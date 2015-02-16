@@ -1,0 +1,34 @@
+% Chapter Template
+
+\chapter{Moving Object Detection Approaches, Challenges and Object Tracking} % Main chapter title
+
+\label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\section{Moving Object Detection}
+
+\lhead{Chapter 2. \emph{Moving Object Detection Approaches, Challenges and Object Tracking}} 
+
+In a video, there are two sources of information that can be used for object detection and tracking: Visual features (color, texture and shape) and motion information. Robust approaches suggest that combining the statistical analysis of visual features and temporal analysis of motion information. Moving object detection targets the extraction of moving objects that are of interest in sequences (e.g. people and vehicles).
+
+A large number of methodologies have been proposed for object tracking, focusing on the task of object detection first. Most of them  apply combinations and intersections among different methodologies, making it very difficult to create a uniform classification of existing approaches. This section classifies different approaches available for object detection from videos.
+
+\subsection{Background Substraction}
+
+Background subtraction is a commonly used technique for object segmentation in static scenarios \cite{McIvor2000}. This task consist in detecting moving regions by subtracting the current image pixel-by-pixel from a reference background image. The pixels above some threshold are classified as foreground (belongs to an object). The background image is created averaging images over time in an intiialization period, and is updated with new images to adapt to dynamic scene changes. Also, the foreground map is followed by morphological operations such as closing and erosion (elimination of small-sized blobs).
+
+Although background subtraction techniques extracts well most of the relevant pixels, this method is sensitive to changes when some background and foreground pixels have similar value.
+
+\subsection{Temporal differencing}
+
+In temporal differencing, objects are detected by taking pixel-by-pixel difference of consecutive frames (generally two or three) in a video sequence. This method is most common for moving object detection in scenarios where camera is moving. Unlike static camera scenarios, the background is changing in time for moving camera (not appropiate to create a background model). Alternatively, the moving object is detected by taking the difference between frames $t - 1$ and $t$.
+
+This method is highly adaptive to dynamic changes in the scene as most recent frames are involved in the process. However, it fails detecting small regions as moving objects (ghost regions). Detection will not be correct also, for objects that preserve uniform regions (static objects).
+
+A two-frame differencing method is presented in \cite{Lipton1998a}, where the pixels that satisfy the following equation are marked as foreground.\\
+\centerline{$|I_t(x,y), I_{t-1}(x,y)|>Th$}
+
+Other methods were developed in order to overcome drastic changes of two frame differencing in some cases. For instance, a three-frame differencing method \cite{Wang2003} and a hybrid method that combines three-frame differencing with an adaptive background subtraction model \cite{Collins2000}.
+
+
+
+
