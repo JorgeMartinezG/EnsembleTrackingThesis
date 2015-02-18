@@ -29,6 +29,33 @@ A two-frame differencing method is presented in \cite{Lipton1998a}, where the pi
 
 Other methods were developed in order to overcome drastic changes of two frame differencing in some cases. For instance, a three-frame differencing method \cite{Wang2003} and a hybrid method that combines three-frame differencing with an adaptive background subtraction model \cite{Collins2000}.
 
+\subsection{Statistical Approaches}
+
+Statistical characteristics of pixels have been used, in order to overcome shortcomings between frames of basic background subtraction methods. The approaches consist in keeping and updating pixels statistics that belong to the background model. Foreground pixels are identified by comparing each pixel's statistics with that of the background model. These methods are becoming more popular due to its reliability in scenes that contain noise, illumination changes and shadows \textbf{Cite here!}.
+
+The statistical method proposed in \textbf{Cite here} describes and adaptive background model for real-time tracking. Every pixel is modeles by a mixture of Gaussians which are udpated online using incoming image data. Then, the Gaussians distributions of the mixture model for each pixel is evaluated in order to detect whether a pixel belongs to foreground and background.
+
+\subsection{Point detectors}
+
+Point detectors are used to find interesting points in objects which have an expressive texture in their respective localities. An interest point should have invariance to changes in illumination and camera viewpoint. One important detector uses optical flow approach. These methods make use of the flow vectors of moving objects over time to detect moving blobs in an image. In this approach the apparent velocity and direction of every pixel in the frame must be computed.
+
+\subsection{Challenges}
+
+Object detection and tracking is still an open research problem in computer vision. A robust, accurate and high performance approach is still a great challenge. The level of difficulty depends on how the object of interest is defined in terms of features. For instance, Using color as object representation method, it is not difficult to identify all pixels with same color as the object. However, there is always a probability of existence a background region with same color information (background clutter). In addition, illumination changes in the scene does not guarantee that the pixel values of an object will be the same in all frames. These variabilities or challenges which are random in object tracking causes wrong object tracking, and are listed below.
+
+\begin{itemize}
+\item \textbf{Illumination Changes:} It is desirable that background model adapts to gradual changes of the appearance of the environment.
+\item \textbf{Dynamic background:} Some scenery regions contain movement, but should be still remain as background, acoording to their relevance. Such movement can be periodical or irregular (e.g. traffic lights, waving trees).
+\item \textbf{Occlusion:} Partially or full, occlusion affects the process of computing the background frame. In real life situations, occlusion can occur anytime the object of interest passes behind another object with respect to a camera.
+\item \textbf{Background clutter:} As stated before, this challenge makes the segmentation task difficult. It is hard to create ans separate background model from moving foreground objects.
+\item \textbf{Shadowing:} Shadows cast by foreground objects complicates processes such as background subtraction. Overlapping shadows hinder their separation and classification. Researchers have proposed different methods for detection of shadows.
+\item \textbf{Camera motion:} Sometimes, video may be captured by unstable (e.g. vibrating) cameras.
+\item \textbf{motion:} The speed of a moving object plays an important role in its detection and track. If an object is moving too slow, the temporal differencing methods fails to detect object, because it preserves uniform region between frames. In the other case, fast moving object leaves ghost regions in a detected foreground model.
+\item \textbf{Object rotation and deformation:} Since natural objects move freely, they can appear slightly or completely transformed. Such rotations and transformations in or out of plane on the images affect object tracking considerably.
+\end{itemize}
+
+
+
 
 
 
