@@ -1,0 +1,641 @@
+@misc{Johnson1998,
+abstract = {There is a rich theoretical base for cooperative learning. Three interrelated types have been developed (formal, informal, cooperative base groups) that provide a framework for effective college teaching. However, too much emphasis is placed on developing the skills of individuals and too little on creating learning communities within which achievement of all students is enhanced. (MSE)},
+author = {Johnson, David W. and Johnson, Roger T. and Smith, Karl A.},
+booktitle = {Change: The Magazine of Higher Learning},
+doi = {10.1080/00091389809602629},
+isbn = {0009-1383},
+issn = {0009-1383},
+mendeley-groups = {Ensemble tracking},
+pages = {26--35},
+title = {{Cooperative Learning Returns To College What Evidence Is There That It Works?}},
+volume = {30},
+year = {1998}
+}
+@inproceedings{Hare2011,
+abstract = {Adaptive tracking-by-detection methods are widely used in computer vision for tracking arbitrary objects. Current approaches treat the tracking problem as a classification task and use online learning techniques to update the object model. However, for these updates to happen one needs to convert the estimated object position into a set of labelled training examples, and it is not clear how best to perform this intermediate step. Furthermore, the objective for the classifier (label prediction) is not explicitly coupled to the objective for the tracker (accurate estimation of object position). In this paper, we present a framework for adaptive visual object tracking based on structured output prediction. By explicitly allowing the output space to express the needs of the tracker, we are able to avoid the need for an intermediate classification step. Our method uses a kernelized structured output support vector machine (SVM), which is learned online to provide adaptive tracking. To allow for real-time application, we introduce a budgeting mechanism which prevents the unbounded growth in the number of support vectors which would otherwise occur during tracking. Experimentally, we show that our algorithm is able to outperform state-of-the-art trackers on various benchmark videos. Additionally, we show that we can easily incorporate additional features and kernels into our framework, which results in increased performance.},
+author = {Hare, Sam and Saffari, Amir and Torr, Philip H S},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2011.6126251},
+isbn = {9781457711015},
+issn = {1550-5499},
+mendeley-groups = {Ensemble tracking},
+pages = {263--270},
+title = {{Struck: Structured output tracking with kernels}},
+year = {2011}
+}
+@article{Kalal2011,
+abstract = {This paper investigates long-term tracking of unknown objects in a video stream. The object is defined by its location and extent in a single frame. In every frame that follows, the task is to determine the object's location and extent or indicate that the object is not present. We propose a novel tracking framework (TLD) that explicitly decomposes the long-term tracking task into tracking, learning and detection. The tracker follows the object from frame to frame. The detector localizes all appearances that have been observed so far and corrects the tracker if necessary. The learning estimates detector's errors and updates it to avoid these errors in the future. We study how to identify detector's errors and learn from them. We develop a novel learning method (P-N learning) which estimates the errors by a pair of "experts'': (i) P-expert estimates missed detections, and (ii) N-expert estimates false alarms. The learning process is modeled as a discrete dynamical system and the conditions under which the learning guarantees improvement are found. We describe our real-time implementation of the TLD framework and the P-N learning. We carry out an extensive quantitative evaluation which shows a significant improvement over state-of-the-art approaches.},
+author = {Kalal, Zdenek and Mikolajczyk, Krystian and Matas, Jiri},
+doi = {10.1109/TPAMI.2011.239},
+isbn = {2011030153},
+issn = {1939-3539},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {Ensemble tracking},
+pages = {1409--1422},
+pmid = {22156098},
+title = {{Tracking-Learning-Detection.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/22156098},
+volume = {34},
+year = {2011}
+}
+@inproceedings{Zhong2012,
+abstract = {In this paper we propose a robust object tracking al- gorithm using a collaborative model. As the main chal- lenge for object tracking is to account for drastic appear- ance change, we propose a robust appearance model that exploits both holistic templates and local representations. We develop a sparsity-based discriminative classifier (SD- C) and a sparsity-based generative model (SGM). In the S- DC module, we introduce an effective method to compute the confidence value that assigns more weights to the fore- ground than the background. In the SGM module, we pro- pose a novel histogram-based method that takes the spatial information of each patch into consideration with an oc- clusion handing scheme. Furthermore, the update scheme considers both the latest observations and the original tem- plate, thereby enabling the tracker to deal with appearance change effectively and alleviate the drift problem. Numer- ous experiments on various challenging videos demonstrate that the proposed tracker performs favorably against sever- al state-of-the-art algorithms.},
+author = {Zhong, Wei and Lu, Huchuan and Yang, Ming-Hsuan},
+booktitle = {CVPR},
+doi = {10.1109/CVPR.2012.6247882},
+isbn = {978-1-4673-1228-8},
+issn = {978-1-4673-1228-8},
+mendeley-groups = {Ensemble tracking},
+pages = {1838--1845},
+title = {{Robust object tracking via sparsity-based collaborative model}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6247882},
+year = {2012}
+}
+@inproceedings{Danelljan2014,
+abstract = {Abstract Visual tracking is a challenging problem in computer vision . Most state-of-the-art visual trackers either rely on luminance information or use simple color representations for image description. Contrary to visual tracking , for object recognition and detection, ... $\backslash$n},
+author = {Danelljan, Martin and Khan, Fahad Shahbaz and Felsberg, Michael and Weijer, Joost Van De},
+booktitle = {CVPR},
+doi = {10.1109/CVPR.2014.143},
+mendeley-groups = {Ensemble tracking},
+title = {{Adaptive Color Attributes for Real-Time Visual Tracking}},
+year = {2014}
+}
+@article{Bolme2010,
+abstract = {Although not commonly used, correlation filters can track complex objects through rotations, occlusions and other distractions at over 20 times the rate of current state-of-the-art techniques. The oldest and simplest correlation filters use simple templates and generally fail when applied to tracking. More modern approaches such as ASEF and UMACE perform better, but their training needs are poorly suited to tracking. Visual tracking requires robust filters to be trained from a single frame and dynamically adapted as the appearance of the target object changes. This paper presents a new type of correlation filter, a Minimum Output Sum of Squared Error (MOSSE) filter, which produces stable correlation filters when initialized using a single frame. A tracker based upon MOSSE filters is robust to variations in lighting, scale, pose, and nonrigid deformations while operating at 669 frames per second. Occlusion is detected based upon the peak-to-sidelobe ratio, which enables the tracker to pause and resume where it left off when the object reappears.},
+author = {Bolme, D S and Beveridge, J R and Draper, B a and Lui, Yui Man Lui Yui Man},
+doi = {10.1109/CVPR.2010.5539960},
+isbn = {978-1-4244-6984-0},
+issn = {10636919},
+journal = {Computer Vision and Pattern Recognition CVPR 2010 IEEE Conference on},
+mendeley-groups = {Ensemble tracking},
+pages = {2544--2550},
+title = {{Visual object tracking using adaptive correlation filters}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5539960},
+year = {2010}
+}
+@inproceedings{Zhang2012,
+abstract = {It is a challenging task to develop effective and efficient appearance models for robust object tracking due to factors such as pose variation, illumination change, occlusion, and motion blur. Existing online tracking algorithms often update models with samples from observations in recent frames. While much success has been demonstrated, several issues remain to be addressed. First, while these adaptive appearance models are data-dependent, there does not exist sufficient amount of data for online algorithms to learn at the outset. Second, online tracking algorithms often encounter the drift problems. As a result of self-taught learning, these misaligned samples are likely to be added and degrade the appearance models. In this paper, we propose a simple yet effective and efficient tracking algorithm with an appearance model based on features extracted from the multi-scale image feature space with data-independent basis. Our appearance model employs non-adaptive random projections that preserve the structure of the image feature space of objects. A very sparse measurement matrix is adopted to efficiently extract the features for the appearance model. We compress samples of foreground targets and the background using the same sparse measurement matrix. The tracking task is formulated as a binary classification via a naive Bayes classifier with online update in the compressed domain. The proposed compressive tracking algorithm runs in real-time and performs favorably against state-of-the-art algorithms on challenging sequences in terms of efficiency, accuracy and robustness.},
+author = {Zhang, Kaihua and Zhang, Lei and Yang, Ming Hsuan},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-642-33712-3\_62},
+isbn = {9783642337116},
+issn = {03029743},
+mendeley-groups = {Ensemble tracking},
+pages = {864--877},
+title = {{Real-time compressive tracking}},
+volume = {7574 LNCS},
+year = {2012}
+}
+@inproceedings{Jia2012,
+abstract = {Sparse representation has been applied to visual track- ing by finding the best candidate with minimal reconstruc- tion error using target templates. However most sparse rep- resentation based trackers only consider the holistic repre- sentation and do not make full use of the sparse coefficients to discriminate between the target and the background, and hence may fail with more possibility when there is similar object or occlusion in the scene. In this paper we develop a simple yet robust tracking method based on the struc- tural local sparse appearance model. This representation exploits both partial information and spatial information of the target based on a novel alignment-pooling method. The similarity obtained by pooling across the local patches helps not only locate the target more accurately but also handle occlusion. In addition, we employ a template up- date strategy which combines incremental subspace learn- ing and sparse representation. This strategy adapts the template to the appearance change of the target with less possibility of drifting and reduces the influence of the oc- cluded target template as well. Both qualitative and quan- titative evaluations on challenging benchmark image se- quences demonstrate that the proposed tracking algorithm performs favorably against several state-of-the-art meth- ods.},
+author = {Jia, Xu and Lu, Huchuan and Yang, Ming Hsuan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2012.6247880},
+isbn = {9781467312264},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {1822--1829},
+title = {{Visual tracking via adaptive structural local sparse appearance model}},
+year = {2012}
+}
+@inproceedings{Collins2005a,
+abstract = {We have implemented a GUI-based tracking tested system in C and Intel OpenCV, running within the Microsoft Windows environment. The motivation for the testbed is to run and log tracking experiments in near real-time. The testbed allows a tracking experiment to be repeated from the same starting state using different tracking algorithms and parameter settings, thereby facilitating comparison of algorithms. We have also developed a tracking evaluation web site to encourage third-party self-evaluation of state-of-the-art tracking algorithms. The site hosts source code for the tracking testbed, a set of ground-truth datasets, and a method for on-line evaluation of uploaded tracking results.},
+author = {Collins, Robert and Zhou, Xuhui and Teh, Seng Keat},
+booktitle = {IEEE International Workshop on Performance Evaluation of Tracking and Surveillance},
+mendeley-groups = {Ensemble tracking},
+title = {{An Open Source Tracking Testbed and Evaluation Web Site}},
+year = {2005}
+}
+@article{Henriques2014,
+abstract = {The core component of most modern trackers is a discriminative classifier, tasked with distinguishing between the target and the surrounding environment. To cope with natural image changes, this classifier is typically trained with translated and scaled sample patches. Such sets of samples are riddled with redundancies – any overlapping pixels are constrained to be the same. Based on this simple observation, we propose an analytic model for datasets of thousands of translated patches. By showing that the resulting data matrix is circulant, we can diagonalize it with the Discrete Fourier Transform, reducing both storage and computation by several orders of magnitude. Interestingly, for linear regression our formulation is equivalent to a correlation filter, used by some of the fastest competitive trackers. For kernel regression, however, we derive a new Kernelized Correlation Filter (KCF), that unlike other kernel algorithms has the exact same complexity as its linear counterpart. Building on it, we also propose a fast multi-channel extension of linear correlation filters, via a linear kernel, which we call Dual Correlation Filter (DCF). Both KCF and DCF outperform top-ranking trackers such as Struck or TLD on a 50 videos benchmark, despite running at hundreds of frames-per-second, and being implemented in a few lines of code (Algorithm 1). To encourage further developments, our tracking framework was made open-source.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1404.7584v1},
+author = {Henriques, JF and Caseiro, Rui and Martins, Pedro and Batista, Jorge},
+eprint = {arXiv:1404.7584v1},
+journal = {arXiv preprint arXiv: \ldots},
+keywords = {Visual tracking,circulant matrices,correlation filter,discrete Fourier transform,kernel methods,ridge regression},
+mendeley-groups = {Ensemble tracking},
+pages = {1--14},
+title = {{High-Speed Tracking with Kernelized Correlation Filters}},
+url = {http://arxiv.org/abs/1404.7584},
+year = {2014}
+}
+@article{Yilmaz2006,
+abstract = {The goal of this article is to review the state-of-the-art tracking methods, classify them into different categories, and identify new trends. Object tracking, in general, is a challenging problem. Difficulties in tracking objects can arise due to abrupt object motion, changing appearance patterns of both the object and the scene, nonrigid object structures, object-to-object and object-to-scene occlusions, and camera motion. Tracking is usually performed in the context of higher-level applications that require the location and/or shape of the object in every frame. Typically, assumptions are made to constrain the tracking problem in the context of a particular application. In this survey, we categorize the tracking methods on the basis of the object and motion representations used, provide detailed descriptions of representative methods in each category, and examine their pros and cons. Moreover, we discuss the important issues related to tracking including the use of appropriate image features, selection of motion models, and detection of objects.},
+author = {Yilmaz, Alper and Javed, Omar and Shah, Mubarak},
+doi = {citeulike-article-id:1008678},
+isbn = {0360-0300},
+issn = {03600300},
+journal = {ACM Computing Surveys},
+keywords = {background\_subtraction,object\_tracking,survey},
+mendeley-groups = {Ensemble tracking},
+pages = {13},
+title = {{Object tracking: A survey}},
+url = {http://dx.doi.org/10.1145/1177352.1177355},
+volume = {38},
+year = {2006}
+}
+@inproceedings{Wu2013,
+abstract = {Object tracking is one of the most important components in numerous applications of computer vision. While much progress has been made in recent years with efforts on sharing code and datasets, it is of great importance to develop a library and benchmark to gauge the state of the art. After briefly reviewing recent advances of online object tracking, we carry out large scale experiments with various evaluation criteria to understand how these algorithms perform. The test image sequences are annotated with different attributes for performance evaluation and analysis. By analyzing quantitative results, we identify effective approaches for robust tracking and provide potential future research directions in this field.},
+author = {Wu, Yi and Lim, Jongwoo and Yang, Ming Hsuan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer  Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2013.312},
+isbn = {1063-6919 VO -},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {2411--2418},
+title = {{Online object tracking: A benchmark}},
+year = {2013}
+}
+@inproceedings{Bai2013,
+abstract = {We propose a randomized ensemble algorithm to model the time-varying appearance of an object for visual tracking. In contrast with previous online methods for updating classifier ensembles in tracking-by-detection, the weight vector that combines weak classifiers is treated as a random variable and the posterior distribution for the weight vector is estimated in a Bayesian manner. In essence, the weight vector is treated as a distribution that reflects the confidence among the weak classifiers used to construct and adapt the classifier ensemble. The resulting formulation models the time-varying discriminative ability among weak classifiers so that the ensembled strong classifier can adapt to the varying appearance, backgrounds, and occlusions. The formulation is tested in a tracking-by-detection implementation. Experiments on 28 challenging benchmark videos demonstrate that the proposed method can achieve results comparable to and often better than those of state- of-the-art approaches.},
+author = {Bai, Qinxun and Wu, Zheng and Sclaroff, Stan and Betke, Margrit and Monnier, Camille},
+booktitle = {International Conference on Computer Vision},
+doi = {10.1109/ICCV.2013.255},
+isbn = {978-1-4799-2840-8},
+issn = {1550-5499},
+mendeley-groups = {Ensemble tracking},
+pages = {2040--2047},
+title = {{Randomized Ensemble Tracking}},
+url = {http://cs-people.bu.edu/qinxun/RET/RET.html},
+year = {2013}
+}
+@article{Bailer2013,
+address = {New York, New York, USA},
+author = {Bailer, Christian and Pagani, Alain and Stricker, Didier},
+doi = {10.1145/2534008.2534018},
+file = {:C$\backslash$:/Users/Jorge/Desktop/OnEye.pdf:pdf},
+isbn = {9781450325899},
+journal = {Proceedings of the 10th European Conference on Visual Media Production - CVMP '13},
+mendeley-groups = {Ensemble tracking},
+pages = {1--8},
+publisher = {ACM Press},
+title = {{A user supported tracking framework for interactive video production}},
+url = {http://dl.acm.org/citation.cfm?doid=2534008.2534018},
+year = {2013}
+}
+@inproceedings{Kwon2011,
+abstract = {We propose a novel tracking framework called visual tracker sampler that tracks a target robustly by searching for the appropriate trackers in each frame. Since the real-world tracking environment varies severely over time, the trackers should be adapted or newly constructed depending on the current situation. To do this, our method obtains several samples of not only the states of the target but also the trackers themselves during the sampling process. The trackers are efficiently sampled using the Markov Chain Monte Carlo method from the predefined tracker space by proposing new appearance models, motion models, state representation types, and observation types, which are the basic important components of visual trackers. Then, the sampled trackers run in parallel and interact with each other while covering various target variations efficiently. The experiment demonstrates that our method tracks targets accurately and robustly in the real-world tracking environments and outperforms the state-of-the-art tracking methods.},
+author = {Kwon, Junseok and Lee, Kyoung Mu},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2011.6126369},
+isbn = {9781457711015},
+issn = {1550-5499},
+mendeley-groups = {Ensemble tracking},
+pages = {1195--1202},
+title = {{Tracking by sampling trackers}},
+year = {2011}
+}
+@inproceedings{Kwon2010,
+abstract = {We propose a novel tracking algorithm that can work robustly in a challenging scenario such that several kinds of appearance and motion changes of an object occur at the same time. Our algorithm is based on a visual tracking decomposition scheme for the efficient design of observation and motion models as well as trackers. In our scheme, the observation model is decomposed into multiple basic observation models that are constructed by sparse principal component analysis (SPCA) of a set of feature templates. Each basic observation model covers a specific appearance of the object. The motion model is also represented by the combination of multiple basic motion models, each of which covers a different type of motion. Then the multiple basic trackers are designed by associating the basic observation models and the basic motion models, so that each specific tracker takes charge of a certain change in the object. All basic trackers are then integrated into one compound tracker through an interactive Markov Chain Monte Carlo (IMCMC) framework in which the basic trackers communicate with one another interactively while run in parallel. By exchanging information with others, each tracker further improves its performance, which results in increasing the whole performance of tracking. Experimental results show that our method tracks the object accurately and reliably in realistic videos where the appearance and motion are drastically changing over time.},
+author = {Kwon, Junseok and Lee, Kyoung M.},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2010.5539821},
+isbn = {9781424469840},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {1269--1276},
+title = {{Visual tracking decomposition}},
+year = {2010}
+}
+@article{Collins2005,
+abstract = {This paper presents an online feature selection mechanism for evaluating multiple features while tracking and adjusting the set of features used to improve tracking performance. Our hypothesis is that the features that best discriminate between object and background are also best for tracking the object. Given a set of seed features, we compute log likelihood ratios of class conditional sample densities from object and background to form a new set of candidate features tailored to the local object/background discrimination task. The two-class variance ratio is used to rank these new features according to how well they separate sample distributions of object and background pixels. This feature evaluation mechanism is embedded in a mean-shift tracking system that adaptively selects the top-ranked discriminative features for tracking. Examples are presented that demonstrate how this method adapts to changing appearances of both tracked object and scene background. We note susceptibility of the variance ratio feature selection method to distraction by spatially correlated background clutter and develop an additional approach that seeks to minimize the likelihood of distraction.},
+author = {Collins, Robert T. and Liu, Yanxi and Leordeanu, Marius},
+doi = {10.1109/TPAMI.2005.205},
+isbn = {0-7695-1950-4},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Computer vision,Feature creation,Feature evaluation and selection,Time-varying imagery,Tracking},
+mendeley-groups = {Ensemble tracking},
+pages = {1631--1643},
+pmid = {16237997},
+title = {{Online selection of discriminative tracking features}},
+volume = {27},
+year = {2005}
+}
+@inproceedings{Bailer2014,
+abstract = {Abstract. General object tracking is a challenging problem, where each tracking algorithm performs well on different sequences. This is because each of them has different strengths and weaknesses. We show that this fact can be utilized to create a fusion approach that clearly outperforms the best tracking algorithms in tracking performance. Thanks to dy- namic programming based trajectory optimization we cannot only out- perform tracking algorithms in accuracy but also in other important aspects like trajectory continuity and smoothness. Our fusion approach is very generic as it only requires frame-based tracking results in form of the object’s bounding box as input and thus can work with arbitrary tracking algorithms. It is also suited for live tracking. We evaluated our approach using 29 different algorithms on 51 sequences and show the su- periority of our approach compared to state-of-the-art tracking methods},
+author = {Bailer, Christian and Pagani, Alain and Stricker, Didier},
+booktitle = {European Conference on Computer Vision},
+file = {::},
+mendeley-groups = {Ensemble tracking},
+pages = {170--185},
+title = {{A Superior Tracking Approach: Building a strong Tracker through Fusion}},
+year = {2014}
+}
+@inproceedings{Saffari2010,
+abstract = {Online boosting is one of the most successful online learning algorithms in computer vision. While many challenging online learning problems are inherently multi-class, online boosting and its variants are only able to solve binary tasks. In this paper, we present Online Multi-Class LPBoost (OMCLP) which is directly applicable to multi-class problems. From a theoretical point of view, our algorithm tries to maximize the multi-class soft-margin of the samples. In order to solve the LP problem in online settings, we perform an efficient variant of online convex programming, which is based on primal-dual gradient descent-ascent update strategies. We conduct an extensive set of experiments over machine learning benchmark datasets, as well as, on Caltech 101 category recognition dataset. We show that our method is able to outperform other online multi-class methods. We also apply our method to tracking where, we present an intuitive way to convert the binary tracking by detection problem to a multi-class problem where background patterns which are similar to the target class, become virtual classes. Applying our novel model, we outperform or achieve the state-of-the-art results on benchmark tracking videos.},
+author = {Saffari, Amir and Godec, Martin and Pock, Thomas and Leistner, Christian and Bischof, Horst},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2010.5539937},
+isbn = {9781424469840},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {3570--3577},
+title = {{Online multi-class LPBoost}},
+year = {2010}
+}
+@article{Avidan2007,
+abstract = {We consider tracking as a binary classification problem, where an ensemble of weak classifiers is trained online to distinguish between the object and the background. The ensemble of weak classifiers is combined into a strong classifier using AdaBoost. The strong classifier is then used to label pixels in the next frame as either belonging to the object or the background, giving a confidence map. The peak of the map and, hence, the new position of the object, is found using mean shift. Temporal coherence is maintained by updating the ensemble with new weak classifiers that are trained online during tracking. We show a realization of this method and demonstrate it on several video sequences.},
+author = {Avidan, Shai},
+doi = {10.1109/TPAMI.2007.35},
+isbn = {0769523722},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {AdaBoost,Concept learning,Video analysis,Visual tracking},
+mendeley-groups = {Ensemble tracking},
+pages = {261--271},
+pmid = {17170479},
+title = {{Ensemble tracking}},
+volume = {29},
+year = {2007}
+}
+@article{Babenko2010,
+abstract = {In this paper we address the problem of tracking an object in a video given its location in the first frame and no other information. Recently, a class of tracking techniques called "tracking by detection" has been shown to give promising results at real-time speeds. These methods train a discriminative classifier in an online manner to separate the object from the background. This classifier bootstraps itself by using the current tracker state to extract positive and negative examples from the current frame. Slight inaccuracies in the tracker can therefore lead to incorrectly labeled training examples, which degrade the classifier and can cause further drift. In this paper we show that using Multiple Instance Learning (MIL) instead of traditional supervised learning avoids these problems, and can therefore lead to a more robust tracker with fewer parameter tweaks. We propose a novel online MIL algorithm for object tracking that achieves superior results with real-time performance. We present thorough experimental results (both qualitative and quantitative) on a number of challenging video clips.},
+author = {Babenko, Boris and Yang, Ming-Hsuan and Belongie, Serge},
+doi = {10.1109/TPAMI.2010.226},
+isbn = {9781424439911},
+issn = {1939-3539},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {Ensemble tracking},
+pages = {983--990},
+pmid = {21173445},
+title = {{Visual Tracking with Online Multiple Instance Learning.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/21173445$\backslash$nhttp://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=5206737},
+year = {2010}
+}
+@inproceedings{Grabner2008,
+abstract = {Recently, on-line adaptation of binary classifiers for tracking have been investigated. On-line learning allows for simple classifiers since only the current view of the object from its surrounding background needs to be discriminiated. However, on-line adaption faces one key problem: Each update of the tracker may introduce an error which, finally, can lead to tracking failure (drifting). The contribution of this paper is a novel on-line semi-supervised boosting method which significantly alleviates the drifting problem in tracking applications. This allows to limit the drifting problem while still staying adaptive to appearance changes. The main idea is to formulate the update process in a semi-supervised fashion as combined decision of a given prior and an on-line classifier. This comes without any parameter tuning. In the experiments, we demonstrate real-time tracking of our SemiBoost tracker on several challenging test sequences where our tracker outperforms other on-line tracking methods.},
+author = {Grabner, Helmut and Leistner, Christian and Bischof, Horst},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-540-88682-2-19},
+isbn = {3540886818},
+issn = {03029743},
+mendeley-groups = {Ensemble tracking},
+pages = {234--247},
+title = {{Semi-supervised on-line boosting for robust tracking}},
+volume = {5302 LNCS},
+year = {2008}
+}
+@article{Oza2000,
+abstract = {Most traditional learning systems only provide users learning resources, but can not support user executing personalized and collaborative learning plans, and that makes online learning lacking communication and guidance compared with traditional learning. E-instructor is proposed to narrow the gap between traditional learning and online learning, it supports making personalized and collaborative learning design besides providing learning resources. This paper analyses traditional learning systems, brings up what an e-instructor should have, then discusses the supporting environments for an e-instructor, finally this paper proposes a service oriented and layered architecture design for e-learning systems and gives a sample implementation.},
+author = {Oza, NC and Russell, S},
+doi = {10.1007/978-3-642-22763-9\_7},
+isbn = {0493584978},
+journal = {AAAI/IAAI},
+mendeley-groups = {Ensemble tracking},
+pages = {1109--1109},
+title = {{Online ensemble learning}},
+url = {http://scholar.google.com/scholar?hl=en\&btnG=Search\&q=intitle:Online+ensemble+learning\#0$\backslash$nhttp://www.aaai.org/Papers/AAAI/2000/AAAI00-190.pdf},
+volume = {6837},
+year = {2000}
+}
+@article{Freund1997a,
+abstract = {In the first part of the paper we consider the problem of dynamically$\backslash$n$\backslash$napportioning resources among a set of options in a worst-case on-line$\backslash$n$\backslash$nframework. The model we study can be interpreted as a broad, abstract$\backslash$n$\backslash$nextension of the well-studied on-line prediction model to a general$\backslash$n$\backslash$ndecision-theoretic setting. We show that the multiplicative weight-$\backslash$n$\backslash$nupdate LittlestoneWarmuth rule can be adapted to this model, yielding$\backslash$n$\backslash$nbounds that are slightly weaker in some cases, but applicable to a$\backslash$ncon-$\backslash$n$\backslash$nsiderably more general class of learning problems. We show how the$\backslash$n$\backslash$nresulting learning algorithm can be applied to a variety of problems,$\backslash$n$\backslash$nincluding gambling, multiple-outcome prediction, repeated games, and$\backslash$n$\backslash$nprediction of points in R\^{}\{n\}. In the second part of the paper we$\backslash$napply the$\backslash$n$\backslash$nmultiplicative weight-update technique to derive a new boosting algo-$\backslash$n$\backslash$nrithm. This boosting algorithm does not require any prior knowledge$\backslash$n$\backslash$nabout the performance of the weak learning algorithm. We also study$\backslash$n$\backslash$ngeneralizations of the new boosting algorithm to the problem of$\backslash$n$\backslash$nlearning functions whose range, rather than being binary, is an arbitrary$\backslash$n$\backslash$nfinite set or a bounded segment of the real line.},
+author = {Freund, Y and Schapire, R E},
+doi = {10.1007/3-540-59119-2\_166},
+isbn = {3540591192},
+issn = {00220000},
+journal = {Journal of Computing Systems and Science},
+keywords = { boosting, multi-class classification,Adaboost},
+mendeley-groups = {Ensemble tracking},
+pages = {119--139},
+pmid = {10394},
+title = {{A Decision-theoretic Generalization of On-line Learning and an Application to Boosting}},
+volume = {55},
+year = {1997}
+}
+@article{Mori2006,
+abstract = {The problem we consider in this paper is to take a single two-dimensional image containing a human figure, locate the joint positions, and use these to estimate the body configuration and pose in three-dimensional space. The basic approach is to store a number of exemplar 2D views of the human body in a variety of different configurations and viewpoints with respect to the camera. On each of these stored views, the locations of the body joints (left elbow, right knee, etc.) are manually marked and labeled for future use. The input image is then matched to each stored view, using the technique of shape context matching in conjunction with a kinematic chain-based deformation model. Assuming that there is a stored view sufficiently similar in configuration and pose, the correspondence process will succeed. The locations of the body joints are then transferred from the exemplar view to the test shape. Given the 2D joint locations, the 3D body configuration and pose are then estimated using an existing algorithm. We can apply this technique to video by treating each frame independently--tracking just becomes repeated recognition. We present results on a variety of data sets.},
+author = {Mori, Greg and Malik, Jitendra},
+doi = {10.1109/TPAMI.2006.149},
+isbn = {0162-8828 VO - 28},
+issn = {01628828},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {Ensemble tracking},
+pages = {1052--1062},
+pmid = {16792095},
+title = {{Recovering 3D human body configurations using shape contexts.}},
+volume = {28},
+year = {2006}
+}
+@inproceedings{Liu2007,
+abstract = {Boosting has been widely applied in computer vision, especially after Viola and Jones's seminal work. The marriage of rectangular features and integral-image- enabled fast computation makes boosting attractive for many vision applications. However, this popular way of applying boosting normally employs an exhaustive feature selection scheme from a very large hypothesis pool, which results in a less-efficient learning process. Furthermore, this poses additional constraint on applying boosting in an onine fashion, where feature re-selection is often necessary because of varying data characteristic, but yet impractical due to the huge hypothesis pool. This paper proposes a gradient-based feature selection approach. Assuming a generally trained feature set and labeled samples are given, our approach iteratively updates each feature using the gradient descent, by minimizing the weighted least square error between the estimated feature response and the true label. In addition, we integrate the gradient-based feature selection with an online boosting framework. This new online boosting algorithm not only provides an efficient way of updating the discriminative feature set, but also presents a unified objective for both feature selection and weak classifier updating. Experiments on the person detection and tracking applications demonstrate the effectiveness of our proposal.},
+author = {Liu, Xiaoming and Yu, Ting},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2007.4408912},
+isbn = {978-1-4244-1631-8},
+issn = {1550-5499},
+mendeley-groups = {Ensemble tracking},
+title = {{Gradient feature selection for online boosting}},
+year = {2007}
+}
+@article{Grabner2006,
+abstract = {Very recently tracking was approached using classification techniques such as support vector machines. The object to be tracked is discriminated by a classifier from the background. In a similar spirit we propose a novel on-line AdaBoost feature selection algorithm for tracking. The distinct advantage of our method is its capability of on-line training. This allows to adapt the classifier while tracking the object. Therefore appearance changes of the object (e.g. out of plane rotations, illumination changes) are handled quite naturally. Moreover, depending on the background the algorithm selects the most discriminating features for tracking resulting in stable tracking results. By using fast computable features (e.g. Haar-like wavelets, orientation histograms, local binary patterns) the algorithm runs in real-time. We demonstrate the performance of the algorithm on several (publically available) video sequences.},
+author = {Grabner, Helmut and Grabner, Michael and Bischof, Horst},
+doi = {10.5244/C.20.6},
+isbn = {1-901725-32-4},
+issn = {0162-8828},
+journal = {Technology},
+mendeley-groups = {Ensemble tracking},
+pages = {1--10},
+title = {{Real-Time Tracking via On-line Boosting}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.8743\&amp;rep=rep1\&amp;type=pdf},
+volume = {1},
+year = {2006}
+}
+@article{Ross2007,
+abstract = {Visual tracking, in essence, deals with non-stationary image streams that change over time. While most existing algorithms are able to track objects well in controlled environments, they usually fail in the presence of significant variation of the object’s appearance or surrounding illumination. One reason for such failures is thatmany algorithms employ fixed appearance models of the target. Such models are trained using only appearance data available before tracking begins, which in practice limits the range of appearances that are modelled, and ignores the large volume of information (such as shape changes or specific lighting conditions) that becomes available during tracking. In this paper, we present a tracking method that incrementally learns a low-dimensional subspace representation, efficiently adapting online to changes in the appearance of the target. The model update, based on incremental algorithms for principal component analysis, includes two important features: a method for correctly updating the sample mean, and a forgetting factor to ensure less modelling power is expended fitting older observations. Both of these features contribute measurably to improving overall tracking performance. Numerous experiments demonstrate the effectiveness of the proposed tracking algorithmin indoor and outdoor environmentswhere the target objects undergo large changes in pose, scale, and illumination.},
+author = {Ross, David a. and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+doi = {10.1007/s11263-007-0075-7},
+isbn = {0920-5691},
+issn = {0920-5691},
+journal = {International Journal of Computer Vision},
+keywords = {Visual tracking,adaptive methods,illumination.,online algorithms,particle filter,subspace update},
+mendeley-groups = {Ensemble tracking},
+pages = {125--141},
+title = {{Incremental Learning for Robust Visual Tracking}},
+url = {http://link.springer.com/10.1007/s11263-007-0075-7},
+volume = {77},
+year = {2007}
+}
+@article{Matthews2004,
+abstract = {Template tracking dates back to the 1981 Lucas-Kanade algorithm. One question that has received very little attention, however, is how to update the template so that it remains a good model of the tracked object. We propose a template update algorithm that avoids the "drifting" inherent in the naive algorithm.},
+author = {Matthews, Iain and Ishikawa, Takahiro and Baker, Simon},
+doi = {10.1109/TPAMI.2004.16},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Active appearance models,Template tracking,The Lucas-Kanade algorithm},
+mendeley-groups = {Ensemble tracking},
+pages = {810--815},
+pmid = {18579941},
+title = {{The template update problem}},
+volume = {26},
+year = {2004}
+}
+@article{Jepson2003,
+abstract = {... Abstract—We propose a framework for learning robust, adaptive, appearance models to be used for ... maintains a natural measure of the stability of the observed image structure during tracking . ... An online EM-algorithm is used to adapt the appearance model parameters over time ... $\backslash$n},
+author = {Jepson, A D and Fleet, D J and El-Maraghi, T F},
+doi = {10.1109/TPAMI.2003.1233903},
+isbn = {0162-8828},
+issn = {0162-8828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {Ensemble tracking},
+pages = {1296--1311},
+title = {{Robust online appearance models for visual tracking}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1233903$\backslash$npapers2://publication/doi/10.1109/TPAMI.2003.1233903},
+volume = {25},
+year = {2003}
+}
+@inproceedings{Adam2006,
+abstract = { We present a novel algorithm (which we call "Frag- Track") for tracking an object in a video sequence. The template object is represented by multiple image fragments or patches. The patches are arbitrary and are not based on an object model (in contrast with traditional use of modelbased parts e.g. limbs and torso in human tracking). Every patch votes on the possible positions and scales of the object in the current frame, by comparing its histogram with the corresponding image patch histogram. We then minimize a robust statistic in order to combine the vote maps of the multiple patches. A key tool enabling the application of our algorithm to tracking is the integral histogram data structure [18]. Its use allows to extract histograms of multiple rectangular regions in the image in a very efficient manner. Our algorithm overcomes several difficulties which cannot be handled by traditional histogram-based algorithms [8, 6]. First, by robustly combining multiple patch votes, we are able to handle partial occlusions or pose change. Second, the geometric relations between the template patches allow us to take into account the spatial distribution of the pixel intensities - information which is lost in traditional histogram-based algorithms. Third, as noted by [18], tracking large targets has the same computational cost as tracking small targets. We present extensive experimental results on challenging sequences, which demonstrate the robust tracking achieved by our algorithm (even with the use of only gray-scale (noncolor) information).},
+author = {Adam, Amit and Rivlin, Ehud and Shimshoni, Ilan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2006.256},
+isbn = {0769525970},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {798--805},
+title = {{Robust fragments-based tracking using the integral histogram}},
+volume = {1},
+year = {2006}
+}
+@article{Comaniciu2000,
+abstract = {A new method for real time tracking of non-rigid objects seen from a moving camera is proposed. The central computational module is based on the mean shift iterations and finds the most probable target position in the current frame. The dissimilarity between the target model (its color distribution) and the target candidates is expressed by a metric derived from the Bhattacharyya coefficient. The theoretical analysis of the approach shows that it relates to the Bayesian framework while providing a practical, fast and efficient solution. The capability of the tracker to handle in real time partial occlusions, significant clutter, and target scale variations, is demonstrated for several image sequences},
+author = {Comaniciu, D and Ramesh, V and Meer, P},
+doi = {10.1109/CVPR.2000.854761},
+isbn = {0-7695-0662-3},
+issn = {01628828},
+journal = {IEEE Conference on Computer Vision and Pattern Recognition},
+keywords = {Bayes methods,Bayesian framework,Bayesian methods,Bhattacharyya coefficient,Educational institutions,Kernel,Monitoring,Surveillance,Target tracking,Visualization,Yield estimation,clutter,color distribution,computational complexity,computational module,computer vision,image sequences,iterative methods,mean shift iterations,most probable target position,moving camera,non-rigid object tracking,optical tracking,partial occlusions,real time tracking,real-time systems,target candidate,target model,target scale variations},
+mendeley-groups = {Ensemble tracking},
+pages = {142--149},
+title = {{Real-time tracking of non-rigid objects using mean shift}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=854761},
+volume = {2},
+year = {2000}
+}
+@article{Black1996,
+abstract = {This paper describes an approach for tracking rigid and articulated objects using a view-based representation. The approach builds on and extends work on eigenspace representations, robust estimation techniques, and parameterized optical flow estimation. First, we note that the least-squares image reconstruction of standard eigenspace techniques has a number of problems and we reformulate the reconstruction problem as one of robust estimation. Second we define a ldquosubspace constancy assumptionrdquo that allows us to exploit techniques for parameterized optical flow estimation to simultaneously solve for the view of an object and the affine transformation between the eigenspace and the image. To account for large affine transformations between the eigenspace and the image we define a multi-scale eigenspace representation and a coarse-to-fine matching strategy. Finally, we use these techniques to track objects over long image sequences in which the objects simultaneously undergo both affine image motions and changes of view. In particular we use this ldquoEigenTrackingrdquo technique to track and recognize the gestures of a moving hand.},
+author = {Black, Michael J and Jepson, Allan D},
+doi = {10.1023/A:1007939232436},
+isbn = {0920-5691},
+issn = {0920-5691},
+journal = {International Journal of Computer Vision},
+keywords = {eigenspace methods - robust estimation - view-base},
+mendeley-groups = {Ensemble tracking},
+pages = {63--84},
+title = {{EigenTracking: Robust Matching and Tracking of Articulated Objects Using a View-Based Representation}},
+volume = {26},
+year = {1996}
+}
+@article{Lepetit2006,
+abstract = {In many 3D object-detection and pose-estimation problems, runtime performance is of critical importance. However, there usually is time to train the system, which we will show to be very useful. Assuming that several registered images of the target object are available, we developed a keypoint-based approach that is effective in this context by formulating wide-baseline matching of keypoints extracted from the input images to those found in the model images as a classification problem. This shifts much of the computational burden to a training phase, without sacrificing recognition performance. As a result, the resulting algorithm is robust, accurate, and fast-enough for frame-rate performance. This reduction in runtime computational complexity is our first contribution. Our second contribution is to show that, in this context, a simple and fast keypoint detector suffices to support detection and tracking even under large perspective and scale variations. While earlier methods require a detector that can be expected to produce very repeatable results, in general, which usually is very time-consuming, we simply find the most repeatable object keypoints for the specific target object during the training phase. We have incorporated these ideas into a real-time system that detects planar, nonplanar, and deformable objects. It then estimates the pose of the rigid ones and the deformations of the others.},
+author = {Lepetit, Vincent and Fua, Pascal},
+doi = {10.1109/TPAMI.2006.188},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Classifier design and evaluation,Edge and feature detection,Image processing and computer vision,Object recognition,Statistical,Tracking},
+mendeley-groups = {Ensemble tracking},
+pages = {1465--1479},
+pmid = {16929732},
+title = {{Keypoint recognition using randomized trees}},
+volume = {28},
+year = {2006}
+}
+@article{Isard2001,
+abstract = {Blob trackers have become increasingly powerful in recent years
+largely due to the adoption of statistical appearance models which allow
+effective background subtraction and robust tracking of deforming
+foreground objects. It has been standard, however, to treat background
+and foreground modelling as separate processes-background subtraction is
+followed by blob detection and tracking-which prevents a principled
+computation of image likelihoods. This paper presents two theoretical
+advances which address this limitation and lead to a robust
+multiple-person tracking system suitable for single-camera real-time
+surveillance applications. The first innovation is a multi-blob
+likelihood function which assigns directly comparable likelihoods to
+hypotheses containing different numbers of objects. This likelihood
+function has a rigorous mathematical basis: it is adapted from the
+theory of Bayesian correlation, but uses the assumption of a static
+camera to create a more specific background model while retaining a
+unified approach to background and foreground modelling. Second we
+introduce a Bayesian filter for tracking multiple objects when the
+number of objects present is unknown and varies over time. We show how a
+particle filter can be used to perform joint inference on both the
+number of objects present and their configurations. Finally we
+demonstrate that our system runs comfortably in real time on a modest
+workstation when the number of blobs in the scene is small},
+author = {Isard, M. and MacCormick, J.},
+doi = {10.1109/ICCV.2001.937594},
+isbn = {0-7695-1143-0},
+journal = {Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001},
+mendeley-groups = {Ensemble tracking},
+title = {{BraMBLe: a Bayesian multiple-blob tracker}},
+volume = {2},
+year = {2001}
+}
+@article{Shi1994a,
+abstract = {No feature-based vision system can work unless good features can
+be identified and tracked from frame to frame. Although tracking itself
+is by and large a solved problem, selecting features that can be tracked
+well and correspond to physical points in the world is still hard. We
+propose a feature selection criterion that is optimal by construction
+because it is based on how the tracker works, and a feature monitoring
+method that can detect occlusions, disocclusions, and features that do
+not correspond to points in the world. These methods are based on a new
+tracking algorithm that extends previous Newton-Raphson style search
+methods to work under affine image transformations. We test performance
+with several simulations and experiments},
+author = {Shi, Jianbo Shi Jianbo and Tomasi, C.},
+doi = {10.1109/CVPR.1994.323794},
+isbn = {0-8186-5825-8},
+issn = {1063-6919},
+journal = {Computer Vision and Pattern Recognition, 1994. Proceedings CVPR '94., 1994 IEEE Computer Society Conference on},
+mendeley-groups = {Ensemble tracking},
+pmid = {11968495},
+title = {{Good features to track}},
+year = {1994}
+}
+@inproceedings{Ozuysal2007,
+abstract = {While feature point recognition is a key component of modern approaches to object detection, existing approaches require computationally expensive patch preprocessing to handle perspective distortion. In this paper, we show that formulating the problem in a Naive Bayesian classification framework makes such preprocessing unnecessary and produces an algorithm that is simple, efficient, and robust. Furthermore, it scales well to handle large number of classes. To recognize the patches surrounding keypoints, our classifier uses hundreds of simple binary features and models class posterior probabilities. We make the problem computationally tractable by assuming independence between arbitrary sets of features. Even though this is not strictly true, we demonstrate that our classifier nevertheless performs remarkably well on image datasets containing very significant perspective changes.},
+author = {\"{O}zuysal, Mustafa and Fua, Pascal and Lepetit, Vincent},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2007.383123},
+isbn = {1424411807},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+title = {{Fast keypoint recognition in ten lines of code}},
+year = {2007}
+}
+@inproceedings{He2013,
+abstract = {This paper presents a novel locality sensitive histogram algorithm for $\backslash$nvisual tracking. Unlike the conventional image histogram that counts the $\backslash$nfrequency of occurrences of each intensity value by adding ones to the $\backslash$ncorresponding bin, a locality sensitive histogram is computed at each pixel $\backslash$nlocation and a floating-point value is added to the corresponding bin for each $\backslash$noccurrence of an intensity value. The floating-point value declines $\backslash$nexponentially with respect to the distance to the pixel location where the $\backslash$nhistogram is computed, thus every pixel is considered but those that are far $\backslash$naway can be neglected due to the very small weights assigned. An efficient $\backslash$nalgorithm is proposed that enables the locality sensitive histograms to be $\backslash$ncomputed in time linear in the image size and the number of bins. A robust $\backslash$ntracking framework based on the locality sensitive histograms is proposed, which $\backslash$nconsists of two main components: a new feature for tracking that is robust to $\backslash$nillumination changes and a novel multi-region tracking algorithm that runs in $\backslash$nreal time even with hundreds of regions. Extensive experiments demonstrate that $\backslash$nthe proposed tracking framework outperforms the state-of-the-art methods in $\backslash$nchallenging scenarios, especially when the illumination changes dramatically.},
+author = {He, Shengfeng and Yang, Qingxiong and Lau, Rynson W H and Wang, Jiang and Yang, Ming Hsuan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer  Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2013.314},
+isbn = {978-0-7695-4989-7},
+issn = {10636919},
+keywords = {Locality sensitive histograms,Visual tracking,illumination invariant features},
+mendeley-groups = {Ensemble tracking},
+pages = {2427--2434},
+title = {{Visual tracking via locality sensitive histograms}},
+year = {2013}
+}
+@inproceedings{Birchfield1998,
+abstract = {An algorithm for tracking a person's head is presented. The head's
+projection onto the image plane is modeled as an ellipse whose position
+and size are continually updated by a local search combining the output
+of a module concentrating on the intensity gradient around the ellipse's
+perimeter with that of another module focusing on the color histogram of
+the ellipse's interior. Since these two modules have roughly orthogonal
+failure modes, they serve to complement one another. The result is a
+robust, real-time system that is able to track a person's head with
+enough accuracy to automatically control the camera's pan, tilt, and
+zoom in order to keep the person centered in the field of view at a
+desired size. Extensive experimentation shows the algorithm's robustness
+with respect to full 360-degree out-of-plane rotation, up to 90-degree
+tilting, severe but brief occlusion, arbitrary camera movement, and
+multiple moving people in the background},
+author = {Birchfield, Stan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.1998.698614},
+isbn = {0818684976},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {232--237},
+title = {{Elliptical head tracking using intensity gradients and color histograms}},
+year = {1998}
+}
+@article{Zhang2013,
+abstract = {In this paper, we present a simple yet fast and robust algorithm which exploits the spatio-temporal context for visual tracking. Our approach formulates the spatio-temporal relationships between the object of interest and its local context based on a Bayesian framework, which models the statistical correlation between the low-level features (i.e., image intensity and position) from the target and its surrounding regions. The tracking problem is posed by computing a confidence map, and obtaining the best target location by maximizing an object location likelihood function. The Fast Fourier Transform is adopted for fast learning and detection in this work. Implemented in MATLAB without code optimization, the proposed tracker runs at 350 frames per second on an i7 machine. Extensive experimental results show that the proposed algorithm performs favorably against state-of-the-art methods in terms of efficiency, accuracy and robustness},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1311.1939v1},
+author = {Zhang, Kaihua and Zhang, Lei and Yang, Ming-Hsuan and Zhang, David},
+eprint = {arXiv:1311.1939v1},
+journal = {arXiv preprint arXiv:1311.1939},
+keywords = {Fast Fourier Transform (FFT),Index Terms Object tracking,spatio-temporal context learning},
+mendeley-groups = {Ensemble tracking},
+pages = {1--16},
+title = {{Fast Tracking via Spatio-Temporal Context Learning}},
+url = {http://arxiv.org/abs/1311.1939},
+year = {2013}
+}
+@inproceedings{Ren2008,
+abstract = {The goal of this work is to find all people in archive films. Challenges include low image quality, motion blur, partial occlusion, non-standard poses and crowded scenes. We base our approach on face detection and take a tracking/temporal approach to detection. Our tracker operates in two modes, following face detections whenever possible, switching to low-level tracking if face detection fails. With temporal correspondences established by tracking, we formulate detection as an inference problem in one-dimensional chains/tracks. We use a conditional random field model to integrate information across frames and to re-score tentative detections in tracks. Quantitative evaluations on full-length films show that the CRF-based temporal detector greatly improves face detection, increasing precision for about 30\% (suppressing isolated false positives) and at the same time boosting recall for over 10\% (recovering difficult cases where face detectors fail).},
+author = {Ren, Xiaofeng},
+booktitle = {26th IEEE Conference on Computer Vision and Pattern Recognition, CVPR},
+doi = {10.1109/CVPR.2008.4587533},
+isbn = {9781424422432},
+issn = {1063-6919},
+mendeley-groups = {Ensemble tracking},
+title = {{Finding people in archive films through tracking}},
+year = {2008}
+}
+@article{Isard1998,
+abstract = {The problem of tracking curves in dense visual clutter is challenging. Kalman filtering is inadequate because it is based on Gaussian densities which, being unimo dal, cannot represent simultaneous alternative hypotheses. The Condensation algorithm uses “factored sampling”, previously applied to the interpretation of static images, in which the probability distribution of possible interpretations is represented by a randomly generated set. Condensation uses learned dynamical models, together with visual observations, to propagate the random set over time. The result is highly robust tracking of agile motion. Notwithstanding the use of stochastic methods, the algorithm runs in near real-time.},
+author = {Isard, Michael and Blake, A.},
+doi = {10.1023/A:1008078328650},
+isbn = {0920-5691},
+issn = {09205691},
+journal = {International journal of computer vision},
+mendeley-groups = {Ensemble tracking},
+pages = {5--28},
+title = {{Condensation - conditional density propagation for visual tracking}},
+url = {http://link.springer.com/article/10.1023/A:1008078328650},
+volume = {29},
+year = {1998}
+}
+@article{Zhou2005,
+abstract = {Abstract-Existing methods for incorporating subspace model constraints in shape tracking use only partial information from the measurements and model distribution. We propose a unified framework for robust shape tracking, optimally fusing heteroscedastic uncertainties or noise from measurement, system dynamics, and a subspace model. The resulting nonorthogonal subspace projection and fusion are natural extensions of the traditional model constraint using orthogonal projection. We present two motion measurement algorithms and introduce alternative solutions for measurement uncertainty estimation. We build shape models offline from training data and exploit information from the ground truth initialization online through a strong model adaptation. Our framework is applied for tracking in echocardiograms where the motion estimation errors are heteroscedastic in nature, each heart has a distinct shape, and the relative motions of epicardial and endocardial borders reveal crucial diagnostic features. The proposed method significantly outperforms the existing shape-space-constrained tracking algorithm. Due to the complete treatment of heteroscedastic uncertainties, the strong model adaptation, and the coupled tracking of double-contours, robust performance is observed even on the most challenging cases.},
+author = {Zhou, Xiang Sean and Comaniciu, Dorin and Gupta, Alok},
+doi = {10.1109/TPAMI.2005.3},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Active shape model,Heteroscedastic noise,Model adaptation,Motion estimation with uncertainty,Shape tracking,Subspace constraint},
+mendeley-groups = {Ensemble tracking},
+pages = {115--129},
+pmid = {15628273},
+title = {{An information fusion framework for robust shape tracking}},
+volume = {27},
+year = {2005}
+}
+@article{Lin2011a,
+abstract = {A new template matching algorithm is proposed to improve rotation invariance of mean absolute difference method. The matching function is composed of two sub functions. The first sub-function matches the gray difference between template image and object image, and the second sub-function matches the edge intensity difference between them. The template image and object image are arranged into circle structure, which ensure not only the rotation invariance of the algorithm but also detailed information considered. Simulation results show that the method can realize the target recognition function, and the recognition accuracy can be raised effectively.},
+author = {Lin, You and Chunbo, Xiu},
+doi = {10.1109/ISCCS.2011.9},
+isbn = {978-1-4577-0644-8},
+journal = {2011 International Symposium on Computer Science and Society},
+keywords = {mean absolute difference,rotation invariance,target recognition,template match},
+mendeley-groups = {Ensemble tracking},
+pages = {7--9},
+title = {{Template Matching Algorithm Based on Edge Detection}},
+year = {2011}
+}
+@inproceedings{Santner2010,
+abstract = {Tracking-by-detection is increasingly popular in order to tackle the visual tracking problem. Existing adaptive methods suffer from the drifting problem, since they rely on self-updates of an on-line learning method. In contrast to previous work that tackled this problem by employing semi-supervised or multiple-instance learning, we show that augmenting an on-line learning method with complementary tracking approaches can lead to more stable results. In particular, we use a simple template model as a non-adaptive and thus stable component, a novel optical-flow-based mean-shift tracker as highly adaptive element and an on-line random forest as moderately adaptive appearance-based learner. We combine these three trackers in a cascade. All of our components run on GPUs or similar multi-core systems, which allows for real-time performance. We show the superiority of our system over current state-of-the-art tracking methods in several experiments on publicly available data.},
+author = {Santner, Jakob and Leistner, Christian and Saffari, Amir and Pock, Thomas and Bischof, Horst},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2010.5540145},
+isbn = {9781424469840},
+issn = {10636919},
+mendeley-groups = {Ensemble tracking},
+pages = {723--730},
+title = {{PROST: Parallel robust online simple tracking}},
+year = {2010}
+}
+@article{Wang,
+author = {Wang, Jianyu and Chen, Xilin and Gao, Wen},
+doi = {10.1109/CVPR.2005.262},
+file = {:C$\backslash$:/Users/Jorge/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang, Chen, Gao - Unknown - Online Selecting Discriminative Tracking Features Using Particle Filter.pdf:pdf},
+isbn = {0-7695-2372-2},
+journal = {2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+mendeley-groups = {Ensemble tracking},
+pages = {1037--1042},
+publisher = {Ieee},
+title = {{Online Selecting Discriminative Tracking Features Using Particle Filter}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1467557},
+volume = {2}
+}

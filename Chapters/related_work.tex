@@ -4,9 +4,13 @@
 
 \label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\section{Moving Object Detection}
-
 \lhead{Chapter 2. \emph{Moving Object Detection Approaches, Challenges and Object Tracking}} 
+
+\section{Object Representation}
+
+An object can be considered simply as nothing but an entity of interest used for further analysis. These elements can be represented by their shape and appearance. In this section, we describe different object shape and appearance representations employed in tracking.
+
+\section{Moving Object Detection}
 
 In a video, there are two sources of information that can be used for object detection and tracking: Visual features (color, texture and shape) and motion information. Robust approaches suggest that combining the statistical analysis of visual features and temporal analysis of motion information. Moving object detection targets the extraction of moving objects that are of interest in sequences (e.g. people and vehicles).
 
@@ -54,8 +58,42 @@ Object detection and tracking is still an open research problem in computer visi
 \item \textbf{Object rotation and deformation:} Since natural objects move freely, they can appear slightly or completely transformed. Such rotations and transformations in or out of plane on the images affect object tracking considerably.
 \end{itemize}
 
+\section{Object Tracking}
+
+The goal of an object tracker is to generate an object path over time. This trajectory consists of the object position over time in every frame of the video. The tracker may provide complete region in the image that is occupied by the object at every time instant. There are a wide variety of applications of object detection and tracking in computer vision. Certainly, this list is not meticulous and covers popular approaches on each category.
+
+\subsection{Point Tracking}
+
+Tracking can be formulated as the correspondence of objects represented by points across frames. This category can be divided into two subcategories:
+\begin{itemize}
+	\item \textbf{Deterministic Methods: } These approaches for point correspondence define a cost of associating each object in frame $t-1$ to a single object in frame $t$ using motion constraints, such as proximity, velocity, rigidity and motion. Minimization of the correspondence cost is formulated as a combinatorial optimization problem. A solution, which consists in one-to-one correspondence among all possible associations, can be obtained by optimal assignment methods. For instance Hungarian Algorithm \textbf{cite Here!} or greedy search methods.
+
+	\item \textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, the optimal state of an object is giben by the Kalman Filter, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters.
+
+	In the case of multiobject data association, state estimation using Kalman or particle filters, it is necessary to solve first correspondence problem before these filters can be applied. However, in cases when two objects are close each other, the correspondence could be incorrect. Then, an incorrectly associated measurement can cause the filter to fail to converge. In order to tackle this problem, Joint Probability Data Association Filtering (JPDAF) and Multiple Hypothesis Tracking (MHT) are two used techniques for data association.
+\end{itemize}
+
+\subsection{Kernel Tracking}
+
+In this type of tracking, object motion is computed using representations of a primitive object region, from one frame to the next. These algorithms differ in terms of appearance representation (features extraction) used, the number of objects tracked, and the method used for object motion estimation. 
+\begin{itemize}
+	\item \textbf{Density-based tracking:} According to \textbf{Cite master thesis}, the object is modelled with one or more probability density functions, such as Gaussian, mixture of Gaussian, Parzen windows or histogras, that describe the probability of object appearance. Mean-shift is an approach to feature space analysis. This method shifts a data point to the average of data points in its neighborhood. Mean shift uses fixed color distribution. A similar approach is called CAMSHIFT that handles dynamically changing color distribution by adapting the search window size and computing color distribution in the search window.
+
+	\item \textbf{Template-based tracking:}  These approaches apply templates of the object to calculate appearance probability on every frame of the video sequence. The most common is \textit{Template matching} that searchs accross the image, a region similar to the object template, defined in previous frames. The similarity measure is calculated using normalized cross correlation. A limitation of this method is its high computational cost due to brute force search. To reduce this cost, some methods limit the object search to a neighborhood near previous position.
+
+	Instead of templates, other object representations can be used for tracking. For example, color histograms or mixture models can be computed using the appearance of pixels inside the rectangular or ellipsoidal regions. To reduce computational complexitu, the similarity between object model and the hypothesized position, is computed evaluating the ratio betweem color means between model and position. The position with highest ratio is selected as current object location.
+
+	"Tracking by detection" or "Tracking by repeated recognition" \cite{Mori2006} systems generally perform target object appearance learning. These methods are closely related to object detection (an area with great progress in computer vision) and has encouraged some successful real-time tracking algorithms \cite{Liu2007,Grabner2006}. However, many tracking algorithms employ static appearance models that are defined manually or trained at the first frame only \cite{Isard2001, Lepetit2006, Black1996, Comaniciu2000, Adam2006}, these methods are often unable to deal with significant appearance changes. This situations are difficult when there is limited knowledge of the object of interest. In order to cope this problem, an adaptive appearance model that changes during the tracking process as the appearance of the object changes, gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
+
+	Boosting has been used in a wide field of machine learning tasks and applied to computer vision problems. Many tracking algorithms are based on the boosting framework \cite{Freund1997a} and is related to the work on Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost \cite{Saffari2010} and MILBoost \cite{Babenko2010}. The goal of boosting is to combine many weak classifiers (usually decision stumps) into a linear strong classifier.
+
+\end{itemize}
 
 
+\subsection{Silhouette Tracking}
 
+The object is tracked via estimation of the object region in each frame. Silhouette-based methods provide an accurate shape description for the objects that are tracked. These approaches can be divided into two main categories, shape matching and contour tracking. Shape matching approaches search object silhouette in the current frame. Contour based, evolve initial contour to its new position in the current frame using state space models or direct minimization of some energy functional.
 
+\subsection{Tracking applying fusion of trackers or features}
 
+Tracking algorithms fusion can be performed actively, that means that each tracker receives feedback; or passively without feedback. The first algorithm that explicitly applies ensemble methods to tracking-by=detection is shown in \cite{Avidan2007}. The author extended the work of \cite{Collins2005} using the Adaboost algorithm to combine a set of weak features and update object model with online update strategy. The authors in \cite{Santner2010}, combined a template-based tracker, optical flow tracker, and online-random forest tracking-by-detection method into a cascade of trackers. The best selection is summarized into a simple set of rules. Another active fusion approaches are VTD \cite{Kwon2010} and VTS \cite{Kwon2011}. In this articles, the trackers are sampled by proposing appearance models, motion models, state representation types, and observation types. Then, the sampled trackers run in parallel and interact with each other. The authors in \cite{Bai2013} proposed a classifier ensemble framwork that uses Bayesian estimation theory to estimate the non-stationary distribution of sampled classifers. In \cite{Bailer2013} and \cite{Bailer2014}, the authors present a passive approach based on the idea of attraction fields. The closer a fusion candidate is to a tracking result box, the stronger it is attracted by it.
