@@ -1,14 +1,14 @@
 % Chapter Template
 
-\chapter{Moving Object Detection Approaches, Challenges and Object Tracking} % Main chapter title
+\chapter{Moving Object Detection Approaches, Challenges, Datasets and Object Tracking} % Main chapter title
 
 \label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 \lhead{Chapter 2. \emph{Moving Object Detection Approaches, Challenges and Object Tracking}} 
 
-\section{Object Representation}
+An object can be considered simply as nothing but an entity of interest used for further analysis. These elements can be represented by their shape \textbf{Cite here} or appearance \textbf{cite color histograms, etc.}. In order to track objects, selecting the right features plays a critical role. In general, the most important property of a visual feature is its uniqueness so that could be easily distinguished from other objects. Mostly features are chosen manually by the user depending on the application domain. this problem of automatic feature selection has receibed significant attention in the pattern recognition community. The most common visual features selections are color, edges, displacement vectors and textures.
 
-An object can be considered simply as nothing but an entity of interest used for further analysis. These elements can be represented by their shape and appearance. In this section, we describe different object shape and appearance representations employed in tracking.
+Among all features, color is the one of the most widely used feature for tracking. However, color features are sensity to illumination variation. To tackle this problem, in scenarios where this effect is inevitable, other features are incorporated to model object appearance.
 
 \section{Moving Object Detection}
 
@@ -43,24 +43,58 @@ The statistical method proposed in \textbf{Cite here} describes and adaptive bac
 
 Point detectors are used to find interesting points in objects which have an expressive texture in their respective localities. An interest point should have invariance to changes in illumination and camera viewpoint. One important detector uses optical flow approach. These methods make use of the flow vectors of moving objects over time to detect moving blobs in an image. In this approach the apparent velocity and direction of every pixel in the frame must be computed.
 
-\subsection{Challenges}
+\section{Challenges}
 
 Object detection and tracking is still an open research problem in computer vision. A robust, accurate and high performance approach is still a great challenge. The level of difficulty depends on how the object of interest is defined in terms of features. For instance, Using color as object representation method, it is not difficult to identify all pixels with same color as the object. However, there is always a probability of existence a background region with same color information (background clutter). In addition, illumination changes in the scene does not guarantee that the pixel values of an object will be the same in all frames. These variabilities or challenges which are random in object tracking causes wrong object tracking, and are listed below.
 
 \begin{itemize}
-\item \textbf{Illumination Changes:} It is desirable that background model adapts to gradual changes of the appearance of the environment.
-\item \textbf{Dynamic background:} Some scenery regions contain movement, but should be still remain as background, acoording to their relevance. Such movement can be periodical or irregular (e.g. traffic lights, waving trees).
-\item \textbf{Occlusion:} Partially or full, occlusion affects the process of computing the background frame. In real life situations, occlusion can occur anytime the object of interest passes behind another object with respect to a camera.
-\item \textbf{Background clutter:} As stated before, this challenge makes the segmentation task difficult. It is hard to create ans separate background model from moving foreground objects.
-\item \textbf{Shadowing:} Shadows cast by foreground objects complicates processes such as background subtraction. Overlapping shadows hinder their separation and classification. Researchers have proposed different methods for detection of shadows.
-\item \textbf{Camera motion:} Sometimes, video may be captured by unstable (e.g. vibrating) cameras.
-\item \textbf{motion:} The speed of a moving object plays an important role in its detection and track. If an object is moving too slow, the temporal differencing methods fails to detect object, because it preserves uniform region between frames. In the other case, fast moving object leaves ghost regions in a detected foreground model.
-\item \textbf{Object rotation and deformation:} Since natural objects move freely, they can appear slightly or completely transformed. Such rotations and transformations in or out of plane on the images affect object tracking considerably.
+\item \textbf{Illumination Variation (IV):} It is desirable that background model adapts to gradual changes of the appearance of the environment.
+\item \textbf{Scale Variation (SV):} Ratio between initial object size and current object size differs.
+\item \textbf{Occlusion (OC):} Partially or full, occlusion affects the process of computing the background frame. In real life situations, occlusion can occur anytime the object of interest passes behind another object with respect to a camera.
+\item \textbf{Dynamic background:} Some scenery regions contain movement, but should be still remain as background, acoording to their relevance. Such movement can be periodical or irregular, causing blurring (motion blur - MB), e.g. traffic lights, waving trees).
+\item \textbf{Out of view (OV): } Some portion o the target leaves the view.
+\item \textbf{Background clutter (BC):} As stated before, this challenge makes the segmentation task difficult. It is hard to create ans separate background model from moving foreground objects.
+\item \textbf{Fast Motion (FM):} The speed of a moving object plays an important role in its detection and track. If an object is moving too slow, the temporal differencing methods fails to detect object, because it preserves uniform region between frames. In the other case, fast moving object leaves ghost regions in a detected foreground model.
+\item \textbf{Object rotation and deformation (DEF):} Since natural objects move freely, they can appear slightly or completely transformed. Such rotations, in (IPR) or out (OPR) of plane on the images affect object tracking considerably.
+\item \textbf{Low Resolution (LR):} Number of pixels inside the object bounding box is less than 400.
 \end{itemize}
+
+\section{Tracking Datasets}
+
+In computer vision, a \textit{dataset} could be defined as a collection of images or video sequences used for testing algorithms. The amount of data and characteristics presented in the list, depend on the field that is studied. For instance, in scene recognition, a dataset contains images of landscapes or outdoor environments. Generally, this collection is shared between researchers and plays an important role in comparison and evaluation of state-of-the-art approaches.
+
+In generic visual tracking, a dataset is a collection of videos that contains and object moving in some scenario. The sequences vary in length from hundreds of frames to thousands. Diverse object types are used. Different scene settings (indoor or outdoor, static or moving camera). Also different challenges, such as object occlusions or illumination conditions are presented. Most commonly used tracking benchmarks are summarized in table \ref{table:datasets}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|ll|}
+\hline
+Name/Author/Paper & Sequences \\
+Babenko           & 3         \\
+Bobot             & 12        \\
+Cehovin           & 5         \\
+Ellis IJCV2011    & 3         \\
+Godec             & 7         \\
+Kalal             & 10        \\
+Kwon              & 4         \\
+Kwon VTD          & 11        \\
+PROST             & 4         \\
+Ross              & 4         \\
+Thang             & 4         \\
+Wang              & 4         \\
+\hline
+\end{tabular}
+\caption{Popular object tracking datasets}
+\label{table:datasets}
+\end{table}
+
+
+Recently, the authors in \textbf{benchmark} released a benchmark containing 50 most commonly used sequences from some datasets mentioned \ref{table:datasets}, to facilitate fair performance evaluation. Also for better evaluation and analysis of strengths and weakness of tracking approaches. They classified sequences, considering a object tracking challenge, as a category, constructing several subsets to report specific challenging conditions. Some attributes occur more frequently, and some sequences are annotated with several attributes.
+
 
 \section{Object Tracking}
 
-The goal of an object tracker is to generate an object path over time. This trajectory consists of the object position over time in every frame of the video. The tracker may provide complete region in the image that is occupied by the object at every time instant. There are a wide variety of applications of object detection and tracking in computer vision. Certainly, this list is not meticulous and covers popular approaches on each category.
+The goal of an object tracker is to generate an object path over time. This trajectory consists of the object position over time in every frame of the video. The tracker may provide complete region in the image that is occupied by the object at every time instant. Certainly, this list is not meticulous and covers popular approaches on each category.
 
 \subsection{Point Tracking}
 
@@ -68,7 +102,7 @@ Tracking can be formulated as the correspondence of objects represented by point
 \begin{itemize}
 	\item \textbf{Deterministic Methods: } These approaches for point correspondence define a cost of associating each object in frame $t-1$ to a single object in frame $t$ using motion constraints, such as proximity, velocity, rigidity and motion. Minimization of the correspondence cost is formulated as a combinatorial optimization problem. A solution, which consists in one-to-one correspondence among all possible associations, can be obtained by optimal assignment methods. For instance Hungarian Algorithm \textbf{cite Here!} or greedy search methods.
 
-	\item \textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, the optimal state of an object is giben by the Kalman Filter, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters.
+	\item \textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, tYhe optimal state of an object is giben by the Kalman Filter, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters.
 
 	In the case of multiobject data association, state estimation using Kalman or particle filters, it is necessary to solve first correspondence problem before these filters can be applied. However, in cases when two objects are close each other, the correspondence could be incorrect. Then, an incorrectly associated measurement can cause the filter to fail to converge. In order to tackle this problem, Joint Probability Data Association Filtering (JPDAF) and Multiple Hypothesis Tracking (MHT) are two used techniques for data association.
 \end{itemize}

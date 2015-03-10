@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.8)  22 FEB 2015 11:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  10 MAR 2015 10:24
 entering extended mode
 **main
-(D:\Tesis\EnsembleTrackingThesis\main.tex
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(D:\Tesis\EnsembleTrackingThesis\Thesis.cls
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Thesis.cls
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
@@ -33,10 +33,10 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ieeepes\vmargin.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeepes\vmargin.sty
 Package: vmargin 1999/06/01
 
 Package `vmargin', V2.2, <1999/06/01>
@@ -259,7 +259,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -363,10 +363,10 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@example=\count100
 \c@theorem=\count101
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 
@@ -460,7 +460,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen126
 \lightrulewidth=\dimen127
@@ -480,7 +480,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen138
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -492,7 +492,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count109
 \lst@gtempboxa=\box29
 \lst@token=\toks30
@@ -506,7 +506,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@lineno=\count114
 \lst@maxwidth=\dimen142
 
-(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -515,18 +515,18 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 *** Patch file not loaded.
 ***
 
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+) (C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box30
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -615,7 +615,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count120
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -672,14 +672,14 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count132
 \LT@p@ftn=\toks31
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\epigraph\epigraph.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\epigraph\epigraph.sty
 Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
 \beforeepigraphskip=\skip65
 \afterepigraphskip=\skip66
 \epigraphwidth=\skip67
 \epigraphrule=\skip68
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
@@ -688,7 +688,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
-(D:\Tesis\EnsembleTrackingThesis\main.aux)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
@@ -710,13 +710,13 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count134
 \scratchdimen=\dimen148
@@ -754,8 +754,8 @@ LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
 
-(D:\Tesis\EnsembleTrackingThesis\main.out)
-(D:\Tesis\EnsembleTrackingThesis\main.out)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 79.
 
@@ -770,7 +770,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/pc1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ------------------------------------------------------------------------------
  Declaration of Authorship
 ------------------------------------------------------------------------------
@@ -797,16 +797,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(D:\Tesis\EnsembleTrackingThesis\main.toc [5
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.toc [5
 
 
 ])
 \tf@toc=\write4
- [6]
+
+[6]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-(D:\Tesis\EnsembleTrackingThesis\main.lof)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lof)
 \tf@lof=\write5
  [7
 
@@ -815,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
-(D:\Tesis\EnsembleTrackingThesis\main.lot)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lot)
 \tf@lot=\write6
  [8
 
@@ -850,55 +851,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
 [12
 
-] (D:\Tesis\EnsembleTrackingThesis\Chapters/introduction.tex
+]
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/introducti
+on.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
-) (D:\Tesis\EnsembleTrackingThesis\Chapters/related_work.tex [1
+)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/related_wo
+rk.tex [1
 
 
 
 ] [2]
 Chapter 2.
 ------------------------------------------------------------------------------
- 2 Moving Object Detection Approaches, Challenges and Object Tracking
+ 2 Moving Object Detection Approaches, Challenges, Datasets and Object Tracking
+
 ------------------------------------------------------------------------------
 [3
 
-] [4]
+] [4] [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
- [5]
-[6] [7] [8]) [9]
+
+[6] [7] [8] [9])
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/approach.t
+ex [10]
+Chapter 3.
+------------------------------------------------------------------------------
+ 3 Object Tracking applying Ensemble of Multiple Trackers
+------------------------------------------------------------------------------
+[11
+
+] [12]
+
+LaTeX Warning: Reference `fig::dendogram' on page 13 undefined on input line 51
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+[13]) [14]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(D:\Tesis\EnsembleTrackingThesis\main.bbl [10
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl [15
 
 
-] [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
-
-(D:\Tesis\EnsembleTrackingThesis\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+]
+[16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+ (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B098D0740169322445CE93D50F07A9C3;4105.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
+(rerunfilecheck)             Checksum: 016DB563D1D2E5BF0E4973A9EEA6A1C6;5692.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
- 13207 strings out of 493921
- 186109 string characters out of 3144877
- 252847 words of memory out of 3000000
- 16220 multiletter control sequences out of 15000+200000
- 15012 words of font info for 56 fonts, out of 3000000 for 9000
+ 13235 strings out of 493921
+ 187634 string characters out of 3144883
+ 253011 words of memory out of 3000000
+ 16233 multiletter control sequences out of 15000+200000
+ 15313 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,11n,45p,1393b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -915,9 +944,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (25 pages, 250534 bytes).
+Output written on main.pdf (30 pages, 278894 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

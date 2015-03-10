@@ -1,0 +1,69 @@
+% Chapter Template
+
+\chapter{Object Tracking applying Ensemble of Multiple Trackers} % Main chapter title
+
+\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 3. \emph{Object Tracking applying Ensemble of Multiple Trackers}}
+
+This section gives a detailed description of the implemented tracking system. Initially, giving an overview of the whole system and the basic functional blocks. Then, explaining implementation details of the different parts.
+
+\section{The Tracking Loop}
+
+The necessary building blocks of an object tracking system
+
+\section{Tracking system overview}
+
+In order to tackle all the problems stated in the previous section, this tracking approach is separated into different modules.
+
+\section{Data clustering}
+
+Cluster analysis is the formal study of algorithms and methods for grouping, or classifying objects. These objects are described as a set of measurements or by relationships between the object and other objects. A \textit{cluster} is comprised of a number of similar objects collected or group together. Other authors define a cluster as a set of entities which are alike, and entities from different clusters are not alike, or "A cluster is an aggregation of points in the test space such that the \textit{distance} between any two points in the cluster is less than the distance between any point in the cluster and any point not in it". This theory is taken from \textbf{Jane and Dubes.}
+
+Cluster analysis is the process of classifying objects into subsets that have meaning in the context of a particular problem. The objects are thereby organized into an efficient representation that characterizes the data. Clustering methods require that an index of proximity, or alikeness, or affinity, or association be established between pairs or patterns. A \textit{proximity matrix} $|d(i, j)|$ accumulates the pairwise indices of proximity in a matrix in which each row and column represents a pattern. Diagonal entries of a proximity matrix are ignored since all paterns are assumed to have the same degree of proximity with themselves. Also it is assmed that all proximity matrices are symmetric, so all pairs of objects have the same proximity index, independent of the order in which they are written.
+
+A proximity index is either a \textit{similarity} or a \textit{dissimilarity}. The more the \textit{i}th and \textit{j}th objects are similar one another, the larger a similarity index and the dissimilarity index are.
+
+\subsection{Hierarchical agglomerative clustering.}
+
+A hirerarchical clustering method is a procedure for transforming a proximity matrix into a sequence of nested partitions. An agglomerative, hierachical classification places each object in its own cluster and gradually merges these atomic clusters into larger and larger clusters until all objects are in a single cluster. 
+
+First comes the notion of a sequence of nested partitions. These $n$ objects to be clustered are denoted by a set of $X$ \\
+\centerline{$X = \left \{ x_1, x_2, ..., x_n \right \}$}
+
+where $x_i$ it the \textit{i}th object. A partition, $C$, of $X$ separates $X$ into subsets $\left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
+
+\centerline{\hspace*{-5cm} $c_i \cap c_j = \emptyset$ for $i$ and $j$ from 1 to $m$, $i \neq j$}
+\centerline{\hspace*{-8.3cm} $c_1 \cup c_2 \cup ... \cup c_m = X$}
+
+In this notation, $\cap$ stands for set intersection, $\cup$ stands for set union, and $\emptyset$ is the empty set. 
+
+A hierarchical clustering is a sequence of partitions in which each partition is nested into the next partition in the sequence. An \textit{agglomerative} algorithm for hierarchical clustering starts with the disjoint clustering, which places each of the $n$ objects in an individual cluster. The clustering method employed dictates how the proximity matrix should be interpreted to merge two or more of these trivial clusters, thus nesting the trivial clustering into a second partition. The process is repeated to form a sequence of nested clusterings in which the number of clusters decreases as the sequence progresses until a single cluster containing all $n$ objects, called the conjoint clustering.
+
+\subsection{Single-link and complete-Link Algorithms from Graph Theory}
+
+We begin with a symmetric $n \times n$ proximity matrix $D = |d(i, j)|$. The $n(n - 1)/2$ entries on one side of the main diagonal are assumed to contain a permutation of the integers from 1 to $n(n - 1)/2$ with no ties. That is, the proximities are on an ordinal scale. The proximities are taken to be dissimilarities. 
+
+A \textit{threshold graph} is an undirected, unweighted graph of $n$ nodes without self-loops or multiple edges. Each node represents an object. A threshold graph $G(v)$ is defined for each dissimilarity level $v$ by inserting an edge $(i, j)$ between nodes $i$ if objects $i$ and $j$ are less dissimilar than $v$. That is,
+
+\centerline{$(i, j) \in G(v)$ if and only if $d(i, j) \leq v$}
+
+Assuming that $d(i, i) = 0$ for all $i$, $G(v)$ degines a binary relation for any real number $v$ that is symmetric and reflexive.Objects $x_i$ and $x_j$ are "related" if their dissimilarity is below some threshold $v$. Figure \ref{fig::dendogram} shows binary relation from a proximity matrix $D$ above some threshold $v$. The symbol * in position $(i, j)$ of the matrix means that the pair $(x_i, x_j)$ are related.
+
+Hierarchies are formed using \textit{single-link} or \textit{complete-link} clustering methods. Those algorithms are deep explained in \textbf{Jain and Dubes}. \\
+
+\textbf{AGGLOMERATIVE ALGORITHM FOR SINGLE-LINK CLUSTERING}
+\textbf{Step 1.} Begin with the disjoint clustering implied by threshold graph $G(0)$, which contains no edges and which places every object in a unique cluster, as the current clustering. Set $k \leftarrow 1$
+
+\textbf{Step 2.} Form threshold graph $G(k)$. If the number of components (maximally connected subgraphs) in $G(k)$ is less than the number of clusters in the current clustering, redefine the current clustering by naming each component of $G(k)$ as a cluster.
+
+\textbf{Step 3.} If $G(k)$ consists of a single connected graph, stop. Else, set $k \leftarrow k + 1$ and go to step 2.
+
+\textbf{AGGLOMERATIVE ALGORITHM FOR SINGLE-LINK CLUSTERING}
+\textbf{Step 1.} Begin with the disjoint clustering implied by threshold graph $G(0)$, which contains no edges and which places every object in a unique cluster, as the current clustering. Set $k \leftarrow 1$
+
+\textbf{Step 2.} Form threshold graph $G(k)$. If two current clusters form a clique (maximally complete subgraph) in $G(k)$, redefine the current clustering by merging these two clusters into a single cluster.
+
+\textbf{Step 3.} If $k = n(n-1)/2$, so that $G(k)$ is the complete graph on the $n$ nods, stop. Else, set $k \leftarrow k + 1$ and go to step 2.
+
+The single-link clustering on $G(v)$ is defined in terms of connected subgraphs in $G(v)$; the complete-link clustering uses complete subgraphs. However, not all maximally complete subgraphs in a threshold graph need be complete-link clusters. The order in which the clusters are formed is crucial.
