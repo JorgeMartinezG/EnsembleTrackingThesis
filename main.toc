@@ -26,12 +26,11 @@
 \contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{8}{subsection.32}
 \contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{10}{subsection.33}
 \contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{10}{subsection.34}
-\contentsline {chapter}{\numberline {3}Object Tracking applying Ensemble of Multiple Trackers}{11}{chapter.35}
+\contentsline {chapter}{\numberline {3}Proposed Approach}{11}{chapter.35}
 \contentsline {section}{\numberline {3.1}The Tracking Loop}{11}{section.36}
 \contentsline {section}{\numberline {3.2}Tracking system overview}{11}{section.37}
-\contentsline {section}{\numberline {3.3}Data clustering}{11}{section.38}
-\contentsline {subsection}{\numberline {3.3.1}Hierarchical agglomerative clustering.}{12}{subsection.39}
-\contentsline {subsection}{\numberline {3.3.2}Single-link and complete-Link Algorithms from Graph Theory}{13}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.1}Basic overview}{11}{subsection.38}
+\contentsline {subsection}{\numberline {3.2.2}Trackers clustering}{12}{subsection.40}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{15}{dummy.41}
+\contentsline {chapter}{Bibliography}{14}{dummy.42}
