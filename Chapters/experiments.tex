@@ -1,0 +1,21 @@
+\chapter{Experiments and results} % Main chapter title
+
+\label{chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 5. \emph{Experiments}} 
+
+\section{Experimental setup}
+Our approach is implemented in native Matlab. The experiments are performed on an Intel Core i7 CPU with 16 GB RAM. We put our tracker to the test by using the recent benchmark \cite{Wu2013} that includes 50 sequences. The sequences used in our experiments pose challenging scenarios that include situations such as motion blur, illumination changes, scale variation, occlusions, in-plane and out-plane rotations, object deformation, background clutter and low resolution. We are encouraged to build a generic algorithm that can perform well in different scenarios.
+
+\section{Evaluation Methodology}
+
+To validate the performance of our proposed approach, we follow the one-pass evaluation methodology (OPE) proposed in \cite{Wu2013}. For performance criteria, we chose for our evaluation, the precision and success plots. In \textit{precision}, a frame may be considered correctly tracked if the predicted target center is within a distance threshold of ground truth. In \cite{Henriques2014}, the authors explain that plotting the precision for all thresholds, no parameters are required. This makes the curves unambiguous and easy to interpret. A higher precision at low thresholds means the tracker is more accurate, while a lost target will not achieve perfect precision on a large threshold range. The chosen theshold is 20 pixels, that is done in previous works \cite{Babenko2010, Wu2013, Henriques2014}. \textit{Success} measures the overlap between a tracking and a ground truth box and checks where the overlap exceeds a threshold $t \in {0,1}$:
+\begin{equation}
+\large
+O(a,b) = \frac{|a\bigcap b|}{|a\bigcup  b|}
+\end{equation}
+Overlap penalizes if the size of a tracking box is different to the ground truth and the error will not increase if the object is lost. Different to precision, in success the trackers are ranked using the area under the curve (AUC), which means the average overlap over all frames.
+
+\section{Experiments with sequence attributes}
+
+The videos in the benchmark dataset are organized and selected with attributes, which describe the conditions where a tracking algorithm might fail - e.g., occlusion, object deformations. These properties are useful for diagnosing tracking behavior, without the need of analyzing each video separately. Tables \ref{table:precision} and \ref{table:success} presents a more specific quantitative attribute-based evaluation. Our approach performs favorably on 8 of 11 attributes, and outperforms state-of-the-art algorithms in \textit{deformation}, \textit{out-of-plane rotation} and \textit{scale variation}. 

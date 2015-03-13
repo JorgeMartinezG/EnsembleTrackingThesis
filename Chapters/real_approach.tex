@@ -18,7 +18,7 @@ In order to tackle all the problems stated in the previous section, this trackin
 
 \subsection{Basic overview}
 
-Generic single-object tracking could be defined as the localization of an object through a video sequence. It is generic because the system is able to track any kind of object (faces, cars, etc.), and is single because the system will track just one object and not many at the same time. The proposed approach in this thesis is shown in \ref{fig::diagram}. Initially, our method starts with a pool of trackers $T = {t_1, t_2, ..., t_n}$ and input data $\mathrm{x}$. This input corresponds to the initial rectangular box for an object in a sequence. All trackers are initalized and an updateable object model is created. Then, on each frame, our method runs and groups all trackers results by position into a set of clusters $C = {c_1, c_2, ..., c_m}$. Also, we obtain a similarity measure which compares an actually tracking result patch to the current object model. The output should be the probabilities of similarity between the object model and each tracker result in that frame. Using clustering information, the system can select between the winner cluster $c*$ which has the highest number of members, or the cluster with highest similarity measure. the others clusters are considered outliers and are reinitialized each 15 frames.
+Generic single-object tracking could be defined as the localization of an object through a video sequence. It is generic because the system is able to track any kind of object (faces, cars, etc.), and is single because the system will track just one object and not many at the same time. The proposed approach in this thesis is shown in \ref{fig::diagram}. Initially, our method starts with a pool of $n$ trackers $T = \left \{ t_1, t_2, ..., t_n \right \}$ and input data $\mathrm{x}$. This input corresponds to the initial rectangular box for an object in a sequence. All trackers are initalized and an updateable object model is created. Then, on each frame, our method runs and groups all trackers results by position into a set of $m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$. Also, we obtain a similarity measure which compares an actually tracking result patch to the current object model. The output should be the probabilities of similarity between the object model and each tracker result in that frame $S = \left \{ s_1, s_2, ..., s_n \right \}$. Using clustering information, the system can select between the winner cluster $c*$ which has the highest number of members, or the cluster with highest similarity measure. the others clusters are considered outliers and are reinitialized each 15 frames.
 
 \begin{figure}[t!]
 	\centering
@@ -42,4 +42,56 @@ Previous works show the common approach of data fusion using majority voting. Th
 d(b,c) = 1 - \frac{b\bigcap c}{b\bigcup  c}
 \end{equation}
 
-\noindent Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$. We take the proximities to be dissimilarities. This means that $d(i,i) = 0$ for all $i$. We use complete-link hierarchical agglomerative clustering to form groups of trackers. Trackers $t_1$ and $t_2$ are "related" if their dissimilarity is below some threshold $v$. CL merges clusters in order of proximity; the closest clusters will be merged first, and the furthest clusters will be merged last. At each merge, CL creates a \textit{reduced proximity matrix}, with one less row and column.
+Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$. We take the proximities to be dissimilarities. This means that $d(i,i) = 0$ for all $i$. We use complete-link hierarchical agglomerative clustering to form groups of trackers. Trackers $t_1$ and $t_2$ are "related" if their dissimilarity is below some threshold $v$. CL merges clusters in order of proximity; the closest clusters will be merged first, and the furthest clusters will be merged last. At each merge, CL creates a \textit{reduced proximity matrix}, with one less row and column. At the end, the algorithm delivers a set of clusters with size $m$ $C = \left \{ c_1, c_2, ..., c_m \right \}$
+
+\subsection{Object classification}
+
+Tracking methods applying object appearence online learning have been recently applied. These systems discriminate object from its surrounding background through all the sequence using a classifier updated based on tracking results. However, these approaches except for MILBoost \cite{Babenko2010}, suffer from label jitter. The authors in \cite{Santner2010} explain that problem of label jitter arises if the bounding boxes of an object are not perfectly aligned with the target, although it is detected correctly. If label jitter occurs repeatedly over a tracking sequence, the tracker will most likely start to lose the target object. To cope this problem, we consider selecting a bag of trackers which share common similarity with appearance model.
+
+The classifier corresponds to a standard linear SVM, which is trained with a buffer of 10 positives and 100 negative examples. The positive buffer is initialized using $\mathrm{x}$. We extract and image patch and calculate hog features. For the negative buffer we sample random bounding boxes with the same size on the image. During tracking, whenever a new example is added to the buffer, the classifier is retrained.
+
+
+\subsection{Best cluster selection}
+
+After perfoming clustering stage and obtaining classification scores with each tracker results, we can select the cluster that best follows the object. We present two selection criterias for best cluster.
+
+\textbf{Best cluster selection based on members criteria:} Once groups are formed, we search the cluster $c^{*}$ in the list of clusters $C$ of size $m$, with highest number of trackers.
+
+\begin{equation}
+\large
+c^{*} = \arg\max_{c\in C} ~\sum_{t \in c}t_{i} 
+\end{equation}
+
+\textbf{Best cluster selection based on appearance scores:} In this case we are considering classification scores for each cluster. Each cluster gives a score per cluster. Then, we select the winner cluster whose score is the highest one. 
+\begin{equation}
+\large
+c^{*} = \arg\max_{c\in C} m_{i}
+\end{equation}
+
+where $m_i \in M = \left \{ m_1, m_2, ..., m_m \right \}$ corresponds to maximum score value of $c_i$ cluster:
+
+\begin{equation}
+\large
+M =  \left \{ \max_{s\in S} s_i \in c_i \right \}
+\end{equation}
+
+
+\subsection{Best tracker selection}
+
+The centered position $\mathrm{x}^{*}$ is selected by choosing the minimum sum of distances of the tracker, to the rest of trackers that belong to $c^{*}$. We did not consider selecting the tracker with best appearance score in order to avoid label jitter and drifting problems. Also selecting this value might make the tracker shaky.
+
+\begin{equation}
+\large
+\mathrm{x}^{*} = \arg\min_{\mathrm{x}} ~\sum_{\mathrm{x}_{i} \in w^{*}}d(\mathrm{x_{i}}, \mathrm{x_{j}}) ,~~ i \neq j, \mathrm{x_{j}}\in c^{*}
+\end{equation}
+
+\subsection{Trackers reset}
+
+The outliers correspond to those trackers that does not belong to $c^*$. These trackers are reinitialized using $\mathrm{x}^{*}$. Also, from $\mathrm{x}^{*}$, we crop and image patch and extract hog features as new positive sample for the classifier.
+
+\begin{equation}
+\large
+R = t_i \not\subset c^*
+\end{equation}
+
+\subsection{Object model update}

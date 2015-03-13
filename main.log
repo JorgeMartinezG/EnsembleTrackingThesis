@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  12 MAR 2015 12:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  13 MAR 2015 11:06
 entering extended mode
 **main
 (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.tex
@@ -858,6 +858,18 @@ Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
+
+Package natbib Warning: Citation `Wu2013' on page 1 undefined on input line 11.
+
+
+
+Package natbib Warning: Citation `Johnson1998' on page 1 undefined on input lin
+e 11.
+
+
+Package natbib Warning: Citation `Yilmaz2006' on page 1 undefined on input line
+ 16.
+
 )
 (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/related_wo
 rk.tex [1
@@ -880,7 +892,109 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
 
-[6] [7] [8] [9])
+[6] [7] [8]
+
+Package natbib Warning: Citation `Mori2006' on page 9 undefined on input line 1
+20.
+
+
+Package natbib Warning: Citation `Liu2007' on page 9 undefined on input line 12
+0.
+
+
+Package natbib Warning: Citation `Grabner2006' on page 9 undefined on input lin
+e 120.
+
+
+Package natbib Warning: Citation `Isard2001' on page 9 undefined on input line 
+120.
+
+
+Package natbib Warning: Citation `Lepetit2006' on page 9 undefined on input lin
+e 120.
+
+
+Package natbib Warning: Citation `Black1996' on page 9 undefined on input line 
+120.
+
+
+Package natbib Warning: Citation `Comaniciu2000' on page 9 undefined on input l
+ine 120.
+
+
+Package natbib Warning: Citation `Adam2006' on page 9 undefined on input line 1
+20.
+
+
+Package natbib Warning: Citation `Ross2007' on page 9 undefined on input line 1
+20.
+
+
+Package natbib Warning: Citation `Matthews2004' on page 9 undefined on input li
+ne 120.
+
+
+Package natbib Warning: Citation `Jepson2003' on page 9 undefined on input line
+ 120.
+
+
+Package natbib Warning: Citation `Freund1997a' on page 9 undefined on input lin
+e 122.
+
+
+Package natbib Warning: Citation `Avidan2007' on page 9 undefined on input line
+ 122.
+
+
+Package natbib Warning: Citation `Grabner2008' on page 9 undefined on input lin
+e 122.
+
+
+Package natbib Warning: Citation `Oza2000' on page 9 undefined on input line 12
+2.
+
+
+Package natbib Warning: Citation `Saffari2010' on page 9 undefined on input lin
+e 122.
+
+
+Package natbib Warning: Citation `Babenko2010' on page 9 undefined on input lin
+e 122.
+
+[9]
+
+Package natbib Warning: Citation `Avidan2007' on page 10 undefined on input lin
+e 133.
+
+
+Package natbib Warning: Citation `Collins2005' on page 10 undefined on input li
+ne 133.
+
+
+Package natbib Warning: Citation `Santner2010' on page 10 undefined on input li
+ne 133.
+
+
+Package natbib Warning: Citation `Kwon2010' on page 10 undefined on input line 
+133.
+
+
+Package natbib Warning: Citation `Kwon2011' on page 10 undefined on input line 
+133.
+
+
+Package natbib Warning: Citation `Bai2013' on page 10 undefined on input line 1
+33.
+
+
+Package natbib Warning: Citation `Bailer2013' on page 10 undefined on input lin
+e 133.
+
+
+Package natbib Warning: Citation `Bailer2014' on page 10 undefined on input lin
+e 133.
+
+)
 (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/real_appro
 ach.tex [10]
 Chapter 3.
@@ -897,6 +1011,14 @@ Package pdftex.def Info: Figures/block_diagram.pdf used on input line 25.
 (pdftex.def)             Requested size: 417.47307pt x 153.05946pt.
  [12 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/block_
 diagram.pdf>]
+
+Package natbib Warning: Citation `Bailer2013' on page 13 undefined on input lin
+e 38.
+
+
+Package natbib Warning: Citation `Bailer2014' on page 13 undefined on input lin
+e 38.
+
 
 LaTeX Font Warning: Command \large invalid in math mode on input line 41.
 
@@ -937,57 +1059,134 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 43.
 
-) [13]
+
+Package natbib Warning: Citation `Babenko2010' on page 13 undefined on input li
+ne 49.
+
+
+Package natbib Warning: Citation `Santner2010' on page 13 undefined on input li
+ne 49.
+
+[13]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 61.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 67.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 74.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 84.
+
+[14]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 93.
+
+)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/experiment
+s.tex [15]
+Chapter 4.
+------------------------------------------------------------------------------
+ 4 Experiments and results
+------------------------------------------------------------------------------
+
+Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 8.
+
+
+
+Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 12
+.
+
+
+Package natbib Warning: Citation `Henriques2014' on page 16 undefined on input 
+line 12.
+
+
+Package natbib Warning: Citation `Babenko2010' on page 16 undefined on input li
+ne 12.
+
+
+Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 12
+.
+
+
+Package natbib Warning: Citation `Henriques2014' on page 16 undefined on input 
+line 12.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 14.
+
+[16
+
+]
+
+LaTeX Warning: Reference `table:precision' on page 17 undefined on input line 2
+1.
+
+
+LaTeX Warning: Reference `table:success' on page 17 undefined on input line 21.
+
+
+) [17]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl [14
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+[18
 
 
 ]
-[15])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B1E277F7231BF823477CC300767432A5;5002.
+(rerunfilecheck)             Checksum: 4335AA350C4DCA9E1E297E485E2D0313;6788.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 13266 strings out of 493921
- 188134 string characters out of 3144883
- 253029 words of memory out of 3000000
- 16261 multiletter control sequences out of 15000+200000
+ 13218 strings out of 493921
+ 187170 string characters out of 3144883
+ 251701 words of memory out of 3000000
+ 16220 multiletter control sequences out of 15000+200000
  18495 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,11n,45p,1393b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,45p,1395b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (29 pages, 325758 bytes).
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (31 pages, 352281 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

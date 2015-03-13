@@ -31,6 +31,15 @@
 \contentsline {section}{\numberline {3.2}Tracking system overview}{11}{section.37}
 \contentsline {subsection}{\numberline {3.2.1}Basic overview}{11}{subsection.38}
 \contentsline {subsection}{\numberline {3.2.2}Trackers clustering}{12}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.3}Object classification}{13}{subsection.42}
+\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{14}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{14}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{15}{subsection.49}
+\contentsline {subsection}{\numberline {3.2.7}Object model update}{15}{subsection.51}
+\contentsline {chapter}{\numberline {4}Experiments and results}{16}{chapter.52}
+\contentsline {section}{\numberline {4.1}Experimental setup}{16}{section.53}
+\contentsline {section}{\numberline {4.2}Evaluation Methodology}{16}{section.54}
+\contentsline {section}{\numberline {4.3}Experiments with sequence attributes}{17}{section.56}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{14}{dummy.42}
+\contentsline {chapter}{Bibliography}{18}{dummy.57}
