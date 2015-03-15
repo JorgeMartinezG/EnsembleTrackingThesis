@@ -22,6 +22,13 @@ Background subtraction is a commonly used technique for object segmentation in s
 
 Although background subtraction techniques extracts well most of the relevant pixels, this method is sensitive to changes when some background and foreground pixels have similar value.
 
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.7\linewidth]{Figures/bg_sub.jpg}
+	\caption{Object detection using Gaussian Mixture Models for background subtraction. foreground pixels are drawn in white.}
+	\label{fig::bg_sub}
+\end{figure}
+
 \subsection{Temporal differencing}
 
 In temporal differencing, objects are detected by taking pixel-by-pixel difference of consecutive frames (generally two or three) in a video sequence. This method is most common for moving object detection in scenarios where camera is moving. Unlike static camera scenarios, the background is changing in time for moving camera (not appropiate to create a background model). Alternatively, the moving object is detected by taking the difference between frames $t - 1$ and $t$.
@@ -99,13 +106,23 @@ The goal of an object tracker is to generate an object path over time. This traj
 \subsection{Point Tracking}
 
 Tracking can be formulated as the correspondence of objects represented by points across frames. This category can be divided into two subcategories:
-\begin{itemize}
-	\item \textbf{Deterministic Methods: } These approaches for point correspondence define a cost of associating each object in frame $t-1$ to a single object in frame $t$ using motion constraints, such as proximity, velocity, rigidity and motion. Minimization of the correspondence cost is formulated as a combinatorial optimization problem. A solution, which consists in one-to-one correspondence among all possible associations, can be obtained by optimal assignment methods. For instance Hungarian Algorithm \textbf{cite Here!} or greedy search methods.
 
-	\item \textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, tYhe optimal state of an object is giben by the Kalman Filter, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters.
+\textbf{Deterministic Methods: } These approaches for point correspondence define a cost of associating each object in frame $t-1$ to a single object in frame $t$ using motion constraints, such as proximity, velocity, rigidity and motion. Minimization of the correspondence cost is formulated as a combinatorial optimization problem. A solution, which consists in one-to-one correspondence among all possible associations, can be obtained by optimal assignment methods. For instance Hungarian Algorithm \textbf{cite Here!} or greedy search methods.
 
-	In the case of multiobject data association, state estimation using Kalman or particle filters, it is necessary to solve first correspondence problem before these filters can be applied. However, in cases when two objects are close each other, the correspondence could be incorrect. Then, an incorrectly associated measurement can cause the filter to fail to converge. In order to tackle this problem, Joint Probability Data Association Filtering (JPDAF) and Multiple Hypothesis Tracking (MHT) are two used techniques for data association.
-\end{itemize}
+\textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, tYhe optimal state of an object is giben by the Kalman Filter, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters.
+
+In the case of multiobject data association, state estimation using Kalman or particle filters, it is necessary to solve first correspondence problem before these filters can be applied. However, in cases when two objects are close each other, the correspondence could be incorrect. Then, an incorrectly associated measurement can cause the filter to fail to converge. In order to tackle this problem, Joint Probability Data Association Filtering (JPDAF) and Multiple Hypothesis Tracking (MHT) are two used techniques for data association.
+
+
+\begin{figure}[t!!]
+\centering
+{
+\includegraphics[width=0.32\linewidth]{Figures/particle_filter1.jpg}
+\includegraphics[width=0.32\linewidth]{Figures/particle_filter2.jpg}
+\includegraphics[width=0.32\linewidth]{Figures/particle_filter3.jpg}
+}	
+\end{figure}
+
 
 \subsection{Kernel Tracking}
 
@@ -120,6 +137,14 @@ In this type of tracking, object motion is computed using representations of a p
 	"Tracking by detection" or "Tracking by repeated recognition" \cite{Mori2006} systems generally perform target object appearance learning. These methods are closely related to object detection (an area with great progress in computer vision) and has encouraged some successful real-time tracking algorithms \cite{Liu2007,Grabner2006}. However, many tracking algorithms employ static appearance models that are defined manually or trained at the first frame only \cite{Isard2001, Lepetit2006, Black1996, Comaniciu2000, Adam2006}, these methods are often unable to deal with significant appearance changes. This situations are difficult when there is limited knowledge of the object of interest. In order to cope this problem, an adaptive appearance model that changes during the tracking process as the appearance of the object changes, gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
 
 	Boosting has been used in a wide field of machine learning tasks and applied to computer vision problems. Many tracking algorithms are based on the boosting framework \cite{Freund1997a} and is related to the work on Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost \cite{Saffari2010} and MILBoost \cite{Babenko2010}. The goal of boosting is to combine many weak classifiers (usually decision stumps) into a linear strong classifier.
+
+	\begin{figure}[t!]
+		\centering
+			\includegraphics[width=0.7\linewidth]{Figures/overview_boost.png}
+		\caption{Overview for online boosting object tracker}
+		\label{fig::overview_boost}
+	\end{figure}
+
 
 \end{itemize}
 

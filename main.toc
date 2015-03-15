@@ -16,30 +16,30 @@
 \contentsline {chapter}{\numberline {2}Moving Object Detection Approaches, Challenges, Datasets and Object Tracking}{3}{chapter.21}
 \contentsline {section}{\numberline {2.1}Moving Object Detection}{3}{section.22}
 \contentsline {subsection}{\numberline {2.1.1}Background Substraction}{4}{subsection.23}
-\contentsline {subsection}{\numberline {2.1.2}Temporal differencing}{4}{subsection.24}
-\contentsline {subsection}{\numberline {2.1.3}Statistical Approaches}{5}{subsection.25}
-\contentsline {subsection}{\numberline {2.1.4}Point detectors}{5}{subsection.26}
-\contentsline {section}{\numberline {2.2}Challenges}{5}{section.27}
-\contentsline {section}{\numberline {2.3}Tracking Datasets}{6}{section.28}
-\contentsline {section}{\numberline {2.4}Object Tracking}{7}{section.30}
-\contentsline {subsection}{\numberline {2.4.1}Point Tracking}{8}{subsection.31}
-\contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{8}{subsection.32}
-\contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{10}{subsection.33}
-\contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{10}{subsection.34}
-\contentsline {chapter}{\numberline {3}Proposed Approach}{11}{chapter.35}
-\contentsline {section}{\numberline {3.1}The Tracking Loop}{11}{section.36}
-\contentsline {section}{\numberline {3.2}Tracking system overview}{11}{section.37}
-\contentsline {subsection}{\numberline {3.2.1}Basic overview}{11}{subsection.38}
-\contentsline {subsection}{\numberline {3.2.2}Trackers clustering}{12}{subsection.40}
-\contentsline {subsection}{\numberline {3.2.3}Object classification}{13}{subsection.42}
-\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{14}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{14}{subsection.47}
-\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{15}{subsection.49}
-\contentsline {subsection}{\numberline {3.2.7}Object model update}{15}{subsection.51}
-\contentsline {chapter}{\numberline {4}Experiments and results}{16}{chapter.52}
-\contentsline {section}{\numberline {4.1}Experimental setup}{16}{section.53}
-\contentsline {section}{\numberline {4.2}Evaluation Methodology}{16}{section.54}
-\contentsline {section}{\numberline {4.3}Experiments with sequence attributes}{17}{section.56}
+\contentsline {subsection}{\numberline {2.1.2}Temporal differencing}{5}{subsection.25}
+\contentsline {subsection}{\numberline {2.1.3}Statistical Approaches}{5}{subsection.26}
+\contentsline {subsection}{\numberline {2.1.4}Point detectors}{6}{subsection.27}
+\contentsline {section}{\numberline {2.2}Challenges}{6}{section.28}
+\contentsline {section}{\numberline {2.3}Tracking Datasets}{7}{section.29}
+\contentsline {section}{\numberline {2.4}Object Tracking}{8}{section.31}
+\contentsline {subsection}{\numberline {2.4.1}Point Tracking}{8}{subsection.32}
+\contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{9}{subsection.34}
+\contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{11}{subsection.36}
+\contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{11}{subsection.37}
+\contentsline {chapter}{\numberline {3}Proposed Approach}{12}{chapter.38}
+\contentsline {section}{\numberline {3.1}The Tracking Loop}{12}{section.39}
+\contentsline {section}{\numberline {3.2}Tracking system overview}{12}{section.40}
+\contentsline {subsection}{\numberline {3.2.1}Basic overview}{12}{subsection.41}
+\contentsline {subsection}{\numberline {3.2.2}Trackers bounding boxes clustering}{13}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.3}Object modeling}{15}{subsection.46}
+\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{16}{subsection.48}
+\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{16}{subsection.52}
+\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{17}{subsection.55}
+\contentsline {subsection}{\numberline {3.2.7}Object model update}{17}{subsection.57}
+\contentsline {chapter}{\numberline {4}Experiments and results}{18}{chapter.58}
+\contentsline {section}{\numberline {4.1}Experimental setup}{18}{section.59}
+\contentsline {section}{\numberline {4.2}Evaluation Methodology}{18}{section.60}
+\contentsline {section}{\numberline {4.3}Experiments with sequence attributes}{19}{section.62}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{18}{dummy.57}
+\contentsline {chapter}{Bibliography}{20}{dummy.63}

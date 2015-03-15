@@ -27,7 +27,7 @@ Generic single-object tracking could be defined as the localization of an object
 	\label{fig::diagram}
 \end{figure}
 
-\subsection{Trackers clustering}
+\subsection{Trackers bounding boxes clustering}
 
 Cluster analysis is the formal study of algorithms and methods for grouping, or classifying objects. These objects are described as a set of measurements or by relationships between the object and other objects. A \textit{cluster} is comprised of a number of similar objects collected or group together. Other authors define a cluster as a set of entities which are alike, and entities from different clusters are not alike, or "A cluster is an aggregation of points in the test space such that the \textit{distance} between any two points in the cluster is less than the distance between any point in the cluster and any point not in it". This theory is taken from \textbf{Jane and Dubes.}
 
@@ -42,9 +42,31 @@ Previous works show the common approach of data fusion using majority voting. Th
 d(b,c) = 1 - \frac{b\bigcap c}{b\bigcup  c}
 \end{equation}
 
-Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$. We take the proximities to be dissimilarities. This means that $d(i,i) = 0$ for all $i$. We use complete-link hierarchical agglomerative clustering to form groups of trackers. Trackers $t_1$ and $t_2$ are "related" if their dissimilarity is below some threshold $v$. CL merges clusters in order of proximity; the closest clusters will be merged first, and the furthest clusters will be merged last. At each merge, CL creates a \textit{reduced proximity matrix}, with one less row and column. At the end, the algorithm delivers a set of clusters with size $m$ $C = \left \{ c_1, c_2, ..., c_m \right \}$
+Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$. We take the proximities to be dissimilarities. This means that $d(i,i) = 0$ for all $i$. We use complete-link hierarchical agglomerative clustering to form groups of trackers. Trackers $t_1$ and $t_2$ are "related" if their dissimilarity is below some threshold $v$. CL merges clusters in order of proximity; the closest clusters will be merged first, and the furthest clusters will be merged last. At each merge, CL creates a \textit{reduced proximity matrix}, with one less row and column. At the end, the algorithm delivers a set of clusters with size $m$ $C = \left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
+\begin{itemize}
+\item $c_i \cap c_j = \emptyset$ for $i$ and $j$ from 1 to $m$, $i \neq j$
+\item $c_1 \cup c_2 \cup ... \cup c_m = T$
+\end{itemize}
 
-\subsection{Object classification}
+\begin{figure}[t!]
+	\centering
+		\includegraphics[width=0.65\linewidth, trim= 1cm 1cm 1cm 1cm, clip=true]{Figures/trackers_clustering.pdf}
+	\caption{Tracking results clustering.}
+	\label{fig::trackers_clustering}
+\end{figure}
+
+\subsection{Object modeling}
+
+Visual object tracking has been formulated as a tracking-by-detection problem recently. In this case, object modeling is dynamically performed to support object detection in all frames. Mostly all approaches can be classified into two categories: \textit{Generative appearance models}, that mainly focus on how fit data into their correspondent object class; and \textit{discriminative appearance models}, that assume object tracking as a binary classification issue. The main goal is to maximize the separability between object and non-object regions discriminately.
+
+Generally, Discriminative methods train a classifier using data acquired from previous frames, and subsequently use the trained classifier to evaluate possible object regions at the current frame (Figure \ref{fig::svm_example}). After localization, a set of \textit{positive} and \textit{negative} samples are heuristically selected to update the classifier. Some approaches apply online boosting \textbf{Cites}, that make a discriminative evaluation of features taken from a candidate feature pool, and then select the top ranked features to conduct the tracking process. Other methods apply Support Vector Nachines (SVM) method, which learns a margin-based discriminative appearance model, in order to maximize inter-class separability. It is important to note that these classifiers are trained using visual representations of the object.
+
+\begin{figure}[t!]
+		\includegraphics[width=1\linewidth, trim= 0cm 3cm 1cm 4cm, clip=true]{Figures/svm_example.pdf}
+	\caption{Example of tracking-by-detection approach based on SVM classification. The left subfigure shows the score map of face and non-face classification; middle subfigure shows the search region for object localization and the context region for face and non-face samples selection; right subfigure plots the classification hyperplane that separates face and non-face classes.}
+	\label{fig::svm_example}
+\end{figure}
+
 
 Tracking methods applying object appearence online learning have been recently applied. These systems discriminate object from its surrounding background through all the sequence using a classifier updated based on tracking results. However, these approaches except for MILBoost \cite{Babenko2010}, suffer from label jitter. The authors in \cite{Santner2010} explain that problem of label jitter arises if the bounding boxes of an object are not perfectly aligned with the target, although it is detected correctly. If label jitter occurs repeatedly over a tracking sequence, the tracker will most likely start to lose the target object. To cope this problem, we consider selecting a bag of trackers which share common similarity with appearance model.
 
@@ -84,6 +106,15 @@ The centered position $\mathrm{x}^{*}$ is selected by choosing the minimum sum o
 \large
 \mathrm{x}^{*} = \arg\min_{\mathrm{x}} ~\sum_{\mathrm{x}_{i} \in w^{*}}d(\mathrm{x_{i}}, \mathrm{x_{j}}) ,~~ i \neq j, \mathrm{x_{j}}\in c^{*}
 \end{equation}
+
+\begin{figure}[t!]
+	\centering
+		\includegraphics[width=0.95\linewidth, trim= 1cm 0cm 1cm 11cm, clip=true]{Figures/best_tracker.pdf}
+	\caption{Best tracker bounding box selection.}
+	\label{fig::best_tracker}
+\end{figure}
+
+
 
 \subsection{Trackers reset}
 

@@ -1,5 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Object detection using Gaussian Mixture Models for background subtraction. foreground pixels are drawn in white.\relax }}{4}{figure.caption.24}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview for online boosting object tracker\relax }}{10}{figure.caption.35}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General schema for generic single-object tracking proposal.\relax }}{12}{figure.caption.39}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General schema for generic single-object tracking proposal.\relax }}{13}{figure.caption.42}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Tracking results clustering.\relax }}{14}{figure.caption.45}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of tracking-by-detection approach based on SVM classification. The left subfigure shows the score map of face and non-face classification; middle subfigure shows the search region for object localization and the context region for face and non-face samples selection; right subfigure plots the classification hyperplane that separates face and non-face classes.\relax }}{15}{figure.caption.47}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Best tracker bounding box selection.\relax }}{17}{figure.caption.54}
 \addvspace {10\p@ }

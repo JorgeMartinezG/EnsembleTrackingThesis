@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  13 MAR 2015 11:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.8)  14 MAR 2015 11:37
 entering extended mode
 **main
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.tex
+(D:\Tesis\EnsembleTrackingThesis\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Thesis.cls
+(D:\Tesis\EnsembleTrackingThesis\Thesis.cls
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
@@ -33,10 +33,10 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeepes\vmargin.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ieeepes\vmargin.sty"
 Package: vmargin 1999/06/01
 
 Package `vmargin', V2.2, <1999/06/01>
@@ -259,7 +259,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -363,10 +363,10 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@example=\count100
 \c@theorem=\count101
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 
@@ -460,7 +460,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen126
 \lightrulewidth=\dimen127
@@ -480,7 +480,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen138
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -492,7 +492,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks29
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count109
 \lst@gtempboxa=\box29
 \lst@token=\toks30
@@ -506,7 +506,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@lineno=\count114
 \lst@maxwidth=\dimen142
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
+(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -515,18 +515,18 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 *** Patch file not loaded.
 ***
 
-) (C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box30
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
+(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -615,7 +615,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count120
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -672,51 +672,51 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count132
 \LT@p@ftn=\toks31
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\epigraph\epigraph.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\epigraph\epigraph.sty"
 Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
 \beforeepigraphskip=\skip65
 \afterepigraphskip=\skip66
 \epigraphwidth=\skip67
 \epigraphrule=\skip68
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count133
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+(D:\Tesis\EnsembleTrackingThesis\main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count134
 \scratchdimen=\dimen148
@@ -740,7 +740,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 38.
+Package hyperref Info: Link coloring ON on input line 39.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -750,19 +750,19 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
+(D:\Tesis\EnsembleTrackingThesis\main.out)
+(D:\Tesis\EnsembleTrackingThesis\main.out)
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -770,12 +770,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{C:/Users/pc1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ------------------------------------------------------------------------------
  Declaration of Authorship
 ------------------------------------------------------------------------------
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 
  []
 
@@ -797,17 +797,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.toc [5
+(D:\Tesis\EnsembleTrackingThesis\main.toc [5
 
 
 ])
 \tf@toc=\write4
-
-[6]
+ [6]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lof)
+(D:\Tesis\EnsembleTrackingThesis\main.lof)
 \tf@lof=\write5
  [7
 
@@ -816,7 +815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lot)
+(D:\Tesis\EnsembleTrackingThesis\main.lot)
 \tf@lot=\write6
  [8
 
@@ -851,9 +850,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ------------------------------------------------------------------------------
 [12
 
-]
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/introducti
-on.tex
+] (D:\Tesis\EnsembleTrackingThesis\Chapters/introduction.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
@@ -870,9 +867,7 @@ e 11.
 Package natbib Warning: Citation `Yilmaz2006' on page 1 undefined on input line
  16.
 
-)
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/related_wo
-rk.tex [1
+) (D:\Tesis\EnsembleTrackingThesis\Chapters/related_work.tex [1
 
 
 
@@ -884,139 +879,174 @@ Chapter 2.
 ------------------------------------------------------------------------------
 [3
 
-] [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+] <Figures/bg_sub.jpg, id=312, 602.25pt x 377.41pt>
+File: Figures/bg_sub.jpg Graphic file (type jpg)
+ <use Figures/bg_sub.jpg>
+Package pdftex.def Info: Figures/bg_sub.jpg used on input line 27.
+(pdftex.def)             Requested size: 292.22987pt x 183.13576pt.
+
+[4 <D:/Tesis/EnsembleTrackingThesis/Figures/bg_sub.jpg>] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+ [6]
 
-[6] [7] [8]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package natbib Warning: Citation `Mori2006' on page 9 undefined on input line 1
-20.
+[7] [8] <Figures/particle_filter1.jpg, id=344, 481.8pt x 361.35pt>
+File: Figures/particle_filter1.jpg Graphic file (type jpg)
 
+<use Figures/particle_filter1.jpg>
+Package pdftex.def Info: Figures/particle_filter1.jpg used on input line 120.
+(pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
 
-Package natbib Warning: Citation `Liu2007' on page 9 undefined on input line 12
-0.
+<Figures/particle_filter2.jpg, id=345, 481.8pt x 361.35pt>
+File: Figures/particle_filter2.jpg Graphic file (type jpg)
 
+<use Figures/particle_filter2.jpg>
+Package pdftex.def Info: Figures/particle_filter2.jpg used on input line 121.
+(pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
 
-Package natbib Warning: Citation `Grabner2006' on page 9 undefined on input lin
-e 120.
+<Figures/particle_filter3.jpg, id=346, 481.8pt x 361.35pt>
+File: Figures/particle_filter3.jpg Graphic file (type jpg)
 
+<use Figures/particle_filter3.jpg>
+Package pdftex.def Info: Figures/particle_filter3.jpg used on input line 122.
+(pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
+ [9 <D:/Tesis/EnsembleTrackingThesis/Figures/particle_filter1.jpg> <D:/Tesis/En
+sembleTrackingThesis/Figures/particle_filter2.jpg> <D:/Tesis/EnsembleTrackingTh
+esis/Figures/particle_filter3.jpg>]
 
-Package natbib Warning: Citation `Isard2001' on page 9 undefined on input line 
-120.
-
-
-Package natbib Warning: Citation `Lepetit2006' on page 9 undefined on input lin
-e 120.
-
-
-Package natbib Warning: Citation `Black1996' on page 9 undefined on input line 
-120.
-
-
-Package natbib Warning: Citation `Comaniciu2000' on page 9 undefined on input l
-ine 120.
-
-
-Package natbib Warning: Citation `Adam2006' on page 9 undefined on input line 1
-20.
+Package natbib Warning: Citation `Mori2006' on page 10 undefined on input line 
+137.
 
 
-Package natbib Warning: Citation `Ross2007' on page 9 undefined on input line 1
-20.
+Package natbib Warning: Citation `Liu2007' on page 10 undefined on input line 1
+37.
 
 
-Package natbib Warning: Citation `Matthews2004' on page 9 undefined on input li
-ne 120.
+Package natbib Warning: Citation `Grabner2006' on page 10 undefined on input li
+ne 137.
 
 
-Package natbib Warning: Citation `Jepson2003' on page 9 undefined on input line
- 120.
+Package natbib Warning: Citation `Isard2001' on page 10 undefined on input line
+ 137.
 
 
-Package natbib Warning: Citation `Freund1997a' on page 9 undefined on input lin
-e 122.
+Package natbib Warning: Citation `Lepetit2006' on page 10 undefined on input li
+ne 137.
 
 
-Package natbib Warning: Citation `Avidan2007' on page 9 undefined on input line
- 122.
+Package natbib Warning: Citation `Black1996' on page 10 undefined on input line
+ 137.
 
 
-Package natbib Warning: Citation `Grabner2008' on page 9 undefined on input lin
-e 122.
+Package natbib Warning: Citation `Comaniciu2000' on page 10 undefined on input 
+line 137.
 
 
-Package natbib Warning: Citation `Oza2000' on page 9 undefined on input line 12
-2.
+Package natbib Warning: Citation `Adam2006' on page 10 undefined on input line 
+137.
 
 
-Package natbib Warning: Citation `Saffari2010' on page 9 undefined on input lin
-e 122.
+Package natbib Warning: Citation `Ross2007' on page 10 undefined on input line 
+137.
 
 
-Package natbib Warning: Citation `Babenko2010' on page 9 undefined on input lin
-e 122.
+Package natbib Warning: Citation `Matthews2004' on page 10 undefined on input l
+ine 137.
 
-[9]
+
+Package natbib Warning: Citation `Jepson2003' on page 10 undefined on input lin
+e 137.
+
+
+Package natbib Warning: Citation `Freund1997a' on page 10 undefined on input li
+ne 139.
+
 
 Package natbib Warning: Citation `Avidan2007' on page 10 undefined on input lin
-e 133.
+e 139.
 
 
-Package natbib Warning: Citation `Collins2005' on page 10 undefined on input li
-ne 133.
+Package natbib Warning: Citation `Grabner2008' on page 10 undefined on input li
+ne 139.
 
 
-Package natbib Warning: Citation `Santner2010' on page 10 undefined on input li
-ne 133.
+Package natbib Warning: Citation `Oza2000' on page 10 undefined on input line 1
+39.
 
 
-Package natbib Warning: Citation `Kwon2010' on page 10 undefined on input line 
-133.
+Package natbib Warning: Citation `Saffari2010' on page 10 undefined on input li
+ne 139.
 
 
-Package natbib Warning: Citation `Kwon2011' on page 10 undefined on input line 
-133.
+Package natbib Warning: Citation `Babenko2010' on page 10 undefined on input li
+ne 139.
+
+<Figures/overview_boost.png, id=352, 639.89063pt x 435.87843pt>
+File: Figures/overview_boost.png Graphic file (type png)
+
+<use Figures/overview_boost.png>
+Package pdftex.def Info: Figures/overview_boost.png used on input line 143.
+(pdftex.def)             Requested size: 292.22987pt x 199.06325pt.
+ [10 <D:/Tesis/EnsembleTrackingThesis/Figures/overview_boost.png (PNG copy)>]
+
+Package natbib Warning: Citation `Avidan2007' on page 11 undefined on input lin
+e 158.
 
 
-Package natbib Warning: Citation `Bai2013' on page 10 undefined on input line 1
-33.
+Package natbib Warning: Citation `Collins2005' on page 11 undefined on input li
+ne 158.
 
 
-Package natbib Warning: Citation `Bailer2013' on page 10 undefined on input lin
-e 133.
+Package natbib Warning: Citation `Santner2010' on page 11 undefined on input li
+ne 158.
 
 
-Package natbib Warning: Citation `Bailer2014' on page 10 undefined on input lin
-e 133.
+Package natbib Warning: Citation `Kwon2010' on page 11 undefined on input line 
+158.
 
-)
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/real_appro
-ach.tex [10]
+
+Package natbib Warning: Citation `Kwon2011' on page 11 undefined on input line 
+158.
+
+
+Package natbib Warning: Citation `Bai2013' on page 11 undefined on input line 1
+58.
+
+
+Package natbib Warning: Citation `Bailer2013' on page 11 undefined on input lin
+e 158.
+
+
+Package natbib Warning: Citation `Bailer2014' on page 11 undefined on input lin
+e 158.
+
+) (D:\Tesis\EnsembleTrackingThesis\Chapters/real_approach.tex [11]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Proposed Approach
 ------------------------------------------------------------------------------
-[11
+[12
 
-] <Figures/block_diagram.pdf, id=341, 963.6pt x 542.025pt>
+] <Figures/block_diagram.pdf, id=367, 963.6pt x 542.025pt>
 File: Figures/block_diagram.pdf Graphic file (type pdf)
 
 <use Figures/block_diagram.pdf>
 Package pdftex.def Info: Figures/block_diagram.pdf used on input line 25.
 (pdftex.def)             Requested size: 417.47307pt x 153.05946pt.
- [12 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/block_
-diagram.pdf>]
+ [13 <D:/Tesis/EnsembleTrackingThesis/Figures/block_diagram.pdf>]
 
-Package natbib Warning: Citation `Bailer2013' on page 13 undefined on input lin
+Package natbib Warning: Citation `Bailer2013' on page 14 undefined on input lin
 e 38.
 
 
-Package natbib Warning: Citation `Bailer2014' on page 13 undefined on input lin
+Package natbib Warning: Citation `Bailer2014' on page 14 undefined on input lin
 e 38.
 
 
@@ -1059,95 +1089,115 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 43.
 
+<Figures/trackers_clustering.pdf, id=381, 963.6pt x 542.025pt>
+File: Figures/trackers_clustering.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `Babenko2010' on page 13 undefined on input li
-ne 49.
+<use Figures/trackers_clustering.pdf>
+Package pdftex.def Info: Figures/trackers_clustering.pdf used on input line 53.
 
+(pdftex.def)             Requested size: 271.35493pt x 145.18166pt.
+ [14 <D:/Tesis/EnsembleTrackingThesis/Figures/trackers_clustering.pdf>]
+<Figures/svm_example.pdf, id=396, 963.6pt x 542.025pt>
+File: Figures/svm_example.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `Santner2010' on page 13 undefined on input li
-ne 49.
-
-[13]
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 61.
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 67.
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 74.
+<use Figures/svm_example.pdf>
+Package pdftex.def Info: Figures/svm_example.pdf used on input line 65.
+(pdftex.def)             Requested size: 417.47307pt x 153.05946pt.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 84.
+Package natbib Warning: Citation `Babenko2010' on page 15 undefined on input li
+ne 71.
 
-[14]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 93.
+Package natbib Warning: Citation `Santner2010' on page 15 undefined on input li
+ne 71.
 
-)
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/experiment
-s.tex [15]
+[15 <D:/Tesis/EnsembleTrackingThesis/Figures/svm_example.pdf>]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 83.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 89.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 96.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 106.
+
+[16] <Figures/best_tracker.pdf, id=414, 963.6pt x 542.025pt>
+File: Figures/best_tracker.pdf Graphic file (type pdf)
+
+<use Figures/best_tracker.pdf>
+Package pdftex.def Info: Figures/best_tracker.pdf used on input line 112.
+(pdftex.def)             Requested size: 396.59813pt x 100.18582pt.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 124.
+
+) (D:\Tesis\EnsembleTrackingThesis\Chapters/experiments.tex [17 <D:/Tesis/Ensem
+bleTrackingThesis/Figures/best_tracker.pdf>]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Experiments and results
 ------------------------------------------------------------------------------
 
-Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 8.
+Package natbib Warning: Citation `Wu2013' on page 18 undefined on input line 8.
 
 
 
-Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 12
+Package natbib Warning: Citation `Wu2013' on page 18 undefined on input line 12
 .
 
 
-Package natbib Warning: Citation `Henriques2014' on page 16 undefined on input 
+Package natbib Warning: Citation `Henriques2014' on page 18 undefined on input 
 line 12.
 
 
-Package natbib Warning: Citation `Babenko2010' on page 16 undefined on input li
+Package natbib Warning: Citation `Babenko2010' on page 18 undefined on input li
 ne 12.
 
 
-Package natbib Warning: Citation `Wu2013' on page 16 undefined on input line 12
+Package natbib Warning: Citation `Wu2013' on page 18 undefined on input line 12
 .
 
 
-Package natbib Warning: Citation `Henriques2014' on page 16 undefined on input 
+Package natbib Warning: Citation `Henriques2014' on page 18 undefined on input 
 line 12.
 
 
 LaTeX Font Warning: Command \large invalid in math mode on input line 14.
 
-[16
+[18
 
 ]
 
-LaTeX Warning: Reference `table:precision' on page 17 undefined on input line 2
+LaTeX Warning: Reference `table:precision' on page 19 undefined on input line 2
 1.
 
 
-LaTeX Warning: Reference `table:success' on page 17 undefined on input line 21.
+LaTeX Warning: Reference `table:success' on page 19 undefined on input line 21.
 
 
-) [17]
+) [19]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl)
+(D:\Tesis\EnsembleTrackingThesis\main.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
-[18
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
+[20
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
- (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+ (D:\Tesis\EnsembleTrackingThesis\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4335AA350C4DCA9E1E297E485E2D0313;6788.
+(rerunfilecheck)             Checksum: AA6D2985BB84B1E345337299B4552981;6839.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1156,16 +1206,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 13218 strings out of 493921
- 187170 string characters out of 3144883
- 251701 words of memory out of 3000000
- 16220 multiletter control sequences out of 15000+200000
- 18495 words of font info for 71 fonts, out of 3000000 for 9000
+ 13273 strings out of 493921
+ 187345 string characters out of 3144877
+ 253423 words of memory out of 3000000
+ 16257 multiletter control sequences out of 15000+200000
+ 18502 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,11n,45p,1395b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,45p,1395b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
@@ -1184,9 +1234,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (31 pages, 352281 bytes).
+Output written on main.pdf (33 pages, 845361 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 382 words of extra memory for PDF output out of 10000 (max. 10000000)
 
