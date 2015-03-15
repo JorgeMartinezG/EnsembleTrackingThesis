@@ -1,14 +1,34 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Pham et~al.(2010)Pham, Vo, Hung, and Bac]{Pham2010}
+Vu~Pham, Phong Vo, Vu~Thanh Hung, and Le~Hoai Bac.
+\newblock {GPU Implementation of Extended Gaussian Mixture Model for Background
+  Subtraction}.
+\newblock \emph{2010 IEEE RIVF International Conference on Computing \&
+  Communication Technologies, Research, Innovation, and Vision for the Future
+  (RIVF)}, pages 1--4, 2010.
+
+\bibitem[Rittscher et~al.(2000)Rittscher, Kato, Joga, and Blake]{Rittscher2000}
+J~Rittscher, J~Kato, S~Joga, and A~Blake.
+\newblock {A probabilistic background model for tracking}.
+\newblock \emph{Computer Vision—ECCV 2000}, pages 336--350, 2000.
+
+\bibitem[Yilmaz et~al.(2006)Yilmaz, Javed, and Shah]{Yilmaz2006}
+Alper Yilmaz, Omar Javed, and Mubarak Shah.
+\newblock {Object tracking: A survey}.
+\newblock \emph{ACM Computing Surveys}, 38:\penalty0 13, 2006.
+\newblock ISSN 03600300.
+
 \bibitem[McIvor(2000)]{McIvor2000}
 Am~McIvor.
 \newblock {Background subtraction techniques}.
-\newblock \emph{Proc. of Image and Vision Computing}, 2:\penalty0 13, 2000.
+\newblock \emph{Proc. of Image and Vision Computing, \ldots}, 2:\penalty0 13,
+  2000.
 
 \bibitem[Lipton et~al.(1998)Lipton, Fujiyoshi, and Patil]{Lipton1998a}
 A~J Lipton, H~Fujiyoshi, and R~S Patil.
@@ -30,5 +50,274 @@ Robert~T Collins, Alan~J Lipton, Takeo Kanade, Hironobu Fujiyoshi, David
   Peter Burt, and Lambert Wixson.
 \newblock {A System for Video Surveillance and Monitoring}, 2000.
 \newblock ISSN 19406029.
+
+\bibitem[Stenger et~al.(2001)Stenger, Ramesh, Paragios, Coetzee, and
+  Buhmann]{Stenger2001}
+B.~Stenger, V.~Ramesh, N.~Paragios, F.~Coetzee, and J.M. Buhmann.
+\newblock {Topology free hidden Markov models: application to background
+  modeling}.
+\newblock \emph{Proceedings Eighth IEEE International Conference on Computer
+  Vision. ICCV 2001}, 1, 2001.
+
+\bibitem[Shi and Tomasi(1994)]{Shi1994}
+Jianbo Shi~Jianbo Shi and C.~Tomasi.
+\newblock {Good features to track}.
+\newblock \emph{Computer Vision and Pattern Recognition, 1994. Proceedings CVPR
+  '94., 1994 IEEE Computer Society Conference on}, 1994.
+\newblock ISSN 1063-6919.
+
+\bibitem[Lowe(2004)]{Lowe2004b}
+David~G Lowe.
+\newblock {Distinctive Image Features from Scale-Invariant Keypoints}.
+\newblock pages 1--28, 2004.
+
+\bibitem[Harris and Stephens(1988)]{Harris1988}
+C.~Harris and M.~Stephens.
+\newblock {A Combined Corner and Edge Detector}.
+\newblock \emph{Procedings of the Alvey Vision Conference 1988}, pages
+  147--151, 1988.
+\newblock ISSN 09639292.
+
+\bibitem[Wu et~al.(2013)Wu, Lim, and Yang]{Wu2013b}
+Yi~Wu, Jongwoo Lim, and Ming-Hsuan Yang.
+\newblock {Online Object Tracking: A Benchmark}.
+\newblock \emph{2013 IEEE Conference on Computer Vision and Pattern
+  Recognition}, \penalty0 (Iccv):\penalty0 2411--2418, June 2013.
+
+\bibitem[Qin and Shelton(2012)]{Qin2012}
+Zhen Qin and Christian~R. Shelton.
+\newblock {Improving multi-target tracking via social grouping}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 1972--1978, 2012.
+
+\bibitem[Ren(2008)]{Ren2008a}
+Xiaofeng Ren.
+\newblock {Finding people in archive films through tracking}.
+\newblock In \emph{26th IEEE Conference on Computer Vision and Pattern
+  Recognition, CVPR}, 2008.
+
+\bibitem[Heikkil\"{a} and Silv\'{e}n(2004)]{Heikkila2004}
+Janne Heikkil\"{a} and Olli Silv\'{e}n.
+\newblock {A real-time system for monitoring of cyclists and pedestrians}.
+\newblock \emph{Image and Vision Computing}, 22:\penalty0 563--570, 2004.
+\newblock ISSN 02628856.
+
+\bibitem[Okuma et~al.(2004)Okuma, Taleghani, Freitas, Little, and
+  Lowe]{Okuma2004}
+Kenji Okuma, Ali Taleghani, Nando~De Freitas, James~J Little, and David~G Lowe.
+\newblock {A Boosted Particle Filter : Multitarget Detection and Tracking}.
+\newblock \emph{Proceedings of the 8th European Conference on Computer Vision -
+  ECCV 2004}, pages 28--39, 2004.
+\newblock ISSN 03029743.
+
+\bibitem[Schulz et~al.(2003)Schulz, Burgard, Fox, and Cremers]{Schulz2003}
+Dirk Schulz, Wolfram Burgard, Dieter Fox, and Armin~B. Cremers.
+\newblock {People Tracking with Mobile Robots Using Sample-Based Joint
+  Probabilistic Data Association Filters}, 2003.
+\newblock ISSN 02783649.
+
+\bibitem[Zulkifley et~al.(2012)Zulkifley, Moran, and Rawlinson]{Zulkifley2012}
+Mohd~Asyraf Zulkifley, Bill Moran, and David Rawlinson.
+\newblock {Robust hierarchical multiple hypothesis tracker for multiple object
+  tracking}.
+\newblock In \emph{Proceedings - International Conference on Image Processing,
+  ICIP}, pages 405--408, 2012.
+
+\bibitem[Cheng(1995)]{Cheng1995}
+Yizong Cheng.
+\newblock {Mean shift, mode seeking, and clustering}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 17:\penalty0 790--799, 1995.
+\newblock ISSN 01628828.
+
+\bibitem[Exner et~al.(2010)Exner, Bruns, Kurz, Grundh\"{o}fer, and
+  Bimber]{Exner2010}
+David Exner, Erich Bruns, Daniel Kurz, Anselm Grundh\"{o}fer, and Oliver
+  Bimber.
+\newblock {Fast and robust CAMShift tracking}.
+\newblock In \emph{2010 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition - Workshops, CVPRW 2010}, pages 9--16, 2010.
+
+\bibitem[Korman et~al.(2013)Korman, Reichman, Tsur, and Avidan]{Korman2013}
+Simon Korman, Daniel Reichman, Gilad Tsur, and Shai Avidan.
+\newblock {FasT-match: Fast affine template matching}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 2331--2338, 2013.
+
+\bibitem[Mori and Malik(2006)]{Mori2006}
+Greg Mori and Jitendra Malik.
+\newblock {Recovering 3D human body configurations using shape contexts.}
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 28:\penalty0 1052--1062, 2006.
+\newblock ISSN 01628828.
+
+\bibitem[Liu and Yu(2007)]{Liu2007}
+Xiaoming Liu and Ting Yu.
+\newblock {Gradient feature selection for online boosting}.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision}, 2007.
+
+\bibitem[Grabner et~al.(2006)Grabner, Grabner, and Bischof]{Grabner2006}
+Helmut Grabner, Michael Grabner, and Horst Bischof.
+\newblock {Real-Time Tracking via On-line Boosting}.
+\newblock \emph{Technology}, 1:\penalty0 1--10, 2006.
+\newblock ISSN 0162-8828.
+
+\bibitem[Isard and MacCormick(2001)]{Isard2001}
+M.~Isard and J.~MacCormick.
+\newblock {BraMBLe: a Bayesian multiple-blob tracker}.
+\newblock \emph{Proceedings Eighth IEEE International Conference on Computer
+  Vision. ICCV 2001}, 2, 2001.
+
+\bibitem[Lepetit and Fua(2006)]{Lepetit2006}
+Vincent Lepetit and Pascal Fua.
+\newblock {Keypoint recognition using randomized trees}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 28:\penalty0 1465--1479, 2006.
+\newblock ISSN 01628828.
+
+\bibitem[Black and Jepson(1996)]{Black1996}
+Michael~J Black and Allan~D Jepson.
+\newblock {EigenTracking: Robust Matching and Tracking of Articulated Objects
+  Using a View-Based Representation}.
+\newblock \emph{International Journal of Computer Vision}, 26:\penalty0 63--84,
+  1996.
+\newblock ISSN 0920-5691.
+
+\bibitem[Comaniciu et~al.(2000)Comaniciu, Ramesh, and Meer]{Comaniciu2000}
+D~Comaniciu, V~Ramesh, and P~Meer.
+\newblock {Real-time tracking of non-rigid objects using mean shift}.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  2:\penalty0 142--149, 2000.
+\newblock ISSN 01628828.
+
+\bibitem[Adam et~al.(2006)Adam, Rivlin, and Shimshoni]{Adam2006}
+Amit Adam, Ehud Rivlin, and Ilan Shimshoni.
+\newblock {Robust fragments-based tracking using the integral histogram}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, volume~1, pages 798--805, 2006.
+
+\bibitem[Ross et~al.(2007)Ross, Lim, Lin, and Yang]{Ross2007}
+David~a. Ross, Jongwoo Lim, Ruei-Sung Lin, and Ming-Hsuan Yang.
+\newblock {Incremental Learning for Robust Visual Tracking}.
+\newblock \emph{International Journal of Computer Vision}, 77:\penalty0
+  125--141, 2007.
+\newblock ISSN 0920-5691.
+
+\bibitem[Matthews et~al.(2004)Matthews, Ishikawa, and Baker]{Matthews2004}
+Iain Matthews, Takahiro Ishikawa, and Simon Baker.
+\newblock {The template update problem}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 26:\penalty0 810--815, 2004.
+\newblock ISSN 01628828.
+
+\bibitem[Jepson et~al.(2003)Jepson, Fleet, and El-Maraghi]{Jepson2003}
+A~D Jepson, D~J Fleet, and T~F El-Maraghi.
+\newblock {Robust online appearance models for visual tracking}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 25:\penalty0 1296--1311, 2003.
+\newblock ISSN 0162-8828.
+
+\bibitem[Freund and Schapire(1997)]{Freund1997a}
+Y~Freund and R~E Schapire.
+\newblock {A Decision-theoretic Generalization of On-line Learning and an
+  Application to Boosting}.
+\newblock \emph{Journal of Computing Systems and Science}, 55:\penalty0
+  119--139, 1997.
+\newblock ISSN 00220000.
+
+\bibitem[Avidan(2007)]{Avidan2007}
+Shai Avidan.
+\newblock {Ensemble tracking}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29:\penalty0 261--271, 2007.
+\newblock ISSN 01628828.
+
+\bibitem[Grabner et~al.(2008)Grabner, Leistner, and Bischof]{Grabner2008}
+Helmut Grabner, Christian Leistner, and Horst Bischof.
+\newblock {Semi-supervised on-line boosting for robust tracking}.
+\newblock In \emph{Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, volume 5302 LNCS, pages 234--247, 2008.
+
+\bibitem[Oza and Russell(2000)]{Oza2000}
+NC~Oza and S~Russell.
+\newblock {Online ensemble learning}.
+\newblock \emph{AAAI/IAAI}, 6837:\penalty0 1109--1109, 2000.
+
+\bibitem[Saffari et~al.(2010)Saffari, Godec, Pock, Leistner, and
+  Bischof]{Saffari2010}
+Amir Saffari, Martin Godec, Thomas Pock, Christian Leistner, and Horst Bischof.
+\newblock {Online multi-class LPBoost}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 3570--3577, 2010.
+
+\bibitem[Babenko et~al.(2010)Babenko, Yang, and Belongie]{Babenko2010}
+Boris Babenko, Ming-Hsuan Yang, and Serge Belongie.
+\newblock {Visual Tracking with Online Multiple Instance Learning.}
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, pages 983--990, 2010.
+\newblock ISSN 1939-3539.
+
+\bibitem[Li et~al.(2001)Li, Chellappa, Zheng, and Der]{Li2001}
+Baoxin Li, Rama Chellappa, Qinfen Zheng, and Sandor~Z. Der.
+\newblock {Model-based temporal object verification using video}.
+\newblock \emph{IEEE Transactions on Image Processing}, 10:\penalty0 897--908,
+  2001.
+\newblock ISSN 10577149.
+
+\bibitem[Cremers and Schn\"{o}rr(2003)]{Cremers2003}
+Daniel Cremers and Christoph Schn\"{o}rr.
+\newblock {Statistical shape knowledge in variational motion segmentation}.
+\newblock \emph{Image and Vision Computing}, 21:\penalty0 77--86, 2003.
+\newblock ISSN 02628856.
+
+\bibitem[Collins et~al.(2005)Collins, Liu, and Leordeanu]{Collins2005}
+Robert~T. Collins, Yanxi Liu, and Marius Leordeanu.
+\newblock {Online selection of discriminative tracking features}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 27:\penalty0 1631--1643, 2005.
+\newblock ISSN 01628828.
+
+\bibitem[Santner et~al.(2010)Santner, Leistner, Saffari, Pock, and
+  Bischof]{Santner2010a}
+Jakob Santner, Christian Leistner, Amir Saffari, Thomas Pock, and Horst
+  Bischof.
+\newblock {PROST: Parallel robust online simple tracking}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 723--730, 2010.
+
+\bibitem[Kwon and Lee(2009)]{Kwon2009}
+Junseok Kwon and Kyoung~M. Lee.
+\newblock {Tracking of a non-rigid object via patch-based dynamic appearance
+  modeling and adaptive basin hopping monte carlo sampling}.
+\newblock In \emph{2009 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition Workshops, CVPR Workshops 2009}, pages 1208--1215, 2009.
+
+\bibitem[Kwon and Lee(2011)]{Kwon2011a}
+Junseok Kwon and Kyoung~Mu Lee.
+\newblock {Tracking by sampling trackers}.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1195--1202, 2011.
+
+\bibitem[Bai et~al.(2013)Bai, Wu, Sclaroff, Betke, and Monnier]{Bai2013}
+Qinxun Bai, Zheng Wu, S~Sclaroff, M~Betke, and C~Monnier.
+\newblock {Randomized Ensemble Tracking}.
+\newblock In \emph{Computer Vision (ICCV), 2013 IEEE International Conference
+  on}, pages 2040--2047, 2013.
+
+\bibitem[Bailer et~al.(2013)Bailer, Pagani, and Stricker]{Bailer2013}
+Christian Bailer, Alain Pagani, and Didier Stricker.
+\newblock {A user supported tracking framework for interactive video
+  production}.
+\newblock \emph{Proceedings of the 10th European Conference on Visual Media
+  Production - CVMP '13}, pages 1--8, 2013.
+
+\bibitem[Bailer et~al.(2014)Bailer, Pagani, and Stricker]{Bailer2014}
+Christian Bailer, Alain Pagani, and Didier Stricker.
+\newblock {A Superior Tracking Approach: Building a strong Tracker through
+  Fusion}.
+\newblock In \emph{European Conference on Computer Vision}, pages 170--185,
+  2014.
 
 \end{thebibliography}

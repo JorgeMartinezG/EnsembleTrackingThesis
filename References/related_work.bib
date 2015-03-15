@@ -1,3 +1,492 @@
+@article{Li2014,
+author = {Li, Xi and Hu, Weiming and Shen, Chunhua and Zhang, Zhongfei and Dick, Anthony R and van den Hengel, Anton},
+journal = {CoRR},
+mendeley-groups = {athesis/Related Work},
+title = {{A Survey of Appearance Models in Visual Object Tracking}},
+url = {http://arxiv.org/abs/1303.4803},
+volume = {abs/1303.4803},
+year = {2013}
+}
+@article{Yilmaz2006,
+abstract = {The goal of this article is to review the state-of-the-art tracking methods, classify them into different categories, and identify new trends. Object tracking, in general, is a challenging problem. Difficulties in tracking objects can arise due to abrupt object motion, changing appearance patterns of both the object and the scene, nonrigid object structures, object-to-object and object-to-scene occlusions, and camera motion. Tracking is usually performed in the context of higher-level applications that require the location and/or shape of the object in every frame. Typically, assumptions are made to constrain the tracking problem in the context of a particular application. In this survey, we categorize the tracking methods on the basis of the object and motion representations used, provide detailed descriptions of representative methods in each category, and examine their pros and cons. Moreover, we discuss the important issues related to tracking including the use of appropriate image features, selection of motion models, and detection of objects.},
+author = {Yilmaz, Alper and Javed, Omar and Shah, Mubarak},
+doi = {citeulike-article-id:1008678},
+isbn = {0360-0300},
+issn = {03600300},
+journal = {ACM Computing Surveys},
+keywords = {background\_subtraction,object\_tracking,survey},
+mendeley-groups = {athesis/Related Work},
+pages = {13},
+title = {{Object tracking: A survey}},
+url = {http://dx.doi.org/10.1145/1177352.1177355},
+volume = {38},
+year = {2006}
+}
+@misc{Schulz2003,
+abstract = { One of the goals in the field of mobile robotics is the development of mobile platforms which operate in populated environments. For many tasks it is therefore highly desirable that a robot can track the positions of the humans in its surrounding. In this paper we introduce sample-based joint probabilistic data association filters as a new algorithm to track multiple moving objects. Our method applies Bayesian filtering to adapt the tracking process to the number of objects in the perceptual range of the robot. The approach has been implemented and tested on a real robot using laser-range data. We present experiments illustrating that our algorithm is able to robustly keep track of multiple people. The experiments furthermore show that the approach outperforms other techniques developed so far. },
+author = {Schulz, Dirk and Burgard, Wolfram and Fox, Dieter and Cremers, Armin B.},
+booktitle = {The International Journal of Robotics Research},
+doi = {10.1177/0278364903022002002},
+issn = {02783649},
+mendeley-groups = {athesis/Related Work},
+pages = {99--116},
+title = {{People Tracking with Mobile Robots Using Sample-Based Joint Probabilistic Data Association Filters}},
+volume = {22},
+year = {2003}
+}
+@inproceedings{Zulkifley2012,
+abstract = {Multiple object tracking is a fundamental subsystem of many higher level applications such as traffic monitoring, people counting, robotic vision and many more. This paper explains in details the methodology of building a robust hierarchical multiple hypothesis tracker for tracking multiple objects in the videos. The main novelties of our approach are anchor-based track initialization, prediction assistance for unconfirmed track and two virtual measurements for confirmed track. The system is built mainly to deal with the problems of merge, split, fragments and occlusion. The system is divided into two levels where the first level obtains the measurement input from foreground segmentation and clustered optical flow. Only K-best hypothesis and one-to-one association are considered. Two more virtual measurements are constructed to help track retention rate for the second level, which are based on predicted state and division of occluded foreground segments. Track based K-best hypothesis with multiple associations are considered for more comprehensive observation assignment. Histogram intersection testing is performed to limit the tracker bounding box expansion. Simulation results show that all our algorithms perform well in the surroundings mentioned above. Two performance metrics are used; multiple-object tracking accuracy (MOTA) and multiple-object tracking precision (MOTP). Our tracker have performed the best compared to the benchmark trackers in both performance evaluation metrics. The main weakness of our algorithms is the heavy processing requirement. © 2012 Elsevier Ltd. All rights reserved.},
+author = {Zulkifley, Mohd Asyraf and Moran, Bill and Rawlinson, David},
+booktitle = {Proceedings - International Conference on Image Processing, ICIP},
+doi = {10.1109/ICIP.2012.6466881},
+isbn = {9781467325332},
+issn = {15224880},
+keywords = {Gaussian modelling,Histogram intersection,Multiple hypothesis tracker,Occlusion predictor,multiple object tracking},
+mendeley-groups = {athesis/Related Work},
+pages = {405--408},
+title = {{Robust hierarchical multiple hypothesis tracker for multiple object tracking}},
+year = {2012}
+}
+@article{Collins2005,
+abstract = {This paper presents an online feature selection mechanism for evaluating multiple features while tracking and adjusting the set of features used to improve tracking performance. Our hypothesis is that the features that best discriminate between object and background are also best for tracking the object. Given a set of seed features, we compute log likelihood ratios of class conditional sample densities from object and background to form a new set of candidate features tailored to the local object/background discrimination task. The two-class variance ratio is used to rank these new features according to how well they separate sample distributions of object and background pixels. This feature evaluation mechanism is embedded in a mean-shift tracking system that adaptively selects the top-ranked discriminative features for tracking. Examples are presented that demonstrate how this method adapts to changing appearances of both tracked object and scene background. We note susceptibility of the variance ratio feature selection method to distraction by spatially correlated background clutter and develop an additional approach that seeks to minimize the likelihood of distraction.},
+author = {Collins, Robert T. and Liu, Yanxi and Leordeanu, Marius},
+doi = {10.1109/TPAMI.2005.205},
+isbn = {0-7695-1950-4},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Computer vision,Feature creation,Feature evaluation and selection,Time-varying imagery,Tracking},
+mendeley-groups = {athesis/Related Work},
+pages = {1631--1643},
+pmid = {16237997},
+title = {{Online selection of discriminative tracking features}},
+volume = {27},
+year = {2005}
+}
+@article{Mori2006,
+abstract = {The problem we consider in this paper is to take a single two-dimensional image containing a human figure, locate the joint positions, and use these to estimate the body configuration and pose in three-dimensional space. The basic approach is to store a number of exemplar 2D views of the human body in a variety of different configurations and viewpoints with respect to the camera. On each of these stored views, the locations of the body joints (left elbow, right knee, etc.) are manually marked and labeled for future use. The input image is then matched to each stored view, using the technique of shape context matching in conjunction with a kinematic chain-based deformation model. Assuming that there is a stored view sufficiently similar in configuration and pose, the correspondence process will succeed. The locations of the body joints are then transferred from the exemplar view to the test shape. Given the 2D joint locations, the 3D body configuration and pose are then estimated using an existing algorithm. We can apply this technique to video by treating each frame independently--tracking just becomes repeated recognition. We present results on a variety of data sets.},
+author = {Mori, Greg and Malik, Jitendra},
+doi = {10.1109/TPAMI.2006.149},
+isbn = {0162-8828 VO - 28},
+issn = {01628828},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {athesis/Related Work},
+pages = {1052--1062},
+pmid = {16792095},
+title = {{Recovering 3D human body configurations using shape contexts.}},
+volume = {28},
+year = {2006}
+}
+@inproceedings{Bailer2014,
+abstract = {Abstract. General object tracking is a challenging problem, where each tracking algorithm performs well on different sequences. This is because each of them has different strengths and weaknesses. We show that this fact can be utilized to create a fusion approach that clearly outperforms the best tracking algorithms in tracking performance. Thanks to dy- namic programming based trajectory optimization we cannot only out- perform tracking algorithms in accuracy but also in other important aspects like trajectory continuity and smoothness. Our fusion approach is very generic as it only requires frame-based tracking results in form of the object’s bounding box as input and thus can work with arbitrary tracking algorithms. It is also suited for live tracking. We evaluated our approach using 29 different algorithms on 51 sequences and show the su- periority of our approach compared to state-of-the-art tracking methods},
+author = {Bailer, Christian and Pagani, Alain and Stricker, Didier},
+booktitle = {European Conference on Computer Vision},
+mendeley-groups = {athesis/Related Work},
+pages = {170--185},
+title = {{A Superior Tracking Approach: Building a strong Tracker through Fusion}},
+year = {2014}
+}
+@article{Bailer2013,
+address = {New York, New York, USA},
+author = {Bailer, Christian and Pagani, Alain and Stricker, Didier},
+doi = {10.1145/2534008.2534018},
+isbn = {9781450325899},
+journal = {Proceedings of the 10th European Conference on Visual Media Production - CVMP '13},
+mendeley-groups = {athesis/Related Work},
+pages = {1--8},
+publisher = {ACM Press},
+title = {{A user supported tracking framework for interactive video production}},
+url = {http://dl.acm.org/citation.cfm?doid=2534008.2534018},
+year = {2013}
+}
+@article{Cremers2003,
+abstract = {We present a generative approach to model-based motion segmentation by incorporating a statistical shape prior into a novel variational segmentation method. The shape prior statistically encodes a training set of object outlines presented in advance during a training phase. In a region competition manner the proposed variational approach maximizes the homogeneity of the motion vector field estimated on a set of regions, thus evolving the separating discontinuity set. Due to the shape prior, this discontinuity set is not only sensitive to motion boundaries but also favors shapes according to the statistical shape knowledge. In numerical examples we verify several properties of the proposed approach: for objects which cannot be easily discriminated from the background by their appearance, the desired motion segmentation is obtained, although the corresponding segmentation based on image intensities fails. The region-based formulation facilitates convergence of the contour from its initialization over fairly large distances, and the estimated flow field is progressively improved during the gradient descent minimization. Due to the shape prior, partial occlusions of the moving object by 'unfamiliar' objects are ignored, and the evolution of the motion boundary is effectively restricted to the subspace of familiar shapes. © 2002 Elsevier Science B.V. All rights reserved.},
+author = {Cremers, Daniel and Schn\"{o}rr, Christoph},
+doi = {10.1016/S0262-8856(02)00128-2},
+isbn = {0262-8856},
+issn = {02628856},
+journal = {Image and Vision Computing},
+keywords = {Diffusion snake,Motion segmentation,Mumford-Shah functional,Region competition,Shape recognition,Statistical learning,Variational methods},
+mendeley-groups = {athesis/Related Work},
+pages = {77--86},
+title = {{Statistical shape knowledge in variational motion segmentation}},
+volume = {21},
+year = {2003}
+}
+@article{Li2001,
+abstract = {An approach to model-based dynamic object verification and
+identification using video is proposed. From image sequences containing
+the moving object, we compute its motion trajectory. Then we estimate
+its three-dimensional (3-D) pose at each time step. Pose estimation is
+formulated as a search problem, with the search space constrained by the
+motion trajectory information of the moving object and assumptions about
+the scene structure. A generalized Hausdorff (1962) metric, which is
+more robust to noise and allows a confidence interpretation, is
+suggested for the matching procedure used for pose estimation as well as
+the identification and verification problem. The pose evolution curves
+are used to assist in the acceptance or rejection of an object
+hypothesis. The models are acquired from real image sequences of the
+objects. Edge maps are extracted and used for matching. Results are
+presented for both infrared and optical sequences containing moving
+objects involved in complex motions},
+author = {Li, Baoxin and Chellappa, Rama and Zheng, Qinfen and Der, Sandor Z.},
+doi = {10.1109/83.923286},
+issn = {10577149},
+journal = {IEEE Transactions on Image Processing},
+keywords = {Hausdorff matching,Moving object recognition,Object recognition,Video processing},
+mendeley-groups = {athesis/Related Work},
+pages = {897--908},
+title = {{Model-based temporal object verification using video}},
+volume = {10},
+year = {2001}
+}
+@article{Babenko2010,
+abstract = {In this paper we address the problem of tracking an object in a video given its location in the first frame and no other information. Recently, a class of tracking techniques called "tracking by detection" has been shown to give promising results at real-time speeds. These methods train a discriminative classifier in an online manner to separate the object from the background. This classifier bootstraps itself by using the current tracker state to extract positive and negative examples from the current frame. Slight inaccuracies in the tracker can therefore lead to incorrectly labeled training examples, which degrade the classifier and can cause further drift. In this paper we show that using Multiple Instance Learning (MIL) instead of traditional supervised learning avoids these problems, and can therefore lead to a more robust tracker with fewer parameter tweaks. We propose a novel online MIL algorithm for object tracking that achieves superior results with real-time performance. We present thorough experimental results (both qualitative and quantitative) on a number of challenging video clips.},
+author = {Babenko, Boris and Yang, Ming-Hsuan and Belongie, Serge},
+doi = {10.1109/TPAMI.2010.226},
+isbn = {9781424439911},
+issn = {1939-3539},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {athesis/Related Work},
+pages = {983--990},
+pmid = {21173445},
+title = {{Visual Tracking with Online Multiple Instance Learning.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/21173445$\backslash$nhttp://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=5206737},
+year = {2010}
+}
+@inproceedings{Saffari2010,
+abstract = {Online boosting is one of the most successful online learning algorithms in computer vision. While many challenging online learning problems are inherently multi-class, online boosting and its variants are only able to solve binary tasks. In this paper, we present Online Multi-Class LPBoost (OMCLP) which is directly applicable to multi-class problems. From a theoretical point of view, our algorithm tries to maximize the multi-class soft-margin of the samples. In order to solve the LP problem in online settings, we perform an efficient variant of online convex programming, which is based on primal-dual gradient descent-ascent update strategies. We conduct an extensive set of experiments over machine learning benchmark datasets, as well as, on Caltech 101 category recognition dataset. We show that our method is able to outperform other online multi-class methods. We also apply our method to tracking where, we present an intuitive way to convert the binary tracking by detection problem to a multi-class problem where background patterns which are similar to the target class, become virtual classes. Applying our novel model, we outperform or achieve the state-of-the-art results on benchmark tracking videos.},
+author = {Saffari, Amir and Godec, Martin and Pock, Thomas and Leistner, Christian and Bischof, Horst},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2010.5539937},
+isbn = {9781424469840},
+issn = {10636919},
+mendeley-groups = {athesis/Related Work},
+pages = {3570--3577},
+title = {{Online multi-class LPBoost}},
+year = {2010}
+}
+@article{Oza2000,
+abstract = {Most traditional learning systems only provide users learning resources, but can not support user executing personalized and collaborative learning plans, and that makes online learning lacking communication and guidance compared with traditional learning. E-instructor is proposed to narrow the gap between traditional learning and online learning, it supports making personalized and collaborative learning design besides providing learning resources. This paper analyses traditional learning systems, brings up what an e-instructor should have, then discusses the supporting environments for an e-instructor, finally this paper proposes a service oriented and layered architecture design for e-learning systems and gives a sample implementation.},
+author = {Oza, NC and Russell, S},
+doi = {10.1007/978-3-642-22763-9\_7},
+isbn = {0493584978},
+journal = {AAAI/IAAI},
+mendeley-groups = {athesis/Related Work},
+pages = {1109--1109},
+title = {{Online ensemble learning}},
+url = {http://scholar.google.com/scholar?hl=en\&btnG=Search\&q=intitle:Online+ensemble+learning\#0$\backslash$nhttp://www.aaai.org/Papers/AAAI/2000/AAAI00-190.pdf},
+volume = {6837},
+year = {2000}
+}
+@inproceedings{Grabner2008,
+abstract = {Recently, on-line adaptation of binary classifiers for tracking have been investigated. On-line learning allows for simple classifiers since only the current view of the object from its surrounding background needs to be discriminiated. However, on-line adaption faces one key problem: Each update of the tracker may introduce an error which, finally, can lead to tracking failure (drifting). The contribution of this paper is a novel on-line semi-supervised boosting method which significantly alleviates the drifting problem in tracking applications. This allows to limit the drifting problem while still staying adaptive to appearance changes. The main idea is to formulate the update process in a semi-supervised fashion as combined decision of a given prior and an on-line classifier. This comes without any parameter tuning. In the experiments, we demonstrate real-time tracking of our SemiBoost tracker on several challenging test sequences where our tracker outperforms other on-line tracking methods.},
+author = {Grabner, Helmut and Leistner, Christian and Bischof, Horst},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-540-88682-2-19},
+isbn = {3540886818},
+issn = {03029743},
+mendeley-groups = {athesis/Related Work},
+pages = {234--247},
+title = {{Semi-supervised on-line boosting for robust tracking}},
+volume = {5302 LNCS},
+year = {2008}
+}
+@article{Avidan2007,
+abstract = {We consider tracking as a binary classification problem, where an ensemble of weak classifiers is trained online to distinguish between the object and the background. The ensemble of weak classifiers is combined into a strong classifier using AdaBoost. The strong classifier is then used to label pixels in the next frame as either belonging to the object or the background, giving a confidence map. The peak of the map and, hence, the new position of the object, is found using mean shift. Temporal coherence is maintained by updating the ensemble with new weak classifiers that are trained online during tracking. We show a realization of this method and demonstrate it on several video sequences.},
+author = {Avidan, Shai},
+doi = {10.1109/TPAMI.2007.35},
+isbn = {0769523722},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {AdaBoost,Concept learning,Video analysis,Visual tracking},
+mendeley-groups = {athesis/Related Work},
+pages = {261--271},
+pmid = {17170479},
+title = {{Ensemble tracking}},
+volume = {29},
+year = {2007}
+}
+@article{Freund1997a,
+abstract = {In the first part of the paper we consider the problem of dynamically$\backslash$n$\backslash$napportioning resources among a set of options in a worst-case on-line$\backslash$n$\backslash$nframework. The model we study can be interpreted as a broad, abstract$\backslash$n$\backslash$nextension of the well-studied on-line prediction model to a general$\backslash$n$\backslash$ndecision-theoretic setting. We show that the multiplicative weight-$\backslash$n$\backslash$nupdate LittlestoneWarmuth rule can be adapted to this model, yielding$\backslash$n$\backslash$nbounds that are slightly weaker in some cases, but applicable to a$\backslash$ncon-$\backslash$n$\backslash$nsiderably more general class of learning problems. We show how the$\backslash$n$\backslash$nresulting learning algorithm can be applied to a variety of problems,$\backslash$n$\backslash$nincluding gambling, multiple-outcome prediction, repeated games, and$\backslash$n$\backslash$nprediction of points in R\^{}\{n\}. In the second part of the paper we$\backslash$napply the$\backslash$n$\backslash$nmultiplicative weight-update technique to derive a new boosting algo-$\backslash$n$\backslash$nrithm. This boosting algorithm does not require any prior knowledge$\backslash$n$\backslash$nabout the performance of the weak learning algorithm. We also study$\backslash$n$\backslash$ngeneralizations of the new boosting algorithm to the problem of$\backslash$n$\backslash$nlearning functions whose range, rather than being binary, is an arbitrary$\backslash$n$\backslash$nfinite set or a bounded segment of the real line.},
+author = {Freund, Y and Schapire, R E},
+doi = {10.1007/3-540-59119-2\_166},
+isbn = {3540591192},
+issn = {00220000},
+journal = {Journal of Computing Systems and Science},
+keywords = { boosting, multi-class classification,Adaboost},
+mendeley-groups = {athesis/Related Work},
+pages = {119--139},
+pmid = {10394},
+title = {{A Decision-theoretic Generalization of On-line Learning and an Application to Boosting}},
+volume = {55},
+year = {1997}
+}
+@article{Jepson2003,
+abstract = {... Abstract—We propose a framework for learning robust, adaptive, appearance models to be used for ... maintains a natural measure of the stability of the observed image structure during tracking . ... An online EM-algorithm is used to adapt the appearance model parameters over time ... $\backslash$n},
+author = {Jepson, A D and Fleet, D J and El-Maraghi, T F},
+doi = {10.1109/TPAMI.2003.1233903},
+isbn = {0162-8828},
+issn = {0162-8828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {athesis/Related Work},
+pages = {1296--1311},
+title = {{Robust online appearance models for visual tracking}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1233903$\backslash$npapers2://publication/doi/10.1109/TPAMI.2003.1233903},
+volume = {25},
+year = {2003}
+}
+@article{Matthews2004,
+abstract = {Template tracking dates back to the 1981 Lucas-Kanade algorithm. One question that has received very little attention, however, is how to update the template so that it remains a good model of the tracked object. We propose a template update algorithm that avoids the "drifting" inherent in the naive algorithm.},
+author = {Matthews, Iain and Ishikawa, Takahiro and Baker, Simon},
+doi = {10.1109/TPAMI.2004.16},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Active appearance models,Template tracking,The Lucas-Kanade algorithm},
+mendeley-groups = {athesis/Related Work},
+pages = {810--815},
+pmid = {18579941},
+title = {{The template update problem}},
+volume = {26},
+year = {2004}
+}
+@article{Ross2007,
+abstract = {Visual tracking, in essence, deals with non-stationary image streams that change over time. While most existing algorithms are able to track objects well in controlled environments, they usually fail in the presence of significant variation of the object’s appearance or surrounding illumination. One reason for such failures is thatmany algorithms employ fixed appearance models of the target. Such models are trained using only appearance data available before tracking begins, which in practice limits the range of appearances that are modelled, and ignores the large volume of information (such as shape changes or specific lighting conditions) that becomes available during tracking. In this paper, we present a tracking method that incrementally learns a low-dimensional subspace representation, efficiently adapting online to changes in the appearance of the target. The model update, based on incremental algorithms for principal component analysis, includes two important features: a method for correctly updating the sample mean, and a forgetting factor to ensure less modelling power is expended fitting older observations. Both of these features contribute measurably to improving overall tracking performance. Numerous experiments demonstrate the effectiveness of the proposed tracking algorithmin indoor and outdoor environmentswhere the target objects undergo large changes in pose, scale, and illumination.},
+author = {Ross, David a. and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+doi = {10.1007/s11263-007-0075-7},
+isbn = {0920-5691},
+issn = {0920-5691},
+journal = {International Journal of Computer Vision},
+keywords = {Visual tracking,adaptive methods,illumination.,online algorithms,particle filter,subspace update},
+mendeley-groups = {athesis/Related Work},
+pages = {125--141},
+title = {{Incremental Learning for Robust Visual Tracking}},
+url = {http://link.springer.com/10.1007/s11263-007-0075-7},
+volume = {77},
+year = {2007}
+}
+@inproceedings{Adam2006,
+abstract = { We present a novel algorithm (which we call "Frag- Track") for tracking an object in a video sequence. The template object is represented by multiple image fragments or patches. The patches are arbitrary and are not based on an object model (in contrast with traditional use of modelbased parts e.g. limbs and torso in human tracking). Every patch votes on the possible positions and scales of the object in the current frame, by comparing its histogram with the corresponding image patch histogram. We then minimize a robust statistic in order to combine the vote maps of the multiple patches. A key tool enabling the application of our algorithm to tracking is the integral histogram data structure [18]. Its use allows to extract histograms of multiple rectangular regions in the image in a very efficient manner. Our algorithm overcomes several difficulties which cannot be handled by traditional histogram-based algorithms [8, 6]. First, by robustly combining multiple patch votes, we are able to handle partial occlusions or pose change. Second, the geometric relations between the template patches allow us to take into account the spatial distribution of the pixel intensities - information which is lost in traditional histogram-based algorithms. Third, as noted by [18], tracking large targets has the same computational cost as tracking small targets. We present extensive experimental results on challenging sequences, which demonstrate the robust tracking achieved by our algorithm (even with the use of only gray-scale (noncolor) information).},
+author = {Adam, Amit and Rivlin, Ehud and Shimshoni, Ilan},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2006.256},
+isbn = {0769525970},
+issn = {10636919},
+mendeley-groups = {athesis/Related Work},
+pages = {798--805},
+title = {{Robust fragments-based tracking using the integral histogram}},
+volume = {1},
+year = {2006}
+}
+@article{Comaniciu2000,
+abstract = {A new method for real time tracking of non-rigid objects seen from a moving camera is proposed. The central computational module is based on the mean shift iterations and finds the most probable target position in the current frame. The dissimilarity between the target model (its color distribution) and the target candidates is expressed by a metric derived from the Bhattacharyya coefficient. The theoretical analysis of the approach shows that it relates to the Bayesian framework while providing a practical, fast and efficient solution. The capability of the tracker to handle in real time partial occlusions, significant clutter, and target scale variations, is demonstrated for several image sequences},
+author = {Comaniciu, D and Ramesh, V and Meer, P},
+doi = {10.1109/CVPR.2000.854761},
+isbn = {0-7695-0662-3},
+issn = {01628828},
+journal = {IEEE Conference on Computer Vision and Pattern Recognition},
+keywords = {Bayes methods,Bayesian framework,Bayesian methods,Bhattacharyya coefficient,Educational institutions,Kernel,Monitoring,Surveillance,Target tracking,Visualization,Yield estimation,clutter,color distribution,computational complexity,computational module,computer vision,image sequences,iterative methods,mean shift iterations,most probable target position,moving camera,non-rigid object tracking,optical tracking,partial occlusions,real time tracking,real-time systems,target candidate,target model,target scale variations},
+mendeley-groups = {athesis/Related Work},
+pages = {142--149},
+title = {{Real-time tracking of non-rigid objects using mean shift}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=854761},
+volume = {2},
+year = {2000}
+}
+@article{Black1996,
+abstract = {This paper describes an approach for tracking rigid and articulated objects using a view-based representation. The approach builds on and extends work on eigenspace representations, robust estimation techniques, and parameterized optical flow estimation. First, we note that the least-squares image reconstruction of standard eigenspace techniques has a number of problems and we reformulate the reconstruction problem as one of robust estimation. Second we define a ldquosubspace constancy assumptionrdquo that allows us to exploit techniques for parameterized optical flow estimation to simultaneously solve for the view of an object and the affine transformation between the eigenspace and the image. To account for large affine transformations between the eigenspace and the image we define a multi-scale eigenspace representation and a coarse-to-fine matching strategy. Finally, we use these techniques to track objects over long image sequences in which the objects simultaneously undergo both affine image motions and changes of view. In particular we use this ldquoEigenTrackingrdquo technique to track and recognize the gestures of a moving hand.},
+author = {Black, Michael J and Jepson, Allan D},
+doi = {10.1023/A:1007939232436},
+isbn = {0920-5691},
+issn = {0920-5691},
+journal = {International Journal of Computer Vision},
+keywords = {eigenspace methods - robust estimation - view-base},
+mendeley-groups = {athesis/Related Work},
+pages = {63--84},
+title = {{EigenTracking: Robust Matching and Tracking of Articulated Objects Using a View-Based Representation}},
+volume = {26},
+year = {1996}
+}
+@article{Lepetit2006,
+abstract = {In many 3D object-detection and pose-estimation problems, runtime performance is of critical importance. However, there usually is time to train the system, which we will show to be very useful. Assuming that several registered images of the target object are available, we developed a keypoint-based approach that is effective in this context by formulating wide-baseline matching of keypoints extracted from the input images to those found in the model images as a classification problem. This shifts much of the computational burden to a training phase, without sacrificing recognition performance. As a result, the resulting algorithm is robust, accurate, and fast-enough for frame-rate performance. This reduction in runtime computational complexity is our first contribution. Our second contribution is to show that, in this context, a simple and fast keypoint detector suffices to support detection and tracking even under large perspective and scale variations. While earlier methods require a detector that can be expected to produce very repeatable results, in general, which usually is very time-consuming, we simply find the most repeatable object keypoints for the specific target object during the training phase. We have incorporated these ideas into a real-time system that detects planar, nonplanar, and deformable objects. It then estimates the pose of the rigid ones and the deformations of the others.},
+author = {Lepetit, Vincent and Fua, Pascal},
+doi = {10.1109/TPAMI.2006.188},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Classifier design and evaluation,Edge and feature detection,Image processing and computer vision,Object recognition,Statistical,Tracking},
+mendeley-groups = {athesis/Related Work},
+pages = {1465--1479},
+pmid = {16929732},
+title = {{Keypoint recognition using randomized trees}},
+volume = {28},
+year = {2006}
+}
+@article{Isard2001,
+abstract = {Blob trackers have become increasingly powerful in recent years
+largely due to the adoption of statistical appearance models which allow
+effective background subtraction and robust tracking of deforming
+foreground objects. It has been standard, however, to treat background
+and foreground modelling as separate processes-background subtraction is
+followed by blob detection and tracking-which prevents a principled
+computation of image likelihoods. This paper presents two theoretical
+advances which address this limitation and lead to a robust
+multiple-person tracking system suitable for single-camera real-time
+surveillance applications. The first innovation is a multi-blob
+likelihood function which assigns directly comparable likelihoods to
+hypotheses containing different numbers of objects. This likelihood
+function has a rigorous mathematical basis: it is adapted from the
+theory of Bayesian correlation, but uses the assumption of a static
+camera to create a more specific background model while retaining a
+unified approach to background and foreground modelling. Second we
+introduce a Bayesian filter for tracking multiple objects when the
+number of objects present is unknown and varies over time. We show how a
+particle filter can be used to perform joint inference on both the
+number of objects present and their configurations. Finally we
+demonstrate that our system runs comfortably in real time on a modest
+workstation when the number of blobs in the scene is small},
+author = {Isard, M. and MacCormick, J.},
+doi = {10.1109/ICCV.2001.937594},
+isbn = {0-7695-1143-0},
+journal = {Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001},
+mendeley-groups = {athesis/Related Work},
+title = {{BraMBLe: a Bayesian multiple-blob tracker}},
+volume = {2},
+year = {2001}
+}
+@article{Grabner2006,
+abstract = {Very recently tracking was approached using classification techniques such as support vector machines. The object to be tracked is discriminated by a classifier from the background. In a similar spirit we propose a novel on-line AdaBoost feature selection algorithm for tracking. The distinct advantage of our method is its capability of on-line training. This allows to adapt the classifier while tracking the object. Therefore appearance changes of the object (e.g. out of plane rotations, illumination changes) are handled quite naturally. Moreover, depending on the background the algorithm selects the most discriminating features for tracking resulting in stable tracking results. By using fast computable features (e.g. Haar-like wavelets, orientation histograms, local binary patterns) the algorithm runs in real-time. We demonstrate the performance of the algorithm on several (publically available) video sequences.},
+author = {Grabner, Helmut and Grabner, Michael and Bischof, Horst},
+doi = {10.5244/C.20.6},
+isbn = {1-901725-32-4},
+issn = {0162-8828},
+journal = {Technology},
+mendeley-groups = {athesis/Related Work},
+pages = {1--10},
+title = {{Real-Time Tracking via On-line Boosting}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.8743\&amp;rep=rep1\&amp;type=pdf},
+volume = {1},
+year = {2006}
+}
+@inproceedings{Liu2007,
+abstract = {Boosting has been widely applied in computer vision, especially after Viola and Jones's seminal work. The marriage of rectangular features and integral-image- enabled fast computation makes boosting attractive for many vision applications. However, this popular way of applying boosting normally employs an exhaustive feature selection scheme from a very large hypothesis pool, which results in a less-efficient learning process. Furthermore, this poses additional constraint on applying boosting in an onine fashion, where feature re-selection is often necessary because of varying data characteristic, but yet impractical due to the huge hypothesis pool. This paper proposes a gradient-based feature selection approach. Assuming a generally trained feature set and labeled samples are given, our approach iteratively updates each feature using the gradient descent, by minimizing the weighted least square error between the estimated feature response and the true label. In addition, we integrate the gradient-based feature selection with an online boosting framework. This new online boosting algorithm not only provides an efficient way of updating the discriminative feature set, but also presents a unified objective for both feature selection and weak classifier updating. Experiments on the person detection and tracking applications demonstrate the effectiveness of our proposal.},
+author = {Liu, Xiaoming and Yu, Ting},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2007.4408912},
+isbn = {978-1-4244-1631-8},
+issn = {1550-5499},
+mendeley-groups = {athesis/Related Work},
+title = {{Gradient feature selection for online boosting}},
+year = {2007}
+}
+@inproceedings{Exner2010,
+abstract = {CAMShift is a well-established and fundamental algorithm for kernel-based visual object tracking. While it performs well with objects that have a simple and constant appearance, it is not robust in more complex cases. As it solely relies on back projected probabilities it can fail in cases when the object's appearance changes (e.g., due to object or camera movement, or due to lighting changes), when similarly colored objects have to be re-detected or when they cross their trajectories. We propose low-cost extensions to CAMShift that address and resolve all of these problems. They allow the accumulation of multiple histograms to model more complex object appearances and the continuous monitoring of object identities to handle ambiguous cases of partial or full occlusion. Most steps of our method are carried out on the GPU for achieving real-time tracking of multiple targets simultaneously. We explain efficient GPU implementations of histogram generation, probability back projection, computation of image moments, and histogram intersection. All of these techniques make full use of a GPU's high parallelization capabilities.},
+author = {Exner, David and Bruns, Erich and Kurz, Daniel and Grundh\"{o}fer, Anselm and Bimber, Oliver},
+booktitle = {2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition - Workshops, CVPRW 2010},
+doi = {10.1109/CVPRW.2010.5543787},
+isbn = {9781424470297},
+mendeley-groups = {athesis/Related Work},
+pages = {9--16},
+title = {{Fast and robust CAMShift tracking}},
+year = {2010}
+}
+@inproceedings{Korman2013,
+abstract = {Fast-Match is a fast algorithm for approximate template matching under 2D affine transformations that minimizes the Sum-of-Absolute-Differences (SAD) error measure. There is a huge number of transformations to consider but we prove that they can be sampled using a density that depends on the smoothness of the image. For each potential transformation, we approximate the SAD error using a sub linear algorithm that randomly examines only a small number of pixels. We further accelerate the algorithm using a branch-and-bound scheme. As images are known to be piecewise smooth, the result is a practical affine template matching algorithm with approximation guarantees, that takes a few seconds to run on a standard machine. We perform several experiments on three different datasets, and report very good results. To the best of our knowledge, this is the first template matching algorithm which is guaranteed to handle arbitrary 2D affine transformations. View full abstract},
+author = {Korman, Simon and Reichman, Daniel and Tsur, Gilad and Avidan, Shai},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer  Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2013.302},
+isbn = {978-0-7695-4989-7},
+issn = {10636919},
+mendeley-groups = {athesis/Related Work},
+pages = {2331--2338},
+title = {{FasT-match: Fast affine template matching}},
+year = {2013}
+}
+@article{Cheng1995,
+abstract = {Mean shift, a simple interactive procedure that shifts each data
+point to the average of data points in its neighborhood is generalized
+and analyzed in the paper. This generalization makes some k-means like
+clustering algorithms its special cases. It is shown that mean shift is
+a mode-seeking process on the surface constructed with a
+\&amp;ldquo;shadow\&amp;rdquo; kernal. For Gaussian kernels, mean shift is a
+gradient mapping. Convergence is studied for mean shift iterations.
+Cluster analysis if treated as a deterministic problem of finding a
+fixed point of mean shift that characterizes the data. Applications in
+clustering and Hough transform are demonstrated. Mean shift is also
+considered as an evolutionary strategy that performs multistart global
+optimization},
+author = {Cheng, Yizong},
+doi = {10.1109/34.400568},
+isbn = {9781439862230},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {athesis/Related Work},
+pages = {790--799},
+title = {{Mean shift, mode seeking, and clustering}},
+volume = {17},
+year = {1995}
+}
+@inproceedings{Qin2012,
+abstract = {We address the problem of multi-person data-association-based tracking (DAT) in semi-crowded environments from a single camera. Existing tracklet-association-based methods using purely visual cues (like appearance and motion information) show impressive results but rely on heavy training, a number of tuned parameters, and sophisticated detectors to cope with visual ambiguities within the video and low-level processing errors. In this work, we consider clustering dynamics to mitigate such ambiguities. This leads to a general optimization framework that adds social grouping behavior (SGB) to any basic affinity model. We formulate this as a nonlinear global optimization problem to maximize the consistency of visual and grouping cues for trajectories in both tracklet-tracklet linking space and tracklet-grouping assignment space. We formulate the Lagrange dual and solve it using a two-stage iterative algorithm, employing the Hungarian algorithm and K-means clustering. We build SGB upon a simple affinity model and show very promising performance on two publicly available real-world datasets with different tracklet extraction methods.},
+author = {Qin, Zhen and Shelton, Christian R.},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2012.6247899},
+isbn = {9781467312264},
+issn = {10636919},
+mendeley-groups = {athesis/Related Work},
+pages = {1972--1978},
+title = {{Improving multi-target tracking via social grouping}},
+year = {2012}
+}
+@article{Stenger2001,
+abstract = {Hidden Markov models (HMMs) are increasingly being used in
+computer vision for applications such as: gesture analysis, action
+recognition from video, and illumination modeling. Their use involves an
+off-line learning step that is used as a basis for on-line decision
+making (i.e. a stationarity assumption on the model parameters). But,
+real-world applications are often non-stationary in nature. This leads
+to the need for a dynamic mechanism to learn and update the model
+topology as well as its parameters. This paper presents a new framework
+for HMM topology and parameter estimation in an online, dynamic fashion.
+The topology and parameter estimation is posed as a model selection
+problem with an MDL prior. Online modifications to the topology are made
+possible by incorporating a state splitting criterion. To demonstrate
+the potential of the algorithm, the background modeling problem is
+considered. Theoretical validation and real experiments are presented
+},
+author = {Stenger, B. and Ramesh, V. and Paragios, N. and Coetzee, F. and Buhmann, J.M.},
+doi = {10.1109/ICCV.2001.937532},
+isbn = {0-7695-1143-0},
+journal = {Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001},
+mendeley-groups = {athesis/Related Work},
+title = {{Topology free hidden Markov models: application to background
+modeling}},
+volume = {1},
+year = {2001}
+}
+@article{Rittscher2000,
+abstract = {A new probabilistic background model based on a Hidden Markov Model is presented. The hidden states of the model enable discrimination between foreground, background and shadow. This model functions as a low level process for a car tracker. A particle filter is employed as a stochastic filter for the car tracker. The use of a particle filter allows the incorporation of the information from the low level process via importance sampling. A novel observation density for the particle filter which models the statistical dependence of neighboring pixels based on a Markov random field is presented. The effectiveness of both the low level process and the observation likelihood are demonstrated.},
+author = {Rittscher, J and Kato, J and Joga, S and Blake, A},
+doi = {10.1007/3-540-45053-X\_22},
+journal = {Computer Vision—ECCV 2000},
+mendeley-groups = {athesis/Related Work},
+pages = {336--350},
+title = {{A probabilistic background model for tracking}},
+url = {http://link.springer.com/chapter/10.1007/3-540-45053-X\_22},
+year = {2000}
+}
+@article{Pham2010,
+abstract = {Although trivial background subtraction (BGS) algorithms (e.g. frame differencing, running average...) can perform quite fast, they are not robust enough to be used in various computer vision problems. Some complex algorithms usually give better results, but are too slow to be applied to real-time systems. We propose an improved version of the Extended Gaussian mixture model that utilizes the computational power of Graphics Processing Units (GPUs) to achieve real-time performance. Experiments show that our implementation running on a low-end GeForce 9600GT GPU provides at least 10x speedup. The frame rate is greater than 50 frames per second (fps) for most of the tests, even on HD video formats.},
+author = {Pham, Vu and Vo, Phong and Hung, Vu Thanh and Bac, Le Hoai},
+doi = {10.1109/RIVF.2010.5634007},
+isbn = {978-1-4244-8074-6},
+journal = {2010 IEEE RIVF International Conference on Computing \& Communication Technologies, Research, Innovation, and Vision for the Future (RIVF)},
+mendeley-groups = {athesis/Related Work},
+pages = {1--4},
+title = {{GPU Implementation of Extended Gaussian Mixture Model for Background Subtraction}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5634007},
+year = {2010}
+}
 @misc{Collins2000,
 abstract = {Under the three-year Video Surveillance and Monitoring (VSAM) project (1997-1999), the Robotics Institute at Carnegie Mellon University (CMU) and the Sarnoff Corporation developed a system for autonomous Video Surveillance and Monitoring. The technical approach uses multiple, cooperative video sensors to provide continuous coverage of people and vehicles in a cluttered environment. This final report presents an overview of the system, and of the technical accomplishments that have been achieved.},
 author = {Collins, Robert T and Lipton, Alan J and Kanade, Takeo and Fujiyoshi, Hironobu and Duggins, David and Tsin, Yanghai and Tolliver, David and Enomoto, Nobuyoshi and Hasegawa, Osamu and Burt, Peter and Wixson, Lambert},
@@ -13,6 +502,34 @@ url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=868676},
 volume = {823},
 year = {2000}
 }
+@article{Wang2003,
+abstract = {Visual analysis of human motion is currently one of the most active research topics in computer vision. This strong interest is driven by a wide spectrum of promising applications in many areas such as virtual reality, smart surveillance, perceptual interface, etc. Human motion analysis concerns the detection, tracking and recognition of people, and more generally, the understanding of human behaviors, from image sequences involving humans. This paper provides a comprehensive survey of research on computer-vision-based human motion analysis. The emphasis is on three major issues involved in a general human motion analysis system, namely human detection, tracking and activity understanding. Various methods for each issue are discussed in order to examine the state of the art. Finally, some research challenges and future directions are discussed. © 2002 Pattern Recognition Society. Published by Elsevier Science Ltd. All rights reserved.},
+author = {Wang, Liang and Hu, Weiming and Tan, Tieniu},
+doi = {10.1016/S0031-3203(02)00100-0},
+isbn = {8610626474},
+issn = {00313203},
+journal = {Pattern Recognition},
+keywords = {Behavior understanding,Detection,Human motion analysis,Semantic description,Tracking},
+mendeley-groups = {athesis/Related Work},
+pages = {585--601},
+title = {{Recent developments in human motion analysis}},
+volume = {36},
+year = {2003}
+}
+@article{Lipton1998a,
+abstract = {This paper describes an end-to-end method for extracting moving targets from a real-time video stream, classifying them into predefined categories according to image-based properties, and then robustly tracking them. Moving targets are detected using the pixel wise difference between consecutive image frames. A classification metric is applied these targets with a temporal consistency constraint to classify them into three categories: human, vehicle or background clutter. Once classified targets are tracked by a combination of temporal differencing and template matching. The resulting system robustly identifies targets of interest, rejects background clutter and continually tracks over large distances and periods of time despite occlusions, appearance changes and cessation of target motion},
+author = {Lipton, A J and Fujiyoshi, H and Patil, R S},
+doi = {10.1109/ACV.1998.732851},
+isbn = {0818686065},
+issn = {09031936},
+journal = {Proceedings Fourth IEEE Workshop on Applications of Computer Vision WACV98 Cat No98EX201},
+mendeley-groups = {athesis/Related Work,athesis},
+pages = {8--14},
+title = {{Moving target classification and tracking from real-time video}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=732851},
+volume = {98},
+year = {1998}
+}
 @article{Heikkila2004,
 abstract = {Camera based systems are routinely used for monitoring highway traffic, supplementing inductive loops and microwave sensors employed for counting purposes. These techniques achieve very good counting accuracy and are capable of discriminating trucks and cars. However, pedestrians and cyclists are mostly counted manually. In this paper, we describe a new camera based automatic system that utilizes Kalman filtering in tracking and Learning Vector Quantization for classifying the observations to pedestrians and cyclists. Both the requirements for such systems and the algorithms used are described. The tests performed show that the system achieves around 80-90\% accuracy in counting and classification. © 2003 Elsevier B.V. All rights reserved.},
 author = {Heikkil\"{a}, Janne and Silv\'{e}n, Olli},
@@ -27,25 +544,11 @@ title = {{A real-time system for monitoring of cyclists and pedestrians}},
 volume = {22},
 year = {2004}
 }
-@article{Lipton1998a,
-abstract = {This paper describes an end-to-end method for extracting moving targets from a real-time video stream, classifying them into predefined categories according to image-based properties, and then robustly tracking them. Moving targets are detected using the pixel wise difference between consecutive image frames. A classification metric is applied these targets with a temporal consistency constraint to classify them into three categories: human, vehicle or background clutter. Once classified targets are tracked by a combination of temporal differencing and template matching. The resulting system robustly identifies targets of interest, rejects background clutter and continually tracks over large distances and periods of time despite occlusions, appearance changes and cessation of target motion},
-author = {Lipton, A J and Fujiyoshi, H and Patil, R S},
-doi = {10.1109/ACV.1998.732851},
-isbn = {0818686065},
-issn = {09031936},
-journal = {Proceedings Fourth IEEE Workshop on Applications of Computer Vision WACV98 Cat No98EX201},
-mendeley-groups = {athesis/Related Work},
-pages = {8--14},
-title = {{Moving target classification and tracking from real-time video}},
-url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=732851},
-volume = {98},
-year = {1998}
-}
 @article{McIvor2000,
 abstract = {We present 3 methods for the subtraction of non-cosmic and unresolved cosmic backgrounds observed by the Low-Energy Concentrator Spectrometer (LECS) on-board BeppoSAX. Removal of these backgrounds allows a more accurate modeling of the spectral data from point and small-scale extended sources. At high (>25 degree) galactic latitudes, subtraction using a standard background spectrum works well. At low galactic latitudes, or in complex regions of the X-ray sky, two alternative methods are presented. The first uses counts obtained from two semi-annuli near the outside of the LECS field of view to estimate the background at the source location. The second method uses ROSAT Position Sensitive Proportional Counter (PSPC) all-sky survey data to estimate the LECS background spectrum for a given pointing position. A comparison of the results from these methods provides an estimate of the systematic uncertainties. For high galactic latitude fields, all 3 methods give 3 sigma confidence uncertainties of <0.9 10 -3 count/s (0.1-10 keV), or <1.5 10 -3 count/s (0.1-2 keV). These correspond to 0.1-2.0 keV fluxes of 0.7-1.8 and 0.5-1.1 10 -13 erg/cm2/s for a power-law spectrum with a photon index of 2 and photoelectric absorption of 3 10 20 and 3 10 21 atom/cm2, respectively. At low galactic latitudes, or in complex regions of the X-ray sky, the uncertainties are a factor \~{}2.5 higher.},
 author = {McIvor, Am},
 doi = {10.1116/1.572689},
-journal = {Proc. of Image and Vision Computing},
+journal = {Proc. of Image and Vision Computing, \ldots},
 keywords = {background subtraction,segmentation,surveillance},
 mendeley-groups = {athesis/Related Work},
 pages = {13},
@@ -54,17 +557,138 @@ url = {http://arxiv.org/abs/astro-ph/9902075$\backslash$nhttp://algebra.sci.csue
 volume = {2},
 year = {2000}
 }
-@article{Wang2003,
-abstract = {Visual analysis of human motion is currently one of the most active research topics in computer vision. This strong interest is driven by a wide spectrum of promising applications in many areas such as virtual reality, smart surveillance, perceptual interface, etc. Human motion analysis concerns the detection, tracking and recognition of people, and more generally, the understanding of human behaviors, from image sequences involving humans. This paper provides a comprehensive survey of research on computer-vision-based human motion analysis. The emphasis is on three major issues involved in a general human motion analysis system, namely human detection, tracking and activity understanding. Various methods for each issue are discussed in order to examine the state of the art. Finally, some research challenges and future directions are discussed. © 2002 Pattern Recognition Society. Published by Elsevier Science Ltd. All rights reserved.},
-author = {Wang, Liang and Hu, Weiming and Tan, Tieniu},
-doi = {10.1016/S0031-3203(02)00100-0},
-isbn = {8610626474},
-issn = {00313203},
-journal = {Pattern Recognition},
-keywords = {Behavior understanding,Detection,Human motion analysis,Semantic description,Tracking},
+@inproceedings{Kwon2011a,
+abstract = {We propose a novel tracking framework called visual tracker sampler that tracks a target robustly by searching for the appropriate trackers in each frame. Since the real-world tracking environment varies severely over time, the trackers should be adapted or newly constructed depending on the current situation. To do this, our method obtains several samples of not only the states of the target but also the trackers themselves during the sampling process. The trackers are efficiently sampled using the Markov Chain Monte Carlo method from the predefined tracker space by proposing new appearance models, motion models, state representation types, and observation types, which are the basic important components of visual trackers. Then, the sampled trackers run in parallel and interact with each other while covering various target variations efficiently. The experiment demonstrates that our method tracks targets accurately and robustly in the real-world tracking environments and outperforms the state-of-the-art tracking methods.},
+author = {Kwon, Junseok and Lee, Kyoung Mu},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2011.6126369},
+isbn = {9781457711015},
+issn = {1550-5499},
 mendeley-groups = {athesis/Related Work},
-pages = {585--601},
-title = {{Recent developments in human motion analysis}},
-volume = {36},
-year = {2003}
+pages = {1195--1202},
+title = {{Tracking by sampling trackers}},
+year = {2011}
+}
+@inproceedings{Santner2010a,
+abstract = {Tracking-by-detection is increasingly popular in order to tackle the visual tracking problem. Existing adaptive methods suffer from the drifting problem, since they rely on self-updates of an on-line learning method. In contrast to previous work that tackled this problem by employing semi-supervised or multiple-instance learning, we show that augmenting an on-line learning method with complementary tracking approaches can lead to more stable results. In particular, we use a simple template model as a non-adaptive and thus stable component, a novel optical-flow-based mean-shift tracker as highly adaptive element and an on-line random forest as moderately adaptive appearance-based learner. We combine these three trackers in a cascade. All of our components run on GPUs or similar multi-core systems, which allows for real-time performance. We show the superiority of our system over current state-of-the-art tracking methods in several experiments on publicly available data.},
+author = {Santner, Jakob and Leistner, Christian and Saffari, Amir and Pock, Thomas and Bischof, Horst},
+booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/CVPR.2010.5540145},
+isbn = {9781424469840},
+issn = {10636919},
+mendeley-groups = {athesis/Related Work},
+pages = {723--730},
+title = {{PROST: Parallel robust online simple tracking}},
+year = {2010}
+}
+@article{Harris1988,
+abstract = {Consistency of image edge filtering is of prime importance for 3D interpretation of image sequences using feature tracking algorithms. To cater for image regions containing texture and isolated features, a combined corner and edge detector based on the local auto-correlation function is utilised, and it is shown to perform with good consistency on natural imagery.},
+author = {Harris, C. and Stephens, M.},
+doi = {10.5244/C.2.23},
+issn = {09639292},
+journal = {Procedings of the Alvey Vision Conference 1988},
+mendeley-groups = {athesis/Related Work},
+pages = {147--151},
+pmid = {20130988},
+title = {{A Combined Corner and Edge Detector}},
+url = {http://www.bmva.org/bmvc/1988/avc-88-023.html},
+year = {1988}
+}
+@inproceedings{Kwon2009,
+abstract = {We propose a novel tracking algorithm for the target of which geometric appearance changes drastically over time. To track it, we present a local patch-based appearance model and provide an efficient scheme to evolve the topology between local patches by on-line update. In the process of on-line update, the robustness of each patch in the model is estimated by a new method of measurement which analyzes the landscape of local mode of the patch. This patch can be moved, deleted or newly added, which gives more flexibility to the model. Additionally, we introduce the Basin Hopping Monte Carlo (BHMC) sampling method to our tracking problem to reduce the computational complexity and deal with the problem of getting trapped in local minima. The BHMC method makes it possible for our appearance model to consist of enough numbers of patches. Since BHMC uses the same local optimizer that is used in the appearance modeling, it can be efficiently integrated into our tracking framework. Experimental results show that our approach tracks the object whose geometric appearance is drastically changing, accurately and robustly.},
+author = {Kwon, Junseok and Lee, Kyoung M.},
+booktitle = {2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2009},
+doi = {10.1109/CVPRW.2009.5206502},
+isbn = {9781424439935},
+issn = {1063-6919},
+mendeley-groups = {athesis/Related Work},
+pages = {1208--1215},
+title = {{Tracking of a non-rigid object via patch-based dynamic appearance modeling and adaptive basin hopping monte carlo sampling}},
+year = {2009}
+}
+@article{Okuma2004,
+abstract = {The problem of tracking a varying number of non-rigid objects has two major difficulties. First, the observation models and target distributions can be highly non-linear and non-Gaussian. Second, the presence of a large, varying number of objects creates complex interactions with overlap and ambiguities. To surmount these difficulties, we introduce a vision system that is capable of learning, detecting and tracking the objects of interest. The system is demonstrated in the context of tracking hockey players using video sequences. Our approach combines the strengths of two successful algorithms: mixture particle filters and Adaboost. The mixture particle filter [17] is ideally suited to multi-target tracking as it assigns a mixture component to each player. The crucial design issues in mixture particle filters are the choice of the proposal distribution and the treatment of objects leaving and entering the scene. Here, we construct the proposal distribution using a mixture model that incorporates information from the dynamic models of each player and the detection hypotheses generated by Adaboost. The learned Adaboost proposal distribution allows us to quickly detect players entering the scene, while the filtering process enables us to keep track of the individual players. The result of interleaving Adaboost with mixture particle filters is a simple, yet powerful and fully automatic multiple object tracking system.},
+author = {Okuma, Kenji and Taleghani, Ali and Freitas, Nando De and Little, James J and Lowe, David G},
+doi = {10.1007/978-3-540-24670-1\_3},
+isbn = {9783540219842},
+issn = {03029743},
+journal = {Proceedings of the 8th European Conference on Computer Vision - ECCV 2004},
+mendeley-groups = {athesis/Related Work},
+pages = {28--39},
+title = {{A Boosted Particle Filter : Multitarget Detection and Tracking}},
+url = {http://link.springer.com/chapter/10.1007/978-3-540-24670-1\_3$\backslash$nhttp://www.cs.ubc.ca/~little/links/linked-papers/kenji-eccv2004.pdf},
+year = {2004}
+}
+@inproceedings{Ren2008a,
+abstract = {The goal of this work is to find all people in archive films. Challenges include low image quality, motion blur, partial occlusion, non-standard poses and crowded scenes. We base our approach on face detection and take a tracking/temporal approach to detection. Our tracker operates in two modes, following face detections whenever possible, switching to low-level tracking if face detection fails. With temporal correspondences established by tracking, we formulate detection as an inference problem in one-dimensional chains/tracks. We use a conditional random field model to integrate information across frames and to re-score tentative detections in tracks. Quantitative evaluations on full-length films show that the CRF-based temporal detector greatly improves face detection, increasing precision for about 30\% (suppressing isolated false positives) and at the same time boosting recall for over 10\% (recovering difficult cases where face detectors fail).},
+author = {Ren, Xiaofeng},
+booktitle = {26th IEEE Conference on Computer Vision and Pattern Recognition, CVPR},
+doi = {10.1109/CVPR.2008.4587533},
+isbn = {9781424422432},
+issn = {1063-6919},
+mendeley-groups = {athesis/Related Work},
+title = {{Finding people in archive films through tracking}},
+year = {2008}
+}
+@article{Wu2013b,
+author = {Wu, Yi and Lim, Jongwoo and Yang, Ming-Hsuan},
+doi = {10.1109/CVPR.2013.312},
+isbn = {978-0-7695-4989-7},
+journal = {2013 IEEE Conference on Computer Vision and Pattern Recognition},
+mendeley-groups = {athesis/Related Work},
+month = jun,
+number = {Iccv},
+pages = {2411--2418},
+publisher = {Ieee},
+title = {{Online Object Tracking: A Benchmark}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6619156},
+year = {2013}
+}
+@inproceedings{Bai2013,
+abstract = {We propose a randomized ensemble algorithm to model the time-varying $\backslash$nappearance of an object for visual tracking. In contrast with previous online $\backslash$nmethods for updating classifier ensembles in tracking-by-detection, the weight $\backslash$nvector that combines weak classifiers is treated as a random variable and the $\backslash$nposterior distribution for the weight vector is estimated in a Bayesian manner. $\backslash$nIn essence, the weight vector is treated as a distribution that reflects the $\backslash$nconfidence among the weak classifiers used to construct and adapt the classifier $\backslash$nensemble. The resulting formulation models the time-varying discriminative $\backslash$nability among weak classifiers so that the ensembled strong classifier can adapt $\backslash$nto the varying appearance, backgrounds, and occlusions. The formulation is $\backslash$ntested in a tracking-by-detection implementation. Experiments on 28 challenging $\backslash$nbenchmark videos demonstrate that the proposed method can achieve results $\backslash$ncomparable to and often better than those of state-of-the-art approaches.},
+author = {Bai, Qinxun and Wu, Zheng and Sclaroff, S and Betke, M and Monnier, C},
+booktitle = {Computer Vision (ICCV), 2013 IEEE International Conference on},
+doi = {10.1109/ICCV.2013.255},
+isbn = {978-1-4799-2840-8},
+issn = {1550-5499},
+keywords = {belief networks;image classification;object tracki},
+mendeley-groups = {athesis/Related Work},
+pages = {2040--2047},
+title = {{Randomized Ensemble Tracking}},
+year = {2013}
+}
+@article{Shi1994,
+abstract = {No feature-based vision system can work unless good features can
+be identified and tracked from frame to frame. Although tracking itself
+is by and large a solved problem, selecting features that can be tracked
+well and correspond to physical points in the world is still hard. We
+propose a feature selection criterion that is optimal by construction
+because it is based on how the tracker works, and a feature monitoring
+method that can detect occlusions, disocclusions, and features that do
+not correspond to points in the world. These methods are based on a new
+tracking algorithm that extends previous Newton-Raphson style search
+methods to work under affine image transformations. We test performance
+with several simulations and experiments},
+author = {Shi, Jianbo Shi Jianbo and Tomasi, C.},
+doi = {10.1109/CVPR.1994.323794},
+isbn = {0-8186-5825-8},
+issn = {1063-6919},
+journal = {Computer Vision and Pattern Recognition, 1994. Proceedings CVPR '94., 1994 IEEE Computer Society Conference on},
+mendeley-groups = {athesis/Related Work},
+pmid = {11968495},
+title = {{Good features to track}},
+year = {1994}
+}
+@article{Lowe2004b,
+author = {Lowe, David G},
+file = {:C$\backslash$:/Users/Jorge/Desktop/papers/ijcv04.pdf:pdf},
+mendeley-groups = {athesis/Related Work},
+pages = {1--28},
+title = {{Distinctive Image Features from Scale-Invariant Keypoints}},
+year = {2004}
+}
+@article{deori2014survey,
+author = {Deori, Barga and Thounaojam, Dalton Meitei},
+mendeley-groups = {athesis/Related Work},
+title = {{A SURVEY ON MOVING OBJECT TRACKING IN VIDEO}}
 }

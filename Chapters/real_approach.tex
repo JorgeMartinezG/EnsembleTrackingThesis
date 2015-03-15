@@ -39,7 +39,7 @@ Previous works show the common approach of data fusion using majority voting. Th
 
 \begin{equation}
 \large
-d(b,c) = 1 - \frac{b\bigcap c}{b\bigcup  c}
+d(b,c) = 1 - \frac{b \bigcap c}{b \bigcup  c}
 \end{equation}
 
 Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$. We take the proximities to be dissimilarities. This means that $d(i,i) = 0$ for all $i$. We use complete-link hierarchical agglomerative clustering to form groups of trackers. Trackers $t_1$ and $t_2$ are "related" if their dissimilarity is below some threshold $v$. CL merges clusters in order of proximity; the closest clusters will be merged first, and the furthest clusters will be merged last. At each merge, CL creates a \textit{reduced proximity matrix}, with one less row and column. At the end, the algorithm delivers a set of clusters with size $m$ $C = \left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
