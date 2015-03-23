@@ -1,11 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Object detection using Gaussian Mixture Models for background subtraction \cite {Pham2010}. foreground pixels are drawn in white.\relax }}{4}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \cite {Rittscher2000}\relax }}{9}{figure.caption.24}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Overview for online boosting object tracker\relax }}{10}{figure.caption.26}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }}{11}{figure.caption.28}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \cite {Rittscher2000}\relax }}{10}{figure.caption.24}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Overview for online boosting object tracker\relax }}{11}{figure.caption.26}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }}{12}{figure.caption.28}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General schema for generic single-object tracking proposal.\relax }}{14}{figure.caption.34}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Tracking results clustering.\relax }}{15}{figure.caption.37}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of tracking-by-detection approach based on SVM classification. The left subfigure shows the score map of face and non-face classification; middle subfigure shows the search region for object localization and the context region for face and non-face samples selection; right subfigure plots the classification hyperplane that separates face and non-face classes.\relax }}{16}{figure.caption.39}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Best tracker bounding box selection.\relax }}{18}{figure.caption.46}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General schema for generic single-object tracking proposal.\relax }}{15}{figure.caption.34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Tracking results clustering.\relax }}{16}{figure.caption.37}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of tracking-by-detection approach based on SVM classification. The left subfigure shows the score map of face and non-face classification; middle subfigure shows the search region for object localization and the context region for face and non-face samples selection; right subfigure plots the classification hyperplane that separates face and non-face classes.\relax }}{17}{figure.caption.39}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Best tracker bounding box selection.\relax }}{19}{figure.caption.46}
+\addvspace {10\p@ }

@@ -16,21 +16,25 @@
 \contentsline {subsection}{\numberline {2.1.4}Point detectors}{6}{subsection.17}
 \contentsline {section}{\numberline {2.2}Challenges}{6}{section.19}
 \contentsline {section}{\numberline {2.3}Tracking Datasets}{7}{section.20}
-\contentsline {section}{\numberline {2.4}Object Tracking}{8}{section.22}
-\contentsline {subsection}{\numberline {2.4.1}Point Tracking}{8}{subsection.23}
-\contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{9}{subsection.25}
+\contentsline {section}{\numberline {2.4}Object Tracking}{9}{section.22}
+\contentsline {subsection}{\numberline {2.4.1}Point Tracking}{9}{subsection.23}
+\contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{10}{subsection.25}
 \contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{11}{subsection.27}
-\contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{11}{subsection.29}
-\contentsline {chapter}{\numberline {3}Proposed Approach}{13}{chapter.30}
-\contentsline {section}{\numberline {3.1}The Tracking Loop}{13}{section.31}
-\contentsline {section}{\numberline {3.2}Tracking system overview}{13}{section.32}
-\contentsline {subsection}{\numberline {3.2.1}Basic overview}{13}{subsection.33}
-\contentsline {subsection}{\numberline {3.2.2}Trackers bounding boxes clustering}{14}{subsection.35}
-\contentsline {subsection}{\numberline {3.2.3}Object modeling}{16}{subsection.38}
-\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{17}{subsection.40}
-\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{17}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{18}{subsection.47}
-\contentsline {subsection}{\numberline {3.2.7}Object model update}{18}{subsection.49}
+\contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{12}{subsection.29}
+\contentsline {chapter}{\numberline {3}Proposed Approach}{14}{chapter.30}
+\contentsline {section}{\numberline {3.1}The Tracking Loop}{14}{section.31}
+\contentsline {section}{\numberline {3.2}Tracking system overview}{14}{section.32}
+\contentsline {subsection}{\numberline {3.2.1}Basic overview}{14}{subsection.33}
+\contentsline {subsection}{\numberline {3.2.2}Trackers bounding boxes clustering}{15}{subsection.35}
+\contentsline {subsection}{\numberline {3.2.3}Object modeling}{17}{subsection.38}
+\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{18}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{18}{subsection.44}
+\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{19}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.7}Object model update}{19}{subsection.49}
+\contentsline {chapter}{\numberline {4}Experiments and results}{20}{chapter.50}
+\contentsline {section}{\numberline {4.1}Experimental setup}{20}{section.51}
+\contentsline {section}{\numberline {4.2}Evaluation Methodology}{20}{section.52}
+\contentsline {section}{\numberline {4.3}Experiments with sequence attributes}{21}{section.54}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{19}{dummy.50}
+\contentsline {chapter}{Bibliography}{22}{dummy.55}
