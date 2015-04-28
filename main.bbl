@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,12 +17,6 @@ Vu~Pham, Phong Vo, Vu~Thanh Hung, and Le~Hoai Bac.
 J~Rittscher, J~Kato, S~Joga, and A~Blake.
 \newblock {A probabilistic background model for tracking}.
 \newblock \emph{Computer Vision—ECCV 2000}, pages 336--350, 2000.
-
-\bibitem[Yilmaz et~al.(2006)Yilmaz, Javed, and Shah]{Yilmaz2006}
-Alper Yilmaz, Omar Javed, and Mubarak Shah.
-\newblock {Object tracking: A survey}.
-\newblock \emph{ACM Computing Surveys}, 38:\penalty0 13, 2006.
-\newblock ISSN 03600300.
 
 \bibitem[McIvor(2000)]{McIvor2000}
 Am~McIvor.

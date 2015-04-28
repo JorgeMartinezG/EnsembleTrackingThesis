@@ -2,15 +2,114 @@
 
 \chapter{Introduction} % Main chapter title
 
-\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+% For referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter1} 
 
 \lhead{Chapter 1. \emph{Introduction}} 
 
-Visual object tracking is an important problem in computer vision. This field has a wide range of applications such as surveillance,en success building trackers for specific object classes, a generic object tracker represents a challenging task. In general case, tracking an arbitrary object in an unknown scenario is still considered unsolved. Common challenges are for example, object deformations, illumination human-computer interaction and motion analysis. Althought there has be changes, partial and complete occlusions, drifting, background clutter and similar objects in the scene. This particular situations make some trackers better than others. However, there is no algorithm that has mastered all possible problems that a scenario might generate.
+The goal of visual object tracking is to estimate the state of a target in an
+image sequence.
+This is a difficult task, as the target object can be articulated or
+deformable, the scene illumination can change suddenly, background
+clutter may introduce distractions that result in tracker drifting,
+among others. In spite of the multiple challenges, there are many potential
+applications that make this capability attractive such as
+activity recognition, motion analysis, human surveillance and robotics.
 
-Recently, the evaluation performed in \cite{Wu2013} shows, each tracking algorithm performs well on different sequences. This explains that different tracking algorithms avoid challenges that can occur in general object tracking. We consider an approach that combines the virtues of different algorithms while evading their weaknesses could outperform each single algorithm. Just as "two heads are better than one", making trackers perform this task together in an unknown scenario, may result in a higher level of performance and achievement, than could be obtained individually. This is what in psychology states as "positive interdependence", the ability of group members to encourage and facilitate each other's efforts \cite{Johnson1998}. 
+%In order to cope with some of these challenges, many approaches for
+%object tracking have been proposed, each attempting to solve one or several
+%of such issues.
+Many approaches for object tracking have been proposed to cope with some of
+these challenges.
+%While current methods can achieve relative success,
+While the state-of-the-art methods achieve relative success,
+there is still no single approach that is able to handle all challenging
+situations.
+%For instance, tracking-by-detection methods generally have the problem of
+%not handling scale variations correctly.
+For instance, tracking-by-detection methods may not be able to handle scale
+variations rigorously.
+%On the other hand, simpler methods tend to suffer from model drifting and
+%struggle to handle strong illumination changes.
+On the other hand, generative methods tend to suffer from model drifting and
+struggle to handle appearance variations.
 
+In this paper, we focus on ``model free tracking'' of
+arbitrary objects in videos, in which no prior knowledge other than
+the object location in the first frame is available.
+Recently, the online tracking benchmark proposed in \cite{Wu2013}
+shows that
+each tracking algorithm performs best under particular circumstances.
+There is no single tracking algorithm that can perform well on all
+sequences in the benchmark. This indicates that each tracking challenge
+can be addressed better by a different algorithm. In other words,
+tracking strenghts may be distributed among the available trackers.
+This is the key observation that inspires our proposed method;
+we consider a tracking approach that combines the outputs
+of multiple trackers running in parallel via an online ensemble.
+This ensemble has the interesting property of leveraging the strenghts
+of individual trackers, while overcoming the failure modes of
+each  tracker. Since for a new and unseen sequence we do
+not know which tracker would perform best, our method computes
+a data-driven online ensemble that results in improved tracking performance
+when compared to the results of individual trackers.
 
-\section{Goals}
+\iffalse
+Taking this into account, we consider an approach that combining the
+virtues of different algorithms, while evading their weaknesses, could
+outperform each single algorithm. Just as "two heads are better than one",
+making trackers perform this task together in an unknown scenario, may
+result in a higher level of performance and achievement, than could be
+obtained individually. This is what in psychology states as "positive
+interdependence", the ability of group members to encourage and
+facilitate each other's efforts \cite{Johnson1998}.
+\fi
 
-In this paper, we focus on the problem of tracking an arbitrary object in videos, with no prior knowledge other than its location in the first frame, also known as "model free tracking". We are motivated to link trackers together so one cannot succeed, unless all group members succeed. A common tracking system consists of an appearance model, which can evaluate the likelihood of the object of interest at a given location. A motion model, that stores and contains the locations of the object over time. Finally, a search strategy to find the best location in the current frame \cite{Yilmaz2006}.All methods share the same goal, meaning that each tracker's individual "effort" is required and is indispensable for group success. Using these models, we make trackers correct each other, increasing performance and ensuring the group is united to a common goal, a concrete reason of being, a purpose for existence.
+%In our method, we leverage the fact that for a given sequence, only
+%some of the trackers fail and they do so drifting into different
+%parts of the image, while some of the trackers succeed by focusing on
+%the correct target.
+In our method, we leverage the observation that only some of the trackers
+drift into non-target areas of the image in most cases while some of the
+trackers succeed by focusing on the correct target.
+Furthermore, our ensemble uses an appearance model
+that serves as an additional verification mechanism of the tracked region.
+%{\color{blue}[This sentence is weird. Appearance model verifies appearance?]}
+%We are motivated to link trackers
+%together so one cannot succeed, unless all group members succeed.
+%A common tracking system consists of an appearance model, which can
+%evaluate the likelihood of the object of interest at a given location.
+%A motion model, that stores and contains the locations of the object
+%over time. Finally, a search strategy to find the best location in the
+%current frame \cite{Yilmaz2006}.
+%All tracking approaches share the same
+%goal, meaning that each tracker's individual "effort" is required and is
+%indispensable for group success.
+Using these model components, we identify and exploit the successful trackers
+to steer failed trackers towards the correct target region. Effectively,
+our ensemble can correct failed trackers, which ultimately increases
+tracking performance.
+
+The main contribution of this paper is an ensemble tracking
+framework that builds on top of the output of available online tracking
+algorithms running in parallel to produce an online fused tracking result that
+leverages each tracker best features. Our method does not use prior knowledge
+about the nature of the trackers in the pool.
+The fused tracking output is obtained by considering appearance and spatial
+relations among tracker outputs.
+In order to cope with trackers weaknesses,
+our ensemble identifies successful trackers in a data-driven fashion
+and uses them to steer failed trackers by restarting them asynchronously.
+This helps to avoid sequence dependent parameters and overtuning.
+
+The rest of the paper is organized as follows.
+We first briefly review the state-of-the-art of tracking algorithms
+in Section \ref{sec:related} and
+then present our online ensemble tracking algorithm
+in Section \ref{sec:approach}.
+Section \ref{sec:experiments} illustrates quantitative and qualitative results of our
+tracker on a standard benchmarking dataset.
+%we present quantitative and qualitative results of our
+%tracker on a standard benchmarking dataset in
+%Section \ref{sec:experiments}.
+Finally, we conclude the paper in Section \ref{sec:conclusions}.
