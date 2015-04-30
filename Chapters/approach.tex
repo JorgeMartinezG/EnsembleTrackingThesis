@@ -1,59 +1,366 @@
-% Chapter Template
+\chapter{Proposed approach} % Main chapter title
 
-\chapter{Object Tracking applying Ensemble of Multiple Trackers} % Main chapter title
+\label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\lhead{Chapter 3. \emph{Proposed approach}} 
 
-\lhead{Chapter 3. \emph{Object Tracking applying Ensemble of Multiple Trackers}}
 
-\section{Data clustering}
+\begin{figure*}
+\centering
+\includegraphics[width=1\linewidth, trim= 0cm 5.1cm 1.3cm 5.3cm, clip=true]{Figures/diagram}
+\caption{\small Basic diagram of our approach. On each frame, we analyze coherence
+        between tracking results. We apply spatial and appearance models with
+        the goal of finding inliers. Then, we select best tracker that follows
+        the target. Finally, we reset outliers and  update object model on
+        necessary cases.
+}
+\label{fig::diagram}
+\end{figure*}
 
-Cluster analysis is the formal study of algorithms and methods for grouping, or classifying objects. These objects are described as a set of measurements or by relationships between the object and other objects. A \textit{cluster} is comprised of a number of similar objects collected or group together. Other authors define a cluster as a set of entities which are alike, and entities from different clusters are not alike, or "A cluster is an aggregation of points in the test space such that the \textit{distance} between any two points in the cluster is less than the distance between any point in the cluster and any point not in it". This theory is taken from \textbf{Jane and Dubes.}
+In this section, we first present an overview of our online ensemble
+tracking approach, and then describe the details of each stage of our
+processing pipeline.
 
-Cluster analysis is the process of classifying objects into subsets that have meaning in the context of a particular problem. The objects are thereby organized into an efficient representation that characterizes the data. Clustering methods require that an index of proximity, or alikeness, or affinity, or association be established between pairs or patterns. A \textit{proximity matrix} $|d(i, j)|$ accumulates the pairwise indices of proximity in a matrix in which each row and column represents a pattern. Diagonal entries of a proximity matrix are ignored since all paterns are assumed to have the same degree of proximity with themselves. Also it is assmed that all proximity matrices are symmetric, so all pairs of objects have the same proximity index, independent of the order in which they are written.
+We illustrate the main components of our method in
+Figure \ref{fig::diagram}.
+%Generic single-object tracking could be defined as the localization of an
+%object through a video sequence. It is generic because the system is able to
+%track any kind of object (faces, cars, etc.), and is single because the system
+%will track just one object and not many at the same time. This section details
+%all the components for our ensemble approach.
+%The proposed approach in this paper is illustrated in figure \ref{fig::diagram}.
+At each frame, our method proceeds as follows.
+First, we independently run all trackers
+$T = \{ t_1, t_2, ..., t_n \}$
+in a pool of size $n$, which produce a set of predicted target
+states
+$X = \{ x_1, x_2, ..., x_n \}$ (Fig.~\ref{fig::diagram}a).
+These predictions are the raw input of our ensemble algorithm,
+and may be in the form of bounding boxes.
+Our ensemble methodology then looks for spatial coherence among the predicted
+target states, and verifies the appearance of the predicted image regions
+with respect to an object model
+%associated to each predicted state
+(Fig.~\ref{fig::diagram}b). The idea is that for a given frame,
+we would like to discover the subset of trackers that are correctly
+estimating the target state and to ignore all erroneous predictions.
+The result is a selection of inlier tracking predictions
+that contain the object with high confidence
+(Fig.~\ref{fig::diagram}c).
+A final ensemble prediciton of the target state is then derived from
+these inlier estimations (Fig.~\ref{fig::diagram}d).
+Finally, we use the prediction of the ensemble to update a model of the
+target appearance, and periodically reinitialize outlier trackers
+(Fig.~\ref{fig::diagram}e).
+This entire process is then repeated for each new frame in the video sequence.
 
-A proximity index is either a \textit{similarity} or a \textit{dissimilarity}. The more the \textit{i}th and \textit{j}th objects are similar one another, the larger a similarity index and the dissimilarity index are.
+In spite of the simplicity of our ensemble procedure, our experiments
+evidence that the ensemble is able to produce more accurate tracking results
+than any of the trackers in the pool. Furthermore, the ensemble can
+achieve state-of-the-art performance on benchmarking videos.
 
-\subsection{Hierarchical agglomerative clustering.}
+In the following, we provide the details of each processing stage and their
+role in the overall ensemble procedure.
 
-A hirerarchical clustering method is a procedure for transforming a proximity matrix into a sequence of nested partitions. An agglomerative, hierachical classification places each object in its own cluster and gradually merges these atomic clusters into larger and larger clusters until all objects are in a single cluster. 
+%Such appearance and spatial anylisis produces a set of inlier estimates
+%analyzes these predicted states
+%Then, our method clusters the predicted states $X$ into a set of
+%This input corresponds to the initial rectangular box for an object in a
+%sequence.
+%All trackers are initalized and an object model is created.
+%Then, on each frame, our method runs and groups all trackers results by
+%position into a set of
+%Also, we obtain a similarity measure which compares an actually tracking result
+%patch to the current object model. The output should be the probabilities of
+%similarity between the object model and each tracker result in that frame
+%$S = \left \{ s_1, s_2, ..., s_n \right \}$.
+%The system selects cluster that best follows the object $c^*$.
+%This selection is
+%performed using two criterias: Cluster with highest number of members, or
+%cluster with highest similarity measure. Remaining groups are considered
+%outliers and members are reinitialized each 15 frames.
 
-First comes the notion of a sequence of nested partitions. These $n$ objects to be clustered are denoted by a set of $X$ \\
-\centerline{$X = \left \{ x_1, x_2, ..., x_n \right \}$}
+\subsection{Analysis of appearance and spatial coherence}
+After running all trackers in the pool, our method uses their state estimates
+$X$ as input of the appearance and spatial coherence stage
+(Fig.~\ref{fig::diagram}b). The goal is to determine the set of
+trackers that correctly estimate the true target state. We denote these trackers
+as inliners in Fig.~\ref{fig::diagram}c.
 
-where $x_i$ it the \textit{i}th object. A partition, $C$, of $X$ separates $X$ into subsets $\left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
+In order to achieve this, we note a simple but key observation: in most cases,
+there is only a small subset of trackers that fail to correctly track the
+object in any given frame.
+In such scenario, the majority of the trackers focus correctly in the object,
+and we could use clustering techniques to automatically determine this set
+of inlier trackers.
+A more difficult scenario is when most of the trackers fail, but only a few
+focus in the correct image region. But even in this case, tracker failures
+tend to be distributed in varied image locations, while the few correct
+trackers focus on a spatially coherent region. Once again, spatial clustering
+of the locations $X$ can help discover the underlying true object location.
+In an extreme scenario, when only one tracker correctly follows the object,
+we can no longer rely on spatial clustering alone.
+A complementary cue can be introduced to overcome this issue: a target
+appearance model. We therefore explore the use of these two cues
+to select a subset of inlier trackers that follow the object region with
+high confidence.
 
-\centerline{\hspace*{-5cm} $c_i \cap c_j = \emptyset$ for $i$ and $j$ from 1 to $m$, $i \neq j$}
-\centerline{\hspace*{-8.3cm} $c_1 \cup c_2 \cup ... \cup c_m = X$}
+%But even if a majority of the trackers fail in a given frame,
+%In this stage, our approach takes as inputs all trackers bounding boxes results.
+%Using spatial information, we are able to create groups of trackers whose
+%members have affinity in position and scale. Also, from each bounding box $x_i$,
+%we extract patches and compute similarity score $s_i$ with an object model.
 
-In this notation, $\cap$ stands for set intersection, $\cup$ stands for set union, and $\emptyset$ is the empty set. 
+\paragraph{Spatial clustering.}
+At this stage, we perform spatial clustering of all tracker predictions $X$.
+Bounding boxes with large overlap, similar location and scale should be grouped
+into the same cluster.
+Since we do not know the number of natural groups beforehand, we use
+an agglomerative clustering technique to achieve this.
 
-A hierarchical clustering is a sequence of partitions in which each partition is nested into the next partition in the sequence. An \textit{agglomerative} algorithm for hierarchical clustering starts with the disjoint clustering, which places each of the $n$ objects in an individual cluster. The clustering method employed dictates how the proximity matrix should be interpreted to merge two or more of these trivial clusters, thus nesting the trivial clustering into a second partition. The process is repeated to form a sequence of nested clusterings in which the number of clusters decreases as the sequence progresses until a single cluster containing all $n$ objects, called the conjoint clustering.
+%In practice, we apply complete-link hierarchical agglomerative clustering
 
-\subsection{Single-link and complete-Link Algorithms from Graph Theory}
+%$m$ groups $C = \left \{ c_1, c_2, ..., c_m \right \}$.
+%Cluster analysis is the process of classifying objects into subsets that have 
+%meaning in the context of a particular problem. Objects are organized into an
+%efficient representation that characterizes data. Clustering methods require 
+%an index of proximity, or alikeness, be established between pairs or patterns.
+%A \textit{proximity matrix} $|d(i, j)|$ accumulates pairwise indices of
+%proximity in a matrix, where each row and column represents a pattern. Diagonal
+%entries of this matrix are ignored since all patterns are assumed to have same
+%degree of proximity with themselves. Also, proximity matrices are symmetric, so  
+%all pairs of objects have the same proximity index, independent of the order in
+%which they are written.
 
-We begin with a symmetric $n \times n$ proximity matrix $D = |d(i, j)|$. The $n(n - 1)/2$ entries on one side of the main diagonal are assumed to contain a permutation of the integers from 1 to $n(n - 1)/2$ with no ties. That is, the proximities are on an ordinal scale. The proximities are taken to be dissimilarities. 
+%A proximity index is either a \textit{similarity} or a \textit{dissimilarity}.
+%The more the \textit{i}th and \textit{j}th objects are similar one another,
+%the larger a similarity index and the dissimilarity index are. We base our
+%approach using the idea of clustering tracking results. On a new frame, each
+%tracker will generate a rectangular box of where the object might be. Using this
+%information, we are able to create groups of trackers that have similar
+%position and scale. For each tracker result, we calculate dissimilarity between
+%its bounding box to the rest of trackers running. The dissimilarity $d$ between
+%two boxes $\mathrm{x_i}$ and $\mathrm{x_j}$ is computed as:
+%\begin{equation}
+%d(\mathrm{x_i},\mathrm{x_j}) =
+%1 - \frac{\mathrm{x_i} \bigcap \mathrm{x_j}}{\mathrm{x_i} \bigcup  \mathrm{x_j}}
+%\text{.}
+%\end{equation}
 
-A \textit{threshold graph} is an undirected, unweighted graph of $n$ nodes without self-loops or multiple edges. Each node represents an object. A threshold graph $G(v)$ is defined for each dissimilarity level $v$ by inserting an edge $(i, j)$ between nodes $i$ if objects $i$ and $j$ are less dissimilar than $v$. That is,
+%Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$.
+%We take dissimilarities as proximity values. 
+%This means that $d(i,i) = 0$ for all $i$.
+In practice,
+we apply complete-link hierarchical agglomerative clustering (CL)
+\cite{Jain88}.
+We define a dissimilarity measure between pairs of bounding boxes equal to
+$1$ minus their intersection over union score.
+In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in the same cluster
+%if their dissimilarity 
+%to form groups of trackers. Trackers $t_1$ and $t_2$ are \textit{related}
+if their dissimilarity is below some threshold $v$.
+For all our experiments we set this value to $0.8$.
+The result of CL is a grouping of the input bounding boxes $X$ into 
+$m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$,
+which are illustrated with colors in Fig.~\ref{fig::diagram}b.
 
-\centerline{$(i, j) \in G(v)$ if and only if $d(i, j) \leq v$}
+\iffalse
+CL merges clusters in order of proximity; the closest clusters
+will be merged first, and the furthest clusters will be merged last. At each
+merge, CL creates a \textit{reduced proximity
+matrix}, with one less row and column \cite{Klein2092}. At the end, the
+algorithm delivers a set of clusters with size $m$
+$C = \left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
 
-Assuming that $d(i, i) = 0$ for all $i$, $G(v)$ degines a binary relation for any real number $v$ that is symmetric and reflexive.Objects $x_i$ and $x_j$ are "related" if their dissimilarity is below some threshold $v$. Figure \ref{fig::dendogram} shows binary relation from a proximity matrix $D$ above some threshold $v$. The symbol * in position $(i, j)$ of the matrix means that the pair $(x_i, x_j)$ are related.
+\begin{itemize}
+\item $c_i \cap c_j = \emptyset$ for $i$ and $j$ from 1 to $m$, $i \neq j$
+\item $c_1 \cup c_2 \cup ... \cup c_m = T$
+\end{itemize}
+\fi
 
-Hierarchies are formed using \textit{single-link} or \textit{complete-link} clustering methods. Those algorithms are deep explained in \textbf{Jain and Dubes}. \\
+\paragraph{Object modeling.}
+At this stage, we would like to verify the appearance of all tracker
+predicitons $X$ in comparison to an object appearance model.
+In order to do so, we train an appearance classifier that aims at separating
+positive target bounding boxes from background bounding boxes.
+We extract positive samples from the target location given at the first frame
+and also from uniformly sampling background bounding boxes around the target
+bounding box.
+In practice, we adopt a feature representation based on HOG and a SVM
+classifier with probability outputs.
+Using the classifier, we compute appearance scores  
+%During tracking loop,
+%from each tracker bounding box, we extract it correspondent image patch
+%and evaluate in object model.
+%On each frame, we obtain probability scores
+$S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result in $X$.
+%We considered a probability score as a similarity measure which compares a tracker
+%patch with the object model in the current frame. 
 
-\textbf{AGGLOMERATIVE ALGORITHM FOR SINGLE-LINK CLUSTERING}
-\textbf{Step 1.} Begin with the disjoint clustering implied by threshold graph $G(0)$, which contains no edges and which places every object in a unique cluster, as the current clustering. Set $k \leftarrow 1$
 
-\textbf{Step 2.} Form threshold graph $G(k)$. If the number of components (maximally connected subgraphs) in $G(k)$ is less than the number of clusters in the current clustering, redefine the current clustering by naming each component of $G(k)$ as a cluster.
+\iffalse
+Visual object tracking has been formulated as a tracking-by-detection problem
+recently. Object modeling is dynamically performed to support object detection
+over all frames. Mostly all approaches can be classified into two categories:
+\textit{Generative appearance models}, that mainly focus on how fit data into
+their correspondent object class; and \textit{discriminative appearance models},
+which assume object tracking as a binary classification issue. Main goal is to
+maximize the separability between object and non-object regions discriminately.
 
-\textbf{Step 3.} If $G(k)$ consists of a single connected graph, stop. Else, set $k \leftarrow k + 1$ and go to step 2.
+Generally, Discriminative methods train a classifier using data acquired from
+previous frames, and subsequently use the trained classifier to evaluate
+possible object regions at the current frame. After localization, a set of
+\textit{positive} and \textit{negative} samples are heuristically selected to
+update the classifier. Some approaches apply online boosting
+\cite{Babenko2010,Grabner2008,Grabner2006}, that make a discriminative
+evaluation of features taken from a candidate feature pool, and then select top
+ranked features to conduct tracking process. Other methods apply Support Vector
+Nachines (SVM) method, which learns a margin-based discriminative appearance
+model, in order to maximize inter-class separability. These classifiers are
+trained using visual representations of the object.
 
-\textbf{AGGLOMERATIVE ALGORITHM FOR SINGLE-LINK CLUSTERING}
-\textbf{Step 1.} Begin with the disjoint clustering implied by threshold graph $G(0)$, which contains no edges and which places every object in a unique cluster, as the current clustering. Set $k \leftarrow 1$
+In our approach, we are asumming that target object is detected at the
+beginning of tracking process. This image region is considered to be a positive
+image sample for the classification model. We also extract negative samples
+creating random regions of the same size as the positive sample. Finally, we
+create an object model taking these labeled samples and training a classifier.
+We adopted HOG as image features representation and SVM for classification
+model. We considered this model, because other methods found in 
+\cite{zhang2014meem,Bai2013}, obtained better
+results. Also, HOG features are more robust to deformable objects than other
+image features used in tracking-by-detection methods \eg Haar.
+\fi
 
-\textbf{Step 2.} Form threshold graph $G(k)$. If two current clusters form a clique (maximally complete subgraph) in $G(k)$, redefine the current clustering by merging these two clusters into a single cluster.
+\begin{figure*}[t!]
+\centering
+    \figuresp{trackers/027.jpeg}
+    \figuresp{trackers/028.jpeg}
+    \figuresp{trackers/029.jpeg}
+    \figuresp{trackers/030.jpeg}
+    \figuresp{trackers/031.jpeg} 
 
-\textbf{Step 3.} If $k = n(n-1)/2$, so that $G(k)$ is the complete graph on the $n$ nods, stop. Else, set $k \leftarrow k + 1$ and go to step 2.
+    \vspace{0.15cm}
 
-The single-link clustering on $G(v)$ is defined in terms of connected subgraphs in $G(v)$; the complete-link clustering uses complete subgraphs. However, not all maximally complete subgraphs in a threshold graph need be complete-link clusters. The order in which the clusters are formed is crucial.
+    \figuresp{clusters/027.jpeg}
+    \figuresp{clusters/028.jpeg}
+    \figuresp{clusters/029.jpeg}
+    \figuresp{clusters/030.jpeg}
+    \figuresp{clusters/031.jpeg}  
+
+    \vspace{0.15cm}
+
+    \figuresp{final_result/027.jpeg}
+    \figuresp{final_result/028.jpeg}
+    \figuresp{final_result/029.jpeg}
+    \figuresp{final_result/030.jpeg}
+    \figuresp{final_result/031.jpeg}
+
+
+\caption{\small System behavior in five frames. Given image input, trackers will give
+results on where the object might be (first row). Then, all results are
+clustered using hierarchical agglomerative clustering (second row). We focus on
+selecting the group with highest number of members, or cluster with best
+appearance score (third row). Finally, we reiniialize outliers
+(frame 30 in this case).}   
+\end{figure*}
+
+\subsection{Selection of inliers}
+\label{sec:inliers}
+The clustering stage and appearance scoring provide cues about which trackers
+can be considered as correctly tracking the target.
+We evalute two simple criteria that optimally select a group of trackers as
+inliers (Fig.~\ref{fig::diagram}c).
+In our experiments, we consider cluster size and appearance scores as
+potential cues to select inliers.
+
+%After performing clustering stage and obtaining classification scores for each
+%tracker, we can select the cluster that best follows the object. We present two
+%selection criterias for inliers.
+
+\textbf{Cluster size:}
+This critera follows the idea that the largest spatially coherent cluster
+is associated to the true target location. Therefore, we flag all trackers
+in the largest cluster as inliners, and all other trackers as outliers.
+
+%Once groups are
+%formed, we search the cluster $c^{*}$ in the list of clusters $C$ of size $m$,
+%with highest members number. 
+%\begin{equation}
+%c^{*} = \arg\max_{c_i\in C} ~\sum_{t \in c_i}t_i 
+%\end{equation}
+
+\textbf{Appearance scores:}
+In this criteria, we trust our object appereance model to validate if a cluster
+contains bounding boxes that focus on the true target location.
+To do so, we max-pool the appereance scores $s$ of the bounding boxes $x$ within
+each cluster:
+%In this case we are
+%considering classification scores for each cluster. Each cluster gives a score
+%per cluster. Then, we select the winner cluster whose score is the highest one. 
+\begin{equation}
+ c^{*} = \argmax_{c_i\in C} \max_{x_j \in c_i} s_{j}
+\end{equation}
+
+%where $m_i \in M = \left \{ m_1, m_2, ..., m_m \right \}$ corresponds to maximum
+%score value of $c_i$ cluster \J{Pooling}:
+%\begin{equation}
+%M =  \left \{ \max_{s\in S} s_i \in c_i \right \}
+%\end{equation}
+\iffalse
+One common issue that most of tracking-by-detection methods deal with,
+corresponds to when is important to update object model.
+Considering model too adaptive, increases risk of contaminating object model
+with spurious samples. In other cases, not including important object
+information into the model, tracking fails due to natural appearance changes
+\eg face rotations. In our approach, we consider to update object model, if
+$c^*$ score is higher than a threshold value $w$. For experiments we set $w$
+the value of 0.3.
+%\eg face rotations. In our approach, we consider to that if $c^*$ score is higher
+%that a threshold value $w$, object model is updated. In experiments we set $w$
+%the value of 0.3.
+\fi
+
+\subsection{Final ensemble tracking result}
+In order to provide an estimation of the state of the target using our
+ensemble, we fuse the outputs of all inlier trackers from the previous stage.
+There are multiple choices on how to impĺement this fusion. For example,
+it can be a linear combination of the inlier bounding boxes. In practice,
+we use a simpler approach that selects the medoid bounding box as the final
+ensemble output. That is, we output a
+bounding box $x^{*}$
+whose sum of distances with the rest of inlier bounding boxes
+is minimum:
+\begin{equation}
+x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j}) 
+\end{equation}
+
+\subsection{Model update and outlier reset}
+Once our ensemble estimates the target state, we can proceed to update the
+object model and steer failed trackers in the pool.
+
+The first goal of this final stage is to keep our target appearance model
+updated. In order to avoid model drifting, we only update the appearance
+model periodically when our tracking ensemble has high confidence in the
+selection of inliers. Such confidence can be measured using the appearance
+scores $S$ or the percentage of trackers in the inliner cluster.
+When confidence is high, a image patch is extracted at the predicted
+location and provided as a new positive sample to retrain or update
+our object appearance model.
+
+The second goal is to steer failed trackers in the pool back to the target.
+When a tracker is consistently tagged as an outlier, our algorithm automatically
+resets its state to the latest target state prediction from the ensemble.
+This reinitialization procedure is only performed periodically every 15 frames
+so that we can also take advantage of the capability of some trackers
+to recover from short-term tracking failures.
+
+%The outliers correspond to those trackers that does not belong to $c^*$. These
+%trackers are reinitialized using $\mathrm{x}^{*}$ every 15 frames. Also,
+%from $\mathrm{x}^{*}$, we crop and image patch and extract features as new
+%positive sample for the object model. We selected 15 frames, because of the
+%ability of some trackers to recover from failures-\eg MEEM expert restoration
+%scheme-, helping the ensemble to be more effective.
+
+%\begin{equation}
+%R = t_i \not\subset c^*
+%\end{equation}

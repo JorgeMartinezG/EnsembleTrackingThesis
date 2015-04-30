@@ -29,8 +29,13 @@
 
 % Specifies the directory where pictures are stored
 \graphicspath{{Pictures/}} 
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \usepackage{epigraph}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
 \usepackage[square, numbers, comma, sort&compress]{natbib}
 \usepackage[font=small,format=plain,labelfont=bf,textfont=normal,
 			justification=justified,singlelinecheck=false]{caption}
@@ -42,6 +47,10 @@
 
 % New commands section.
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\newcommand{\figuresp}[1]{\includegraphics[width=0.18\textwidth]{Figures/Process/#1}}
+\newcommand{\figuresr}[1]{\includegraphics[width=0.195\textwidth, trim= 1cm 8cm 2.4cm 6.5cm, clip=true]{Figures/Results/#1}}
+\newcommand{\figuresall}[1]{\includegraphics[width=0.195\textwidth, trim= 1cm 8cm 2.4cm 6.5cm, clip=true]{Figures/results_all/#1}}
+\newcommand{\eg}{\emph{e.g}}
 
 \begin{document}
 
@@ -97,7 +106,7 @@
 % Include the chapters of the thesis as separate files from the Chapters folder
 \input{Chapters/introduction}
 \input{Chapters/related_work}
-\input{Chapters/real_approach}
+\input{Chapters/approach}
 \input{Chapters/experiments}
 
 %----------------------------------------------------------------------------------------

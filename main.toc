@@ -19,21 +19,21 @@
 \contentsline {subsection}{\numberline {2.4.1}Point Tracking}{9}{subsection.22}
 \contentsline {subsection}{\numberline {2.4.2}Kernel Tracking}{10}{subsection.24}
 \contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{11}{subsection.26}
-\contentsline {subsection}{\numberline {2.4.4}Tracking applying fusion of trackers or features}{12}{subsection.28}
-\contentsline {chapter}{\numberline {3}Proposed Approach}{14}{chapter.29}
-\contentsline {section}{\numberline {3.1}The Tracking Loop}{14}{section.30}
-\contentsline {section}{\numberline {3.2}Tracking system overview}{14}{section.31}
-\contentsline {subsection}{\numberline {3.2.1}Basic overview}{14}{subsection.32}
-\contentsline {subsection}{\numberline {3.2.2}Trackers bounding boxes clustering}{15}{subsection.34}
-\contentsline {subsection}{\numberline {3.2.3}Object modeling}{17}{subsection.37}
-\contentsline {subsection}{\numberline {3.2.4}Best cluster selection}{18}{subsection.39}
-\contentsline {subsection}{\numberline {3.2.5}Best tracker selection}{18}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.6}Trackers reset}{19}{subsection.46}
-\contentsline {subsection}{\numberline {3.2.7}Object model update}{19}{subsection.48}
-\contentsline {chapter}{\numberline {4}Experiments and results}{20}{chapter.49}
-\contentsline {section}{\numberline {4.1}Experimental setup}{20}{section.50}
-\contentsline {section}{\numberline {4.2}Evaluation Methodology}{20}{section.51}
-\contentsline {section}{\numberline {4.3}Experiments with sequence attributes}{21}{section.53}
+\contentsline {subsection}{\numberline {2.4.4}Tracking applying ensemble of trackers}{12}{subsection.28}
+\contentsline {chapter}{\numberline {3}Proposed approach}{14}{chapter.29}
+\contentsline {subsection}{\numberline {3.0.5}Analysis of appearance and spatial coherence}{15}{subsection.31}
+\contentsline {paragraph}{Spatial clustering.}{15}{section*.32}
+\contentsline {paragraph}{Object modeling.}{16}{section*.33}
+\contentsline {subsection}{\numberline {3.0.6}Selection of inliers}{16}{subsection.35}
+\contentsline {subsection}{\numberline {3.0.7}Final ensemble tracking result}{17}{subsection.37}
+\contentsline {subsection}{\numberline {3.0.8}Model update and outlier reset}{17}{subsection.39}
+\contentsline {chapter}{\numberline {4}Experiments}{18}{chapter.40}
+\contentsline {subsection}{\numberline {4.0.9}Experimental setup}{18}{subsection.44}
+\contentsline {subsection}{\numberline {4.0.10}Evaluation Methodology}{18}{subsection.45}
+\contentsline {subsection}{\numberline {4.0.11}Tracker pool}{19}{subsection.46}
+\contentsline {subsection}{\numberline {4.0.12}Benchmarking results}{19}{subsection.49}
+\contentsline {subsection}{\numberline {4.0.13}Analysis of the tracking ensemble}{20}{subsection.50}
+\contentsline {subsection}{\numberline {4.0.14}Experiments with sequence attributes}{22}{subsection.62}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{22}{dummy.54}
+\contentsline {chapter}{Bibliography}{25}{dummy.63}

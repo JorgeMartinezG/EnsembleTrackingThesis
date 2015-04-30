@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -266,12 +266,11 @@ Daniel Cremers and Christoph Schn\"{o}rr.
 \newblock \emph{Image and Vision Computing}, 21:\penalty0 77--86, 2003.
 \newblock ISSN 02628856.
 
-\bibitem[Collins et~al.(2005)Collins, Liu, and Leordeanu]{Collins2005}
-Robert~T. Collins, Yanxi Liu, and Marius Leordeanu.
-\newblock {Online selection of discriminative tracking features}.
-\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
-  Intelligence}, 27:\penalty0 1631--1643, 2005.
-\newblock ISSN 01628828.
+\bibitem[Bai et~al.(2013)Bai, Wu, Sclaroff, Betke, and Monnier]{Bai2013}
+Qinxun Bai, Zheng Wu, S~Sclaroff, M~Betke, and C~Monnier.
+\newblock {Randomized Ensemble Tracking}.
+\newblock In \emph{Computer Vision (ICCV), 2013 IEEE International Conference
+  on}, pages 2040--2047, 2013.
 
 \bibitem[Santner et~al.(2010)Santner, Leistner, Saffari, Pock, and
   Bischof]{Santner2010a}
@@ -293,19 +292,6 @@ Junseok Kwon and Kyoung~Mu Lee.
 \newblock {Tracking by sampling trackers}.
 \newblock In \emph{Proceedings of the IEEE International Conference on Computer
   Vision}, pages 1195--1202, 2011.
-
-\bibitem[Bai et~al.(2013)Bai, Wu, Sclaroff, Betke, and Monnier]{Bai2013}
-Qinxun Bai, Zheng Wu, S~Sclaroff, M~Betke, and C~Monnier.
-\newblock {Randomized Ensemble Tracking}.
-\newblock In \emph{Computer Vision (ICCV), 2013 IEEE International Conference
-  on}, pages 2040--2047, 2013.
-
-\bibitem[Bailer et~al.(2013)Bailer, Pagani, and Stricker]{Bailer2013}
-Christian Bailer, Alain Pagani, and Didier Stricker.
-\newblock {A user supported tracking framework for interactive video
-  production}.
-\newblock \emph{Proceedings of the 10th European Conference on Visual Media
-  Production - CVMP '13}, pages 1--8, 2013.
 
 \bibitem[Bailer et~al.(2014)Bailer, Pagani, and Stricker]{Bailer2014}
 Christian Bailer, Alain Pagani, and Didier Stricker.

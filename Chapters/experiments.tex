@@ -1,22 +1,286 @@
-\chapter{Experiments and results} % Main chapter title
+\chapter{Experiments} % Main chapter title
 
-\label{chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\lhead{Chapter 5. \emph{Experiments}} 
+\lhead{Chapter 4. \emph{Experiments}} 
 
-\section{Experimental setup}
-Our approach is implemented in native Matlab. The experiments are performed on an Intel Core i7 CPU with 16 GB RAM. We put our tracker to the test by using the recent benchmark \cite{Wu2013} that includes 50 sequences. The sequences used in our experiments pose challenging scenarios that include situations such as motion blur, illumination changes, scale variation, occlusions, in-plane and out-plane rotations, object deformation, background clutter and low resolution. We are encouraged to build a generic algorithm that can perform well in different scenarios.
+In this section we report evaluations for our proposed approach. We compare our
+tracking ensemble method and other state-of-the-art trackers using complete
+50 sequences tracking benchmark \cite{Wu2013}. We also present qualitative and
+quantitative analysis of our ensemble tracker, such as
+individual performance of trackers and effect of the tracker pool.
+
+\label{sec:experiments}
+
+\begin{figure*}[t]
+\subfloat{\includegraphics[width=0.49\linewidth, trim= 1cm 6.7cm 2cm 6cm, clip=true]{Figures/Results/quality_plot_error_OPE_threshold}
+\label{fig:precision_plot}
+}
+\subfloat{\includegraphics[width=0.49\linewidth, trim= 1cm 6.7cm 2cm 6cm, clip=true]{Figures/Results/quality_plot_overlap_OPE_AUC}
+\label{fig:success_plot}
+}
+\caption{\small  Precision and success plots for all 50 sequences. Precision and success
+		ratios are measured by center location error and overlap ratio,
+		respectively. Trackers are ranked using scores of 20 pixels for
+		precision and AUC for success.}
+\label{fig:results}
+\end{figure*}
+
+\subsection{Experimental setup}
+In order to evaluate the performance of our proposed ensemble tracking,
+we adopt the Online Object Tracking Benchmark from \cite{Wu2013}.
+This is an extensive benchmarking dataset that includes 50 sequences
+annotated with 11 attributes.
+The dataset includes challenging scenarios such as motion blur,
+illumination changes, scale variation, occlusions,
+in-plane and out-of-plane rotations, object deformation,
+background clutter and low resolution.
+
+We implement our online ensemble tracking algorithm in MATLAB.
+All experiments are performed on desktop with an Intel Xeon CPU
+and 16 GB of RAM.
 
 
-\section{Evaluation Methodology}
+\subsection{Evaluation Methodology}
+To validate the performance of our proposed approach, we follow the one-pass
+evaluation methodology (OPE) proposed in \cite{Wu2013}. 
+We summarize the performance using the precision and success plots.
 
-To validate the performance of our proposed approach, we follow the one-pass evaluation methodology (OPE) proposed in \cite{Wu2013}. For performance criteria, we chose for our evaluation, the precision and success plots. In \textit{precision}, a frame may be considered correctly tracked if the predicted target center is within a distance threshold of ground truth. In \cite{Henriques2014}, the authors explain that plotting the precision for all thresholds, no parameters are required. This makes the curves unambiguous and easy to interpret. A higher precision at low thresholds means the tracker is more accurate, while a lost target will not achieve perfect precision on a large threshold range. The chosen theshold is 20 pixels, that is done in previous works \cite{Babenko2010, Wu2013, Henriques2014}. \textit{Success} measures the overlap between a tracking and a ground truth box and checks where the overlap exceeds a threshold $t \in {0,1}$:
-\begin{equation}
-\large
-O(a,b) = \frac{|a\bigcap b|}{|a\bigcup  b|}
-\end{equation}
-Overlap penalizes if the size of a tracking box is different to the ground truth and the error will not increase if the object is lost. Different to precision, in success the trackers are ranked using the area under the curve (AUC), which means the average overlap over all frames.
+In
+\textit{precision}, a frame is considered correctly tracked if the predicted
+target center is within a distance threshold of the ground truth.
+%In
+%\cite{Henriques2014}, the authors explain that plotting the precision for all
+%thresholds, no parameters are required. This makes the curves unambiguous and
+%easy to interpret.
+A higher precision at low thresholds means the tracker is
+more accurate, while a lost target will not achieve perfect precision on a large
+threshold range.
+We rank tracking algorithms using their performance at 20 pixels
+as in \cite{Babenko2010, Wu2013, Henriques2014}.
 
-\section{Experiments with sequence attributes}
+\textit{Success} measures intersection over union overlap between a tracker
+output and a ground truth box and evaluates whether it exceeds a threshold.
+%$t_H \in {0,1}$:
+%\begin{equation}
+%O(a,b) = \frac{|a\bigcap b|}{|a\bigcup  b|}
+%\end{equation}
+This overlap measure penalizes if the scale of the target is estimated incorrectly.
+In contrast to precision, trackers are ranked using area under
+the curve (AUC) metric, which relates to the average overlap across all frames. 
 
-The videos in the benchmark dataset are organized and selected with attributes, which describe the conditions where a tracking algorithm might fail - e.g., occlusion, object deformations. These properties are useful for diagnosing tracking behavior, without the need of analyzing each video separately. Tables \ref{table:precision} and \ref{table:success} presents a more specific quantitative attribute-based evaluation. Our approach performs favorably on 8 of 11 attributes, and outperforms state-of-the-art algorithms in \textit{deformation}, \textit{out-of-plane rotation} and \textit{scale variation}. 
+\subsection{Tracker pool}
+
+\begin{figure*}[t!]
+\centering
+	\figuresr{subway/041}
+	\figuresr{subway/042}
+	\figuresr{subway/043}
+	\figuresr{subway/044}
+	\figuresr{subway/045} \\
+	\figuresr{soccer/090}
+	\figuresr{soccer/110}
+	\figuresr{soccer/131}
+	\figuresr{soccer/140}
+	\figuresr{soccer/150}
+\vspace{-2mm}
+\caption{\small Qualitative results for object tracking applying both selection
+	criterias in two sequences. \textbf{Green} bounding box corresponds to
+	appearance score selection. \textbf{Blue} box to cluster size. In
+	\textit{subway} when occlusion happens, many trackers are lost, creating a
+	big cluster. In cases of background clutter \textit{soccer}, appearance
+	selection loses target in some frames.}
+\label{fig::clustvsapp}
+\end{figure*}
+
+We integrate into our pool tracking algorithms whose original source code
+is publicly available.
+%All trackers were modified in order to store their results and save
+%their states on each frame.
+Table \ref{table:trackers} shows the list of the
+selected tracking algorithms. 
+
+\begin{table}[h!]
+\centering
+\caption{\small Selected tracking algorithms for ensemble method. \textbf{Code Column}: 
+M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}p{9.5cm}ll@{}}
+\toprule
+ \textbf{Method}&  \textbf{Code}&  \\ \midrule
+ Template matching - TM \cite{Collins2005a}&  other&  \\
+ Mean Shift - MS \cite{Collins2005a}&  other&  \\
+ Variance Ratio - VR \cite{Collins2005a}&  other&  \\
+ Peak Difference - PD \cite{Collins2005a}&  other&  \\
+ Ratio Shift - RS \cite{Collins2005a}&  other&  \\ 
+ Adaptive Structural Local Sparse Appearance Model - ASLA \cite{Jia2012}&  MC& 
+ \\  Compressive Tracker - CT \cite{Zhang2012a}&  MC&  \\
+ Minimum Experts Entropy Minimization - MEEM \cite{zhang2014meem}&  MC&  \\ 
+ Self-paced learning for long-term tracking - SPLTT \cite{Supancic2013}&  MC& \\ 
+ Kernelized Correlation Filters - KCF \cite{Henriques2014}&  M&  \\ 
+ Dual Correlation Filters - DCF \cite{Henriques2014}&  M&  \\  
+ Spatio-temporal Context Tracker - SCT \cite{Zhang2013}&  M&  \\
+ Circulant Structure Kernel - CSK, sKCF \cite{Henriques2014}&  M&  \\
+ Robust CSK tracker - RCSK \cite{Danelljan2014}&  M&  \\  
+ Minimum Output Sum of Squared Error - MOSSE \cite{Bolme2010}&  M&  \\ 
+\bottomrule
+\end{tabular}}
+\label{table:trackers}
+\end{table}
+
+
+\subsection{Benchmarking results}
+
+We report the performance of our ensemble tracking algorithm on the 50
+benchmarking sequences in
+Figure \ref{fig:results}.
+The plots compare our approach with each individual tracker
+in Table \ref{table:trackers} and state-of-the-art trackers: Struck tracker
+\cite{Hare2011}, Sparse Collaborative Model (SCM) \cite{Zhong2012}, TLD tracker
+\cite{Kalal2011}. Our online ensemble tracking algorithm is denoted \textit{OET}.
+
+We note that our tracking ensemble improves performance over current
+state-of-the-art tracking algorithms in the benchmark.
+From Figure \ref{fig:results}, our method outperforms each individual tracking
+score, in both precision and success.
+When inspecting individial sequences, we note that 
+out method handles better camera
+rotation sequences, such as \textit{singer1, singer2, fish, car4}, unlike
+the competing
+MEEM tracker. Also, our ensemble method can overcome complete object occlusion. In
+sequences where this situation happens \textit{jogging, david3}, KCF trackers
+fails tracking the object. 
+
+%Establishing a general comparison, performance of MEEM is comparable to ours.
+%However,  MEEM tracker fails handling camera rotation as in  sequences. Also, KCF tracker bring good tracking results.
+%But, KCF usually fails handling complete objects occlusion. It is good to note,
+%as in \cite{Bailer2014}, in our system, scale is not determined. We are
+%dependent of each separated tracker scale, and some trackers do not consider
+%scale correction. Some of them apply initialization scale over all sequence.
+%However, our method outperforms each individual tracker and state-of-the-art
+%trackers in success plot, where scale is considered.
+
+\subsection{Analysis of the tracking ensemble}
+In this subsection, we focus on the relevance of the number of trackers in the pool.
+We vary the size of the tracker pool in order to evaluate its effect on the
+performance of the ensemble.
+When selecting small tracker pools, we first chose the best 5 trackers
+from Fig.~\ref{fig:success_plot}. We then augment the pool with the next 5 trackers to
+form a pool of size 10. Finally we add the worst 5 trackers for a pool of size 15.
+%Finally, we add 5 last trackers.
+We also study the effect of the inlier selection criteria of Section
+\ref{sec:inliers}
+(appearance score and cluster size).
+
+
+\begin{table}[h!]
+\caption{\small Average AUC and precision for live fusion methods tested in 50 videos
+		dataset.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llll}
+\hline
+\textbf{Method}     & \textbf{\# trackers} & \textbf{Success(AUC)} & \textbf{Precision(20px)} \\
+\hline
+           & 5                  & 0.585        & 0.855           \\
+\textbf{Appearance score} & 10                 & 0.569        & 0.811           \\
+           & 15                 & 0.560         & 0.804           \\
+\hline           
+           & 5                  & 0.528        & 0.765           \\
+\textbf{Cluster size}    & 10                 & 0.493        & 0.715           \\
+           & 15                 & 0.480         & 0.678           \\
+\hline
+\end{tabular}}
+\label{table:trackers_number}
+\end{table}
+
+The results are summarized in Table \ref{table:trackers_number} for all 50
+sequences in the benchmark.
+We report AUC ranking score for success, 
+and 20-pixel threshold for precision.
+%
+%Table \ref{table:trackers_number} summarizes quantitative evaluation results for
+%all 50 sequences.
+%
+Our algorithm generally outperforms other methods using
+appearance score selection criteria. In case of cluster size selection,
+this method usually fails handling occlusions. In some sequences, many trackers
+lose object target and keep steady when occlusion happens, creating a big
+cluster which has the biggest number of members (Figure \ref{fig::clustvsapp}).
+However, this method is smoother and handles better fast motion and background
+clutter sequences.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.0\linewidth, trim= 0.7cm 7.6cm 0.3cm 7.8cm, clip=true]{Figures/stats.pdf}
+\caption{\small Statistics for each tracker in the ensemble over all frames. }
+\label{fig:stats}
+\end{figure}
+
+\input{Figures/results_figures}
+
+\begin{figure*}
+\centering
+\includegraphics[width=1.0\linewidth, trim= 0.2cm 6.15cm 0.2cm 5.8cm, clip=true]{Figures/bar_graph.pdf}
+\caption{\small Average AUC ranking scores of top trackers on different subsets of test
+		sequences in OPE. Each subset of sequences corresponds to an attribute:
+		IV - illumination variation, OPR - out of plane rotation, SV- scale
+		variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM -
+		fast motion, IPR - in plane rotation, OV - out of view, BC - background
+		clutter, and LR - low resolution. Average AUC for all 50 videos is
+		presented as global.}
+\label{fig:attributes}
+\end{figure*}
+
+
+We also note that adding trackers with lower performance hurts the ensemble.
+However, the drop in performance when adding
+weaker trackers, is less than 5\% ($\sim$300 frames) in success and 10\% in
+precision ($\sim$500 frames). For instance, when performing inlier selection using
+the
+appearance score criteria, a spurious tracker may focus on a region with
+very similar apperance to the object, \eg background clutter, which can
+make tracking fail.
+This is very common in the \textit{soccer} and \textit{shaking}
+sequences.
+
+In terms of running time, the average time cost for our ensemble
+method is $0.062$ s/frame for 5
+trackers, $0.122$ s/frame for 10 trackers, and $0.198$ s/frame for 15 trackers.
+These timings do not include the processing time of each tracker.
+%didn't consider each tracker processing time and model update for timing.
+
+On the other hand, we present statistics about how often trackers in the pool
+are selected as outlier, inliner, and medoid.
+In figure
+\ref{fig:stats}, for each tracker, there are 3 bars: percentage of frames that a
+tracker was in best cluster(inlier - blue bar); percentage of frames where a
+tracker was considered outlier (red bar); finally, percentage of frames that a
+tracker was selected as medoid bounding box (green bar). Based on this result,
+trackers whose individual performance is very high, have low percentage of being
+considered outliers (KCF, MEEM, RCSK). MEEM individual performance is very high.
+However, it does not have the highest frame percentage of being selected as
+central bounding box, in comparison with KCF or RCSK. Also, trackers that were
+considered spurious in previous experiments, have high rate in outliers bar
+(MS, VR, PD, RS). 
+
+\subsection{Experiments with sequence attributes}
+
+The videos in the benchmark dataset are organized and selected with attributes,
+which describe challenges present in the sequence - \eg occlusion, object
+deformations. These properties are useful for diagnosing tracking behavior,
+without the need of analyzing each video separately. Figure \ref{fig:attributes}
+shows AUC ranking scores of recent trackers on different sequences, grouped by
+attributes. For instance, background clutter (BC) contains all sequences whose
+target pixels might be confused with background.
+
+From figure \ref{fig:attributes}, our approach using appearance selection
+outperforms other trackers in 8 of 11 attributes. Specifically, in attributes
+such as IV (illumination variation), OPR (out of plane rotation), OCC
+(occlusion), DEF (deformation), MB (motion blur), IPR (in plane rotation),
+OV (out of view), and BC (background clutter). It is important to note that SCM
+tracker is better than most recent trackers in terms of scale variation.
+Results show that its affine motion models handle scale
+variation better than other trackers, which are designed to account
+translational motion \cite{Wu2013}. In our system, scale is not determined. We are
+dependent of each separated tracker scale, and some trackers do not consider
+scale correction. Some of them apply initialization scale over all sequence.

@@ -168,16 +168,84 @@ The object is tracked via estimation of the object region in each frame. Silhoue
 	\label{fig::contour}
 \end{figure}	
 
-\subsection{Tracking applying fusion of trackers or features}
+\subsection{Tracking applying ensemble of trackers}
 
-Generic object tracking is a defying problem in computer vision. Each tracking method perform well on different sequence than others. However there is not absolute theory about which tracker is the best of all. So, many approaches have been proposed in order to combine different trackers to outperform each individual tracker.
+Several methods have proposed the use of ensemble classifiers within
+the tracking-by-detection framework.
+%The first algorithm that explicitly applies ensemble methods to
+%tracking-by-detection is presented in \cite{Avidan2007}.
+In this perspective, instead of ensembling the outputs of other trackers,
+these methods focus on building ensemble classifiers,
+such as Adaboost \cite{Avidan2007} or Bayesian probabilistic fusion \cite{Bai2013},
+from weak low-level image features.
+The classifier is then used to detect the target object in
+new frames. Instead of working directly with low-level image features,
+our ensemble tracker builds on top of tracker outputs
+which are used as a more powerful mid-level representation of the target.
+%Considering tracking as a binary classification problem, the author
+%extends \cite{Collins2005} by using the Adaboost algorithm to
+%combine a set of weak features and online updating of the object model.
+%The classifier is then used to classify pixels in the next
+%frames as either related to the object or background, which produces
+%a confidence map of the location of the object.
 
-The first algorithm that explicitly applies ensemble methods to tracking-by-detection is shown in \cite{Avidan2007}. Considering tracking as a binary classification problem, the author extended the work of \cite{Collins2005} using the Adaboost algorithm to combine a set of weak features and update object model with online update strategy. The classifier is then used to classify pixels in the next frames as either related to the object or background, obtaining a confidence map. 
+Another alternative is to manually select a small set of trackers and use
+prior knowledge on the behaviour of each tracker to build an ensemble.
+In \cite{Santner2010a}, the authors combine a template-based tracker,
+an optical flow tracker, and an online-random forest tracking-by-detection
+method into a cascade.
+In that case, the authors manually predefine a set of rules that decide
+how to ensemble the tracker outputs. In contrast, our method can handle
+a larger pool of trackers in the ensemble, since their outputs are combined
+in a data-drive fashion that does not require manual rules or prior knowledge
+on the behaviour of each tracker.
+%The best selection is summarized into a simple
+%set of rules. The authors explain that augmenting or updating in a smart way
+%a simple online learner in terms of adaptivity can lead to much better results.
 
-The authors in \cite{Santner2010a}, combined a template-based tracker, optical flow tracker, and online-random forest tracking-by-detection method into a cascade of trackers. The best selection is summarized into a simple set of rules. The authors explain that augmenting or updating in a smart way a simple online learner in terms of adaptivity can lead to much better results.
 
-Another active fusion approaches are VTD \cite{Kwon2009} and VTS \cite{Kwon2011a}. In these articles, the approaches obtain several samples of target and trackers states during sampling process using a Markov Chain Monte Carlo method. The trackers are sampled by proposing appearance models, motion models, state representation types, and observation types. Then, the sampled trackers run in parallel and interact with each other, covering target variations.
+Sampling based approaches have also been explored for ensemble tracking.
+Examples of this are the VTD \cite{Kwon2009} and
+VTS \cite{Kwon2011a} trackers.
+In this perspective, there is a sampling process that generates
+multiple samples of target and tracker states. These trackers run in parallel
+and their outputs are fused by probabilistic weighting. Therefore,
+the ensemble uses a set of trackers of similiar architecture
+with varying parameters. Our ensemble has the advantage of fusing outputs
+of multiple trackers with no assumptions on their architectural similarity
+and can leverage strenghts that different tracker architectures can provide.
+%In these articles, the approaches obtain several samples of target and trackers
+%states during sampling process using a Markov Chain Monte Carlo method.
+%The trackers are sampled by proposing appearance models, motion models,
+%state representation types, and observation types.
+%Then, the sampled trackers run in parallel and interact with each other,
+%covering target variations.
 
-The authors in \cite{Bai2013} proposed a classifier ensemble framwork that uses Bayesian estimation theory to estimate the non-stationary distribution of sampled classifers. In contrast with general tracking-by-detection classifiers, the weight vector that combines the classifiers is treated as a random variable and the posterior distribution of this vector is treated using Bayes' theory.
+%The authors in \cite{Bai2013} proposed a classifier ensemble framework that
+%uses Bayesian estimation theory to estimate the non-stationary distribution
+%of sampled classifiers.
+%In contrast with general tracking-by-detection classifiers,
+%the weight vector that combines the classifiers is treated as a random
+%variable and the posterior distribution of this vector is treated using
+%Bayes' theory.
+%Our approach presents a self-learning algorithm that enables
+%object model updates based on tracking results and not from Bayesian updates of
+%the classifier.
 
-In \cite{Bailer2013} and \cite{Bailer2014}, the authors present an approach that merges the result of different tracking algorithms to produce a better tracking result. Based on the idea of attraction fields, which means the closer a fusion candidate is to a tracking result box, the stronger it is attracted by it. The result that maximizes the attraction of all trackers is chosen as a global result. In \cite{Bailer2014} present different variants of this method, including a weighted combination of trackers and an approach that favors continuos trajectories throughout the sequence.
+Finally, one can consider the case of offline fusion of trackers, such as in
+\cite{Bailer2014}, where all trackers are applied to the entire sequence
+and the ensemble is performed after the entire sequence is processed.
+However, we are interested in the case of online tracking,
+where the full sequence is not available beforehand. Furthermore, our online
+approach is capable of steering and reinitializing failed trackers, increasing
+the chances of better long-term tracking performance.
+
+%the authors present an approach
+%that merges the result of different tracking algorithms to produce a better
+%tracking result.
+%Based on the idea of attraction fields, which means the closer
+%a fusion candidate is to a tracking result box,
+%the stronger it is attracted by it.
+%The result that maximizes the attraction of all trackers is chosen as a
+%global result. In contrast, our fusion approach does not drop out bad tracking
+%results. Our method is able to find and reinitialize outliers efficiently.
