@@ -4,22 +4,11 @@
 
 \lhead{Chapter 3. \emph{Proposed approach}} 
 
-
-\begin{figure*}
-\centering
-\includegraphics[width=1\linewidth, trim= 0cm 5.1cm 1.3cm 5.3cm, clip=true]{Figures/diagram}
-\caption{\small Basic diagram of our approach. On each frame, we analyze coherence
-        between tracking results. We apply spatial and appearance models with
-        the goal of finding inliers. Then, we select best tracker that follows
-        the target. Finally, we reset outliers and  update object model on
-        necessary cases.
-}
-\label{fig::diagram}
-\end{figure*}
-
 In this section, we first present an overview of our online ensemble
 tracking approach, and then describe the details of each stage of our
 processing pipeline.
+
+\section{Overview}
 
 We illustrate the main components of our method in
 Figure \ref{fig::diagram}.
@@ -54,6 +43,19 @@ target appearance, and periodically reinitialize outlier trackers
 (Fig.~\ref{fig::diagram}e).
 This entire process is then repeated for each new frame in the video sequence.
 
+\begin{figure*}[t!]
+\centering
+\includegraphics[width=1\linewidth, trim= 0cm 5.1cm 1.3cm 5.3cm, clip=true]{Figures/diagram}
+\caption{\small Basic diagram of our approach. On each frame, we analyze coherence
+        between tracking results. We apply spatial and appearance models with
+        the goal of finding inliers. Then, we select best tracker that follows
+        the target. Finally, we reset outliers and  update object model on
+        necessary cases.
+}
+\label{fig::diagram}
+\end{figure*}
+
+
 In spite of the simplicity of our ensemble procedure, our experiments
 evidence that the ensemble is able to produce more accurate tracking results
 than any of the trackers in the pool. Furthermore, the ensemble can
@@ -80,7 +82,7 @@ role in the overall ensemble procedure.
 %cluster with highest similarity measure. Remaining groups are considered
 %outliers and members are reinitialized each 15 frames.
 
-\subsection{Analysis of appearance and spatial coherence}
+\section{Analysis of appearance and spatial coherence}
 After running all trackers in the pool, our method uses their state estimates
 $X$ as input of the appearance and spatial coherence stage
 (Fig.~\ref{fig::diagram}b). The goal is to determine the set of
@@ -111,76 +113,82 @@ high confidence.
 %members have affinity in position and scale. Also, from each bounding box $x_i$,
 %we extract patches and compute similarity score $s_i$ with an object model.
 
-\paragraph{Spatial clustering.}
+\subsection{Spatial clustering.}
+
+Cluster analysis is the formal study of algorithms and methods for grouping, or
+classifying objects. These objects are described as a set of measurements or by
+relationships between the object and other objects. A \textit{cluster} is
+comprised of a number of similar objects collected or group together. Other
+authors define a cluster as a set of entities which are alike, and entities from
+different clusters are not alike, or "A cluster is an aggregation of points in
+the test space such that the \textit{distance} between any two points in the
+cluster is less than the distance between any point in the cluster and any point
+not in it". This theory is taken from \textbf{Jane and Dubes.}
+
+Cluster analysis is the process of classifying objects into subsets that have
+meaning in the context of a particular problem. The objects are thereby
+organized into an efficient representation that characterizes the data.
+Clustering methods require that an index of proximity, or alikeness, or
+affinity, or association be established between pairs or patterns. A
+\textit{proximity matrix} $|d(i, j)|$ accumulates the pairwise indices of
+proximity in a matrix in which each row and column represents a pattern.
+Diagonal entries of a proximity matrix are ignored since all paterns are
+assumed to have the same degree of proximity with themselves. Also it is
+assumed that all proximity matrices are symmetric, so all pairs of objects have
+the same proximity index, independent of the order in which they are written.A
+proximity index is either a \textit{similarity} or a \textit{dissimilarity}.
+The more the \textit{i}th and \textit{j}th objects are similar one another, the
+larger a similarity index and the dissimilarity index are.
+
 At this stage, we perform spatial clustering of all tracker predictions $X$.
 Bounding boxes with large overlap, similar location and scale should be grouped
 into the same cluster.
 Since we do not know the number of natural groups beforehand, we use
-an agglomerative clustering technique to achieve this.
-
-%In practice, we apply complete-link hierarchical agglomerative clustering
-
-%$m$ groups $C = \left \{ c_1, c_2, ..., c_m \right \}$.
-%Cluster analysis is the process of classifying objects into subsets that have 
-%meaning in the context of a particular problem. Objects are organized into an
-%efficient representation that characterizes data. Clustering methods require 
-%an index of proximity, or alikeness, be established between pairs or patterns.
-%A \textit{proximity matrix} $|d(i, j)|$ accumulates pairwise indices of
-%proximity in a matrix, where each row and column represents a pattern. Diagonal
-%entries of this matrix are ignored since all patterns are assumed to have same
-%degree of proximity with themselves. Also, proximity matrices are symmetric, so  
-%all pairs of objects have the same proximity index, independent of the order in
-%which they are written.
-
-%A proximity index is either a \textit{similarity} or a \textit{dissimilarity}.
-%The more the \textit{i}th and \textit{j}th objects are similar one another,
-%the larger a similarity index and the dissimilarity index are. We base our
-%approach using the idea of clustering tracking results. On a new frame, each
-%tracker will generate a rectangular box of where the object might be. Using this
-%information, we are able to create groups of trackers that have similar
-%position and scale. For each tracker result, we calculate dissimilarity between
-%its bounding box to the rest of trackers running. The dissimilarity $d$ between
-%two boxes $\mathrm{x_i}$ and $\mathrm{x_j}$ is computed as:
-%\begin{equation}
-%d(\mathrm{x_i},\mathrm{x_j}) =
-%1 - \frac{\mathrm{x_i} \bigcap \mathrm{x_j}}{\mathrm{x_i} \bigcup  \mathrm{x_j}}
-%\text{.}
-%\end{equation}
-
-%Using all distances, we construct a symmetric $l \times l$ proximity matrix $D$.
-%We take dissimilarities as proximity values. 
-%This means that $d(i,i) = 0$ for all $i$.
-In practice,
+an agglomerative clustering technique to achieve this. In practice,
 we apply complete-link hierarchical agglomerative clustering (CL)
 \cite{Jain88}.
-We define a dissimilarity measure between pairs of bounding boxes equal to
-$1$ minus their intersection over union score.
-In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in the same cluster
-%if their dissimilarity 
-%to form groups of trackers. Trackers $t_1$ and $t_2$ are \textit{related}
-if their dissimilarity is below some threshold $v$.
+We define a dissimilarity measure between pairs of bounding boxes equal to:
+
+\begin{equation}
+d(x_i,x_j) = 1 - \frac{x_i \bigcap x_j}{x_i \bigcup  x_j}
+\end{equation}
+
+Using all dissimilarity values, we construct a symmetric $n \times n$ proximity
+matrix $D$. In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in
+the same cluster if their dissimilarity is below some threshold $v$.
 For all our experiments we set this value to $0.8$.
 The result of CL is a grouping of the input bounding boxes $X$ into 
 $m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$,
-which are illustrated with colors in Fig.~\ref{fig::diagram}b.
-
-\iffalse
-CL merges clusters in order of proximity; the closest clusters
-will be merged first, and the furthest clusters will be merged last. At each
-merge, CL creates a \textit{reduced proximity
-matrix}, with one less row and column \cite{Klein2092}. At the end, the
-algorithm delivers a set of clusters with size $m$
-$C = \left \{ c_1, c_2, ..., c_m \right \}$ satisfying the following:
-
+which are illustrated with colors in Fig.~\ref{fig::diagram}b. These clusters
+satisfy the following:
 \begin{itemize}
 \item $c_i \cap c_j = \emptyset$ for $i$ and $j$ from 1 to $m$, $i \neq j$
 \item $c_1 \cup c_2 \cup ... \cup c_m = T$
 \end{itemize}
-\fi
 
-\paragraph{Object modeling.}
+\section{Object modeling.}
+Visual object tracking has been formulated as a tracking-by-detection problem
+recently. Object modeling is dynamically performed to support object detection
+over all frames. Mostly all the approaches can be classified into two categories:
+\textit{Generative appearance models}, that mainly focus on how fit the data into
+their correspondent object class; and \textit{discriminative appearance models},
+which assume object tracking as a binary classification issue. Main goal is to
+maximize the separability between object and non-object regions discriminately.
+
+Generally, Discriminative methods train a classifier using data acquired from
+previous frames, and subsequently use the trained classifier to evaluate
+possible object regions at the current frame. After localization, a set of
+\textit{positive} and \textit{negative} samples are heuristically selected to
+update the classifier. Some approaches apply online boosting
+\cite{Babenko2010,Grabner2008,Grabner2006}, that make a discriminative
+evaluation of features taken from a candidate feature pool, and then select the
+top ranked features to conduct the tracking process. Other methods apply
+Support Vector Nachines (SVM) method, which learns a margin-based discriminative
+appearance model, in order to maximize inter-class separability. These
+classifiers are trained using visual representations of the object.
+
 At this stage, we would like to verify the appearance of all tracker
-predicitons $X$ in comparison to an object appearance model.
+predictions $X$ in comparison to an object appearance model.
 In order to do so, we train an appearance classifier that aims at separating
 positive target bounding boxes from background bounding boxes.
 We extract positive samples from the target location given at the first frame
@@ -193,42 +201,23 @@ Using the classifier, we compute appearance scores
 %from each tracker bounding box, we extract it correspondent image patch
 %and evaluate in object model.
 %On each frame, we obtain probability scores
-$S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result in $X$.
+$S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result $x_i$ in
+$X$. We considered this model, because other methods found in 
+\cite{zhang2014meem,Bai2013}, obtained better results. Also, HOG features are
+more robust to deformable objects than other image features used in
+tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
 
 \iffalse
-Visual object tracking has been formulated as a tracking-by-detection problem
-recently. Object modeling is dynamically performed to support object detection
-over all frames. Mostly all approaches can be classified into two categories:
-\textit{Generative appearance models}, that mainly focus on how fit data into
-their correspondent object class; and \textit{discriminative appearance models},
-which assume object tracking as a binary classification issue. Main goal is to
-maximize the separability between object and non-object regions discriminately.
-
-Generally, Discriminative methods train a classifier using data acquired from
-previous frames, and subsequently use the trained classifier to evaluate
-possible object regions at the current frame. After localization, a set of
-\textit{positive} and \textit{negative} samples are heuristically selected to
-update the classifier. Some approaches apply online boosting
-\cite{Babenko2010,Grabner2008,Grabner2006}, that make a discriminative
-evaluation of features taken from a candidate feature pool, and then select top
-ranked features to conduct tracking process. Other methods apply Support Vector
-Nachines (SVM) method, which learns a margin-based discriminative appearance
-model, in order to maximize inter-class separability. These classifiers are
-trained using visual representations of the object.
-
 In our approach, we are asumming that target object is detected at the
 beginning of tracking process. This image region is considered to be a positive
 image sample for the classification model. We also extract negative samples
 creating random regions of the same size as the positive sample. Finally, we
 create an object model taking these labeled samples and training a classifier.
 We adopted HOG as image features representation and SVM for classification
-model. We considered this model, because other methods found in 
-\cite{zhang2014meem,Bai2013}, obtained better
-results. Also, HOG features are more robust to deformable objects than other
-image features used in tracking-by-detection methods \eg Haar.
+model. 
 \fi
 
 \begin{figure*}[t!]
@@ -281,6 +270,10 @@ potential cues to select inliers.
 This critera follows the idea that the largest spatially coherent cluster
 is associated to the true target location. Therefore, we flag all trackers
 in the largest cluster as inliners, and all other trackers as outliers.
+
+\begin{equation}
+ c^{*} = \argmax_{c_i\in C} |c_i|
+\end{equation}
 
 %Once groups are
 %formed, we search the cluster $c^{*}$ in the list of clusters $C$ of size $m$,

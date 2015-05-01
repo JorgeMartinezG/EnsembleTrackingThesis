@@ -21,19 +21,20 @@
 \contentsline {subsection}{\numberline {2.4.3}Silhouette Tracking}{11}{subsection.26}
 \contentsline {subsection}{\numberline {2.4.4}Tracking applying ensemble of trackers}{12}{subsection.28}
 \contentsline {chapter}{\numberline {3}Proposed approach}{14}{chapter.29}
-\contentsline {subsection}{\numberline {3.0.5}Analysis of appearance and spatial coherence}{15}{subsection.31}
-\contentsline {paragraph}{Spatial clustering.}{15}{section*.32}
-\contentsline {paragraph}{Object modeling.}{16}{section*.33}
-\contentsline {subsection}{\numberline {3.0.6}Selection of inliers}{16}{subsection.35}
-\contentsline {subsection}{\numberline {3.0.7}Final ensemble tracking result}{17}{subsection.37}
-\contentsline {subsection}{\numberline {3.0.8}Model update and outlier reset}{17}{subsection.39}
-\contentsline {chapter}{\numberline {4}Experiments}{18}{chapter.40}
-\contentsline {subsection}{\numberline {4.0.9}Experimental setup}{18}{subsection.44}
-\contentsline {subsection}{\numberline {4.0.10}Evaluation Methodology}{18}{subsection.45}
-\contentsline {subsection}{\numberline {4.0.11}Tracker pool}{19}{subsection.46}
-\contentsline {subsection}{\numberline {4.0.12}Benchmarking results}{19}{subsection.49}
-\contentsline {subsection}{\numberline {4.0.13}Analysis of the tracking ensemble}{20}{subsection.50}
-\contentsline {subsection}{\numberline {4.0.14}Experiments with sequence attributes}{22}{subsection.62}
+\contentsline {section}{\numberline {3.1}Overview}{14}{section.30}
+\contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.32}
+\contentsline {subsection}{\numberline {3.2.1}Spatial clustering.}{16}{subsection.33}
+\contentsline {section}{\numberline {3.3}Object modeling.}{17}{section.35}
+\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{17}{subsection.37}
+\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{18}{subsection.40}
+\contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{19}{subsection.42}
+\contentsline {chapter}{\numberline {4}Experiments}{20}{chapter.43}
+\contentsline {subsection}{\numberline {4.0.4}Experimental setup}{20}{subsection.47}
+\contentsline {subsection}{\numberline {4.0.5}Evaluation Methodology}{20}{subsection.48}
+\contentsline {subsection}{\numberline {4.0.6}Tracker pool}{21}{subsection.49}
+\contentsline {subsection}{\numberline {4.0.7}Benchmarking results}{21}{subsection.52}
+\contentsline {subsection}{\numberline {4.0.8}Analysis of the tracking ensemble}{22}{subsection.53}
+\contentsline {subsection}{\numberline {4.0.9}Experiments with sequence attributes}{24}{subsection.65}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{25}{dummy.63}
+\contentsline {chapter}{Bibliography}{27}{dummy.66}
