@@ -4,9 +4,21 @@
 
 \lhead{Chapter 3. \emph{Proposed approach}} 
 
-In this section, we first present an overview of our online ensemble
+This section presents an overview of our online ensemble
 tracking approach, and then describe the details of each stage of our
-processing pipeline.
+processing pipeline. Given tracking inputs, the algorithm estimates the
+trajectory of an object as it moves around a scene. The tracker outputs labels
+of the tracked object in every frame of the video \ref{fig::global_diagram}.
+These labels provide position and scale information for evaluation and analysis.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[page=2, width=0.8\linewidth, trim= 0cm 5.1cm 6cm 5.3cm,
+                 clip=true]{Figures/global_diagram}
+\caption[Global tracking process2]{\small Global tracking process.}
+\label{fig::global_diagram}
+\end{figure}
+
 
 \section{Overview}
 
@@ -209,6 +221,13 @@ tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
+\begin{figure}[t!]
+\centering
+\includegraphics[page=3, width=0.8\linewidth, trim= 0.4cm 11.5cm 10.6cm 1.8cm,
+                 clip=true]{Figures/global_diagram}
+\caption[Global tracking process2]{\small Global tracking process.}
+\label{fig::global_diagram}
+\end{figure}
 
 \iffalse
 In our approach, we are asumming that target object is detected at the
@@ -219,39 +238,6 @@ create an object model taking these labeled samples and training a classifier.
 We adopted HOG as image features representation and SVM for classification
 model. 
 \fi
-
-\begin{figure*}[t!]
-\centering
-    \figuresp{trackers/027.jpeg}
-    \figuresp{trackers/028.jpeg}
-    \figuresp{trackers/029.jpeg}
-    \figuresp{trackers/030.jpeg}
-    \figuresp{trackers/031.jpeg} 
-
-    \vspace{0.15cm}
-
-    \figuresp{clusters/027.jpeg}
-    \figuresp{clusters/028.jpeg}
-    \figuresp{clusters/029.jpeg}
-    \figuresp{clusters/030.jpeg}
-    \figuresp{clusters/031.jpeg}  
-
-    \vspace{0.15cm}
-
-    \figuresp{final_result/027.jpeg}
-    \figuresp{final_result/028.jpeg}
-    \figuresp{final_result/029.jpeg}
-    \figuresp{final_result/030.jpeg}
-    \figuresp{final_result/031.jpeg}
-
-
-\caption{\small System behavior in five frames. Given image input, trackers will give
-results on where the object might be (first row). Then, all results are
-clustered using hierarchical agglomerative clustering (second row). We focus on
-selecting the group with highest number of members, or cluster with best
-appearance score (third row). Finally, we reiniialize outliers
-(frame 30 in this case).}   
-\end{figure*}
 
 \subsection{Selection of inliers}
 \label{sec:inliers}
@@ -312,6 +298,40 @@ the value of 0.3.
 %that a threshold value $w$, object model is updated. In experiments we set $w$
 %the value of 0.3.
 \fi
+
+\begin{figure*}[t!]
+\centering
+    \figuresp{trackers/027.jpeg}
+    \figuresp{trackers/028.jpeg}
+    \figuresp{trackers/029.jpeg}
+    \figuresp{trackers/030.jpeg}
+    \figuresp{trackers/031.jpeg} 
+
+    \vspace{0.15cm}
+
+    \figuresp{clusters/027.jpeg}
+    \figuresp{clusters/028.jpeg}
+    \figuresp{clusters/029.jpeg}
+    \figuresp{clusters/030.jpeg}
+    \figuresp{clusters/031.jpeg}  
+
+    \vspace{0.15cm}
+
+    \figuresp{final_result/027.jpeg}
+    \figuresp{final_result/028.jpeg}
+    \figuresp{final_result/029.jpeg}
+    \figuresp{final_result/030.jpeg}
+    \figuresp{final_result/031.jpeg}
+
+
+\caption{\small System behavior in five frames. Given image input, trackers will give
+results on where the object might be (first row). Then, all results are
+clustered using hierarchical agglomerative clustering (second row). We focus on
+selecting the group with highest number of members, or cluster with best
+appearance score (third row). Finally, we reiniialize outliers
+(frame 30 in this case).}   
+\end{figure*}
+
 
 \subsection{Final ensemble tracking result}
 In order to provide an estimation of the state of the target using our
