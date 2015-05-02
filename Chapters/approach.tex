@@ -137,6 +137,14 @@ the test space such that the \textit{distance} between any two points in the
 cluster is less than the distance between any point in the cluster and any point
 not in it". This theory is taken from \textbf{Jane and Dubes.}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[page=4, width=0.9\linewidth, trim= 0.4cm 5.5cm 6.5cm 5cm,
+                 clip=true]{Figures/global_diagram}
+\caption[Global tracking process2]{\small Global tracking process.}
+\label{fig::global_diagram}
+\end{figure}
+
 Cluster analysis is the process of classifying objects into subsets that have
 meaning in the context of a particular problem. The objects are thereby
 organized into an efficient representation that characterizes the data.
@@ -187,6 +195,14 @@ their correspondent object class; and \textit{discriminative appearance models},
 which assume object tracking as a binary classification issue. Main goal is to
 maximize the separability between object and non-object regions discriminately.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[page=3, width=1\linewidth, trim= 0.4cm 9.9cm 7.5cm 1.8cm,
+                 clip=true]{Figures/global_diagram}
+\caption[Global tracking process2]{\small Global tracking process.}
+\label{fig::global_diagram}
+\end{figure}
+
 Generally, Discriminative methods train a classifier using data acquired from
 previous frames, and subsequently use the trained classifier to evaluate
 possible object regions at the current frame. After localization, a set of
@@ -221,13 +237,14 @@ tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
-\begin{figure}[t!]
+\begin{figure}[h!]
 \centering
-\includegraphics[page=3, width=0.8\linewidth, trim= 0.4cm 11.5cm 10.6cm 1.8cm,
+\includegraphics[page=5, width=1\linewidth, trim= 0.4cm 5.5cm 0cm 5cm,
                  clip=true]{Figures/global_diagram}
 \caption[Global tracking process2]{\small Global tracking process.}
 \label{fig::global_diagram}
 \end{figure}
+
 
 \iffalse
 In our approach, we are asumming that target object is detected at the
@@ -366,6 +383,11 @@ resets its state to the latest target state prediction from the ensemble.
 This reinitialization procedure is only performed periodically every 15 frames
 so that we can also take advantage of the capability of some trackers
 to recover from short-term tracking failures.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/clustering/deer_outliers.png}
+\end{figure}
 
 %The outliers correspond to those trackers that does not belong to $c^*$. These
 %trackers are reinitialized using $\mathrm{x}^{*}$ every 15 frames. Also,
