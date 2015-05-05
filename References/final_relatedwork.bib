@@ -1,0 +1,301 @@
+@article{Black1996,
+abstract = {Most approaches for estimating optical flow assume that, within a finite image region, only a single motion is present. Thissingle motion assumptionis violated in common situations involving transparency, depth discontinuities, independently moving objects, shadows, and specular reflections. To robustly estimate optical flow, the single motion assumption must be relaxed. This paper presents a framework based onrobust estimationthat addresses violations of the brightness constancy and spatial smoothness assumptions caused by multiple motions. We show how therobust estimation frameworkcan be applied to standard formulations of the optical flow problem thus reducing their sensitivity to violations of their underlying assumptions. The approach has been applied to three standard techniques for recovering optical flow: area-based regression, correlation, and regularization with motion discontinuities. This paper focuses on the recovery of multiple parametric motion models within a region, as well as the recovery of piecewise-smooth flow fields, and provides examples with natural and synthetic image sequences.},
+author = {Black, Michael J. and Anandan, P.},
+doi = {10.1006/cviu.1996.0006},
+issn = {10773142},
+journal = {Computer Vision and Image Understanding},
+mendeley-groups = {aaa},
+pages = {75--104},
+title = {{The Robust Estimation of Multiple Motions: Parametric and Piecewise-Smooth Flow Fields}},
+url = {http://www.sciencedirect.com/science/article/pii/S1077314296900065},
+volume = {63},
+year = {1996}
+}
+@article{Bowyer2001,
+abstract = {A method is demonstrated to evaluate edge detector performance using receiver operating characteristic curves. It involves matching edges to manually specified ground truth to count true positive and false positive detections. Edge detector parameter settings are trained and tested on different images, and aggregate test ROC curves presented for two sets of 10 images. The performance of eight different edge detectors is compared. The Canny and Heitger detectors provide the best performance},
+author = {Bowyer, Kevin and Kranenburg, Christine and Dougherty, Sean},
+doi = {10.1006/cviu.2001.0931},
+isbn = {0769501494},
+issn = {10773142},
+journal = {Computer Vision and Image Understanding},
+mendeley-groups = {aaa},
+pages = {77--103},
+title = {{Edge Detector Evaluation Using Empirical ROC Curves}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S1077314201909312},
+volume = {84},
+year = {2001}
+}
+@article{Canny1986,
+abstract = {This paper describes a computational approach to edge detection. The success of the approach depends on the definition of a comprehensive set of goals for the computation of edge points. These goals must be precise enough to delimit the desired behavior of the detector while making minimal assumptions about the form of the solution. We define detection and localization criteria for a class of edges, and present mathematical forms for these criteria as functionals on the operator impulse response. A third criterion is then added to ensure that the detector has only one response to a single edge. We use the criteria in numerical optimization to derive detectors for several common image features, including step edges. On specializing the analysis to step edges, we find that there is a natural uncertainty principle between detection and localization performance, which are the two main goals. With this principle we derive a single operator shape which is optimal at any scale. The optimal detector has a simple approximate implementation in which edges are marked at maxima in gradient magnitude of a Gaussian-smoothed image. We extend this simple detector using operators of several widths to cope with different signal-to-noise ratios in the image. We present a general method, called feature synthesis, for the fine-to-coarse integration of information from operators at different scales. Finally we show that step edge detector performance improves considerably as the operator point spread function is extended along the edge.},
+author = {Canny, J},
+doi = {10.1109/TPAMI.1986.4767851},
+isbn = {978-1-4244-7657-2},
+issn = {0162-8828},
+journal = {IEEE transactions on pattern analysis and machine intelligence},
+mendeley-groups = {aaa},
+pages = {679--698},
+pmid = {21869365},
+title = {{A computational approach to edge detection.}},
+volume = {8},
+year = {1986}
+}
+@article{Comaniciu2003a,
+abstract = { A new approach toward target representation and localization, the central component in visual tracking of nonrigid objects, is proposed. The feature histogram-based target representations are regularized by spatial masking with an isotropic kernel. The masking induces spatially-smooth similarity functions suitable for gradient-based optimization, hence, the target localization problem can be formulated using the basin of attraction of the local maxima. We employ a metric derived from the Bhattacharyya coefficient as similarity measure, and use the mean shift procedure to perform the optimization. In the presented tracking examples, the new method successfully coped with camera motion, partial occlusions, clutter, and target scale variations. Integration with motion filters and data association techniques is also discussed. We describe only a few of the potential applications: exploitation of background information, Kalman tracking using motion models, and face tracking.},
+author = {Comaniciu, Dorin and Ramesh, Visvanathan and Meer, Peter},
+doi = {10.1109/TPAMI.2003.1195991},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Bhattacharyya coefficient,Face tracking,Nonrigid object tracking,Spatially-smooth similarity function,Target localization and representation},
+mendeley-groups = {aaa},
+pages = {564--577},
+title = {{Kernel-based object tracking}},
+volume = {25},
+year = {2003}
+}
+@article{Haralick1973,
+abstract = {Texture is one of the important characteristics used in identifying objects or regions of interest in an image, whether the image be a photomicrograph, an aerial photograph, or a satellite image. This paper describes some easily computable textural features based on gray-tone spatial dependancies, and illustrates their application in category-identification tasks of three different kinds of image data: photomicrographs of five kinds of sandstones, 1:20 000 panchromatic aerial photographs of eight land-use categories, and Earth Resources Technology Satellite (ERTS) multispecial imagery containing seven land-use categories. We use two kinds of decision rules: one for which the decision regions are convex polyhedra (a piecewise linear decision rule), and one for which the decision regions are rectangular parallelpipeds (a min-max decision rule). In each experiment the data set was divided into two parts, a training set and a test set. Test set identification accuracy is 89 percent for the photomicrographs, 82 percent for the aerial photographic imagery, and 83 percent for the satellite imagery. These results indicate that the easily computable textural features probably have a general applicability for a wide variety of image-classification applications.},
+author = {Haralick, Robert M. and Shanmugam, K. and Dinstein, Its'Hak},
+doi = {10.1109/TSMC.1973.4309314},
+isbn = {0018-9472 VO - SMC-3},
+issn = {0018-9472},
+journal = {IEEE Transactions on Systems, Man, and Cybernetics},
+mendeley-groups = {aaa},
+pmid = {283},
+title = {{Textural Features for Image Classification}},
+volume = {3},
+year = {1973}
+}
+@article{Haritaoglu2000,
+abstract = {W<sup>4</sup> is a real time visual surveillance system for
+detecting and tracking multiple people and monitoring their activities
+in an outdoor environment. It operates on monocular gray-scale video
+imagery, or on video imagery from an infrared camera. W<sup>4</sup>
+employs a combination of shape analysis and tracking to locate people
+and their parts (head, hands, feet, torso) and to create models of
+people's appearance so that they can be tracked through interactions
+such as occlusions. It can determine whether a foreground region
+contains multiple people and can segment the region into its constituent
+people and track them. W<sup>4</sup> can also determine whether people
+are carrying objects, and can segment objects from their silhouettes,
+and construct appearance models for them so they can be identified in
+subsequent frames. W<sup>4</sup> can recognize events between people and
+objects, such as depositing an object, exchanging bags, or removing an
+object. It runs at 25 Hz for 320\&amp;times;240 resolution images on a 400
+MHz dual-Pentium II PC},
+author = {Haritaoglu, Ismail and Harwood, David and Davis, Larry S.},
+doi = {10.1109/34.868683},
+isbn = {01628828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {aaa},
+pages = {809--830},
+title = {{W4: Real-time surveillance of people and their activities}},
+volume = {22},
+year = {2000}
+}
+@article{Harris1988,
+abstract = {Consistency of image edge filtering is of prime importance for 3D interpretation of image sequences using feature tracking algorithms. To cater for image regions containing texture and isolated features, a combined corner and edge detector based on the local auto-correlation function is utilised, and it is shown to perform with good consistency on natural imagery.},
+author = {Harris, C. and Stephens, M.},
+doi = {10.5244/C.2.23},
+issn = {09639292},
+journal = {Procedings of the Alvey Vision Conference 1988},
+mendeley-groups = {athesis/Related Work,aaa},
+pages = {147--151},
+pmid = {20130988},
+title = {{A Combined Corner and Edge Detector}},
+url = {http://www.bmva.org/bmvc/1988/avc-88-023.html},
+year = {1988}
+}
+@misc{Horn1981,
+abstract = {Optical flow cannot be computed locally, since only one independent measurement is available from the image sequence at a point, while the flow velocity has two components. A second constraint is needed. A method for finding the optical flow pattern is presented which assumes that the apparent velocity of the brightness pattern varies smoothly almost everywhere in the image. An iterative implementation is shown which successfully computes the optical flow for a number of synthetic image sequences. The algorithm is robust in that it can handle image sequences that are quantized rather coarsely in space and time. It is also insensitive to quantization of brightness levels and additive noise. Examples are included where the assumption of smoothness is violated at singular points or along lines in the image.},
+author = {Horn, Berthold K.P. and Schunck, Brian G.},
+booktitle = {Artificial Intelligence},
+doi = {10.1016/0004-3702(81)90024-2},
+isbn = {0867204524},
+issn = {00043702},
+mendeley-groups = {aaa},
+pages = {185--203},
+pmid = {14765965},
+title = {{Determining optical flow}},
+volume = {17},
+year = {1981}
+}
+@article{Lucas1981a,
+abstract = {Image registration finds a variety of applications in computer vision. Unfortunately, traditional image registration techniques tend to be costly. We present a new image registration technique that makes use of the spatial intensity gradient of the images to find a good match using a type of Newton-Raphson iteration. Our technique is faster because it examines far fewer potential matches between the images than existing techniques. Furthermore, this registration technique can be generalized to handle rotation, scaling and shearing. We show show our technique can be adapted for use in a stereo vision system.},
+author = {Lucas, Bruce D and Kanade, Takeo},
+doi = {10.1109/HPDC.2004.1323531},
+isbn = {0769521754},
+issn = {17486815},
+journal = {Imaging},
+mendeley-groups = {aaa},
+pages = {674--679},
+title = {{An Iterative Image Registration Technique with an Application to Stereo Vision}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.49.2019\&amp;rep=rep1\&amp;type=pdf},
+volume = {130},
+year = {1981}
+}
+@article{Mallat1989,
+abstract = {Multiresolution representations are effective for analyzing the
+information content of images. The properties of the operator which
+approximates a signal at a given resolution were studied. It is shown
+that the difference of information between the approximation of a signal
+at the resolutions 2<sup>j+1</sup> and 2<sup>j</sup> (where j is an
+integer) can be extracted by decomposing this signal on a wavelet
+orthonormal basis of <e1>L</e1><sup>2</sup>(<e1>R</e1><sup>n</sup>), the
+vector space of measurable, square-integrable <e1>n</e1>-dimensional
+functions. In <e1>L</e1><sup>2</sup>(<e1>R</e1>), a wavelet orthonormal
+basis is a family of functions which is built by dilating and
+translating a unique function \&amp;psi;(<e1>x</e1>). This decomposition
+defines an orthogonal multiresolution representation called a wavelet
+representation. It is computed with a pyramidal algorithm based on
+convolutions with quadrature mirror filters. Wavelet representation lies
+between the spatial and Fourier domains. For images, the wavelet
+representation differentiates several spatial orientations. The
+application of this representation to data compression in image coding,
+texture discrimination and fractal analysis is discussed},
+author = {Mallat, Stephane G.},
+doi = {10.1109/34.192463},
+isbn = {01628828 (ISSN)},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {aaa},
+pages = {674--693},
+pmid = {18216768},
+title = {{Theory for multiresolution signal decomposition: the wavelet representation}},
+volume = {11},
+year = {1989}
+}
+@article{Mallat1989,
+abstract = {Multiresolution representations are effective for analyzing the
+information content of images. The properties of the operator which
+approximates a signal at a given resolution were studied. It is shown
+that the difference of information between the approximation of a signal
+at the resolutions 2<sup>j+1</sup> and 2<sup>j</sup> (where j is an
+integer) can be extracted by decomposing this signal on a wavelet
+orthonormal basis of <e1>L</e1><sup>2</sup>(<e1>R</e1><sup>n</sup>), the
+vector space of measurable, square-integrable <e1>n</e1>-dimensional
+functions. In <e1>L</e1><sup>2</sup>(<e1>R</e1>), a wavelet orthonormal
+basis is a family of functions which is built by dilating and
+translating a unique function \&amp;psi;(<e1>x</e1>). This decomposition
+defines an orthogonal multiresolution representation called a wavelet
+representation. It is computed with a pyramidal algorithm based on
+convolutions with quadrature mirror filters. Wavelet representation lies
+between the spatial and Fourier domains. For images, the wavelet
+representation differentiates several spatial orientations. The
+application of this representation to data compression in image coding,
+texture discrimination and fractal analysis is discussed},
+author = {Mallat, Stephane G.},
+doi = {10.1109/34.192463},
+isbn = {01628828 (ISSN)},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {aaa},
+pages = {674--693},
+pmid = {18216768},
+title = {{Theory for multiresolution signal decomposition: the wavelet representation}},
+volume = {11},
+year = {1989}
+}
+@misc{Nickels1997,
+abstract = {Title :   .  Personal Author(s) : ,Kenneth Ivan.  Abstract : The problem of   analysis is introduced, and existing },
+author = {Nickels, Kevin M. and Hutchinson, Seth},
+booktitle = {Image and Vision Computing},
+doi = {10.1016/S0262-8856(97)00021-8},
+isbn = {940},
+issn = {02628856},
+mendeley-groups = {aaa},
+pages = {781--795},
+title = {{Textured image segmentation}},
+volume = {15},
+year = {1997}
+}
+@article{Paschos2001,
+abstract = {RGB, a nonuniform color space, is almost universally accepted by
+the image processing community as the means for representing color. On
+the other hand, perceptually uniform spaces, such as L*a*b*, as well as
+approximately-uniform color spaces, such as HSV, exist, in which
+measured color differences are proportional to the human perception of
+such differences. This paper compares RGB with L*a*b* and HSV in terms
+of their effectiveness in color texture analysis. There has been a
+limited but increasing amount of work on the color aspects of textured
+images. The results have shown that incorporating color into a texture
+analysis and recognition scheme can be very important and beneficial.
+The presented methodology uses a family of Gabor filters specially tuned
+to measure specific orientations and sizes within each color texture.
+Effectiveness is measured by the classification performance of each
+color space, as well as by classifier-independent measures. Experimental
+results are obtained with a variety of color texture Images.
+Perceptually uniform spaces are shown to outperform RGB in many cases
+},
+author = {Paschos, G.},
+doi = {10.1109/83.923289},
+issn = {10577149},
+journal = {IEEE Transactions on Image Processing},
+keywords = {Classification,Color spaces,Color texture analysis,Evaluation,Gabor filtering},
+mendeley-groups = {aaa},
+pages = {932--937},
+title = {{Perceptually uniform color spaces for color texture analysis: An empirical evaluation}},
+volume = {10},
+year = {2001}
+}
+@article{Shafique2005,
+abstract = {This paper presents a framework for finding point correspondences in monocular image sequences over multiple frames. The general problem of multiframe point correspondence is NP-hard for three or more frames. A polynomial time algorithm for a restriction of this problem is presented and is used as the basis of the proposed greedy algorithm for the general problem. The greedy nature of the proposed algorithm allows it to be used in real-time systems for tracking and surveillance, etc. In addition, the proposed algorithm deals with the problems of occlusion, missed detections, and false positives by using a single noniterative greedy optimization scheme and, hence, reduces the complexity of the overall algorithm as compared to most existing approaches where multiple heuristics are used for the same purpose. While most greedy algorithms for point tracking do not allow for entry and exit of the points from the scene, this is not a limitation for the proposed algorithm. Experiments with real and synthetic data over a wide range of scenarios and system parameters are presented to validate the claims about the performance of the proposed algorithm.},
+author = {Shafique, Khurram and Shah, Mubarak},
+doi = {10.1109/TPAMI.2005.1},
+isbn = {0-7695-1950-4},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Bipartite graph matching,Data association,Motion,Occlusion,Path cover of directed graph,Point correspondence,Point trajectory,Target tracking},
+mendeley-groups = {aaa},
+pages = {51--65},
+pmid = {15628268},
+title = {{A noniterative greedy algorithm for multiframe point correspondence}},
+volume = {27},
+year = {2005}
+}
+@article{Song1996,
+abstract = {Machine vision and automatic surface inspection has been an active field of research during the last few years. However, very little research has been contributed to the area of defect detection in textured images, especially for the case of random textures. In this paper, we propose a novel algorithm that uses colour and texture information to solve the problem. A new colour clustering scheme based on human colour perception is developed. The algorithm is training based and produces very promising results on defect detection in random textured images and in particular, granite images.},
+author = {Song, K. Y. and Kittler, J. and Petrou, M.},
+doi = {10.1016/0262-8856(96)84491-X},
+isbn = {0262-8856},
+issn = {02628856},
+journal = {Image and Vision Computing},
+keywords = {Colour clustering,Colour defect detection,Colour texture,Structural features,Texture defect detection},
+mendeley-groups = {aaa},
+pages = {667--683},
+title = {{Defect detection in random colour textures}},
+volume = {14},
+year = {1996}
+}
+@article{Veenman2001,
+abstract = {Studies the motion correspondence problem for which a diversity of
+qualitative and statistical solutions exist. We concentrate on
+qualitative modeling, especially in situations where assignment
+conflicts arise either because multiple features compete for one
+detected point or because multiple detected points fit a single feature
+point. We leave out the possibility of point track initiation and
+termination because that principally conflicts with allowing for
+temporary point occlusion. We introduce individual, combined, and global
+motion models and fit existing qualitative solutions in this framework.
+Additionally, we present a tracking algorithm that satisfies
+these-possibly constrained-models in a greedy matching sense, including
+an effective way to handle detection errors and occlusion. The
+performance evaluation shows that the proposed algorithm outperforms
+existing greedy matching algorithms. Finally, we describe an extension
+to the tracker that enables automatic initialization of the point
+tracks. Several experiments show that the extended algorithm is
+efficient, hardly sensitive to its few parameters, and qualitatively
+better than other algorithms, including the presumed optimal statistical
+multiple hypothesis tracker},
+author = {Veenman, Cor J. and Reinders, Marcel J T and Backer, Eric},
+doi = {10.1109/34.899946},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {aaa},
+pages = {54--72},
+title = {{Resolving motion correspondence for densely moving points}},
+volume = {23},
+year = {2001}
+}

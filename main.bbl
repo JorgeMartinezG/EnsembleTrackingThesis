@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,10 +13,114 @@ Vu~Pham, Phong Vo, Vu~Thanh Hung, and Le~Hoai Bac.
   Communication Technologies, Research, Innovation, and Vision for the Future
   (RIVF)}, pages 1--4, 2010.
 
+\bibitem[Yilmaz et~al.(2006)Yilmaz, Javed, and Shah]{Yilmaz2006}
+Alper Yilmaz, Omar Javed, and Mubarak Shah.
+\newblock {Object tracking: A survey}.
+\newblock \emph{ACM Computing Surveys}, 38:\penalty0 13, 2006.
+\newblock ISSN 03600300.
+
 \bibitem[Rittscher et~al.(2000)Rittscher, Kato, Joga, and Blake]{Rittscher2000}
 J~Rittscher, J~Kato, S~Joga, and A~Blake.
 \newblock {A probabilistic background model for tracking}.
 \newblock \emph{Computer Vision—ECCV 2000}, pages 336--350, 2000.
+
+\bibitem[Veenman et~al.(2001)Veenman, Reinders, and Backer]{Veenman2001}
+Cor~J. Veenman, Marcel J~T Reinders, and Eric Backer.
+\newblock {Resolving motion correspondence for densely moving points}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 23:\penalty0 54--72, 2001.
+\newblock ISSN 01628828.
+
+\bibitem[Shafique and Shah(2005)]{Shafique2005}
+Khurram Shafique and Mubarak Shah.
+\newblock {A noniterative greedy algorithm for multiframe point
+  correspondence}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 27:\penalty0 51--65, 2005.
+\newblock ISSN 01628828.
+
+\bibitem[Comaniciu et~al.(2003)Comaniciu, Ramesh, and Meer]{Comaniciu2003a}
+Dorin Comaniciu, Visvanathan Ramesh, and Peter Meer.
+\newblock {Kernel-based object tracking}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 25:\penalty0 564--577, 2003.
+\newblock ISSN 01628828.
+
+\bibitem[Haritaoglu et~al.(2000)Haritaoglu, Harwood, and Davis]{Haritaoglu2000}
+Ismail Haritaoglu, David Harwood, and Larry~S. Davis.
+\newblock {W4: Real-time surveillance of people and their activities}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 22:\penalty0 809--830, 2000.
+\newblock ISSN 01628828.
+
+\bibitem[Paschos(2001)]{Paschos2001}
+G.~Paschos.
+\newblock {Perceptually uniform color spaces for color texture analysis: An
+  empirical evaluation}.
+\newblock \emph{IEEE Transactions on Image Processing}, 10:\penalty0 932--937,
+  2001.
+\newblock ISSN 10577149.
+
+\bibitem[Song et~al.(1996)Song, Kittler, and Petrou]{Song1996}
+K.~Y. Song, J.~Kittler, and M.~Petrou.
+\newblock {Defect detection in random colour textures}.
+\newblock \emph{Image and Vision Computing}, 14:\penalty0 667--683, 1996.
+\newblock ISSN 02628856.
+
+\bibitem[Canny(1986)]{Canny1986}
+J~Canny.
+\newblock {A computational approach to edge detection.}
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 8:\penalty0 679--698, 1986.
+\newblock ISSN 0162-8828.
+
+\bibitem[Bowyer et~al.(2001)Bowyer, Kranenburg, and Dougherty]{Bowyer2001}
+Kevin Bowyer, Christine Kranenburg, and Sean Dougherty.
+\newblock {Edge Detector Evaluation Using Empirical ROC Curves}.
+\newblock \emph{Computer Vision and Image Understanding}, 84:\penalty0 77--103,
+  2001.
+\newblock ISSN 10773142.
+
+\bibitem[Black and Anandan(1996)]{Black1996}
+Michael~J. Black and P.~Anandan.
+\newblock {The Robust Estimation of Multiple Motions: Parametric and
+  Piecewise-Smooth Flow Fields}.
+\newblock \emph{Computer Vision and Image Understanding}, 63:\penalty0 75--104,
+  1996.
+\newblock ISSN 10773142.
+
+\bibitem[Lucas and Kanade(1981)]{Lucas1981a}
+Bruce~D Lucas and Takeo Kanade.
+\newblock {An Iterative Image Registration Technique with an Application to
+  Stereo Vision}.
+\newblock \emph{Imaging}, 130:\penalty0 674--679, 1981.
+\newblock ISSN 17486815.
+
+\bibitem[Harris and Stephens(1988)]{Harris1988}
+C.~Harris and M.~Stephens.
+\newblock {A Combined Corner and Edge Detector}.
+\newblock \emph{Procedings of the Alvey Vision Conference 1988}, pages
+  147--151, 1988.
+\newblock ISSN 09639292.
+
+\bibitem[Haralick et~al.(1973)Haralick, Shanmugam, and Dinstein]{Haralick1973}
+Robert~M. Haralick, K.~Shanmugam, and Its'Hak Dinstein.
+\newblock {Textural Features for Image Classification}.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics}, 3, 1973.
+\newblock ISSN 0018-9472.
+
+\bibitem[Nickels and Hutchinson(1997)]{Nickels1997}
+Kevin~M. Nickels and Seth Hutchinson.
+\newblock {Textured image segmentation}, 1997.
+\newblock ISSN 02628856.
+
+\bibitem[Mallat(1989)]{Mallat1989}
+Stephane~G. Mallat.
+\newblock {Theory for multiresolution signal decomposition: the wavelet
+  representation}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 11:\penalty0 674--693, 1989.
+\newblock ISSN 01628828.
 
 \bibitem[McIvor(2000)]{McIvor2000}
 Am~McIvor.
@@ -64,19 +168,6 @@ Jianbo Shi~Jianbo Shi and C.~Tomasi.
 David~G Lowe.
 \newblock {Distinctive Image Features from Scale-Invariant Keypoints}.
 \newblock pages 1--28, 2004.
-
-\bibitem[Harris and Stephens(1988)]{Harris1988}
-C.~Harris and M.~Stephens.
-\newblock {A Combined Corner and Edge Detector}.
-\newblock \emph{Procedings of the Alvey Vision Conference 1988}, pages
-  147--151, 1988.
-\newblock ISSN 09639292.
-
-\bibitem[Wu et~al.(2013)Wu, Lim, and Yang]{Wu2013b}
-Yi~Wu, Jongwoo Lim, and Ming-Hsuan Yang.
-\newblock {Online Object Tracking: A Benchmark}.
-\newblock \emph{2013 IEEE Conference on Computer Vision and Pattern
-  Recognition}, \penalty0 (Iccv):\penalty0 2411--2418, June 2013.
 
 \bibitem[Qin and Shelton(2012)]{Qin2012}
 Zhen Qin and Christian~R. Shelton.
@@ -169,14 +260,6 @@ Vincent Lepetit and Pascal Fua.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 28:\penalty0 1465--1479, 2006.
 \newblock ISSN 01628828.
-
-\bibitem[Black and Jepson(1996)]{Black1996}
-Michael~J Black and Allan~D Jepson.
-\newblock {EigenTracking: Robust Matching and Tracking of Articulated Objects
-  Using a View-Based Representation}.
-\newblock \emph{International Journal of Computer Vision}, 26:\penalty0 63--84,
-  1996.
-\newblock ISSN 0920-5691.
 
 \bibitem[Comaniciu et~al.(2000)Comaniciu, Ramesh, and Meer]{Comaniciu2000}
 D~Comaniciu, V~Ramesh, and P~Meer.
@@ -299,5 +382,11 @@ Christian Bailer, Alain Pagani, and Didier Stricker.
   Fusion}.
 \newblock In \emph{European Conference on Computer Vision}, pages 170--185,
   2014.
+
+\bibitem[Wu et~al.(2013)Wu, Lim, and Yang]{Wu2013b}
+Yi~Wu, Jongwoo Lim, and Ming-Hsuan Yang.
+\newblock {Online Object Tracking: A Benchmark}.
+\newblock \emph{2013 IEEE Conference on Computer Vision and Pattern
+  Recognition}, \penalty0 (Iccv):\penalty0 2411--2418, June 2013.
 
 \end{thebibliography}
