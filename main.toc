@@ -29,12 +29,13 @@
 \contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{19}{subsection.44}
 \contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{20}{subsection.46}
 \contentsline {chapter}{\numberline {4}Experiments}{21}{chapter.48}
-\contentsline {subsection}{\numberline {4.0.4}Experimental setup}{21}{subsection.52}
-\contentsline {subsection}{\numberline {4.0.5}Evaluation Methodology}{21}{subsection.53}
-\contentsline {subsection}{\numberline {4.0.6}Tracker pool}{22}{subsection.54}
-\contentsline {subsection}{\numberline {4.0.7}Benchmarking results}{22}{subsection.57}
-\contentsline {subsection}{\numberline {4.0.8}Analysis of the tracking ensemble}{24}{subsection.58}
-\contentsline {subsection}{\numberline {4.0.9}Experiments with sequence attributes}{26}{subsection.70}
+\contentsline {section}{\numberline {4.1}Implementation details}{21}{section.49}
+\contentsline {section}{\numberline {4.2}Evaluation Methodology}{21}{section.53}
+\contentsline {section}{\numberline {4.3}Dataset}{22}{section.54}
+\contentsline {section}{\numberline {4.4}Tracker pool}{23}{section.60}
+\contentsline {section}{\numberline {4.5}Benchmarking results}{24}{section.62}
+\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{24}{section.63}
+\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{27}{section.75}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{28}{dummy.71}
+\contentsline {chapter}{Bibliography}{29}{dummy.76}

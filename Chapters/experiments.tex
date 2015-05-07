@@ -3,6 +3,7 @@
 \label{chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 \lhead{Chapter 4. \emph{Experiments}} 
+\label{chapter::experiments}
 
 In this section we report evaluations for our proposed approach. We compare our
 tracking ensemble method and other state-of-the-art trackers using complete
@@ -10,7 +11,14 @@ tracking ensemble method and other state-of-the-art trackers using complete
 quantitative analysis of our ensemble tracker, such as
 individual performance of trackers and effect of the tracker pool.
 
-\label{sec:experiments}
+\section{Implementation details}
+We implemented our online ensemble approach in MATLAB. CL clustering method is
+implemented in C++ and ported as \textit{mex} function. Object model corresponds
+to a standard RBF SVM, implemented in LIBSVM library. To extract HOG features,
+we made use of Piotr Toolbox for Matlab using default parameters. All
+experiments were performed on a PC with an Intel Xeon CPU and 16 GB of RAM using
+same parameters over default dataset. This is commonly used to prevent
+over-tuning.
 
 \begin{figure*}[t]
 \centering
@@ -27,22 +35,7 @@ individual performance of trackers and effect of the tracker pool.
 \label{fig:results}
 \end{figure*}
 
-\subsection{Experimental setup}
-In order to evaluate the performance of our proposed ensemble tracking,
-we adopt the Online Object Tracking Benchmark from \cite{Wu2013}.
-This is an extensive benchmarking dataset that includes 50 sequences
-annotated with 11 attributes.
-The dataset includes challenging scenarios such as motion blur,
-illumination changes, scale variation, occlusions,
-in-plane and out-of-plane rotations, object deformation,
-background clutter and low resolution.
-
-We implement our online ensemble tracking algorithm in MATLAB.
-All experiments are performed on desktop with an Intel Xeon CPU
-and 16 GB of RAM.
-
-
-\subsection{Evaluation Methodology}
+\section{Evaluation Methodology}
 To validate the performance of our proposed approach, we follow the one-pass
 evaluation methodology (OPE) proposed in \cite{Wu2013}. 
 We summarize the performance using the precision and success plots.
@@ -70,7 +63,30 @@ This overlap measure penalizes if the scale of the target is estimated incorrect
 In contrast to precision, trackers are ranked using area under
 the curve (AUC) metric, which relates to the average overlap across all frames. 
 
-\subsection{Tracker pool}
+\section{Dataset}
+In order to evaluate the performance of our proposed ensemble tracking,
+we adopt the Online Object Tracking Benchmark (OOTB) from \cite{Wu2013}.
+This is an extensive benchmarking dataset that includes 50 sequences
+annotated with 11 attributes.
+The dataset includes challenging scenarios such as motion blur,
+illumination changes, scale variation, occlusions,
+in-plane and out-of-plane rotations, object deformation,
+background clutter and low resolution. The selection criterias of this dataset
+are enumerated below. 
+\begin{enumerate}
+\item For better comparison, OOTB videos are widely used as benchmark sequences
+in recent literature, allowing us to make a fair comparison to state-of-the-art
+algorithms.
+\item OOTB comes with ground-truth annotations for each sequence. This avoid
+labeling process.
+\item Each sequence corresponds to a set of image frames. This format allows to
+evaluate global processing time of the ensemble approach.
+\item Each benchmark sequence provide an annotation with 11 attributes, which
+explain the challenging scenarios encountered. This allow us to make
+attribute-based comparisons, which can show strengths and weaknesses
+of different trackers.
+
+\end{enumerate}
 
 \begin{figure*}[t!]
 \centering
@@ -94,42 +110,54 @@ the curve (AUC) metric, which relates to the average overlap across all frames.
 \label{fig::clustvsapp}
 \end{figure*}
 
-We integrate into our pool tracking algorithms whose original source code
-is publicly available.
+
+\section{Tracker pool}
+
 %All trackers were modified in order to store their results and save
 %their states on each frame.
 Table \ref{table:trackers} shows the list of the
-selected tracking algorithms. 
+selected tracking algorithms. The selection criterias for the trackers are
+enumerated below.
+\begin{itemize}
+\item \textbf{Source code: } We integrate into our pool tracking algorithms
+whose original source code is publicly available. Executable files were not
+selected.
+\item \textbf{Store current state: } On each frame, a tracker must be able to
+store current state and give current result.
+\item \textbf{Trackers bounding box result: } All results must be given as
+a generic format (x,y, width, height), in order to perform ensemble.
+\end{itemize}
+
 
 \begin{table}[h!]
-\centering
 \caption{\small Selected tracking algorithms for ensemble method. \textbf{Code Column}: 
 M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.}
-\begin{tabular}{@{}p{9.5cm}ll@{}}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llll}
 \toprule
- \textbf{Method}&  \textbf{Code}&  \\ \midrule
- Template matching - TM \cite{Collins2005a}&  other&  \\
- Mean Shift - MS \cite{Collins2005a}&  other&  \\
- Variance Ratio - VR \cite{Collins2005a}&  other&  \\
- Peak Difference - PD \cite{Collins2005a}&  other&  \\
- Ratio Shift - RS \cite{Collins2005a}&  other&  \\ 
- Adaptive Structural Local Sparse Appearance Model - ASLA \cite{Jia2012}&  MC& 
- \\  Compressive Tracker - CT \cite{Zhang2012a}&  MC&  \\
- Minimum Experts Entropy Minimization - MEEM \cite{zhang2014meem}&  MC&  \\ 
- Self-paced learning for long-term tracking - SPLTT \cite{Supancic2013}&  MC& \\ 
- Kernelized Correlation Filters - KCF \cite{Henriques2014}&  M&  \\ 
- Dual Correlation Filters - DCF \cite{Henriques2014}&  M&  \\  
- Spatio-temporal Context Tracker - SCT \cite{Zhang2013}&  M&  \\
- Circulant Structure Kernel - CSK, sKCF \cite{Henriques2014}&  M&  \\
- Robust CSK tracker - RCSK \cite{Danelljan2014}&  M&  \\  
- Minimum Output Sum of Squared Error - MOSSE \cite{Bolme2010}&  M&  \\ 
+ \textbf{Method}&  \textbf{Type}& \textbf{Code}& \\ \midrule
+ Template matching - TM \cite{Collins2005a}& Template-based& other&  \\
+ Mean Shift - MS \cite{Collins2005a}& Point-based& other&  \\
+ Variance Ratio - VR \cite{Collins2005a}& Point-based& other&  \\
+ Peak Difference - PD \cite{Collins2005a}& Point-based& other&  \\
+ Ratio Shift - RS \cite{Collins2005a}& Point-based& other&  \\ 
+ Adaptive Structural Local Sparse Appearance \\ Model - ASLA \cite{Jia2012}& Sparse representation&  MC& 
+ \\  Compressive Tracker - CT \cite{Zhang2012a}& Sparse representation& MC&  \\
+ Minimum Experts Entropy Minimization - MEEM \cite{zhang2014meem}& tracking by detection& MC&  \\ 
+ Self-paced learning for long-term tracking - SPLTT \cite{Supancic2013}& tracking by detection& MC& \\ 
+ Kernelized Correlation Filters - KCF \cite{Henriques2014}& Template-based& M&  \\ 
+ Dual Correlation Filters - DCF \cite{Henriques2014}& Template-based& M&  \\  
+ Spatio-temporal Context Tracker - SCT \cite{Zhang2013}& Template-based& M&  \\
+ Circulant Structure Kernel - CSK, sKCF \cite{Henriques2014}& Template-based& M&  \\
+ Robust CSK tracker - RCSK \cite{Danelljan2014}& Template-based& M&\\  
+ Minimum Output Sum of Squared Error - MOSSE \cite{Bolme2010}& Template-based& M&  \\ 
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \label{table:trackers}
 \end{table}
 
 
-\subsection{Benchmarking results}
+\section{Benchmarking results}
 
 We report the performance of our ensemble tracking algorithm on the 50
 benchmarking sequences in
@@ -160,7 +188,7 @@ fails tracking the object.
 %However, our method outperforms each individual tracker and state-of-the-art
 %trackers in success plot, where scale is considered.
 
-\subsection{Analysis of the tracking ensemble}
+\section{Analysis of the tracking ensemble}
 In this subsection, we focus on the relevance of the number of trackers in the pool.
 We vary the size of the tracker pool in order to evaluate its effect on the
 performance of the ensemble.
@@ -174,9 +202,10 @@ We also study the effect of the inlier selection criteria of Section
 
 
 \begin{table}[h!]
+\centering
 \caption{\small Average AUC and precision for live fusion methods tested in 50 videos
 		dataset.}
-\resizebox{\linewidth}{!}{%
+\resizebox{0.9\linewidth}{!}{%
 \begin{tabular}{llll}
 \hline
 \textbf{Method}     & \textbf{\# trackers} & \textbf{Success(AUC)} & \textbf{Precision(20px)} \\
@@ -263,7 +292,7 @@ central bounding box, in comparison with KCF or RCSK. Also, trackers that were
 considered spurious in previous experiments, have high rate in outliers bar
 (MS, VR, PD, RS). 
 
-\subsection{Experiments with sequence attributes}
+\section{Experiments with sequence attributes}
 
 The videos in the benchmark dataset are organized and selected with attributes,
 which describe challenges present in the sequence - \eg occlusion, object

@@ -160,15 +160,22 @@
 \newlabel{fig::outliers}{{3.7}{20}{Outliers reinitialization}{figure.caption.47}{}}
 \citation{Wu2013}
 \citation{Wu2013}
-\citation{Wu2013}
 \citation{Babenko2010,Wu2013,Henriques2014}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments}{21}{chapter.48}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chapter4}{{4}{21}{Experiments}{chapter.48}{}}
-\newlabel{sec:experiments}{{4}{21}{Experiments}{chapter.48}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.4}Experimental setup}{21}{subsection.52}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.5}Evaluation Methodology}{21}{subsection.53}}
+\newlabel{chapter::experiments}{{4}{21}{Experiments}{chapter.48}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Implementation details}{21}{section.49}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Evaluation Methodology}{21}{section.53}}
+\citation{Wu2013}
+\newlabel{fig:precision_plot}{{4.1a}{22}{Subfigure 4 4.1a}{subfigure.51}{}}
+\newlabel{sub@fig:precision_plot}{{(a)}{a}{Subfigure 4 4.1a\relax }{subfigure.51}{}}
+\newlabel{fig:success_plot}{{4.1b}{22}{Subfigure 4 4.1b}{subfigure.52}{}}
+\newlabel{sub@fig:success_plot}{{(b)}{b}{Subfigure 4 4.1b\relax }{subfigure.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }}{22}{figure.caption.50}}
+\newlabel{fig:results}{{4.1}{22}{\small Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }{figure.caption.50}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dataset}{22}{section.54}}
 \citation{Collins2005a}
 \citation{Collins2005a}
 \citation{Collins2005a}
@@ -187,35 +194,29 @@
 \citation{Hare2011}
 \citation{Zhong2012}
 \citation{Kalal2011}
-\newlabel{fig:precision_plot}{{4.1a}{22}{Subfigure 4 4.1a}{subfigure.50}{}}
-\newlabel{sub@fig:precision_plot}{{(a)}{a}{Subfigure 4 4.1a\relax }{subfigure.50}{}}
-\newlabel{fig:success_plot}{{4.1b}{22}{Subfigure 4 4.1b}{subfigure.51}{}}
-\newlabel{sub@fig:success_plot}{{(b)}{b}{Subfigure 4 4.1b\relax }{subfigure.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }}{22}{figure.caption.49}}
-\newlabel{fig:results}{{4.1}{22}{\small Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }{figure.caption.49}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.6}Tracker pool}{22}{subsection.54}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.7}Benchmarking results}{22}{subsection.57}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Qualitative results for object tracking applying both selection criterias in two sequences. \textbf  {Green} bounding box corresponds to appearance score selection. \textbf  {Blue} box to cluster size. In \textit  {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit  {soccer}, appearance selection loses target in some frames.\relax }}{23}{figure.caption.55}}
-\newlabel{fig::clustvsapp}{{4.2}{23}{\small Qualitative results for object tracking applying both selection criterias in two sequences. \textbf {Green} bounding box corresponds to appearance score selection. \textbf {Blue} box to cluster size. In \textit {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit {soccer}, appearance selection loses target in some frames.\relax }{figure.caption.55}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Selected tracking algorithms for ensemble method. \textbf  {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }}{23}{table.caption.56}}
-\newlabel{table:trackers}{{4.1}{23}{\small Selected tracking algorithms for ensemble method. \textbf {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }{table.caption.56}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.8}Analysis of the tracking ensemble}{24}{subsection.58}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }}{24}{table.caption.59}}
-\newlabel{table:trackers_number}{{4.2}{24}{\small Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }{table.caption.59}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Statistics for each tracker in the ensemble over all frames. \relax }}{24}{figure.caption.60}}
-\newlabel{fig:stats}{{4.3}{24}{\small Statistics for each tracker in the ensemble over all frames. \relax }{figure.caption.60}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Screenshots of tracking results.\relax }}{25}{figure.caption.61}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {bolt sequence.}}}{25}{subfigure.4.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {jogging-2 sequence.}}}{25}{subfigure.4.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {singer-1 sequence.}}}{25}{subfigure.4.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {football sequence.}}}{25}{subfigure.4.4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {singer-2 sequence.}}}{25}{subfigure.4.5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {skating1 sequence.}}}{25}{subfigure.4.6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {david3 sequence.}}}{25}{subfigure.4.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Qualitative results for object tracking applying both selection criterias in two sequences. \textbf  {Green} bounding box corresponds to appearance score selection. \textbf  {Blue} box to cluster size. In \textit  {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit  {soccer}, appearance selection loses target in some frames.\relax }}{23}{figure.caption.59}}
+\newlabel{fig::clustvsapp}{{4.2}{23}{\small Qualitative results for object tracking applying both selection criterias in two sequences. \textbf {Green} bounding box corresponds to appearance score selection. \textbf {Blue} box to cluster size. In \textit {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit {soccer}, appearance selection loses target in some frames.\relax }{figure.caption.59}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Tracker pool}{23}{section.60}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Selected tracking algorithms for ensemble method. \textbf  {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }}{24}{table.caption.61}}
+\newlabel{table:trackers}{{4.1}{24}{\small Selected tracking algorithms for ensemble method. \textbf {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }{table.caption.61}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Benchmarking results}{24}{section.62}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{24}{section.63}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }}{25}{table.caption.64}}
+\newlabel{table:trackers_number}{{4.2}{25}{\small Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }{table.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Statistics for each tracker in the ensemble over all frames. \relax }}{25}{figure.caption.65}}
+\newlabel{fig:stats}{{4.3}{25}{\small Statistics for each tracker in the ensemble over all frames. \relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Screenshots of tracking results.\relax }}{26}{figure.caption.66}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {bolt sequence.}}}{26}{subfigure.4.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {jogging-2 sequence.}}}{26}{subfigure.4.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {singer-1 sequence.}}}{26}{subfigure.4.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {football sequence.}}}{26}{subfigure.4.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {singer-2 sequence.}}}{26}{subfigure.4.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {skating1 sequence.}}}{26}{subfigure.4.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {david3 sequence.}}}{26}{subfigure.4.7}}
 \citation{Wu2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }}{26}{figure.caption.69}}
-\newlabel{fig:attributes}{{4.5}{26}{\small Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }{figure.caption.69}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.9}Experiments with sequence attributes}{26}{subsection.70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }}{27}{figure.caption.74}}
+\newlabel{fig:attributes}{{4.5}{27}{\small Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }{figure.caption.74}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{27}{section.75}}
 \@writefile{toc}{\vspace  {2em}}
 \@writefile{toc}{\vspace  {2em}}
 \bibstyle{unsrtnatNEW}
@@ -230,8 +231,8 @@
 \bibcite{Bowyer2001}{{8}{2001}{{Bowyer et~al.}}{{Bowyer, Kranenburg, and Dougherty}}}
 \bibcite{Black1996}{{9}{1996}{{Black and Jepson}}{{}}}
 \bibcite{Lucas1981a}{{10}{1981}{{Lucas and Kanade}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{28}{dummy.71}}
-\newlabel{Bibliography}{{6}{28}{Experiments with sequence attributes}{dummy.71}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{29}{dummy.76}}
+\newlabel{Bibliography}{{6}{29}{Experiments with sequence attributes}{dummy.76}{}}
 \bibcite{Harris1988}{{11}{1988}{{Harris and Stephens}}{{}}}
 \bibcite{Haralick1973}{{12}{1973}{{Haralick et~al.}}{{Haralick, Shanmugam, and Dinstein}}}
 \bibcite{Nickels1997}{{13}{1997}{{Nickels and Hutchinson}}{{}}}
