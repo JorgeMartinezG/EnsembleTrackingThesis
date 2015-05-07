@@ -83,7 +83,7 @@
 \citation{Liu2007,Grabner2006}
 \citation{Isard2001,Lepetit2006,Black1996,Comaniciu2000,Adam2006}
 \citation{Ross2007,Matthews2004,Jepson2003}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \cite  {Rittscher2000}\relax }}{8}{figure.caption.21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Object tracking using particle filter. Image taken from \cite  {Rittscher2000}\relax }}{8}{figure.caption.21}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Kernel Tracking}{8}{subsection.22}}
 \citation{Freund1997a}
 \citation{Avidan2007,Grabner2008,Oza2000}
@@ -91,60 +91,83 @@
 \citation{Babenko2010}
 \citation{Li2001}
 \citation{Cremers2003}
-\citation{Avidan2007}
-\citation{Bai2013}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Overview for online boosting object tracker\relax }}{9}{figure.caption.23}}
 \newlabel{fig::overview_boost}{{2.4}{9}{Overview for online boosting object tracker\relax }{figure.caption.23}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Silhouette Tracking}{9}{subsection.24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }}{10}{figure.caption.25}}
+\newlabel{fig::contour}{{2.5}{10}{Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Tracking Datasets and Challenges}{10}{section.26}}
+\citation{Maggio2005}
+\citation{Munder2006}
+\citation{PETS}
+\citation{Torralba2003}
+\citation{Vezzani2010}
+\citation{Wu2013b}
+\citation{Smeulders2014}
+\citation{KleinIROS10}
+\citation{Cehovin2013}
+\citation{Kalal2011}
+\citation{KwonL09}
+\citation{KwonL10}
+\citation{Santner2010a}
+\citation{Ross2007}
+\citation{Dinh2011}
+\citation{Wu2013b}
+\citation{Smeulders2014}
+\citation{godec11a}
+\citation{Babenko2010}
+\citation{Maggio2005}
+\citation{Munder2006}
+\citation{PETS}
+\citation{Torralba2003}
+\citation{Birchfield1998}
+\citation{Vezzani2010}
+\citation{Avidan2007}
+\citation{Bai2013}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Object tracking datasets\relax }}{12}{table.caption.27}}
+\newlabel{table:datasets}{{2.1}{12}{Object tracking datasets\relax }{table.caption.27}{}}
 \citation{Santner2010a}
 \citation{Kwon2009}
 \citation{Kwon2011a}
 \citation{Bailer2014}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }}{10}{figure.caption.25}}
-\newlabel{fig::contour}{{2.5}{10}{Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }{figure.caption.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Tracking applying ensemble of trackers}{10}{subsection.26}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Challenges}{11}{section.27}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Tracking Datasets}{12}{section.28}}
-\citation{Wu2013b}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Popular object tracking datasets\relax }}{13}{table.caption.29}}
-\newlabel{table:datasets}{{2.1}{13}{Popular object tracking datasets\relax }{table.caption.29}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Proposed approach}{14}{chapter.30}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Tracking applying ensemble of trackers}{13}{section.28}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Proposed approach}{14}{chapter.29}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter2}{{3}{14}{Proposed approach}{chapter.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Global tracking process2}}{14}{figure.caption.31}}
-\newlabel{fig::global_diagram}{{3.1}{14}{Global tracking process2}{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview}{14}{section.32}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Basic diagram of our approach. On each frame, we analyze coherence between tracking results. We apply spatial and appearance models with the goal of finding inliers. Then, we select best tracker that follows the target. Finally, we reset outliers and update object model on necessary cases. \relax }}{15}{figure.caption.33}}
-\newlabel{fig::diagram}{{3.2}{15}{\small Basic diagram of our approach. On each frame, we analyze coherence between tracking results. We apply spatial and appearance models with the goal of finding inliers. Then, we select best tracker that follows the target. Finally, we reset outliers and update object model on necessary cases. \relax }{figure.caption.33}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.34}}
+\newlabel{chapter2}{{3}{14}{Proposed approach}{chapter.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Global tracking process2}}{14}{figure.caption.30}}
+\newlabel{fig::global_diagram}{{3.1}{14}{Global tracking process2}{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview}{14}{section.31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Basic diagram of our approach. On each frame, we analyze coherence between tracking results. We apply spatial and appearance models with the goal of finding inliers. Then, we select best tracker that follows the target. Finally, we reset outliers and update object model on necessary cases. \relax }}{15}{figure.caption.32}}
+\newlabel{fig::diagram}{{3.2}{15}{\small Basic diagram of our approach. On each frame, we analyze coherence between tracking results. We apply spatial and appearance models with the goal of finding inliers. Then, we select best tracker that follows the target. Finally, we reset outliers and update object model on necessary cases. \relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.33}}
 \citation{Jain88}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Spatial clustering.}{16}{subsection.35}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Global tracking process2}}{16}{figure.caption.36}}
-\newlabel{fig::global_diagram}{{3.3}{16}{Global tracking process2}{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Spatial clustering.}{16}{subsection.34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Global tracking process2}}{16}{figure.caption.35}}
+\newlabel{fig::global_diagram}{{3.3}{16}{Global tracking process2}{figure.caption.35}{}}
 \citation{Babenko2010,Grabner2008,Grabner2006}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Object modeling.}{17}{section.38}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Global tracking process2}}{17}{figure.caption.39}}
-\newlabel{fig::global_diagram}{{3.4}{17}{Global tracking process2}{figure.caption.39}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Object modeling.}{17}{section.37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Global tracking process2}}{17}{figure.caption.38}}
+\newlabel{fig::global_diagram}{{3.4}{17}{Global tracking process2}{figure.caption.38}{}}
 \citation{zhang2014meem,Bai2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Global tracking process2}}{18}{figure.caption.40}}
-\newlabel{fig::global_diagram}{{3.5}{18}{Global tracking process2}{figure.caption.40}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{18}{subsection.41}}
-\newlabel{sec:inliers}{{3.3.1}{18}{Selection of inliers}{subsection.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip System behavior in five frames. Given image input, trackers will give results on where the object might be (first row). Then, all results are clustered using hierarchical agglomerative clustering (second row). We focus on selecting the group with highest number of members, or cluster with best appearance score (third row). Finally, we reiniialize outliers (frame 30 in this case).\relax }}{19}{figure.caption.44}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{19}{subsection.45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{20}{subsection.47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Global tracking process2}}{18}{figure.caption.39}}
+\newlabel{fig::global_diagram}{{3.5}{18}{Global tracking process2}{figure.caption.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{18}{subsection.40}}
+\newlabel{sec:inliers}{{3.3.1}{18}{Selection of inliers}{subsection.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip System behavior in five frames. Given image input, trackers will give results on where the object might be (first row). Then, all results are clustered using hierarchical agglomerative clustering (second row). We focus on selecting the group with highest number of members, or cluster with best appearance score (third row). Finally, we reiniialize outliers (frame 30 in this case).\relax }}{19}{figure.caption.43}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{19}{subsection.44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{20}{subsection.46}}
 \citation{Wu2013}
 \citation{Wu2013}
 \citation{Wu2013}
 \citation{Babenko2010,Wu2013,Henriques2014}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments}{21}{chapter.49}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments}{21}{chapter.48}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter4}{{4}{21}{Experiments}{chapter.49}{}}
-\newlabel{sec:experiments}{{4}{21}{Experiments}{chapter.49}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.4}Experimental setup}{21}{subsection.53}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.5}Evaluation Methodology}{21}{subsection.54}}
+\newlabel{chapter4}{{4}{21}{Experiments}{chapter.48}{}}
+\newlabel{sec:experiments}{{4}{21}{Experiments}{chapter.48}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.4}Experimental setup}{21}{subsection.52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.5}Evaluation Methodology}{21}{subsection.53}}
 \citation{Collins2005a}
 \citation{Collins2005a}
 \citation{Collins2005a}
@@ -163,26 +186,26 @@
 \citation{Hare2011}
 \citation{Zhong2012}
 \citation{Kalal2011}
-\newlabel{fig:precision_plot}{{4.1a}{22}{Subfigure 4 4.1a}{subfigure.51}{}}
-\newlabel{sub@fig:precision_plot}{{(a)}{a}{Subfigure 4 4.1a\relax }{subfigure.51}{}}
-\newlabel{fig:success_plot}{{4.1b}{22}{Subfigure 4 4.1b}{subfigure.52}{}}
-\newlabel{sub@fig:success_plot}{{(b)}{b}{Subfigure 4 4.1b\relax }{subfigure.52}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }}{22}{figure.caption.50}}
-\newlabel{fig:results}{{4.1}{22}{\small Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }{figure.caption.50}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.6}Tracker pool}{22}{subsection.55}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.7}Benchmarking results}{22}{subsection.58}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Qualitative results for object tracking applying both selection criterias in two sequences. \textbf  {Green} bounding box corresponds to appearance score selection. \textbf  {Blue} box to cluster size. In \textit  {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit  {soccer}, appearance selection loses target in some frames.\relax }}{23}{figure.caption.56}}
-\newlabel{fig::clustvsapp}{{4.2}{23}{\small Qualitative results for object tracking applying both selection criterias in two sequences. \textbf {Green} bounding box corresponds to appearance score selection. \textbf {Blue} box to cluster size. In \textit {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit {soccer}, appearance selection loses target in some frames.\relax }{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.8}Analysis of the tracking ensemble}{23}{subsection.59}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Selected tracking algorithms for ensemble method. \textbf  {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }}{24}{table.caption.57}}
-\newlabel{table:trackers}{{4.1}{24}{\small Selected tracking algorithms for ensemble method. \textbf {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }{table.caption.57}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }}{24}{table.caption.60}}
-\newlabel{table:trackers_number}{{4.2}{24}{\small Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }{table.caption.60}{}}
+\newlabel{fig:precision_plot}{{4.1a}{22}{Subfigure 4 4.1a}{subfigure.50}{}}
+\newlabel{sub@fig:precision_plot}{{(a)}{a}{Subfigure 4 4.1a\relax }{subfigure.50}{}}
+\newlabel{fig:success_plot}{{4.1b}{22}{Subfigure 4 4.1b}{subfigure.51}{}}
+\newlabel{sub@fig:success_plot}{{(b)}{b}{Subfigure 4 4.1b\relax }{subfigure.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }}{22}{figure.caption.49}}
+\newlabel{fig:results}{{4.1}{22}{\small Precision and success plots for all 50 sequences. Precision and success ratios are measured by center location error and overlap ratio, respectively. Trackers are ranked using scores of 20 pixels for precision and AUC for success.\relax }{figure.caption.49}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.6}Tracker pool}{22}{subsection.54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.7}Benchmarking results}{22}{subsection.57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Qualitative results for object tracking applying both selection criterias in two sequences. \textbf  {Green} bounding box corresponds to appearance score selection. \textbf  {Blue} box to cluster size. In \textit  {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit  {soccer}, appearance selection loses target in some frames.\relax }}{23}{figure.caption.55}}
+\newlabel{fig::clustvsapp}{{4.2}{23}{\small Qualitative results for object tracking applying both selection criterias in two sequences. \textbf {Green} bounding box corresponds to appearance score selection. \textbf {Blue} box to cluster size. In \textit {subway} when occlusion happens, many trackers are lost, creating a big cluster. In cases of background clutter \textit {soccer}, appearance selection loses target in some frames.\relax }{figure.caption.55}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.8}Analysis of the tracking ensemble}{23}{subsection.58}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Selected tracking algorithms for ensemble method. \textbf  {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }}{24}{table.caption.56}}
+\newlabel{table:trackers}{{4.1}{24}{\small Selected tracking algorithms for ensemble method. \textbf {Code Column}: M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.\relax }{table.caption.56}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }}{24}{table.caption.59}}
+\newlabel{table:trackers_number}{{4.2}{24}{\small Average AUC and precision for live fusion methods tested in 50 videos dataset.\relax }{table.caption.59}{}}
 \citation{Wu2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Statistics for each tracker in the ensemble over all frames. \relax }}{25}{figure.caption.61}}
-\newlabel{fig:stats}{{4.3}{25}{\small Statistics for each tracker in the ensemble over all frames. \relax }{figure.caption.61}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.9}Experiments with sequence attributes}{25}{subsection.71}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Screenshots of tracking results.\relax }}{26}{figure.caption.62}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Statistics for each tracker in the ensemble over all frames. \relax }}{25}{figure.caption.60}}
+\newlabel{fig:stats}{{4.3}{25}{\small Statistics for each tracker in the ensemble over all frames. \relax }{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.9}Experiments with sequence attributes}{25}{subsection.70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Screenshots of tracking results.\relax }}{26}{figure.caption.61}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {bolt sequence.}}}{26}{subfigure.4.1}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {jogging-2 sequence.}}}{26}{subfigure.4.2}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {singer-1 sequence.}}}{26}{subfigure.4.3}}
@@ -190,12 +213,12 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {singer-2 sequence.}}}{26}{subfigure.4.5}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {skating1 sequence.}}}{26}{subfigure.4.6}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {david3 sequence.}}}{26}{subfigure.4.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }}{27}{figure.caption.70}}
-\newlabel{fig:attributes}{{4.5}{27}{\small Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }{figure.caption.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }}{27}{figure.caption.69}}
+\newlabel{fig:attributes}{{4.5}{27}{\small Average AUC ranking scores of top trackers on different subsets of test sequences in OPE. Each subset of sequences corresponds to an attribute: IV - illumination variation, OPR - out of plane rotation, SV- scale variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM - fast motion, IPR - in plane rotation, OV - out of view, BC - background clutter, and LR - low resolution. Average AUC for all 50 videos is presented as global.\relax }{figure.caption.69}{}}
 \@writefile{toc}{\vspace  {2em}}
 \@writefile{toc}{\vspace  {2em}}
 \bibstyle{unsrtnatNEW}
-\bibdata{References/final_relatedwork,References/related_work}
+\bibdata{References/related_work}
 \bibcite{Pham2010}{{1}{2010}{{Pham et~al.}}{{Pham, Vo, Hung, and Bac}}}
 \bibcite{Yilmaz2006}{{2}{2006}{{Yilmaz et~al.}}{{Yilmaz, Javed, and Shah}}}
 \bibcite{Rittscher2000}{{3}{2000}{{Rittscher et~al.}}{{Rittscher, Kato, Joga, and Blake}}}
@@ -206,10 +229,10 @@
 \bibcite{Paschos2001}{{8}{2001}{{Paschos}}{{}}}
 \bibcite{Song1996}{{9}{1996}{{Song et~al.}}{{Song, Kittler, and Petrou}}}
 \bibcite{Canny1986}{{10}{1986}{{Canny}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{28}{dummy.72}}
-\newlabel{Bibliography}{{6}{28}{Experiments with sequence attributes}{dummy.72}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{28}{dummy.71}}
+\newlabel{Bibliography}{{6}{28}{Experiments with sequence attributes}{dummy.71}{}}
 \bibcite{Bowyer2001}{{11}{2001}{{Bowyer et~al.}}{{Bowyer, Kranenburg, and Dougherty}}}
-\bibcite{Black1996}{{12}{1996}{{Black and Anandan}}{{}}}
+\bibcite{Black1996}{{12}{1996}{{Black and Jepson}}{{}}}
 \bibcite{Lucas1981a}{{13}{1981}{{Lucas and Kanade}}{{}}}
 \bibcite{Harris1988}{{14}{1988}{{Harris and Stephens}}{{}}}
 \bibcite{Haralick1973}{{15}{1973}{{Haralick et~al.}}{{Haralick, Shanmugam, and Dinstein}}}
@@ -249,9 +272,23 @@
 \bibcite{Babenko2010}{{49}{2010}{{Babenko et~al.}}{{Babenko, Yang, and Belongie}}}
 \bibcite{Li2001}{{50}{2001}{{Li et~al.}}{{Li, Chellappa, Zheng, and Der}}}
 \bibcite{Cremers2003}{{51}{2003}{{Cremers and Schn\"{o}rr}}{{}}}
-\bibcite{Bai2013}{{52}{2013}{{Bai et~al.}}{{Bai, Wu, Sclaroff, Betke, and Monnier}}}
-\bibcite{Santner2010a}{{53}{2010}{{Santner et~al.}}{{Santner, Leistner, Saffari, Pock, and Bischof}}}
-\bibcite{Kwon2009}{{54}{2009}{{Kwon and Lee}}{{}}}
-\bibcite{Kwon2011a}{{55}{2011}{{Kwon and Lee}}{{}}}
-\bibcite{Bailer2014}{{56}{2014}{{Bailer et~al.}}{{Bailer, Pagani, and Stricker}}}
+\bibcite{Maggio2005}{{52}{2005}{{Maggio and Cavallaro}}{{}}}
+\bibcite{Munder2006}{{53}{2006}{{Munder and Gavrila}}{{}}}
+\bibcite{PETS}{{54}{2009}{{Alahi et~al.}}{{Alahi, Jacques, Boursier, and Vandergheynst}}}
+\bibcite{Torralba2003}{{55}{2003}{{Torralba et~al.}}{{Torralba, Murphy, Freeman, and Rubin}}}
+\bibcite{Vezzani2010}{{56}{2010}{{Vezzani and Cucchiara}}{{}}}
 \bibcite{Wu2013b}{{57}{2013}{{Wu et~al.}}{{Wu, Lim, and Yang}}}
+\bibcite{Smeulders2014}{{58}{2014}{{Smeulders et~al.}}{{Smeulders, Chu, Cucchiara, Calderara, Dehghan, and Shah}}}
+\bibcite{KleinIROS10}{{59}{2010}{{Klein et~al.}}{{Klein, Schulz, Frintrop, and Cremers}}}
+\bibcite{Cehovin2013}{{60}{2013}{{Cehovin et~al.}}{{Cehovin, Kristan, and Leonardis}}}
+\bibcite{Kalal2011}{{61}{2011}{{Kalal et~al.}}{{Kalal, Mikolajczyk, and Matas}}}
+\bibcite{KwonL09}{{62}{2009{}}{{Kwon and Lee}}{{}}}
+\bibcite{KwonL10}{{63}{2010}{{Kwon and Lee}}{{}}}
+\bibcite{Santner2010a}{{64}{2010}{{Santner et~al.}}{{Santner, Leistner, Saffari, Pock, and Bischof}}}
+\bibcite{Dinh2011}{{65}{2011}{{Dinh et~al.}}{{Dinh, Vo, and Medioni}}}
+\bibcite{godec11a}{{66}{2011}{{Godec et~al.}}{{Godec, Roth, and Bischof}}}
+\bibcite{Birchfield1998}{{67}{1998}{{Birchfield}}{{}}}
+\bibcite{Bai2013}{{68}{2013}{{Bai et~al.}}{{Bai, Wu, Sclaroff, Betke, and Monnier}}}
+\bibcite{Kwon2009}{{69}{2009{}}{{Kwon and Lee}}{{}}}
+\bibcite{Kwon2011a}{{70}{2011}{{Kwon and Lee}}{{}}}
+\bibcite{Bailer2014}{{71}{2014}{{Bailer et~al.}}{{Bailer, Pagani, and Stricker}}}

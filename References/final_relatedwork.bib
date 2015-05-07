@@ -299,3 +299,116 @@ title = {{Resolving motion correspondence for densely moving points}},
 volume = {23},
 year = {2001}
 }
+@article{Vezzani2010,
+abstract = {The availability of new techniques and tools for Video Surveillance and the capability of storing huge amounts of visual data acquired by hundreds of cameras every day call for a convergence between pattern recognition, computer vision and multimedia paradigms. A clear need for this convergence is shown by new research projects which attempt to exploit both ontology-based retrieval and video analysis techniques also in the field of surveillance. This paper presents the ViSOR (Video Surveillance Online Repository) framework, designed with the aim of establishing an open platform for collecting, annotating, retrieving, and sharing surveillance videos, as well as evaluating the performance of automatic surveillance systems. Annotations are based on a reference ontology which has been defined integrating hundreds of concepts, some of them coming from the LSCOM and MediaMill ontologies. A new annotation classification schema is also provided, which is aimed at identifying the spatial, temporal and domain detail level used. The ViSOR web interface allows video browsing, querying by annotated concepts or by keywords, compressed video previewing, media downloading and uploading. Finally, ViSOR includes a performance evaluation desk which can be used to compare different annotations.},
+author = {Vezzani, Roberto and Cucchiara, Rita},
+doi = {10.1007/s11042-009-0402-9},
+isbn = {9781450318945},
+issn = {13807501},
+journal = {Multimedia Tools and Applications},
+keywords = {Annotation,ViSOR,Video repository,Video surveillance},
+pages = {359--380},
+title = {{Video surveillance online repository (ViSOR): An integrated framework}},
+volume = {50},
+year = {2010}
+}
+@InProceedings{PETS,
+   abstract    = {We propose to evaluate our sparsity driven people
+                 localization framework on crowded complex scenes. The
+                 problem is recast as a linear inverse problem. It relies
+                 on deducing an occupancy vector, i.e. the discretized
+                 occupancy of people on the ground, from the noisy binary
+                 silhouettes observed as foreground pixels in each camera.
+                 This inverse problem is regularized by imposing a sparse
+                 occupancy vector, i.e. made of few non-zero elements,
+                 while a particular dictionary of silhouettes linearly
+                 maps these non-empty grid locations to the multiple
+                 silhouettes viewed by the cameras network. The proposed
+                 approach is (i) generic to any scene of people, i.e.
+                 people are located in low and high density crowds, (ii)
+                 scalable to any number of cameras and already working
+                 with a single camera, (iii) unconstraint on the scene
+                 surface to be monitored. Qualitative and quantitative
+                 results are presented given the PETS 2009 dataset. The
+                 proposed algorithm detects people in high density crowd,
+                 count and track them given severely degraded foreground
+                 silhouettes.},
+   address     = {Snowbird, Utah},
+   affiliation = {EPFL},
+   author      = {Alahi, Alexandre and Jacques, Laurent and Boursier,
+                 Yannick and Vandergheynst, Pierre},
+   booktitle   = {{IEEE} {I}nternational {W}orkshop on {P}erformance
+                 {E}valuation of {T}racking and {S}urveillance},
+   details     = {http://infoscience.epfl.ch/record/141843},
+   keywords    = {Sparsity, People detection, crowd, multi-view,lts2,lts4},
+   location    = {Snowbird, Utah},
+   oai-id      = {oai:infoscience.epfl.ch:141843},
+   oai-set     = {conf},
+   publisher   = { },
+   review      = {REVIEWED},
+   series      = { },
+   status      = {PUBLISHED},
+   title       = {Sparsity-driven {P}eople {L}ocalization {A}lgorithm:
+                 {E}valuation in {C}rowded {S}cenes {E}nvironments},
+   unit        = {LTS2 LTS4},
+   year        = 2009
+}
+@article{Torralba2003,
+abstract = {While navigating in an environment, a vision system has to be able to recognize where it is and what the main objects in the scene are. We present a context-based vision system for place and object recognition. The goal is to identify familiar locations (e.g., office 610, conference room 941, main street), to categorize new environments (office, corridor, street) and to use that information to provide contextual priors for object recognition (e.g., tables are more likely in an office than a street). We present a low-dimensional global image representation that provides relevant information for place recognition and categorization, and show how such contextual information introduces strong priors that simplify object recognition. We have trained the system to recognize over 60 locations (indoors and outdoors) and to suggest the presence and locations of more than 20 different object types. The algorithm has been integrated into a mobile system that provides realtime feedback to the user.},
+author = {Torralba, A. and Murphy, K.P. and Freeman, W.T. and Rubin, M.A.},
+doi = {10.1109/ICCV.2003.1238354},
+isbn = {0-7695-1950-4},
+issn = {0769519504},
+journal = {Proceedings Ninth IEEE International Conference on Computer Vision},
+title = {{Context-based vision system for place and object recognition}},
+year = {2003}
+}
+@article{Smeulders2014,
+abstract = {There is a large variety of trackers, which have been proposed in the literature during the last two decades with some mixed success. Object tracking in realistic scenarios is a difficult problem, therefore, it remains a most active area of research in computer vision. A good tracker should perform well in a large number of videos involving illumination changes, occlusion, clutter, camera motion, low contrast, specularities, and at least six more aspects. However, the performance of proposed trackers have been evaluated typically on less than ten videos, or on the special purpose datasets. In this paper, we aim to evaluate trackers systematically and experimentally on 315 video fragments covering above aspects. We selected a set of nineteen trackers to include a wide variety of algorithms often cited in literature, supplemented with trackers appearing in 2010 and 2011 for which the code was publicly available. We demonstrate that trackers can be evaluated objectively by survival curves, Kaplan Meier statistics, and Grubs testing. We find that in the evaluation practice the F-score is as effective as the object tracking accuracy (OTA) score. The analysis under a large variety of circumstances provides objective insight into the strengths and weaknesses of trackers.},
+author = {Smeulders, Arnold W M and Chu, Dung M. and Cucchiara, Rita and Calderara, Simone and Dehghan, Afshin and Shah, Mubarak},
+doi = {10.1109/TPAMI.2013.230},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Camera surveillance,Computer vision,Image processing,Object tracking,Tracking dataset,Tracking evaluation,Video understanding},
+pages = {1442--1468},
+pmid = {24277945},
+title = {{Visual tracking: An experimental survey}},
+volume = {36},
+year = {2014}
+}
+@inproceedings{Maggio2005,
+abstract = {We propose a tracking algorithm based on a combination of Particle Filter and Mean Shift, and enhanced with a new adaptive state transition model. Particle Filter is robust to partial and total occlusions, can deal with multi-modal pdf s and can recover lost tracks. However, its complexity dramatically increases with the dimensionality of the sampled pdf. Mean Shift has a low complex- ity, but is unable to deal with multi-modal pdf s. To overcome these problems, the proposed tracker first produces a smaller number of samples than Particle Filter and then shifts the samples toward a close local maximum using Mean Shift. The transition model pre- dicts the state based on adaptive variances. Experimental results show that the combined tracker outperforms Particle Filter and Mean Shift in terms of accuracy in estimating the target size and position while generating 80\% less samples than Particle Filter.},
+author = {Maggio, Emilio and Cavallaro, Andrea},
+booktitle = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+doi = {10.1109/ICASSP.2005.1415381},
+isbn = {0780388747},
+issn = {15206149},
+title = {{Hybrid particle filter and mean shift tracker with adaptive transition model}},
+volume = {II},
+year = {2005}
+}
+@article{Munder2006,
+abstract = {Detecting people in images is key for several important application domains in computer vision. This paper presents an in-depth experimental study on pedestrian classification; multiple feature-classifier combinations are examined with respect to their ROC performance and efficiency. We investigate global versus local and adaptive versus nonadaptive features, as exemplified by PCA coefficients, Haar wavelets, and local receptive fields (LRFs). In terms of classifiers, we consider the popular Support Vector Machines (SVMs), feed-forward neural networks, and k-nearest neighbor classifier. Experiments are performed on a large data set consisting of 4,000 pedestrian and more than 25,000 nonpedestrian (labeled) images captured in outdoor urban environments. Statistically meaningful results are obtained by analyzing performance variances caused by varying training and test sets. Furthermore, we investigate how classification performance and training sample size are correlated. Sample size is adjusted by increasing the number of manually labeled training data or by employing automatic bootstrapping or cascade techniques. Our experiments show that the novel combination of SVMs with LRF features performs best. A boosted cascade of Haar wavelets can, however, reach quite competitive results, at a fraction of computational cost. The data set used in this paper is made public, establishing a benchmark for this important problem.},
+author = {Munder, S. and Gavrila, D. M.},
+doi = {10.1109/TPAMI.2006.217},
+isbn = {0162-8828 (Print)},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Classifier evaluation,Feature evaluation,Pedestrian classification,Performance analysis},
+pages = {1863--1868},
+pmid = {17063690},
+title = {{An experimental study on pedestrian classification}},
+volume = {28},
+year = {2006}
+}
+
+
+
+
+
+
+
+
+
+
+

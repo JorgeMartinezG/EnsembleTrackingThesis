@@ -1,19 +1,22 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnatNEW.bst
-Database file #1: References/final_relatedwork.bib
-Repeated entry---line 169 of file References/final_relatedwork.bib
- : @article{Mallat1989
- :                    ,
-I'm skipping whatever remains of this entry
-Database file #2: References/related_work.bib
-Repeated entry---line 296 of file References/related_work.bib
+Database file #1: References/related_work.bib
+Repeated entry---line 695 of file References/related_work.bib
  : @article{Black1996
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 584 of file References/related_work.bib
+Repeated entry---line 791 of file References/related_work.bib
  : @article{Harris1988
  :                    ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 863 of file References/related_work.bib
+ : @article{Mallat1989
+ :                    ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "KwonL09"
+refers to entry "DBLP:conf/cvpr/2009", which doesn't exist
+A bad cross reference---entry "KwonL10"
+refers to entry "DBLP:conf/cvpr/2010", which doesn't exist
 Warning--I didn't find a database entry for "Wu2013"
 Warning--I didn't find a database entry for "Jain88"
 Warning--I didn't find a database entry for "zhang2014meem"
@@ -27,7 +30,8 @@ Warning--I didn't find a database entry for "Danelljan2014"
 Warning--I didn't find a database entry for "Bolme2010"
 Warning--I didn't find a database entry for "Hare2011"
 Warning--I didn't find a database entry for "Zhong2012"
-Warning--I didn't find a database entry for "Kalal2011"
+Warning--I didn't find a database entry for "DBLP:conf/cvpr/2009"
+Warning--I didn't find a database entry for "DBLP:conf/cvpr/2010"
 Warning--empty journal in Lowe2004b
 Warning--there's a number but no volume in Wu2013b
-(There were 3 error messages)
+(There were 5 error messages)

@@ -5,15 +5,15 @@
 
 \lhead{Chapter 2. \emph{Related Work}} 
 
-In this chapter, we provide a review of some state-of-the-art tracking methods.
+In this chapter, we provide a review of state-of-the-art tracking methods.
 Numerous approaches for object tracking have been proposed before. These methods
 differ from each other based on the way the authors solve common questions, such
 as: Which object representation is suitable for tracking the target? How can
-motion, appearance, or shape of the object needs to be modeled?. The answers for
-these questions depend on the context/environment where tracking is performed and
-the visual features of the object that needs to be tracked. This chapter is
-focused on presenting methodologies for object tracking in general and not for
-specific objects, such as humans or faces.
+motion, appearance, or shape of the object needs to be modeled?. The answers 
+for these questions depend on the context/environment where tracking is
+performed and the visual features of the object that needs to be tracked. This
+chapter is focused on presenting methodologies for object tracking in general
+and not for specific objects, such as humans or faces.
 
 We follow a structure for describing the issues that are necessary to address
 when building an object tracker. In section \ref{sec::object_representation} we
@@ -22,7 +22,8 @@ describe common object representation and image features. Section
 scenario. In Section \ref{sec::tracking}, we categorize and describe
 existing tracking methods. Finally, section \ref{sec::datasets} shows existing
 datasets used for object tracking and explains challenges which are present
-in different video sequences.
+in different video sequences. Also, we show in section \ref{sec::ensemble}
+recent tracking methods that perform ensemble of multiple trackers or features.
 
 \section{Object representation and visual features.}
 \label{sec::object_representation}
@@ -112,7 +113,8 @@ A two-frame differencing method is presented in \cite{Lipton1998a}, where the
 pixels that satisfy the following equation are marked as foreground.\\
 \centerline{$|I_t(x,y), I_{t-1}(x,y)|>Th$}
 
-Other methods were developed in order to overcome drastic changes of two frame differencing. For instance, a three-frame differencing method \cite{Wang2003} 
+Other methods were developed in order to overcome drastic changes of two frame
+differencing. For instance, a three-frame differencing method \cite{Wang2003} 
 and a hybrid method which combines three-frame differencing with an adaptive
 background subtraction model \cite{Collins2000}.
 
@@ -120,7 +122,8 @@ background subtraction model \cite{Collins2000}.
 
 Statistical characteristics of pixels have been used, in order to overcome
 shortcomings between frames of basic background subtraction methods. The
-approaches consist in keeping and updating pixels statistics that belong to the background model. Foreground pixels are identified by comparing each pixel's
+approaches consist in keeping and updating pixels statistics that belong to the
+background model. Foreground pixels are identified by comparing each pixel's
 statistics with that of the background model. These methods are becoming more
 popular due to its reliability in scenes that contain noise, illumination
 changes and shadows. Some approaches apply Hidden Markov Models (HMM). These
@@ -158,22 +161,46 @@ Harris \cite{Harris1988} corners detectors.
 \section{Object Tracking}
 \label{sec::tracking}
 
-The goal of an object tracker is to generate an object trajectory over time.
+The goal of an object tracker is to generate an object trajectory in a video.
 This path consists of the object position across the time. Additionally,
-a tracker provides other informations, such as scale, orientation, area, or
+a tracker may provides other informations, such as scale, orientation, area, or
 shape of an object. As stated in section \ref{sec::detection}, many combinations
 of object tracking approaches have been proposed before. This section classifies
 ans covers popular approaches on each category.
 
 \subsection{Point Tracking}
 
-Tracking can be formulated as the correspondence of objects represented by points across frames. This category can be divided into two subcategories:
+Tracking can be formulated as the correspondence of objects represented by
+points across frames. This category can be divided into two subcategories:
 
-\textbf{Deterministic Methods: } These approaches for point correspondence define a cost of associating each object in frame $t-1$ to a single object in frame $t$ using motion constraints, such as proximity, velocity, rigidity and motion. Minimization of the correspondence cost is formulated as a combinatorial optimization problem. A solution, which consists in one-to-one correspondence among all possible associations, can be obtained by optimal assignment methods. For instance Hungarian Algorithm \cite{Qin2012} or greedy search methods.
+\textbf{Deterministic Methods. } These approaches for point correspondence
+define a cost of associating each object in frame $t-1$ to a single object in
+frame $t$ using motion constraints, such as proximity, velocity, rigidity and
+motion. Minimization of the correspondence cost is formulated as a
+combinatorial optimization problem. A solution, which consists in one-to-one
+correspondence among all possible associations, can be obtained by optimal
+assignment methods. For instance Hungarian Algorithm \cite{Qin2012} or
+greedy search methods.
 
-\textbf{Statistical methods for Point Tracking: } Statistical correspondence methods solve tracking problems whose measurements obtained from video sensors contain nose, or object motion can undergo random perturbations. These approaches take measurements and model uncertainties into account during object state estimation. Applying state space approach to model the object properties such as position, velocity and acceleration. In single object state estimation, tYhe optimal state of an object is giben by the Kalman Filter \cite{Ren2008a,Heikkila2004}, assuming measurement noise have a Gaussian distribution. In the general case, that is, object state is not assumed as Gaussian, estimation can be performed using particle filters \cite{Okuma2004,Rittscher2000}.
+\textbf{Statistical methods for Point Tracking. } Statistical correspondence
+methods solve tracking problems whose measurements obtained from video sensors
+contain noise, or object motion can undergo random perturbations. These
+approaches take measurements and model uncertainties into account during
+object state estimation. Applying state space approach to modeling the object
+properties such as position, velocity and acceleration. In single object
+state estimation, tYhe optimal state of an object is given by a Kalman Filter
+\cite{Ren2008a,Heikkila2004}, assuming measurement noise have a Gaussian
+distribution. In the general case, that is, object state is not assumed as
+Gaussian, estimation can be performed using particle filters
+\cite{Okuma2004,Rittscher2000}.
 
-In the case of multiobject data association, state estimation using Kalman or particle filters, it is necessary to solve first correspondence problem before these filters can be applied. However, in cases when two objects are close each other, the correspondence could be incorrect. Then, an incorrectly associated measurement can cause the filter to fail to converge. In order to tackle this problem, Joint Probability Data Association Filtering (JPDAF) \cite{Schulz2003} and Multiple Hypothesis Tracking (MHT) \cite{Zulkifley2012} are two used techniques for data association.
+In the case of multiobject data association, it is necessary to solve first
+correspondence problem before these filters can be applied. However, in cases
+when two objects are close each other, the correspondence could be incorrect.
+Then, an incorrectly associated measurement can cause the filter to fail to
+converge. In order to tackle this problem, Joint Probability Data Association
+Filtering (JPDAF) \cite{Schulz2003} and Multiple Hypothesis Tracking
+(MHT) \cite{Zulkifley2012} are two used techniques for data association.
 
 \begin{figure}[t!!]
 \centering
@@ -182,19 +209,44 @@ In the case of multiobject data association, state estimation using Kalman or pa
 \includegraphics[width=0.32\linewidth]{Figures/particle_filter2.jpg}
 \includegraphics[width=0.32\linewidth]{Figures/particle_filter3.jpg}
 }
-\caption{\cite{Rittscher2000}}
+\caption{Object tracking using particle filter. Image taken from 
+		\cite{Rittscher2000}}
 \end{figure}
 
 
 \subsection{Kernel Tracking}
 
-In this type of tracking, object motion is computed using representations of a primitive object region, from one frame to the next. These algorithms differ in terms of appearance representation (features extraction) used, the number of objects tracked, and the method used for object motion estimation. 
+In this type of tracking, the object motion is computed using representations
+of a primitive object region, from one frame to the next. These algorithms
+differ in terms of appearance representation, the number of objects to be
+tracked, and the method used for object motion estimation. 
 
-\textbf{Density-based tracking:} According to \cite{Cheng1995}, the object is modelled with one or more probability density functions, such as Gaussian, mixture of Gaussian, Parzen windows or histogras, that describe the probability of object appearance. Mean-shift is an approach to feature space analysis. This method shifts a data point to the average of data points in its neighborhood. Mean shift uses fixed color distribution. A similar approach is called CAMSHIFT \cite{Exner2010} that handles dynamically changing color distribution by adapting the search window size and computing color distribution in the search window.
+\textbf{Density-based tracking:} According to \cite{Cheng1995}, the object is
+modeled with one or more probability density functions, such as
+Gaussian, mixture of Gaussian, Parzen windows or histograms, that describe
+the probability of object appearance. Mean-shift is an approach of density-based
+tracking. This method shifts a data point to the average of data points
+in its neighborhood, using fixed color distribution. A similar
+approach is called CAMSHIFT \cite{Exner2010} that handles dynamically
+changing color distribution by adapting the search window size
+and computing color distribution in the search window.
 
-\textbf{Template-based tracking:}  These approaches apply templates of the object to calculate appearance probability on every frame of the video sequence. The most common is \textit{Template matching} \cite{Korman2013} that searchs accross the image, a region similar to the object template, defined in previous frames. The similarity measure is calculated using normalized cross correlation. A limitation of this method is its high computational cost due to brute force search. To reduce this cost, some methods limit the object search to a neighborhood near previous position.
+\textbf{Template-based tracking:}  These approaches apply templates of the
+object to calculate appearance probability on every frame of the
+video sequence. The most common is \textit{Template matching} \cite{Korman2013}
+that searchs accross the image, a region similar to the object template, defined
+in previous frames. The similarity measure is calculated using normalized cross
+correlation. A limitation of this method is its high computational cost due to
+brute force search. To reduce this cost, some methods limit the object search
+to a neighborhood near previous position.
 
-Instead of templates, other object representations can be used for tracking. For example, color histograms or mixture models can be computed using the appearance of pixels inside the rectangular or ellipsoidal regions. To reduce computational complexitu, the similarity between object model and the hypothesized position, is computed evaluating the ratio betweem color means between model and position. The position with highest ratio is selected as current object location.
+Instead of templates, other object representations can be used for tracking.
+For example, color histograms or mixture models can be computed using the
+appearance of pixels inside a rectangular or ellipsoidal region. To reduce
+computational complexity, the similarity between object model and the
+hypothesized position, is computed evaluating the ratio between color means of
+object model and position. The position with highest ratio is selected as
+current object location.
 
 \begin{figure}[t]
 	\centering
@@ -203,23 +255,166 @@ Instead of templates, other object representations can be used for tracking. For
 	\label{fig::overview_boost}
 \end{figure}	
 
-"Tracking by detection" or "Tracking by repeated recognition" \cite{Mori2006} systems generally perform target object appearance learning. These methods are closely related to object detection (an area with great progress in computer vision) and has encouraged some successful real-time tracking algorithms \cite{Liu2007,Grabner2006}. However, many tracking algorithms employ static appearance models that are defined manually or trained at the first frame only \cite{Isard2001, Lepetit2006, Black1996, Comaniciu2000, Adam2006}, these methods are often unable to deal with significant appearance changes. This situations are difficult when there is limited knowledge of the object of interest. In order to cope this problem, an adaptive appearance model that changes during the tracking process as the appearance of the object changes, gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
+"Tracking by detection" \cite{Mori2006} systems generally perform target object
+appearance learning. These methods are closely related to object detection
+(an area with great progress in computer vision) and has encouraged some
+successful real-time tracking algorithms \cite{Liu2007,Grabner2006}. However,
+many tracking algorithms employ static appearance models that are defined
+manually or trained at the first frame only \cite{Isard2001, Lepetit2006,
+Black1996, Comaniciu2000, Adam2006}, these methods are often unable to deal
+with significant appearance changes. In order to cope this problem, an adaptive
+appearance model that changes during the tracking process as the appearance of
+the object changes, gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
 
-Boosting has been used in a wide field of machine learning tasks and applied to computer vision problems. Many tracking algorithms are based on the boosting framework \cite{Freund1997a} and is related to the work on Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost \cite{Saffari2010} and MILBoost \cite{Babenko2010}. The goal of boosting is to combine many weak classifiers (usually decision stumps) into a linear strong classifier.
-
+Boosting has been used in a wide field of machine learning tasks and
+applied to computer vision problems. Many tracking algorithms are based on the
+boosting framework \cite{Freund1997a} and is related to the work on
+Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost
+\cite{Saffari2010} and MILBoost \cite{Babenko2010}. The goal of boosting is
+to combine many weak classifiers (usually decision stumps) into a linear
+strong classifier.
 
 \subsection{Silhouette Tracking}
 
-The object is tracked via estimation of the object region in each frame. Silhouette-based methods provide an accurate shape description for the objects that are tracked. These approaches can be divided into two main categories, shape matching and contour tracking. Shape matching \cite{Li2001} approaches search object silhouette in the current frame. Contour based, evolve initial contour to its new position in the current frame using state space models or direct minimization of some energy function \cite{Cremers2003}.
+The object is tracked via estimation of the object region in each frame.
+Silhouette-based methods provide an accurate shape description for the
+objects that are tracked. These approaches can be divided into two main
+categories, shape matching and contour tracking. Shape matching \cite{Li2001}
+approaches search object silhouette in the current frame. Contour based, evolve
+initial contour to its new position using state space models or direct
+minimization of an energy function \cite{Cremers2003}.
 
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.9\linewidth]{Figures/contour.png}
-	\caption{Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.}
+	\caption{Illustration of an active contour representation. Left subfigure
+			shows the signed distance map of a human contour; right
+			image displays contour result.}
 	\label{fig::contour}
 \end{figure}	
 
-\subsection{Tracking applying ensemble of trackers}
+\section{Tracking Datasets and Challenges}
+
+Object detection and tracking is still an open research problem in computer
+vision. A robust, accurate and high performance approach is still a great
+challenge. The level of difficulty depends on how the object of interest is
+defined in terms of features. For instance, Using color as object representation
+method, it is not difficult to identify all pixels with same color as the
+object. However, there is always a probability of existence a background region
+with same color information (background clutter). In addition, illumination
+changes in the scene does not guarantee that the pixel values of an object
+will be the same in all frames. These variabilities or challenges which are
+random in object tracking causes wrong object tracking, and are listed below.
+
+\begin{itemize}
+\item \textbf{Illumination Variation (IV):} It is desirable that background
+model adapts to gradual changes of the appearance of the environment.
+\item \textbf{Scale Variation (SV):} Ratio between initial object size and
+current object size differs.
+\item \textbf{Occlusion (OC):} Partially or full, occlusion affects the process
+of computing the background frame. In real life situations, occlusion can occur
+anytime the object of interest passes behind another object with respect to a camera.
+\item \textbf{Dynamic background:} Some scenery regions contain movement, but
+should be still remain as background, acoording to their relevance. Such
+movement can be periodical or irregular, causing blurring (motion blur - MB),
+e.g. traffic lights, waving trees).
+\item \textbf{Out of view (OV): } Some portion o the target leaves the view.
+\item \textbf{Background clutter (BC):} As stated before, this challenge makes
+the segmentation task difficult. It is hard to create ans separate background
+model from moving foreground objects.
+\item \textbf{Fast Motion (FM):} The speed of a moving object plays an
+important role in its detection and track. If an object is moving too slow,
+the temporal differencing methods fails to detect object, because it preserves
+uniform region between frames. In the other case, fast moving object leaves
+ghost regions in a detected foreground model.
+\item \textbf{Object rotation and deformation (DEF):} Since natural objects
+move freely, they can appear slightly or completely transformed. Such
+rotations, in (IPR) or out (OPR) of plane on the images affect object tracking
+considerably.
+\item \textbf{Low Resolution (LR):} Number of pixels inside the object
+bounding box is less than 400.
+\end{itemize}
+
+\textbf{Tracking Dataset: } In computer vision, a \textit{dataset} could be
+defined as a collection of
+images or video sequences used for testing algorithms. The amount of data and
+characteristics presented, depend on the field that is studied.
+For instance, in scene recognition, a dataset contains images of landscapes or
+outdoor environments. Generally, this collection is shared between researchers
+and plays an important role in comparison and evaluation of state-of-the-art
+approaches. A list of datasets used in object tracking is summarized in table
+\ref{table:datasets}
+
+The Surveillance Performance Evaluation Initiative (SPEVI) \cite{Maggio2005}
+can be used for evaluating algorithms for surveillance-related applications. The
+first dataset contains 5 sequences applied to single person/face detection and
+tracking. The second dataset applies for multiple person/face detection and
+tracking. The sequences contain four targets occluding each other repeatedly.
+ETISEO dataset \cite{Munder2006} contains indoor and outdoor scenes, such as
+corridors, buildings entries, etc. This dataset can be used for surveillance
+applications.
+
+PETS dataset \cite{PETS} became a surveillance project whose challenging
+scenarios are focused only on high level applications of this field. Some
+issues, like illumination or scale changes are not considered in these videos.
+Most of the sequences are used for person/vehicle tracking in outdoor
+environments(subway stations, building entrances). CAVIAR \cite{Torralba2003}
+is a dataset used generally for situation recognition systems. However,
+sequences can be applied for tracking evaluation methods. Includes videos of
+people walking alone, meeting other people, entering and exiting shops.
+
+The VIdeo Surveillance Online Repository (VISOR) \cite{Vezzani2010} database
+covers a wide range of scenarios and situations, including videos for human
+action recognition, outdoor videos for face detection, indoor videos for people
+tracking with occlusions, vehicles detection and surveillance. The VIdeo
+Surveillance Online Repository, includes several sequences for two separate
+tasks: First, an abandoned baggage scenario and second, a parked vehicle
+scenario.
+
+Recently, the tracking community released evaluation suites containing a
+selection of videos and algorithms for testing trackers performance. These
+benchmarks test and compare many tracking approaches using fair evaluation
+criteria. Online Object Tracking Benchmark \cite{Wu2013b} contais 50 most
+commonly used sequences. Also, the authors classified tracking challenges
+(attributes) into subsets to report specific challenging conditions. The
+Amsterdam Library of Ordinary Videos for tracking, ALOV300 \cite{Smeulders2014},
+consists in 315 real-life video sequences from Youtube with 64 different
+targets. The collection is categorized for thirteen aspects of difficulty and
+evaluates a large variety of situations including low contrast, occlusion,
+ilumination variation, etc.
+
+\begin{table}[t!]
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Dataset} & \textbf{\# Sequence} & \textbf{GT-Available} &
+\textbf{Object} \\ \midrule
+Bobot \cite{KleinIROS10}          & 12       & Yes & Generic \\
+Cehovin \cite{Cehovin2013}        & 5        & Yes & Generic \\
+Kalal \cite{Kalal2011}            & 10       & Yes & Generic \\
+Kwon \cite{KwonL09}               & 4        & Yes & Generic \\
+Kwon VTD \cite{KwonL10}           & 11       & Yes & Generic \\
+PROST \cite{Santner2010a}         & 4        & Yes & Generic \\
+Ross \cite{Ross2007}              & 4        & Yes & Generic \\
+Thang \cite{Dinh2011}             & 4        & Yes & Generic \\
+Wang (NoRef)                      & 4        & Yes & Generic \\
+Tracking Benchmark \cite{Wu2013b} & 50       & Yes & Generic \\
+ALOV 300+ \cite{Smeulders2014}    & 315      & Yes & Generic \\
+Godec \cite{godec11a}             & 7        & Yes & Human   \\
+Babenko \cite{Babenko2010}        & 3        & Yes & Human   \\
+SPEVI \cite{Maggio2005}           & 3,5      & Yes & Human   \\
+ETISEO \cite{Munder2006}          & 86       & Yes & Human   \\
+PETS \cite{PETS}                  & 1,5,7,10 & Yes & Human   \\
+CAVIAR \cite{Torralba2003}        & 6,11,6   & Yes & Human   \\
+Clemson \cite{Birchfield1998}     & 16       & Yes & Human   \\
+VISOR \cite{Vezzani2010}          & 6        & No  & Human   \\
+\bottomrule
+\end{tabular}
+\caption{Object tracking datasets}
+\label{table:datasets}
+\end{table}
+
+\section{Tracking applying ensemble of trackers}
 
 Several methods have proposed the use of ensemble classifiers within
 the tracking-by-detection framework.
@@ -301,53 +496,3 @@ the chances of better long-term tracking performance.
 %global result. In contrast, our fusion approach does not drop out bad tracking
 %results. Our method is able to find and reinitialize outliers efficiently.
 
-\section{Challenges}
-
-Object detection and tracking is still an open research problem in computer vision. A robust, accurate and high performance approach is still a great challenge. The level of difficulty depends on how the object of interest is defined in terms of features. For instance, Using color as object representation method, it is not difficult to identify all pixels with same color as the object. However, there is always a probability of existence a background region with same color information (background clutter). In addition, illumination changes in the scene does not guarantee that the pixel values of an object will be the same in all frames. These variabilities or challenges which are random in object tracking causes wrong object tracking, and are listed below.
-
-\begin{itemize}
-\item \textbf{Illumination Variation (IV):} It is desirable that background model adapts to gradual changes of the appearance of the environment.
-\item \textbf{Scale Variation (SV):} Ratio between initial object size and current object size differs.
-\item \textbf{Occlusion (OC):} Partially or full, occlusion affects the process of computing the background frame. In real life situations, occlusion can occur anytime the object of interest passes behind another object with respect to a camera.
-\item \textbf{Dynamic background:} Some scenery regions contain movement, but should be still remain as background, acoording to their relevance. Such movement can be periodical or irregular, causing blurring (motion blur - MB), e.g. traffic lights, waving trees).
-\item \textbf{Out of view (OV): } Some portion o the target leaves the view.
-\item \textbf{Background clutter (BC):} As stated before, this challenge makes the segmentation task difficult. It is hard to create ans separate background model from moving foreground objects.
-\item \textbf{Fast Motion (FM):} The speed of a moving object plays an important role in its detection and track. If an object is moving too slow, the temporal differencing methods fails to detect object, because it preserves uniform region between frames. In the other case, fast moving object leaves ghost regions in a detected foreground model.
-\item \textbf{Object rotation and deformation (DEF):} Since natural objects move freely, they can appear slightly or completely transformed. Such rotations, in (IPR) or out (OPR) of plane on the images affect object tracking considerably.
-\item \textbf{Low Resolution (LR):} Number of pixels inside the object bounding box is less than 400.
-\end{itemize}
-
-\section{Tracking Datasets}
-
-In computer vision, a \textit{dataset} could be defined as a collection of images or video sequences used for testing algorithms. The amount of data and characteristics presented in the list, depend on the field that is studied. For instance, in scene recognition, a dataset contains images of landscapes or outdoor environments. Generally, this collection is shared between researchers and plays an important role in comparison and evaluation of state-of-the-art approaches.
-
-The Surveillance Performance Evaluation Initiative (SPEVI) can be used for evaluating algorithms for surveillance-related applications. The first dataset contains 5 sequences applied to single person/face detection and tracking. The second dataset applies for multiple person/face detection and tracking. The sequences contain four targets occluding each other repeatedly. ETISEO dataset contains indoor and outdoor scenes, such as corridors, buildings entries, etc. This dataset can be used for surveillance applications.
-
-PETS dataset became a surveillance project whose challenging scenarios are focused only on high level applications of this field. Some issues, like illumination or scale changes are not considered in these videos. Most of the sequences are used for person/vehicle tracking in outdoor environments(subway stations, building entrances). CAVIAR is a dataset used generally for situation recognition systems. However, sequences can be applied for tracking evaluation methods. Includes videos of people walking alone, meeting other people, entering and exiting shops.
-
-The VIdeo Surveillance Online Repository (VISOR) database covers a wide range of scenarios and situations, including videos for human action recognition, outdoor videos for face detection, indoor videos for people tracking with occlusions, vehicles detection and surveillance. The VIdeo Surveillance Online Repository, includes several sequences for two separate tasks: First, an abandoned baggage scenario and second, a parked vehicle scenario.
-
-In generic visual tracking, a dataset is a collection of videos that contains and object moving in some scenario. The sequences vary in length from hundreds of frames to thousands. Diverse object types are used. Different scene settings (indoor or outdoor, static or moving camera). Also different challenges, such as object occlusions or illumination conditions are presented. Most commonly used tracking benchmarks are summarized in table \ref{table:datasets}.  Recently, the authors in \cite{Wu2013b} released a benchmark containing 50 most commonly used sequences from some datasets mentioned \ref{table:datasets}, to facilitate fair performance evaluation. Also for better evaluation and analysis of strengths and weakness of tracking approaches. They classified sequences, considering a object tracking challenge, as a category, constructing several subsets to report specific challenging conditions. Some attributes occur more frequently, and some sequences are annotated with several attributes.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|ll|}
-\hline
-Name/Author/Paper & Sequences \\
-Babenko           & 3         \\
-Bobot             & 12        \\
-Cehovin           & 5         \\
-Ellis IJCV2011    & 3         \\
-Godec             & 7         \\
-Kalal             & 10        \\
-Kwon              & 4         \\
-Kwon VTD          & 11        \\
-PROST             & 4         \\
-Ross              & 4         \\
-Thang             & 4         \\
-Wang              & 4         \\
-\hline
-\end{tabular}
-\caption{Popular object tracking datasets}
-\label{table:datasets}
-\end{table}
