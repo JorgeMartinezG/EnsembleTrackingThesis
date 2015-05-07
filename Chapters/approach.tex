@@ -1,6 +1,6 @@
 \chapter{Proposed approach} % Main chapter title
 
-\label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 \lhead{Chapter 3. \emph{Proposed approach}} 
 
@@ -15,7 +15,10 @@ These labels provide position and scale information for evaluation and analysis.
 \centering
 \includegraphics[page=2, width=0.8\linewidth, trim= 0cm 5.1cm 6cm 5.3cm,
                  clip=true]{Figures/global_diagram}
-\caption[Global tracking process2]{\small Global tracking process.}
+\caption[Tracking diagram]{\small Tracking diagram. The proposed system takes
+        initial bounding box, image sequences and the list of trackers as inputs.
+        After tracking ensemble, the system drops out tracking results for each
+        frame.}
 \label{fig::global_diagram}
 \end{figure}
 
@@ -58,7 +61,8 @@ This entire process is then repeated for each new frame in the video sequence.
 \begin{figure*}[t!]
 \centering
 \includegraphics[width=1\linewidth, trim= 0cm 5.1cm 1.3cm 5.3cm, clip=true]{Figures/diagram}
-\caption{\small Basic diagram of our approach. On each frame, we analyze coherence
+\caption [Proposed methodology.]
+    {\small Basic diagram of our approach. On each frame, we analyze coherence
         between tracking results. We apply spatial and appearance models with
         the goal of finding inliers. Then, we select best tracker that follows
         the target. Finally, we reset outliers and  update object model on
@@ -141,8 +145,10 @@ not in it". This theory is taken from \textbf{Jane and Dubes.}
 \centering
 \includegraphics[page=4, width=0.9\linewidth, trim= 0.4cm 5.5cm 6.5cm 5cm,
                  clip=true]{Figures/global_diagram}
-\caption[Global tracking process2]{\small Global tracking process.}
-\label{fig::global_diagram}
+\caption[Spatial clustering stage]{\small Spatial clustering stage. Using
+        trackers estimate, we cluster similar bounding boxes using equation
+        \ref{eq::overlap}. On right image, each color represents a cluster.}
+\label{fig::clustering}
 \end{figure}
 
 Cluster analysis is the process of classifying objects into subsets that have
@@ -171,6 +177,7 @@ We define a dissimilarity measure between pairs of bounding boxes equal to:
 
 \begin{equation}
 d(x_i,x_j) = 1 - \frac{x_i \bigcap x_j}{x_i \bigcup  x_j}
+\label{eq::overlap}
 \end{equation}
 
 Using all dissimilarity values, we construct a symmetric $n \times n$ proximity
@@ -199,8 +206,12 @@ maximize the separability between object and non-object regions discriminately.
 \centering
 \includegraphics[page=3, width=1\linewidth, trim= 0.4cm 9.9cm 7.5cm 1.8cm,
                  clip=true]{Figures/global_diagram}
-\caption[Global tracking process2]{\small Global tracking process.}
-\label{fig::global_diagram}
+\caption[Patches and features extraction process]
+{\small Patches and features extraction process. For a given patch, Histograms
+of Oriented Gradients are extracted. The final result, corresponds to a hog
+descriptor.
+}
+\label{fig::features_extraction}
 \end{figure}
 
 Generally, Discriminative methods train a classifier using data acquired from
@@ -230,7 +241,7 @@ Using the classifier, we compute appearance scores
 %and evaluate in object model.
 %On each frame, we obtain probability scores
 $S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result $x_i$ in
-$X$. We considered this model, because other methods found in 
+$X$ (Figure \ref{fig::svm_app}). We considered this model, because other methods found in 
 \cite{zhang2014meem,Bai2013}, obtained better results. Also, HOG features are
 more robust to deformable objects than other image features used in
 tracking-by-detection methods \eg Haar.
@@ -241,8 +252,11 @@ tracking-by-detection methods \eg Haar.
 \centering
 \includegraphics[page=5, width=1\linewidth, trim= 0.4cm 5.5cm 0cm 5cm,
                  clip=true]{Figures/global_diagram}
-\caption[Global tracking process2]{\small Global tracking process.}
-\label{fig::global_diagram}
+\caption[Appearance estimation for trackers estimates.]
+        {\small Appearance estimation for trackers estimates. On each frame,
+        We compute appearance score for each tracker result using a previously
+        trained classifier. We adopted HOG as image features.}
+\label{fig::svm_app}
 \end{figure}
 
 
@@ -345,8 +359,7 @@ the value of 0.3.
 give results on where the object might be (first row). Then, all results are
 clustered using hierarchical agglomerative clustering (second row). We focus on
 selecting the group with highest number of members, or cluster with best
-appearance score (third row). Finally, we reiniialize outliers
-(frame 30 in this case).}   
+appearance score (third row). Finally, we reinitialize outliers.}   
 \end{figure*}
 
 
@@ -379,7 +392,8 @@ our object appearance model.
 
 The second goal is to steer failed trackers in the pool back to the target.
 When a tracker is consistently tagged as an outlier, our algorithm automatically
-resets its state to the latest target state prediction from the ensemble.
+resets its state to the latest target state prediction from the ensemble
+(Figure~\ref{fig::outliers}).
 This reinitialization procedure is only performed periodically every 15 frames
 so that we can also take advantage of the capability of some trackers
 to recover from short-term tracking failures.
@@ -387,6 +401,11 @@ to recover from short-term tracking failures.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\textwidth]{Figures/clustering/deer_outliers.png}
+\caption[Outliers reinitialization]{Outliers reinitialization. In this Figure,
+dashed red bounding boxes are tagged as outliers. These trackers states are
+reset to the latest target state prediction from the ensemble (green bounding
+box.)}
+\label{fig::outliers}
 \end{figure}
 
 %The outliers correspond to those trackers that does not belong to $c^*$. These
