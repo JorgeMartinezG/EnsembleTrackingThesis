@@ -32,10 +32,10 @@
 \contentsline {section}{\numberline {4.1}Implementation details}{21}{section.49}
 \contentsline {section}{\numberline {4.2}Evaluation Methodology}{21}{section.53}
 \contentsline {section}{\numberline {4.3}Dataset}{22}{section.54}
-\contentsline {section}{\numberline {4.4}Tracker pool}{23}{section.60}
-\contentsline {section}{\numberline {4.5}Benchmarking results}{24}{section.62}
-\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{24}{section.63}
-\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{27}{section.75}
+\contentsline {section}{\numberline {4.4}Tracker pool}{23}{section.56}
+\contentsline {section}{\numberline {4.5}Benchmarking results}{23}{section.58}
+\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{24}{section.59}
+\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{27}{section.71}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{29}{dummy.76}
+\contentsline {chapter}{Bibliography}{28}{dummy.72}
