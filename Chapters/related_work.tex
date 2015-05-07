@@ -33,11 +33,11 @@ further analysis. For instance, birds in the sky, pedestrians, vehicles on a
 road, ships on the sea, are set of objects necessary to track in a specific
 context. These elements can be represented by their shape or appearance.
 According to the object that is chosen to be tracked, an object representation
-is selected instead of the rest as the best choice. For tracking small objects
+is selected instead of the rest. For tracking small objects
 in a scenario, point representation is usually appropiate
 \cite{Veenman2001,Shafique2005}. In the case of tracking objects whose shapes
 are approximated to rectangle and ellipses, shape representation is more
-appropiate \cite{Comaniciu2003a}. For tracking objects with complex shapes, such
+appropiate \cite{Comaniciu2003a}. To track objects with complex shapes, such
 as humans or excavators machines, contour or silhouette-based representation are
 appropiate \cite{Haritaoglu2000}.
 
@@ -49,19 +49,20 @@ chosen manually by the user depending on the application domain. This problem of
 automatic feature selection has received significant attention in the pattern
 recognition community. The most common visual features selections are color
 \cite{Paschos2001,Song1996}, edges \cite{Canny1986,Bowyer2001}, displacement
-vectors\cite{Black1996,Lucas1981a}, corners\cite{Harris1988} and textures
+vectors \cite{Black1996,Lucas1981a}, corners \cite{Harris1988} and textures
 \cite{Haralick1973,Nickels1997,Mallat1989}.
 
 Among all features, color is the one of the most widely used feature for
-tracking. However, color features are sensity to illumination variation. To
+tracking. However, color features are sensitive to illumination variation. To
 tackle this problem, in scenarios where this effect is inevitable, other
-features are incorporated to model object appearance.
+features are incorporated to model the appearance of an object.
 
 \section{Moving Object Detection} 
 \label{sec::detection}
 
-Every tracking approach requires an object detection framework as
-initialization, or in every frame of the video. A common method for object
+Every tracking approach requires an object detection approach as
+initialization, or in every frame of the video. Detection can be defined as
+finding instances of objects in images or videos. A common method for object
 tracking is to apply object detection when the object appears for the first
 time, reducing the number of false detections. 
 
@@ -89,8 +90,10 @@ pixels have similar value.
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.7\linewidth]{Figures/bg_sub.jpg}
-	\caption{Object detection using Gaussian Mixture Models for background
-	subtraction \cite{Pham2010}. foreground pixels are drawn in white.}
+	\caption[Object detection using Gaussian Mixture Models for background
+	subtraction]
+	{Object detection using Gaussian Mixture Models for background
+	subtraction \cite{Pham2010}. Foreground pixels are drawn in white.}
 	\label{fig::bg_sub}
 \end{figure}
 
@@ -154,7 +157,8 @@ Harris \cite{Harris1988} corners detectors.
 \includegraphics[width=0.32\linewidth]{Figures/points/klt.png}
 \includegraphics[width=0.32\linewidth]{Figures/points/sift.png}
 }	
-\caption{Interest points for object detection. Left - Harris, center - KLT, 
+\caption[Interest points for object detection]
+		{Interest points for object detection. Left - Harris, center - KLT, 
 		right - SIFT. Image taken from \cite{Yilmaz2006}.}
 \end{figure}
 
@@ -209,8 +213,11 @@ Filtering (JPDAF) \cite{Schulz2003} and Multiple Hypothesis Tracking
 \includegraphics[width=0.32\linewidth]{Figures/particle_filter2.jpg}
 \includegraphics[width=0.32\linewidth]{Figures/particle_filter3.jpg}
 }
-\caption{Object tracking using particle filter. Image taken from 
-		\cite{Rittscher2000}}
+\caption[Object tracking using particle filter]
+		{Object tracking using particle filter. Each particle represents one
+		possible location of the object being tracked. A set of particles have
+		more weight at locations where is more likely to be the object.Image
+		taken from \cite{Rittscher2000}}
 \end{figure}
 
 
@@ -251,7 +258,12 @@ current object location.
 \begin{figure}[t]
 	\centering
 		\includegraphics[width=0.7\linewidth]{Figures/overview_boost.png}
-	\caption{Overview for online boosting object tracker}
+	\caption[Overview for online boosting object tracker]
+	{Overview for online boosting object tracker. For each classified patch,
+	the system receives a confidence value, that is entered into a 
+	confidence map. Using the confidence map, the tracking windows is
+	shifted to the best possible position. Then, the classifier is updated and
+	the	process is repeated.}
 	\label{fig::overview_boost}
 \end{figure}	
 
@@ -287,12 +299,12 @@ minimization of an energy function \cite{Cremers2003}.
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.9\linewidth]{Figures/contour.png}
-	\caption{Illustration of an active contour representation. Left subfigure
+	\caption[Illustration of an active contour representation]
+			{Illustration of an active contour representation. Left subfigure
 			shows the signed distance map of a human contour; right
-			image displays contour result.}
+			image displays contour result. Image taken from \cite{Yilmaz2006}}
 	\label{fig::contour}
 \end{figure}	
-
 \section{Tracking Datasets and Challenges}
 
 Object detection and tracking is still an open research problem in computer
@@ -313,7 +325,8 @@ model adapts to gradual changes of the appearance of the environment.
 current object size differs.
 \item \textbf{Occlusion (OC):} Partially or full, occlusion affects the process
 of computing the background frame. In real life situations, occlusion can occur
-anytime the object of interest passes behind another object with respect to a camera.
+anytime the object of interest passes behind another object with respect to a
+camera.
 \item \textbf{Dynamic background:} Some scenery regions contain movement, but
 should be still remain as background, acoording to their relevance. Such
 movement can be periodical or irregular, causing blurring (motion blur - MB),
@@ -377,7 +390,7 @@ benchmarks test and compare many tracking approaches using fair evaluation
 criteria. Online Object Tracking Benchmark \cite{Wu2013b} contais 50 most
 commonly used sequences. Also, the authors classified tracking challenges
 (attributes) into subsets to report specific challenging conditions. The
-Amsterdam Library of Ordinary Videos for tracking, ALOV300 \cite{Smeulders2014},
+Amsterdam Library of Ordinary Videos for tracking, ALOV300+ \cite{Smeulders2014},
 consists in 315 real-life video sequences from Youtube with 64 different
 targets. The collection is categorized for thirteen aspects of difficulty and
 evaluates a large variety of situations including low contrast, occlusion,
@@ -385,9 +398,10 @@ ilumination variation, etc.
 
 \begin{table}[t!]
 \centering
-\begin{tabular}{cccc}
+\caption{Object tracking datasets.}
+\begin{tabular}{lccc}
 \toprule
-\textbf{Dataset} & \textbf{\# Sequence} & \textbf{GT-Available} &
+\textbf{Dataset} & \textbf{\# Sequences} & \textbf{GT-Available} &
 \textbf{Object} \\ \midrule
 Bobot \cite{KleinIROS10}          & 12       & Yes & Generic \\
 Cehovin \cite{Cehovin2013}        & 5        & Yes & Generic \\
@@ -410,11 +424,10 @@ Clemson \cite{Birchfield1998}     & 16       & Yes & Human   \\
 VISOR \cite{Vezzani2010}          & 6        & No  & Human   \\
 \bottomrule
 \end{tabular}
-\caption{Object tracking datasets}
 \label{table:datasets}
 \end{table}
 
-\section{Tracking applying ensemble of trackers}
+\section{Object tracking applying ensemble}
 
 Several methods have proposed the use of ensemble classifiers within
 the tracking-by-detection framework.

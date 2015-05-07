@@ -1,10 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Object detection using Gaussian Mixture Models for background subtraction \cite {Pham2010}. foreground pixels are drawn in white.\relax }}{5}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Interest points for object detection. Left - Harris, center - KLT, right - SIFT. Image taken from \cite {Yilmaz2006}.\relax }}{6}{figure.caption.18}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Object tracking using particle filter. Image taken from \cite {Rittscher2000}\relax }}{8}{figure.caption.21}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Overview for online boosting object tracker\relax }}{9}{figure.caption.23}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation. Left subfigure shows the signed distance map of a human contour; right image displays contour result.\relax }}{10}{figure.caption.25}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Object detection using Gaussian Mixture Models for background subtraction}}{5}{figure.caption.14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Interest points for object detection}}{6}{figure.caption.18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Object tracking using particle filter}}{8}{figure.caption.21}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Overview for online boosting object tracker}}{9}{figure.caption.23}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation}}{10}{figure.caption.25}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Global tracking process2}}{14}{figure.caption.30}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Basic diagram of our approach. On each frame, we analyze coherence between tracking results. We apply spatial and appearance models with the goal of finding inliers. Then, we select best tracker that follows the target. Finally, we reset outliers and update object model on necessary cases. \relax }}{15}{figure.caption.32}

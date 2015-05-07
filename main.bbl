@@ -5,25 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Pham et~al.(2010)Pham, Vo, Hung, and Bac]{Pham2010}
-Vu~Pham, Phong Vo, Vu~Thanh Hung, and Le~Hoai Bac.
-\newblock {GPU Implementation of Extended Gaussian Mixture Model for Background
-  Subtraction}.
-\newblock \emph{2010 IEEE RIVF International Conference on Computing \&
-  Communication Technologies, Research, Innovation, and Vision for the Future
-  (RIVF)}, pages 1--4, 2010.
-
-\bibitem[Yilmaz et~al.(2006)Yilmaz, Javed, and Shah]{Yilmaz2006}
-Alper Yilmaz, Omar Javed, and Mubarak Shah.
-\newblock {Object tracking: A survey}.
-\newblock \emph{ACM Computing Surveys}, 38:\penalty0 13, 2006.
-\newblock ISSN 03600300.
-
-\bibitem[Rittscher et~al.(2000)Rittscher, Kato, Joga, and Blake]{Rittscher2000}
-J~Rittscher, J~Kato, S~Joga, and A~Blake.
-\newblock {A probabilistic background model for tracking}.
-\newblock \emph{Computer Vision—ECCV 2000}, pages 336--350, 2000.
-
 \bibitem[Veenman et~al.(2001)Veenman, Reinders, and Backer]{Veenman2001}
 Cor~J. Veenman, Marcel J~T Reinders, and Eric Backer.
 \newblock {Resolving motion correspondence for densely moving points}.
@@ -128,6 +109,14 @@ Am~McIvor.
 \newblock \emph{Proc. of Image and Vision Computing, \ldots}, 2:\penalty0 13,
   2000.
 
+\bibitem[Pham et~al.(2010)Pham, Vo, Hung, and Bac]{Pham2010}
+Vu~Pham, Phong Vo, Vu~Thanh Hung, and Le~Hoai Bac.
+\newblock {GPU Implementation of Extended Gaussian Mixture Model for Background
+  Subtraction}.
+\newblock \emph{2010 IEEE RIVF International Conference on Computing \&
+  Communication Technologies, Research, Innovation, and Vision for the Future
+  (RIVF)}, pages 1--4, 2010.
+
 \bibitem[Lipton et~al.(1998)Lipton, Fujiyoshi, and Patil]{Lipton1998a}
 A~J Lipton, H~Fujiyoshi, and R~S Patil.
 \newblock {Moving target classification and tracking from real-time video}.
@@ -157,6 +146,11 @@ B.~Stenger, V.~Ramesh, N.~Paragios, F.~Coetzee, and J.M. Buhmann.
 \newblock \emph{Proceedings Eighth IEEE International Conference on Computer
   Vision. ICCV 2001}, 1, 2001.
 
+\bibitem[Rittscher et~al.(2000)Rittscher, Kato, Joga, and Blake]{Rittscher2000}
+J~Rittscher, J~Kato, S~Joga, and A~Blake.
+\newblock {A probabilistic background model for tracking}.
+\newblock \emph{Computer Vision—ECCV 2000}, pages 336--350, 2000.
+
 \bibitem[Shi and Tomasi(1994)]{Shi1994}
 Jianbo Shi~Jianbo Shi and C.~Tomasi.
 \newblock {Good features to track}.
@@ -168,6 +162,12 @@ Jianbo Shi~Jianbo Shi and C.~Tomasi.
 David~G Lowe.
 \newblock {Distinctive Image Features from Scale-Invariant Keypoints}.
 \newblock pages 1--28, 2004.
+
+\bibitem[Yilmaz et~al.(2006)Yilmaz, Javed, and Shah]{Yilmaz2006}
+Alper Yilmaz, Omar Javed, and Mubarak Shah.
+\newblock {Object tracking: A survey}.
+\newblock \emph{ACM Computing Surveys}, 38:\penalty0 13, 2006.
+\newblock ISSN 03600300.
 
 \bibitem[Qin and Shelton(2012)]{Qin2012}
 Zhen Qin and Christian~R. Shelton.
