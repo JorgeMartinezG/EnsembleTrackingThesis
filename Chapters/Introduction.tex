@@ -7,6 +7,9 @@
 
 \lhead{Chapter 1. \emph{Introduction}} 
 
+\textbf{Keywords: }Computer vision, object tracking, object model, spatial
+clustering, inliers, outliers, ensemble.
+
 The goal of visual object tracking is to estimate the state of a target in an
 image sequence.
 This is a difficult task, as the target object can be articulated or
@@ -90,6 +93,18 @@ to steer failed trackers towards the correct target region. Effectively,
 our ensemble can correct failed trackers, which ultimately increases
 tracking performance.
 
+\section{Goals} \label{sec::goals}
+
+\textbf{Our main goal} is to design and implement a visual object tracking
+system, performing an ensemble of multiple tracking algorithms (trackers). We
+aim at selecting a set of standarized sequences, to be used for analysis, development and tests of the proposed system. We need to select a group of
+trackers, which can store its state on each frame and be possible its
+reinitialization. We seek to develop an ensemble of multiple trackers
+algorithms. We plan to test and verify our approach behavior using performance
+quantification.
+
+\section{Contributions}
+
 The main contribution of this paper is an ensemble tracking
 framework that builds on top of the output of available online tracking
 algorithms running in parallel to produce an online fused tracking result that
@@ -102,7 +117,9 @@ our ensemble identifies successful trackers in a data-driven fashion
 and uses them to steer failed trackers by restarting them asynchronously.
 This helps to avoid sequence dependent parameters and overtuning.
 
-The rest of the paper is organized as follows.
+\section{Thesis overview}
+
+The remainder of this thesis is organized as follows.
 We first briefly review the state-of-the-art of tracking algorithms
 in Section \ref{chapter::related_work} and
 then present our online ensemble tracking algorithm

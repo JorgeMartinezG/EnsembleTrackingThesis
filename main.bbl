@@ -1,4 +1,4 @@
-\begin{thebibliography}{88}
+\begin{thebibliography}{90}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -536,6 +536,18 @@ Jianming Zhang, Shugao Ma, and Stan Sclaroff.
   minimization.
 \newblock In \emph{Proc. of the European Conference on Computer Vision (ECCV)},
   2014.
+
+\bibitem[Chang and Lin(2011)]{libsvm}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock \emph{ACM Transactions on Intelligent Systems and Technology},
+  2:\penalty0 27:1--27:27, 2011.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem[Doll\'ar()]{PMT}
+Piotr Doll\'ar.
+\newblock {P}iotr's {C}omputer {V}ision {M}atlab {T}oolbox ({PMT}).
+\newblock \url{http://vision.ucsd.edu/~pdollar/toolbox/doc/index.html}.
 
 \bibitem[Collins et~al.(2005)Collins, Zhou, and Teh]{Collins2005a}
 Robert Collins, Xuhui Zhou, and Seng~Keat Teh.

@@ -14,11 +14,10 @@ individual performance of trackers and effect of the tracker pool.
 \section{Implementation details}
 We implemented our online ensemble approach in MATLAB. CL clustering method is
 implemented in C++ and ported as \textit{mex} function. Object model corresponds
-to a standard RBF SVM, implemented in LIBSVM library. To extract HOG features,
-we made use of Piotr Toolbox for Matlab using default parameters. All
-experiments were performed on a PC with an Intel Xeon CPU and 16 GB of RAM using
-same parameters over default dataset. This is commonly used to prevent
-over-tuning.
+to a standard RBF SVM, implemented in LIBSVM library \cite{libsvm}. To extract
+HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default parameters. All experiments were performed on a PC with an Intel Xeon CPU and
+16 GB of RAM using same parameters over default dataset. This is commonly used
+to prevent over-tuning.
 
 \section{Evaluation Metrics}
 The trackers were evaluated using two evaluation metrics commonly used in
@@ -54,8 +53,8 @@ on estimated center location, which is beneficial for trackers that do not
 estimate scale of the object. Instead, OP also takes estimated scale into
 account and penalizes if the scale of the target is estimated incorrectly. We report results performance for both precision and overlap metrics.
 
-Recently, authors of OOBT suggest the usage of precision and success plots.
-These curves show distance and overlap precision metrics over a range of
+Recently, authors of Online Object Tracking Benchmark (OOTB) suggest the usage
+of precision and success plots. These curves show distance and overlap precision metrics over a range of
 thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
 achieve perfect precision on a large threshold range. In both types of plots,
@@ -96,7 +95,7 @@ M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.}
 
 \section{Dataset}
 In order to evaluate the performance of our proposed ensemble tracking,
-we adopt the Online Object Tracking Benchmark (OOTB) from \cite{Wu2013B}.
+we adopt the OOTB from \cite{Wu2013B}.
 This is an extensive benchmarking dataset that includes 50 sequences
 annotated with 11 attributes.
 The dataset includes challenging scenarios such as motion blur,
@@ -105,17 +104,13 @@ in-plane and out-of-plane rotations, object deformation,
 background clutter and low resolution. The selection criterias of this dataset
 are listed below. 
 \begin{itemize}
-\item For better comparison, OOTB videos are widely used as benchmark sequences
-in recent literature, allowing us to make a fair comparison to state-of-the-art
-algorithms.
-\item OOTB comes with ground-truth annotations for each sequence. This avoid
-labeling process.
-\item Each sequence corresponds to a set of image frames. This format allows to
-evaluate global processing time of the ensemble approach.
-\item Each benchmark sequence provide an annotation with 11 attributes, which
-explain the challenging scenarios encountered. This allow us to make
-attribute-based comparisons, which can show strengths and weaknesses
-of different trackers.
+\item \textbf{Standarized sequences: }For better comparison, OOTB videos are
+widely used as benchmark sequences in recent literature, allowing us to make a
+fair comparison to state-of-the-art algorithms.
+\item \textbf{Manual annotations available: }OOTB comes with ground-truth annotations for each sequence. This avoid labeling process, which takes time.
+\item \textbf{Image frames: } Each sequence corresponds to a set of image frames. This format allows to evaluate global processing time of the ensemble approach.
+\item \textbf{Attributes classification: } Each sequence provides an annotation with 11 attributes, which explain the challenging scenarios encountered. This
+allow us to make attribute-based comparisons, which can show strengths and weaknesses of different trackers.
 
 \end{itemize}
 
@@ -127,13 +122,17 @@ Table \ref{table:trackers} shows the list of the
 selected tracking algorithms. The selection criterias for the trackers are
 listed below.
 \begin{itemize}
-\item \textbf{Source code: } We integrate into our pool tracking algorithms
+\item \textbf{Source code: } We integrate into our pool, tracking algorithms
 whose original source code is publicly available. Executable files were not
 selected.
 \item \textbf{Store current state: } On each frame, a tracker must be able to
-store current state and give current result.
-\item \textbf{Trackers bounding box result: } All results must be given as
-a generic format (x,y, width, height), in order to perform ensemble.
+store current state and give current result. This allow the ensemble to
+perform spatial clustering and compute appearance score for each tracker.
+\item \textbf{Trackers bounding box result: } Each tracker estimate must give
+current target location and scale overall frames. Also, the current result
+must be able to transform into a generic format, in order to perform ensemble.
+\item \textbf{Reinitialization available: } A tracker is able to reset its
+state using final ensemble tracking result.
 \end{itemize}
 
 \section{Benchmarking results}
@@ -154,7 +153,7 @@ in Table \ref{table:trackers} and state-of-the-art trackers: Struck tracker
 \subfloat{\includegraphics[width=0.5\linewidth, trim= 1cm 6.7cm 2cm 6cm, clip=true]{Figures/Results/quality_plot_overlap_OPE_AUC}
 \label{fig:success_plot}
 }
-\caption{\small  Precision and success plots for all 50 sequences. Precision and success
+\caption[Precision and success plots for all 50 sequences]{\small  Precision and success plots for all 50 sequences. Precision and success
 		ratios are measured by center location error and overlap ratio,
 		respectively. Trackers are ranked using scores of 20 pixels for
 		precision and AUC for success.}
@@ -198,7 +197,8 @@ fails tracking the object.
 	\figuresr{soccer/140}
 	\figuresr{soccer/150}
 \vspace{-2mm}
-\caption{\small Qualitative results for object tracking applying both selection
+\caption[Qualitative results for object tracking applying both selection
+	criterias in two sequences.]{\small Qualitative results for object tracking applying both selection
 	criterias in two sequences. \textbf{Green} bounding box corresponds to
 	appearance score selection. \textbf{Blue} box to cluster size. In
 	\textit{subway} when occlusion happens, many trackers are lost, creating a
@@ -288,7 +288,7 @@ In figure
 \ref{fig:stats}, for each tracker, there are 3 bars: percentage of frames that a
 tracker was in best cluster(inlier - blue bar); percentage of frames where a
 tracker was considered outlier (red bar); finally, percentage of frames that a
-tracker was selected as medoid bounding box (green bar). Based on this result,
+tracker was selected as medoid-centralbb bounding box (green bar). Based on this result,
 trackers whose individual performance is very high, have low percentage of being
 considered outliers (KCF, MEEM, RCSK). MEEM individual performance is very high.
 However, it does not have the highest frame percentage of being selected as
@@ -301,7 +301,9 @@ considered spurious in previous experiments, have high rate in outliers bar
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\linewidth, trim= 0.2cm 6.15cm 0.2cm 5.8cm, clip=true]{Figures/bar_graph.pdf}
-\caption{\small Average AUC ranking scores of top trackers on different subsets of test
+\caption[Average AUC ranking scores of top trackers on different subsets of test
+sequences in OPE]
+{\small Average AUC ranking scores of top trackers on different subsets of test
 		sequences in OPE. Each subset of sequences corresponds to an attribute:
 		IV - illumination variation, OPR - out of plane rotation, SV- scale
 		variation, OCC - occlusion, DEF - deformation, MB - motion blur, FM -
