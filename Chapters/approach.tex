@@ -194,7 +194,7 @@ satisfy the following:
 \item $c_1 \cup c_2 \cup ... \cup c_m = T$
 \end{itemize}
 
-\section{Object modeling.}
+\subsection{Object modeling.}
 Visual object tracking has been formulated as a tracking-by-detection problem
 recently. Object modeling is dynamically performed to support object detection
 over all frames. Mostly all the approaches can be classified into two categories:
@@ -271,7 +271,7 @@ We adopted HOG as image features representation and SVM for classification
 model. 
 \fi
 
-\subsection{Selection of inliers}
+\section{Selection of inliers}
 \label{sec:inliers}
 The clustering stage and appearance scoring provide cues about which trackers
 can be considered as correctly tracking the target.
@@ -364,7 +364,7 @@ appearance score (third row). Finally, we reinitialize outliers.}
 \end{figure*}
 
 
-\subsection{Final ensemble tracking result}
+\section{Final ensemble tracking result}
 In order to provide an estimation of the state of the target using our
 ensemble, we fuse the outputs of all inlier trackers from the previous stage.
 There are multiple choices on how to impĺement this fusion. For example,
@@ -378,7 +378,7 @@ is minimum:
 x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j}) 
 \end{equation}
 
-\subsection{Model update and outlier reset}
+\section{Model update and outlier reset}
 Once our ensemble estimates the target state, we can proceed to update the
 object model and steer failed trackers in the pool.
 

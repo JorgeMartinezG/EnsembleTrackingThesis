@@ -24,10 +24,10 @@
 \contentsline {section}{\numberline {3.1}Overview}{14}{section.31}
 \contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.33}
 \contentsline {subsection}{\numberline {3.2.1}Spatial clustering.}{16}{subsection.34}
-\contentsline {section}{\numberline {3.3}Object modeling.}{17}{section.37}
-\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{19}{subsection.40}
-\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{20}{subsection.44}
-\contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{20}{subsection.46}
+\contentsline {subsection}{\numberline {3.2.2}Object modeling.}{17}{subsection.37}
+\contentsline {section}{\numberline {3.3}Selection of inliers}{19}{section.40}
+\contentsline {section}{\numberline {3.4}Final ensemble tracking result}{20}{section.44}
+\contentsline {section}{\numberline {3.5}Model update and outlier reset}{20}{section.46}
 \contentsline {chapter}{\numberline {4}Experiments}{22}{chapter.48}
 \contentsline {section}{\numberline {4.1}Implementation details}{22}{section.49}
 \contentsline {section}{\numberline {4.2}Evaluation Metrics}{22}{section.50}
