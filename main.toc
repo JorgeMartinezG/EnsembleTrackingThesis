@@ -25,17 +25,17 @@
 \contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.33}
 \contentsline {subsection}{\numberline {3.2.1}Spatial clustering.}{16}{subsection.34}
 \contentsline {section}{\numberline {3.3}Object modeling.}{17}{section.37}
-\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{18}{subsection.40}
-\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{19}{subsection.44}
+\contentsline {subsection}{\numberline {3.3.1}Selection of inliers}{19}{subsection.40}
+\contentsline {subsection}{\numberline {3.3.2}Final ensemble tracking result}{20}{subsection.44}
 \contentsline {subsection}{\numberline {3.3.3}Model update and outlier reset}{20}{subsection.46}
-\contentsline {chapter}{\numberline {4}Experiments}{21}{chapter.48}
-\contentsline {section}{\numberline {4.1}Implementation details}{21}{section.49}
-\contentsline {section}{\numberline {4.2}Evaluation Methodology}{21}{section.53}
-\contentsline {section}{\numberline {4.3}Dataset}{22}{section.54}
-\contentsline {section}{\numberline {4.4}Tracker pool}{23}{section.56}
-\contentsline {section}{\numberline {4.5}Benchmarking results}{23}{section.58}
-\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{24}{section.59}
-\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{27}{section.71}
+\contentsline {chapter}{\numberline {4}Experiments}{22}{chapter.48}
+\contentsline {section}{\numberline {4.1}Implementation details}{22}{section.49}
+\contentsline {section}{\numberline {4.2}Evaluation Metrics}{22}{section.50}
+\contentsline {section}{\numberline {4.3}Dataset}{23}{section.55}
+\contentsline {section}{\numberline {4.4}Tracker pool}{24}{section.56}
+\contentsline {section}{\numberline {4.5}Benchmarking results}{25}{section.57}
+\contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{25}{section.61}
+\contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{28}{section.73}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{28}{dummy.72}
+\contentsline {chapter}{Bibliography}{30}{dummy.75}

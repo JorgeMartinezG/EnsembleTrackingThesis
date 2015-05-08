@@ -40,7 +40,8 @@ in a pool of size $n$, which produce a set of predicted target
 states
 $X = \{ x_1, x_2, ..., x_n \}$ (Fig.~\ref{fig::diagram}a).
 These predictions are the raw input of our ensemble algorithm,
-and may be in the form of bounding boxes.
+and may be in the form of bounding boxes. A bounding box is here defines as the
+set of pixels covered by a rectangular area.
 Our ensemble methodology then looks for spatial coherence among the predicted
 target states, and verifies the appearance of the predicted image regions
 with respect to an object model
@@ -139,9 +140,9 @@ authors define a cluster as a set of entities which are alike, and entities from
 different clusters are not alike, or "A cluster is an aggregation of points in
 the test space such that the \textit{distance} between any two points in the
 cluster is less than the distance between any point in the cluster and any point
-not in it". This theory is taken from \textbf{Jane and Dubes.}
+not in it" \cite{Jain88}.
 
-\begin{figure}[h!]
+\begin{figure}[b!]
 \centering
 \includegraphics[page=4, width=0.9\linewidth, trim= 0.4cm 5.5cm 6.5cm 5cm,
                  clip=true]{Figures/global_diagram}
@@ -176,7 +177,7 @@ we apply complete-link hierarchical agglomerative clustering (CL)
 We define a dissimilarity measure between pairs of bounding boxes equal to:
 
 \begin{equation}
-d(x_i,x_j) = 1 - \frac{x_i \bigcap x_j}{x_i \bigcup  x_j}
+d(x_i,x_j) = 1 - \frac{|x_i \bigcap x_j|}{|x_i \bigcup  x_j|}
 \label{eq::overlap}
 \end{equation}
 
@@ -202,7 +203,7 @@ their correspondent object class; and \textit{discriminative appearance models},
 which assume object tracking as a binary classification issue. Main goal is to
 maximize the separability between object and non-object regions discriminately.
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[page=3, width=1\linewidth, trim= 0.4cm 9.9cm 7.5cm 1.8cm,
                  clip=true]{Figures/global_diagram}
@@ -248,7 +249,7 @@ tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
-\begin{figure}[h!]
+\begin{figure}[b!]
 \centering
 \includegraphics[page=5, width=1\linewidth, trim= 0.4cm 5.5cm 0cm 5cm,
                  clip=true]{Figures/global_diagram}
@@ -381,6 +382,16 @@ x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j})
 Once our ensemble estimates the target state, we can proceed to update the
 object model and steer failed trackers in the pool.
 
+\begin{figure}[b!]
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/clustering/deer_outliers.png}
+\caption[Outliers reinitialization]{Outliers reinitialization. In this Figure,
+dashed red bounding boxes are tagged as outliers. These trackers states are
+reset to the latest target state prediction from the ensemble (green bounding
+box.)}
+\label{fig::outliers}
+\end{figure}
+
 The first goal of this final stage is to keep our target appearance model
 updated. In order to avoid model drifting, we only update the appearance
 model periodically when our tracking ensemble has high confidence in the
@@ -397,16 +408,6 @@ resets its state to the latest target state prediction from the ensemble
 This reinitialization procedure is only performed periodically every 15 frames
 so that we can also take advantage of the capability of some trackers
 to recover from short-term tracking failures.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{Figures/clustering/deer_outliers.png}
-\caption[Outliers reinitialization]{Outliers reinitialization. In this Figure,
-dashed red bounding boxes are tagged as outliers. These trackers states are
-reset to the latest target state prediction from the ensemble (green bounding
-box.)}
-\label{fig::outliers}
-\end{figure}
 
 %The outliers correspond to those trackers that does not belong to $c^*$. These
 %trackers are reinitialized using $\mathrm{x}^{*}$ every 15 frames. Also,
