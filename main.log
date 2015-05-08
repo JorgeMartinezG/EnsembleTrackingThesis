@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  8 MAY 2015 10:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  8 MAY 2015 15:16
 entering extended mode
-**main
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.tex
+**C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/main.tex
+(C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -740,11 +740,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 51.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux
-
-LaTeX Warning: Label `eq::overlap' multiply defined.
-
-)
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -767,7 +763,8 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+
+(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
@@ -892,30 +889,11 @@ Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
-
-Package natbib Warning: Citation `Wu2013' on page 1 undefined on input line 40.
-
-
 [1
 
 
 
-]
-
-LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 107.
-
-
-LaTeX Warning: Reference `sec:approach' on page 2 undefined on input line 109.
-
-
-LaTeX Warning: Reference `sec:experiments' on page 2 undefined on input line 11
-0.
-
-
-LaTeX Warning: Reference `sec:conclusions' on page 2 undefined on input line 11
-5.
-
-)
+])
 (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/related_wo
 rk.tex [2]
 Chapter 2.
@@ -924,7 +902,7 @@ Chapter 2.
 ------------------------------------------------------------------------------
 [3
 
-] [4] <Figures/bg_sub.jpg, id=343, 602.25pt x 377.41pt>
+] [4] <Figures/bg_sub.jpg, id=354, 602.25pt x 377.41pt>
 File: Figures/bg_sub.jpg Graphic file (type jpg)
 
 <use Figures/bg_sub.jpg>
@@ -932,21 +910,21 @@ Package pdftex.def Info: Figures/bg_sub.jpg used on input line 92.
 (pdftex.def)             Requested size: 292.22987pt x 183.13576pt.
  [5 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/bg_sub.
 jpg>]
-<Figures/points/harris.png, id=367, 268.75406pt x 202.50656pt>
+<Figures/points/harris.png, id=378, 268.75406pt x 202.50656pt>
 File: Figures/points/harris.png Graphic file (type png)
 
 <use Figures/points/harris.png>
 Package pdftex.def Info: Figures/points/harris.png used on input line 156.
 (pdftex.def)             Requested size: 133.59444pt x 100.66283pt.
 
-<Figures/points/klt.png, id=369, 268.00125pt x 202.50656pt>
+<Figures/points/klt.png, id=380, 268.00125pt x 202.50656pt>
 File: Figures/points/klt.png Graphic file (type png)
 
 <use Figures/points/klt.png>
 Package pdftex.def Info: Figures/points/klt.png used on input line 157.
 (pdftex.def)             Requested size: 133.59444pt x 100.94402pt.
 
-<Figures/points/sift.png, id=370, 270.25969pt x 205.5178pt>
+<Figures/points/sift.png, id=381, 270.25969pt x 205.5178pt>
 File: Figures/points/sift.png Graphic file (type png)
 
 <use Figures/points/sift.png>
@@ -956,28 +934,28 @@ Package pdftex.def Info: Figures/points/sift.png used on input line 158.
 harris.png> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures
 /points/klt.png> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Fi
 gures/points/sift.png>]
-<Figures/particle_filter1.jpg, id=392, 481.8pt x 361.35pt>
+<Figures/particle_filter1.jpg, id=403, 481.8pt x 361.35pt>
 File: Figures/particle_filter1.jpg Graphic file (type jpg)
 
 <use Figures/particle_filter1.jpg>
 Package pdftex.def Info: Figures/particle_filter1.jpg used on input line 212.
 (pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
 
-<Figures/particle_filter2.jpg, id=393, 481.8pt x 361.35pt>
+<Figures/particle_filter2.jpg, id=404, 481.8pt x 361.35pt>
 File: Figures/particle_filter2.jpg Graphic file (type jpg)
 
 <use Figures/particle_filter2.jpg>
 Package pdftex.def Info: Figures/particle_filter2.jpg used on input line 213.
 (pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
 
-<Figures/particle_filter3.jpg, id=394, 481.8pt x 361.35pt>
+<Figures/particle_filter3.jpg, id=405, 481.8pt x 361.35pt>
 File: Figures/particle_filter3.jpg Graphic file (type jpg)
 
 <use Figures/particle_filter3.jpg>
 Package pdftex.def Info: Figures/particle_filter3.jpg used on input line 214.
 (pdftex.def)             Requested size: 133.59444pt x 100.19586pt.
  [7]
-<Figures/overview_boost.png, id=409, 639.89063pt x 435.87843pt>
+<Figures/overview_boost.png, id=420, 639.89063pt x 435.87843pt>
 File: Figures/overview_boost.png Graphic file (type png)
 
 <use Figures/overview_boost.png>
@@ -986,27 +964,22 @@ Package pdftex.def Info: Figures/overview_boost.png used on input line 260.
  [8 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/particl
 e_filter1.jpg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figu
 res/particle_filter2.jpg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTracking
-Thesis/Figures/particle_filter3.jpg>]
-<Figures/contour.png, id=432, 737.00343pt x 242.40562pt>
+Thesis/Figures/particle_filter3.jpg>] [9 <C:/Users/pc1/Documents/ThesisReport/E
+nsembleTrackingThesis/Figures/overview_boost.png (PNG copy)>] <Figures/contour.
+png, id=463, 737.00343pt x 242.40562pt>
 File: Figures/contour.png Graphic file (type png)
 
 <use Figures/contour.png>
-Package pdftex.def Info: Figures/contour.png used on input line 301.
+Package pdftex.def Info: Figures/contour.png used on input line 307.
 (pdftex.def)             Requested size: 375.7232pt x 123.57713pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/overview
-_boost.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 323.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 329.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 323.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 329.
  [10 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/contou
 r.png>] [11]
 [12])
@@ -1016,7 +989,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Proposed approach
 ------------------------------------------------------------------------------
-<Figures/global_diagram.pdf, id=523, page=2, 963.6pt x 542.025pt>
+<Figures/global_diagram.pdf, id=537, page=2, 963.6pt x 542.025pt>
 File: Figures/global_diagram.pdf Graphic file (type pdf)
 
 <use Figures/global_diagram.pdf, page 2>
@@ -1027,19 +1000,14 @@ Package pdftex.def Info: Figures/global_diagram.pdf, page2 used on input line 1
 
  <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/global_dia
 gram.pdf>]
-<Figures/diagram.pdf, id=550, 963.6pt x 542.025pt>
+<Figures/diagram.pdf, id=564, 963.6pt x 542.025pt>
 File: Figures/diagram.pdf Graphic file (type pdf)
  <use Figures/diagram.pdf>
 Package pdftex.def Info: Figures/diagram.pdf used on input line 64.
 (pdftex.def)             Requested size: 417.47307pt x 110.88266pt.
 
 [15 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/diagram
-.pdf>]
-
-Package natbib Warning: Citation `Jain88' on page 16 undefined on input line 14
-3.
-
-<Figures/global_diagram.pdf, id=574, page=4, 963.6pt x 542.025pt>
+.pdf>] <Figures/global_diagram.pdf, id=589, page=4, 963.6pt x 542.025pt>
 File: Figures/global_diagram.pdf Graphic file (type pdf)
 
 <use Figures/global_diagram.pdf, page 4>
@@ -1048,11 +1016,7 @@ Package pdftex.def Info: Figures/global_diagram.pdf, page4 used on input line 1
 (pdftex.def)             Requested size: 375.7232pt x 119.12962pt.
  [16 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/global
 _diagram.pdf>]
-
-Package natbib Warning: Citation `Jain88' on page 17 undefined on input line 17
-6.
-
-<Figures/global_diagram.pdf, id=596, page=3, 963.6pt x 542.025pt>
+<Figures/global_diagram.pdf, id=613, page=3, 963.6pt x 542.025pt>
 File: Figures/global_diagram.pdf Graphic file (type pdf)
 
 <use Figures/global_diagram.pdf, page 3>
@@ -1060,11 +1024,7 @@ Package pdftex.def Info: Figures/global_diagram.pdf, page3 used on input line 2
 09.
 (pdftex.def)             Requested size: 417.47307pt x 118.16702pt.
  [17]
-
-Package natbib Warning: Citation `zhang2014meem' on page 18 undefined on input 
-line 246.
-
-<Figures/global_diagram.pdf, id=610, page=5, 963.6pt x 542.025pt>
+<Figures/global_diagram.pdf, id=627, page=5, 963.6pt x 542.025pt>
 File: Figures/global_diagram.pdf Graphic file (type pdf)
 
 <use Figures/global_diagram.pdf, page 5>
@@ -1074,7 +1034,7 @@ Package pdftex.def Info: Figures/global_diagram.pdf, page5 used on input line 2
  [18 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/global
 _diagram.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figur
 es/global_diagram.pdf>]
-<Figures/Process/trackers/027.jpeg, id=647, 1204.5pt x 903.375pt>
+<Figures/Process/trackers/027.jpeg, id=665, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/027.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/027.jpeg>
@@ -1082,7 +1042,7 @@ Package pdftex.def Info: Figures/Process/trackers/027.jpeg used on input line 3
 36.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/trackers/028.jpeg, id=648, 1204.5pt x 903.375pt>
+<Figures/Process/trackers/028.jpeg, id=666, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/028.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/028.jpeg>
@@ -1090,7 +1050,7 @@ Package pdftex.def Info: Figures/Process/trackers/028.jpeg used on input line 3
 37.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/trackers/029.jpeg, id=649, 1204.5pt x 903.375pt>
+<Figures/Process/trackers/029.jpeg, id=667, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/029.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/029.jpeg>
@@ -1098,7 +1058,7 @@ Package pdftex.def Info: Figures/Process/trackers/029.jpeg used on input line 3
 38.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/trackers/030.jpeg, id=650, 1204.5pt x 903.375pt>
+<Figures/Process/trackers/030.jpeg, id=668, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/030.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/030.jpeg>
@@ -1106,7 +1066,7 @@ Package pdftex.def Info: Figures/Process/trackers/030.jpeg used on input line 3
 39.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/trackers/031.jpeg, id=651, 1204.5pt x 903.375pt>
+<Figures/Process/trackers/031.jpeg, id=669, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/031.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/031.jpeg>
@@ -1114,7 +1074,7 @@ Package pdftex.def Info: Figures/Process/trackers/031.jpeg used on input line 3
 40.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/clusters/027.jpeg, id=652, 1204.5pt x 903.375pt>
+<Figures/Process/clusters/027.jpeg, id=670, 1204.5pt x 903.375pt>
 File: Figures/Process/clusters/027.jpeg Graphic file (type jpg)
 
 <use Figures/Process/clusters/027.jpeg>
@@ -1122,7 +1082,7 @@ Package pdftex.def Info: Figures/Process/clusters/027.jpeg used on input line 3
 44.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/clusters/028.jpeg, id=653, 1204.5pt x 903.375pt>
+<Figures/Process/clusters/028.jpeg, id=671, 1204.5pt x 903.375pt>
 File: Figures/Process/clusters/028.jpeg Graphic file (type jpg)
 
 <use Figures/Process/clusters/028.jpeg>
@@ -1130,7 +1090,7 @@ Package pdftex.def Info: Figures/Process/clusters/028.jpeg used on input line 3
 45.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/clusters/029.jpeg, id=654, 1204.5pt x 903.375pt>
+<Figures/Process/clusters/029.jpeg, id=672, 1204.5pt x 903.375pt>
 File: Figures/Process/clusters/029.jpeg Graphic file (type jpg)
 
 <use Figures/Process/clusters/029.jpeg>
@@ -1138,7 +1098,7 @@ Package pdftex.def Info: Figures/Process/clusters/029.jpeg used on input line 3
 46.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/clusters/030.jpeg, id=655, 1204.5pt x 903.375pt>
+<Figures/Process/clusters/030.jpeg, id=673, 1204.5pt x 903.375pt>
 File: Figures/Process/clusters/030.jpeg Graphic file (type jpg)
 
 <use Figures/Process/clusters/030.jpeg>
@@ -1146,7 +1106,7 @@ Package pdftex.def Info: Figures/Process/clusters/030.jpeg used on input line 3
 47.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/clusters/031.jpeg, id=656, 1204.5pt x 903.375pt>
+<Figures/Process/clusters/031.jpeg, id=674, 1204.5pt x 903.375pt>
 File: Figures/Process/clusters/031.jpeg Graphic file (type jpg)
 
 <use Figures/Process/clusters/031.jpeg>
@@ -1154,7 +1114,7 @@ Package pdftex.def Info: Figures/Process/clusters/031.jpeg used on input line 3
 48.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/final_result/027.jpeg, id=657, 1204.5pt x 903.375pt>
+<Figures/Process/final_result/027.jpeg, id=675, 1204.5pt x 903.375pt>
 File: Figures/Process/final_result/027.jpeg Graphic file (type jpg)
 
 <use Figures/Process/final_result/027.jpeg>
@@ -1162,7 +1122,7 @@ Package pdftex.def Info: Figures/Process/final_result/027.jpeg used on input li
 ne 352.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/final_result/028.jpeg, id=658, 1204.5pt x 903.375pt>
+<Figures/Process/final_result/028.jpeg, id=676, 1204.5pt x 903.375pt>
 File: Figures/Process/final_result/028.jpeg Graphic file (type jpg)
 
 <use Figures/Process/final_result/028.jpeg>
@@ -1170,7 +1130,7 @@ Package pdftex.def Info: Figures/Process/final_result/028.jpeg used on input li
 ne 353.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/final_result/029.jpeg, id=659, 1204.5pt x 903.375pt>
+<Figures/Process/final_result/029.jpeg, id=677, 1204.5pt x 903.375pt>
 File: Figures/Process/final_result/029.jpeg Graphic file (type jpg)
 
 <use Figures/Process/final_result/029.jpeg>
@@ -1178,7 +1138,7 @@ Package pdftex.def Info: Figures/Process/final_result/029.jpeg used on input li
 ne 354.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/final_result/030.jpeg, id=660, 1204.5pt x 903.375pt>
+<Figures/Process/final_result/030.jpeg, id=678, 1204.5pt x 903.375pt>
 File: Figures/Process/final_result/030.jpeg Graphic file (type jpg)
 
 <use Figures/Process/final_result/030.jpeg>
@@ -1186,7 +1146,7 @@ Package pdftex.def Info: Figures/Process/final_result/030.jpeg used on input li
 ne 355.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
 
-<Figures/Process/final_result/031.jpeg, id=661, 1204.5pt x 903.375pt>
+<Figures/Process/final_result/031.jpeg, id=679, 1204.5pt x 903.375pt>
 File: Figures/Process/final_result/031.jpeg Graphic file (type jpg)
 
 <use Figures/Process/final_result/031.jpeg>
@@ -1212,7 +1172,7 @@ port/EnsembleTrackingThesis/Figures/Process/final_result/029.jpeg> <C:/Users/pc
 1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Process/final_result/03
 0.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Pro
 cess/final_result/031.jpeg>]
-<Figures/clustering/deer_outliers.png, id=669, 421.575pt x 316.18124pt>
+<Figures/clustering/deer_outliers.png, id=687, 421.575pt x 316.18124pt>
 File: Figures/clustering/deer_outliers.png Graphic file (type png)
 
 <use Figures/clustering/deer_outliers.png>
@@ -1227,100 +1187,14 @@ Chapter 4.
 ------------------------------------------------------------------------------
  4 Experiments
 ------------------------------------------------------------------------------
-
-Package natbib Warning: Citation `Wu2013' on page 22 undefined on input line 10
-.
-
 [22
 
 ]
 
-Package natbib Warning: Citation `Wu2013' on page 23 undefined on input line 67
-.
-
-
-Package natbib Warning: Citation `Collins2005a' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Collins2005a' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Collins2005a' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Collins2005a' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Collins2005a' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Jia2012' on page 23 undefined on input line 9
-3.
-
-
-Package natbib Warning: Citation `Zhang2012a' on page 23 undefined on input lin
-e 93.
-
-
-Package natbib Warning: Citation `zhang2014meem' on page 23 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Supancic2013' on page 23 undefined on input l
-ine 93.
-
-
-Package natbib Warning: Citation `Henriques2014' on page 23 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Henriques2014' on page 23 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Zhang2013' on page 23 undefined on input line
- 93.
-
-
-Package natbib Warning: Citation `Henriques2014' on page 23 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Danelljan2014' on page 23 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Bolme2010' on page 23 undefined on input line
- 93.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--95
-[][]
- []
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package natbib Warning: Citation `Wu2013' on page 23 undefined on input line 99
-.
-
 [23] [24]
-
-Package natbib Warning: Citation `Hare2011' on page 25 undefined on input line 
-146.
-
-
-Package natbib Warning: Citation `Zhong2012' on page 25 undefined on input line
- 146.
-
-
-<Figures/Results/quality_plot_error_OPE_threshold.pdf, id=702, 614.295pt x 794.
+<Figures/Results/quality_plot_error_OPE_threshold.pdf, id=749, 614.295pt x 794.
 97pt>
 File: Figures/Results/quality_plot_error_OPE_threshold.pdf Graphic file (type p
 df)
@@ -1329,7 +1203,7 @@ Package pdftex.def Info: Figures/Results/quality_plot_error_OPE_threshold.pdf u
 sed on input line 153.
 (pdftex.def)             Requested size: 208.73653pt x 171.12259pt.
 
-<Figures/Results/quality_plot_overlap_OPE_AUC.pdf, id=704, 614.295pt x 794.97pt
+<Figures/Results/quality_plot_overlap_OPE_AUC.pdf, id=751, 614.295pt x 794.97pt
 >
 File: Figures/Results/quality_plot_overlap_OPE_AUC.pdf Graphic file (type pdf)
  <use Figures/Results/quality_plot_overlap_OPE_AUC.pdf>
@@ -1341,7 +1215,7 @@ Overfull \hbox (7.29997pt too wide) in paragraph at lines 153--160
  [][][][] 
  []
 
-<Figures/Results/subway/041.pdf, id=707, 614.295pt x 794.97pt>
+<Figures/Results/subway/041.pdf, id=754, 614.295pt x 794.97pt>
 File: Figures/Results/subway/041.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/041.pdf>
@@ -1349,7 +1223,7 @@ Package pdftex.def Info: Figures/Results/subway/041.pdf used on input line 189.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/subway/042.pdf, id=709, 614.295pt x 794.97pt>
+<Figures/Results/subway/042.pdf, id=756, 614.295pt x 794.97pt>
 File: Figures/Results/subway/042.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/042.pdf>
@@ -1357,7 +1231,7 @@ Package pdftex.def Info: Figures/Results/subway/042.pdf used on input line 190.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/subway/043.pdf, id=711, 614.295pt x 794.97pt>
+<Figures/Results/subway/043.pdf, id=758, 614.295pt x 794.97pt>
 File: Figures/Results/subway/043.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/043.pdf>
@@ -1365,7 +1239,7 @@ Package pdftex.def Info: Figures/Results/subway/043.pdf used on input line 191.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/subway/044.pdf, id=713, 614.295pt x 794.97pt>
+<Figures/Results/subway/044.pdf, id=760, 614.295pt x 794.97pt>
 File: Figures/Results/subway/044.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/044.pdf>
@@ -1373,7 +1247,7 @@ Package pdftex.def Info: Figures/Results/subway/044.pdf used on input line 192.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/subway/045.pdf, id=715, 614.295pt x 794.97pt>
+<Figures/Results/subway/045.pdf, id=762, 614.295pt x 794.97pt>
 File: Figures/Results/subway/045.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/045.pdf>
@@ -1381,7 +1255,7 @@ Package pdftex.def Info: Figures/Results/subway/045.pdf used on input line 193.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/soccer/090.pdf, id=717, 614.295pt x 794.97pt>
+<Figures/Results/soccer/090.pdf, id=764, 614.295pt x 794.97pt>
 File: Figures/Results/soccer/090.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/090.pdf>
@@ -1389,7 +1263,7 @@ Package pdftex.def Info: Figures/Results/soccer/090.pdf used on input line 195.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/soccer/110.pdf, id=719, 614.295pt x 794.97pt>
+<Figures/Results/soccer/110.pdf, id=766, 614.295pt x 794.97pt>
 File: Figures/Results/soccer/110.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/110.pdf>
@@ -1397,7 +1271,7 @@ Package pdftex.def Info: Figures/Results/soccer/110.pdf used on input line 196.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/soccer/131.pdf, id=721, 614.295pt x 794.97pt>
+<Figures/Results/soccer/131.pdf, id=768, 614.295pt x 794.97pt>
 File: Figures/Results/soccer/131.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/131.pdf>
@@ -1405,7 +1279,7 @@ Package pdftex.def Info: Figures/Results/soccer/131.pdf used on input line 197.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/soccer/140.pdf, id=723, 614.295pt x 794.97pt>
+<Figures/Results/soccer/140.pdf, id=770, 614.295pt x 794.97pt>
 File: Figures/Results/soccer/140.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/140.pdf>
@@ -1413,7 +1287,7 @@ Package pdftex.def Info: Figures/Results/soccer/140.pdf used on input line 198.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
-<Figures/Results/soccer/150.pdf, id=725, 614.295pt x 794.97pt>
+<Figures/Results/soccer/150.pdf, id=772, 614.295pt x 794.97pt>
 File: Figures/Results/soccer/150.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/150.pdf>
@@ -1424,7 +1298,7 @@ Package pdftex.def Info: Figures/Results/soccer/150.pdf used on input line 199.
 s/quality_plot_error_OPE_threshold.pdf> <C:/Users/pc1/Documents/ThesisReport/En
 sembleTrackingThesis/Figures/Results/quality_plot_overlap_OPE_AUC.pdf>]
 (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Figures/results_fig
-ures.tex <Figures/results_all/bolt/015.pdf, id=749, 614.295pt x 794.97pt>
+ures.tex <Figures/results_all/bolt/015.pdf, id=798, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/015.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/015.pdf>
@@ -1432,7 +1306,7 @@ Package pdftex.def Info: Figures/results_all/bolt/015.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/bolt/196.pdf, id=751, 614.295pt x 794.97pt>
+<Figures/results_all/bolt/196.pdf, id=800, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/196.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/196.pdf>
@@ -1440,7 +1314,7 @@ Package pdftex.def Info: Figures/results_all/bolt/196.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/bolt/236.pdf, id=753, 614.295pt x 794.97pt>
+<Figures/results_all/bolt/236.pdf, id=802, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/236.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/236.pdf>
@@ -1448,7 +1322,7 @@ Package pdftex.def Info: Figures/results_all/bolt/236.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/bolt/316.pdf, id=755, 614.295pt x 794.97pt>
+<Figures/results_all/bolt/316.pdf, id=804, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/316.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/316.pdf>
@@ -1456,7 +1330,7 @@ Package pdftex.def Info: Figures/results_all/bolt/316.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/bolt/346.pdf, id=757, 614.295pt x 794.97pt>
+<Figures/results_all/bolt/346.pdf, id=806, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/346.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/346.pdf>
@@ -1468,7 +1342,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-<Figures/results_all/jogging-2/033.pdf, id=759, 614.295pt x 794.97pt>
+<Figures/results_all/jogging-2/033.pdf, id=808, 614.295pt x 794.97pt>
 File: Figures/results_all/jogging-2/033.pdf Graphic file (type pdf)
 
 <use Figures/results_all/jogging-2/033.pdf>
@@ -1476,7 +1350,7 @@ Package pdftex.def Info: Figures/results_all/jogging-2/033.pdf used on input li
 ne 19.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/jogging-2/071.pdf, id=761, 614.295pt x 794.97pt>
+<Figures/results_all/jogging-2/071.pdf, id=810, 614.295pt x 794.97pt>
 File: Figures/results_all/jogging-2/071.pdf Graphic file (type pdf)
 
 <use Figures/results_all/jogging-2/071.pdf>
@@ -1484,7 +1358,7 @@ Package pdftex.def Info: Figures/results_all/jogging-2/071.pdf used on input li
 ne 19.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/jogging-2/104.pdf, id=763, 614.295pt x 794.97pt>
+<Figures/results_all/jogging-2/104.pdf, id=812, 614.295pt x 794.97pt>
 File: Figures/results_all/jogging-2/104.pdf Graphic file (type pdf)
 
 <use Figures/results_all/jogging-2/104.pdf>
@@ -1492,7 +1366,7 @@ Package pdftex.def Info: Figures/results_all/jogging-2/104.pdf used on input li
 ne 19.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/jogging-2/258.pdf, id=765, 614.295pt x 794.97pt>
+<Figures/results_all/jogging-2/258.pdf, id=814, 614.295pt x 794.97pt>
 File: Figures/results_all/jogging-2/258.pdf Graphic file (type pdf)
 
 <use Figures/results_all/jogging-2/258.pdf>
@@ -1500,7 +1374,7 @@ Package pdftex.def Info: Figures/results_all/jogging-2/258.pdf used on input li
 ne 19.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/jogging-2/305.pdf, id=767, 614.295pt x 794.97pt>
+<Figures/results_all/jogging-2/305.pdf, id=816, 614.295pt x 794.97pt>
 File: Figures/results_all/jogging-2/305.pdf Graphic file (type pdf)
 
 <use Figures/results_all/jogging-2/305.pdf>
@@ -1512,7 +1386,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<Figures/results_all/singer-1/048.pdf, id=769, 614.295pt x 794.97pt>
+<Figures/results_all/singer-1/048.pdf, id=818, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-1/048.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-1/048.pdf>
@@ -1520,7 +1394,7 @@ Package pdftex.def Info: Figures/results_all/singer-1/048.pdf used on input lin
 e 29.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-1/131.pdf, id=771, 614.295pt x 794.97pt>
+<Figures/results_all/singer-1/131.pdf, id=820, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-1/131.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-1/131.pdf>
@@ -1528,7 +1402,7 @@ Package pdftex.def Info: Figures/results_all/singer-1/131.pdf used on input lin
 e 29.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-1/179.pdf, id=773, 614.295pt x 794.97pt>
+<Figures/results_all/singer-1/179.pdf, id=822, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-1/179.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-1/179.pdf>
@@ -1536,7 +1410,7 @@ Package pdftex.def Info: Figures/results_all/singer-1/179.pdf used on input lin
 e 29.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-1/242.pdf, id=775, 614.295pt x 794.97pt>
+<Figures/results_all/singer-1/242.pdf, id=824, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-1/242.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-1/242.pdf>
@@ -1544,7 +1418,7 @@ Package pdftex.def Info: Figures/results_all/singer-1/242.pdf used on input lin
 e 29.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-1/306.pdf, id=777, 614.295pt x 794.97pt>
+<Figures/results_all/singer-1/306.pdf, id=826, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-1/306.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-1/306.pdf>
@@ -1556,7 +1430,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-<Figures/results_all/football/005.pdf, id=779, 614.295pt x 794.97pt>
+<Figures/results_all/football/005.pdf, id=828, 614.295pt x 794.97pt>
 File: Figures/results_all/football/005.pdf Graphic file (type pdf)
 
 <use Figures/results_all/football/005.pdf>
@@ -1564,7 +1438,7 @@ Package pdftex.def Info: Figures/results_all/football/005.pdf used on input lin
 e 39.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/football/086.pdf, id=781, 614.295pt x 794.97pt>
+<Figures/results_all/football/086.pdf, id=830, 614.295pt x 794.97pt>
 File: Figures/results_all/football/086.pdf Graphic file (type pdf)
 
 <use Figures/results_all/football/086.pdf>
@@ -1572,7 +1446,7 @@ Package pdftex.def Info: Figures/results_all/football/086.pdf used on input lin
 e 39.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/football/135.pdf, id=783, 614.295pt x 794.97pt>
+<Figures/results_all/football/135.pdf, id=832, 614.295pt x 794.97pt>
 File: Figures/results_all/football/135.pdf Graphic file (type pdf)
 
 <use Figures/results_all/football/135.pdf>
@@ -1580,7 +1454,7 @@ Package pdftex.def Info: Figures/results_all/football/135.pdf used on input lin
 e 39.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/football/325.pdf, id=785, 614.295pt x 794.97pt>
+<Figures/results_all/football/325.pdf, id=834, 614.295pt x 794.97pt>
 File: Figures/results_all/football/325.pdf Graphic file (type pdf)
 
 <use Figures/results_all/football/325.pdf>
@@ -1588,7 +1462,7 @@ Package pdftex.def Info: Figures/results_all/football/325.pdf used on input lin
 e 39.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/football/353.pdf, id=787, 614.295pt x 794.97pt>
+<Figures/results_all/football/353.pdf, id=836, 614.295pt x 794.97pt>
 File: Figures/results_all/football/353.pdf Graphic file (type pdf)
 
 <use Figures/results_all/football/353.pdf>
@@ -1600,7 +1474,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 39--40
  [][] 
  []
 
-<Figures/results_all/singer-2/029.pdf, id=789, 614.295pt x 794.97pt>
+<Figures/results_all/singer-2/029.pdf, id=838, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-2/029.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-2/029.pdf>
@@ -1608,7 +1482,7 @@ Package pdftex.def Info: Figures/results_all/singer-2/029.pdf used on input lin
 e 49.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-2/069.pdf, id=791, 614.295pt x 794.97pt>
+<Figures/results_all/singer-2/069.pdf, id=840, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-2/069.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-2/069.pdf>
@@ -1616,7 +1490,7 @@ Package pdftex.def Info: Figures/results_all/singer-2/069.pdf used on input lin
 e 49.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-2/155.pdf, id=793, 614.295pt x 794.97pt>
+<Figures/results_all/singer-2/155.pdf, id=842, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-2/155.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-2/155.pdf>
@@ -1624,7 +1498,7 @@ Package pdftex.def Info: Figures/results_all/singer-2/155.pdf used on input lin
 e 49.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-2/211.pdf, id=795, 614.295pt x 794.97pt>
+<Figures/results_all/singer-2/211.pdf, id=844, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-2/211.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-2/211.pdf>
@@ -1632,7 +1506,7 @@ Package pdftex.def Info: Figures/results_all/singer-2/211.pdf used on input lin
 e 49.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/singer-2/309.pdf, id=797, 614.295pt x 794.97pt>
+<Figures/results_all/singer-2/309.pdf, id=846, 614.295pt x 794.97pt>
 File: Figures/results_all/singer-2/309.pdf Graphic file (type pdf)
 
 <use Figures/results_all/singer-2/309.pdf>
@@ -1644,7 +1518,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 49--50
  [][] 
  []
 
-<Figures/results_all/skating1/058.pdf, id=799, 614.295pt x 794.97pt>
+<Figures/results_all/skating1/058.pdf, id=848, 614.295pt x 794.97pt>
 File: Figures/results_all/skating1/058.pdf Graphic file (type pdf)
 
 <use Figures/results_all/skating1/058.pdf>
@@ -1652,7 +1526,7 @@ Package pdftex.def Info: Figures/results_all/skating1/058.pdf used on input lin
 e 59.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/skating1/093.pdf, id=801, 614.295pt x 794.97pt>
+<Figures/results_all/skating1/093.pdf, id=850, 614.295pt x 794.97pt>
 File: Figures/results_all/skating1/093.pdf Graphic file (type pdf)
 
 <use Figures/results_all/skating1/093.pdf>
@@ -1660,7 +1534,7 @@ Package pdftex.def Info: Figures/results_all/skating1/093.pdf used on input lin
 e 59.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/skating1/237.pdf, id=803, 614.295pt x 794.97pt>
+<Figures/results_all/skating1/237.pdf, id=852, 614.295pt x 794.97pt>
 File: Figures/results_all/skating1/237.pdf Graphic file (type pdf)
 
 <use Figures/results_all/skating1/237.pdf>
@@ -1668,7 +1542,7 @@ Package pdftex.def Info: Figures/results_all/skating1/237.pdf used on input lin
 e 59.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/skating1/295.pdf, id=805, 614.295pt x 794.97pt>
+<Figures/results_all/skating1/295.pdf, id=854, 614.295pt x 794.97pt>
 File: Figures/results_all/skating1/295.pdf Graphic file (type pdf)
 
 <use Figures/results_all/skating1/295.pdf>
@@ -1676,7 +1550,7 @@ Package pdftex.def Info: Figures/results_all/skating1/295.pdf used on input lin
 e 59.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/skating1/329.pdf, id=807, 614.295pt x 794.97pt>
+<Figures/results_all/skating1/329.pdf, id=856, 614.295pt x 794.97pt>
 File: Figures/results_all/skating1/329.pdf Graphic file (type pdf)
 
 <use Figures/results_all/skating1/329.pdf>
@@ -1688,7 +1562,7 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
-<Figures/results_all/david3/072.pdf, id=809, 614.295pt x 794.97pt>
+<Figures/results_all/david3/072.pdf, id=858, 614.295pt x 794.97pt>
 File: Figures/results_all/david3/072.pdf Graphic file (type pdf)
 
 <use Figures/results_all/david3/072.pdf>
@@ -1696,7 +1570,7 @@ Package pdftex.def Info: Figures/results_all/david3/072.pdf used on input line
 69.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/david3/092.pdf, id=811, 614.295pt x 794.97pt>
+<Figures/results_all/david3/092.pdf, id=860, 614.295pt x 794.97pt>
 File: Figures/results_all/david3/092.pdf Graphic file (type pdf)
 
 <use Figures/results_all/david3/092.pdf>
@@ -1704,7 +1578,7 @@ Package pdftex.def Info: Figures/results_all/david3/092.pdf used on input line
 69.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/david3/197.pdf, id=813, 614.295pt x 794.97pt>
+<Figures/results_all/david3/197.pdf, id=862, 614.295pt x 794.97pt>
 File: Figures/results_all/david3/197.pdf Graphic file (type pdf)
 
 <use Figures/results_all/david3/197.pdf>
@@ -1712,7 +1586,7 @@ Package pdftex.def Info: Figures/results_all/david3/197.pdf used on input line
 69.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/david3/218.pdf, id=815, 614.295pt x 794.97pt>
+<Figures/results_all/david3/218.pdf, id=864, 614.295pt x 794.97pt>
 File: Figures/results_all/david3/218.pdf Graphic file (type pdf)
 
 <use Figures/results_all/david3/218.pdf>
@@ -1720,7 +1594,7 @@ Package pdftex.def Info: Figures/results_all/david3/218.pdf used on input line
 69.
 (pdftex.def)             Requested size: 81.4103pt x 60.14742pt.
 
-<Figures/results_all/david3/242.pdf, id=817, 614.295pt x 794.97pt>
+<Figures/results_all/david3/242.pdf, id=866, 614.295pt x 794.97pt>
 File: Figures/results_all/david3/242.pdf Graphic file (type pdf)
 
 <use Figures/results_all/david3/242.pdf>
@@ -1732,14 +1606,14 @@ Overfull \hbox (11.47836pt too wide) in paragraph at lines 69--69
  [][] 
  []
 
-<Figures/results_all/legend.pdf, id=819, 722.7pt x 542.025pt>
+<Figures/results_all/legend.pdf, id=868, 722.7pt x 542.025pt>
 File: Figures/results_all/legend.pdf Graphic file (type pdf)
 
 <use Figures/results_all/legend.pdf>
 Package pdftex.def Info: Figures/results_all/legend.pdf used on input line 70.
 (pdftex.def)             Requested size: 333.97972pt x 40.10376pt.
 )
-<Figures/stats.pdf, id=821, 794.97pt x 614.295pt>
+<Figures/stats.pdf, id=870, 794.97pt x 614.295pt>
 File: Figures/stats.pdf Graphic file (type pdf)
  <use Figures/stats.pdf>
 Package pdftex.def Info: Figures/stats.pdf used on input line 280.
@@ -1801,7 +1675,7 @@ gures/results_all/david3/197.pdf> <C:/Users/pc1/Documents/ThesisReport/Ensemble
 TrackingThesis/Figures/results_all/david3/218.pdf> <C:/Users/pc1/Documents/Thes
 isReport/EnsembleTrackingThesis/Figures/results_all/david3/242.pdf> <C:/Users/p
 c1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/legend.pdf
->] <Figures/bar_graph.pdf, id=1072, 794.97pt x 614.295pt>
+>] <Figures/bar_graph.pdf, id=1121, 794.97pt x 614.295pt>
 File: Figures/bar_graph.pdf Graphic file (type pdf)
 
 <use Figures/bar_graph.pdf>
@@ -1809,48 +1683,43 @@ Package pdftex.def Info: Figures/bar_graph.pdf used on input line 303.
 (pdftex.def)             Requested size: 417.47307pt x 146.1319pt.
  [28 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/stats.
 pdf, page is rotated 90 degrees> <C:/Users/pc1/Documents/ThesisReport/EnsembleT
-rackingThesis/Figures/bar_graph.pdf, page is rotated 90 degrees>]
+rackingThesis/Figures/bar_graph.pdf, page is rotated 90 degrees>])
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/conclusion
+s.tex [29]
+Chapter 5.
+------------------------------------------------------------------------------
+ 5 Conclusions and future work
+------------------------------------------------------------------------------
+) [30
 
-Package natbib Warning: Citation `Wu2013' on page 29 undefined on input line 33
-0.
-
-) [29]
+]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl [30
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl [31
 
 
 ]
-[31] [32] [33] [34] [35])
+[32] [33] [34] [35] [36] [37])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+ [38]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
-[36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F9C1D54C6456E075FA99FA90E6B5E9BB;6406.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+(rerunfilecheck)             Checksum: 745D20F8F1BF35A2BB1B870C482D2DA1;6609.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 14653 strings out of 493921
- 217254 string characters out of 3144883
- 280427 words of memory out of 3000000
- 17421 multiletter control sequences out of 15000+200000
+ 14713 strings out of 493921
+ 218461 string characters out of 3144883
+ 281407 words of memory out of 3000000
+ 17458 multiletter control sequences out of 15000+200000
  16894 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,12n,45p,1035b,571s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,45p,1098b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/P
@@ -1868,9 +1737,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (45 pages, 4899987 bytes).
+Output written on main.pdf (47 pages, 4912891 bytes).
 PDF statistics:
- 1224 PDF objects out of 1440 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 1019 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1288 PDF objects out of 1440 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 1027 words of extra memory for PDF output out of 10000 (max. 10000000)
 

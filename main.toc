@@ -17,9 +17,9 @@
 \contentsline {section}{\numberline {2.3}Object Tracking}{7}{section.19}
 \contentsline {subsection}{\numberline {2.3.1}Point Tracking}{7}{subsection.20}
 \contentsline {subsection}{\numberline {2.3.2}Kernel Tracking}{8}{subsection.22}
-\contentsline {subsection}{\numberline {2.3.3}Silhouette Tracking}{9}{subsection.24}
+\contentsline {subsection}{\numberline {2.3.3}Silhouette Tracking}{10}{subsection.24}
 \contentsline {section}{\numberline {2.4}Tracking Datasets and Challenges}{10}{section.26}
-\contentsline {section}{\numberline {2.5}Object tracking applying ensemble}{13}{section.28}
+\contentsline {section}{\numberline {2.5}Object tracking applying ensemble}{12}{section.28}
 \contentsline {chapter}{\numberline {3}Proposed approach}{14}{chapter.29}
 \contentsline {section}{\numberline {3.1}Overview}{14}{section.31}
 \contentsline {section}{\numberline {3.2}Analysis of appearance and spatial coherence}{15}{section.33}
@@ -36,6 +36,7 @@
 \contentsline {section}{\numberline {4.5}Benchmarking results}{25}{section.57}
 \contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{25}{section.61}
 \contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{28}{section.73}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{30}{chapter.75}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{30}{dummy.75}
+\contentsline {chapter}{Bibliography}{31}{dummy.76}

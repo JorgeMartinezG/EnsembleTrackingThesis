@@ -1,9 +1,15 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{88}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wu et~al.(2013)Wu, Lim, and Yang]{Wu2013B}
+Yi~Wu, Jongwoo Lim, and Ming-Hsuan Yang.
+\newblock {Online Object Tracking: A Benchmark}.
+\newblock \emph{2013 IEEE Conference on Computer Vision and Pattern
+  Recognition}, \penalty0 (Iccv):\penalty0 2411--2418, June 2013.
 
 \bibitem[Veenman et~al.(2001)Veenman, Reinders, and Backer]{Veenman2001}
 Cor~J. Veenman, Marcel J~T Reinders, and Eric Backer.
@@ -336,6 +342,43 @@ Boris Babenko, Ming-Hsuan Yang, and Serge Belongie.
   intelligence}, pages 983--990, 2010.
 \newblock ISSN 1939-3539.
 
+\bibitem[Zhang et~al.(2012{\natexlab{a}})Zhang, Ghanem, Liu, and
+  Ahuja]{Zhang2012b}
+Tianzhu Zhang, Bernard Ghanem, Si~Liu, and Narendra Ahuja.
+\newblock {Robust visual tracking via multi-task sparse learning}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 2042--2049,
+  2012{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2012{\natexlab{b}})Zhang, Zhang, and Yang]{Zhang2012a}
+Kaihua Zhang, Lei Zhang, and Ming~Hsuan Yang.
+\newblock {Real-time compressive tracking}.
+\newblock In \emph{Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, volume 7574 LNCS, pages 864--877, 2012{\natexlab{b}}.
+
+\bibitem[Bao et~al.(2012)Bao, Wu, Ling, and Ji]{Bao2012}
+Chenglong Bao, Yi~Wu, Haibin Ling, and Hui Ji.
+\newblock {Real time robust L1 tracker using accelerated proximal gradient
+  approach}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 1830--1837, 2012.
+
+\bibitem[Mei et~al.(2011)Mei, Ling, Wu, Blasch, and Bai]{Mei2011a}
+Xue Mei, Haibin Ling, Yi~Wu, Erik Blasch, and Li~Bai.
+\newblock {Minimum error bounded efficient ???1 tracker with occlusion
+  detection}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 1257--1264, 2011.
+
+\bibitem[Mei and Ling(2011)]{Mei2011}
+Xue Mei and Haibin Ling.
+\newblock {Robust visual tracking and vehicle classification via sparse
+  representation}.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 33:\penalty0 2259--2272, 2011.
+\newblock ISSN 01628828.
+
 \bibitem[Li et~al.(2001)Li, Chellappa, Zheng, and Der]{Li2001}
 Baoxin Li, Rama Chellappa, Qinfen Zheng, and Sandor~Z. Der.
 \newblock {Model-based temporal object verification using video}.
@@ -385,12 +428,6 @@ Roberto Vezzani and Rita Cucchiara.
 \newblock \emph{Multimedia Tools and Applications}, 50:\penalty0 359--380,
   2010.
 \newblock ISSN 13807501.
-
-\bibitem[Wu et~al.(2013)Wu, Lim, and Yang]{Wu2013b}
-Yi~Wu, Jongwoo Lim, and Ming-Hsuan Yang.
-\newblock {Online Object Tracking: A Benchmark}.
-\newblock \emph{2013 IEEE Conference on Computer Vision and Pattern
-  Recognition}, \penalty0 (Iccv):\penalty0 2411--2418, June 2013.
 
 \bibitem[Smeulders et~al.(2014)Smeulders, Chu, Cucchiara, Calderara, Dehghan,
   and Shah]{Smeulders2014}
@@ -487,5 +524,79 @@ Christian Bailer, Alain Pagani, and Didier Stricker.
   Fusion}.
 \newblock In \emph{European Conference on Computer Vision}, pages 170--185,
   2014.
+
+\bibitem[Jain and Dubes(1988)]{Jain88}
+Anil~K. Jain and Richard~C. Dubes.
+\newblock \emph{Algorithms for clustering data}.
+\newblock Prentice-Hall, Inc., Upper Saddle River, NJ, USA, 1988.
+
+\bibitem[Zhang et~al.(2014)Zhang, Ma, and Sclaroff]{zhang2014meem}
+Jianming Zhang, Shugao Ma, and Stan Sclaroff.
+\newblock {MEEM:} robust tracking via multiple experts using entropy
+  minimization.
+\newblock In \emph{Proc. of the European Conference on Computer Vision (ECCV)},
+  2014.
+
+\bibitem[Collins et~al.(2005)Collins, Zhou, and Teh]{Collins2005a}
+Robert Collins, Xuhui Zhou, and Seng~Keat Teh.
+\newblock {An Open Source Tracking Testbed and Evaluation Web Site}.
+\newblock In \emph{IEEE International Workshop on Performance Evaluation of
+  Tracking and Surveillance}, 2005.
+
+\bibitem[Jia et~al.(2012)Jia, Lu, and Yang]{Jia2012}
+Xu~Jia, Huchuan Lu, and Ming~Hsuan Yang.
+\newblock {Visual tracking via adaptive structural local sparse appearance
+  model}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 1822--1829, 2012.
+
+\bibitem[Zhang et~al.(2012{\natexlab{c}})Zhang, Zhang, and Yang]{Zhang2012}
+Kaihua Zhang, Lei Zhang, and Ming~Hsuan Yang.
+\newblock {Real-time compressive tracking}.
+\newblock In \emph{Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, volume 7574 LNCS, pages 864--877, 2012{\natexlab{c}}.
+
+\bibitem[Supancic and Ramanan(2013)]{Supancic2013}
+James~Steven Supancic and Deva Ramanan.
+\newblock {Self-paced learning for long-term tracking}.
+\newblock In \emph{Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 2379--2386, 2013.
+
+\bibitem[Henriques et~al.(2014)Henriques, Caseiro, Martins, and
+  Batista]{Henriques2014}
+JF~Henriques, Rui Caseiro, Pedro Martins, and Jorge Batista.
+\newblock {High-Speed Tracking with Kernelized Correlation Filters}.
+\newblock \emph{arXiv preprint arXiv: \ldots}, pages 1--14, 2014.
+
+\bibitem[Zhang et~al.(2013)Zhang, Zhang, Yang, and Zhang]{Zhang2013}
+Kaihua Zhang, Lei Zhang, Ming-Hsuan Yang, and David Zhang.
+\newblock {Fast Tracking via Spatio-Temporal Context Learning}.
+\newblock \emph{arXiv preprint arXiv:1311.1939}, pages 1--16, 2013.
+
+\bibitem[Danelljan et~al.(2014)Danelljan, Khan, Felsberg, and
+  Weijer]{Danelljan2014}
+Martin Danelljan, Fahad~Shahbaz Khan, Michael Felsberg, and Joost Van~De
+  Weijer.
+\newblock {Adaptive Color Attributes for Real-Time Visual Tracking}.
+\newblock In \emph{CVPR}, 2014.
+
+\bibitem[Bolme et~al.(2010)Bolme, Beveridge, Draper, and Lui]{Bolme2010}
+D~S Bolme, J~R Beveridge, B~a Draper, and Yui Man Lui Yui~Man Lui.
+\newblock {Visual object tracking using adaptive correlation filters}.
+\newblock \emph{Computer Vision and Pattern Recognition CVPR 2010 IEEE
+  Conference on}, pages 2544--2550, 2010.
+\newblock ISSN 10636919.
+
+\bibitem[Hare et~al.(2011)Hare, Saffari, and Torr]{Hare2011}
+Sam Hare, Amir Saffari, and Philip H~S Torr.
+\newblock {Struck: Structured output tracking with kernels}.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 263--270, 2011.
+
+\bibitem[Zhong et~al.(2012)Zhong, Lu, and Yang]{Zhong2012}
+Wei Zhong, Huchuan Lu, and Ming-Hsuan Yang.
+\newblock {Robust object tracking via sparsity-based collaborative model}.
+\newblock In \emph{CVPR}, pages 1838--1845, 2012.
 
 \end{thebibliography}

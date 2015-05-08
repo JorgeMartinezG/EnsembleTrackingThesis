@@ -7,7 +7,7 @@
 
 In this section we report evaluations for our proposed approach. We compare our
 tracking ensemble method and other state-of-the-art trackers using complete
-50 sequences tracking benchmark \cite{Wu2013}. We also present qualitative and
+50 sequences tracking benchmark \cite{Wu2013B}. We also present qualitative and
 quantitative analysis of our ensemble tracker, such as
 individual performance of trackers and effect of the tracker pool.
 
@@ -64,7 +64,7 @@ In precision the DP value of 20 pixels is used as ranking score. In contrast to 
 the curve (AUC), which relates to the average overlap across all frames. 
 
 To validate the performance of our proposed approach, we follow the one-pass
-evaluation methodology (OPE) proposed in \cite{Wu2013}. 
+evaluation methodology (OPE) proposed in \cite{Wu2013B}. 
 We summarize the performance using the precision and success plots.
 
 \begin{table}[h!]
@@ -75,12 +75,12 @@ M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.}
 \toprule
  \textbf{Method}&  \textbf{Type}& \textbf{Code}& \\ \midrule
  Template matching - TM \cite{Collins2005a}& Template-based& other&  \\
- Mean Shift - MS \cite{Collins2005a}& Point-based& other&  \\
- Variance Ratio - VR \cite{Collins2005a}& Point-based& other&  \\
+ Mean Shift - MS \cite{Collins2005a}& Density-based& other&  \\
+ Variance Ratio - VR \cite{Collins2005a}& Density-based& other&  \\
  Peak Difference - PD \cite{Collins2005a}& Point-based& other&  \\
  Ratio Shift - RS \cite{Collins2005a}& Point-based& other&  \\ 
  Adaptive Structural Local Sparse Appearance \\ Model - ASLA \cite{Jia2012}& Sparse representation&  MC& 
- \\  Compressive Tracker - CT \cite{Zhang2012a}& Sparse representation& MC&  \\
+ \\  Compressive Tracker - CT \cite{Zhang2012}& Sparse representation& MC&  \\
  Minimum Experts Entropy Minimization - MEEM \cite{zhang2014meem}& tracking by detection& MC&  \\ 
  Self-paced learning for long-term tracking - SPLTT \cite{Supancic2013}& tracking by detection& MC& \\ 
  Kernelized Correlation Filters - KCF \cite{Henriques2014}& Template-based& M&  \\ 
@@ -96,7 +96,7 @@ M: Matlab, MC: Mixture of Matlab and C/C++, other: DLL files.}
 
 \section{Dataset}
 In order to evaluate the performance of our proposed ensemble tracking,
-we adopt the Online Object Tracking Benchmark (OOTB) from \cite{Wu2013}.
+we adopt the Online Object Tracking Benchmark (OOTB) from \cite{Wu2013B}.
 This is an extensive benchmarking dataset that includes 50 sequences
 annotated with 11 attributes.
 The dataset includes challenging scenarios such as motion blur,
@@ -327,7 +327,7 @@ OV (out of view), and BC (background clutter). It is important to note that SCM
 tracker is better than most recent trackers in terms of scale variation.
 Results show that its affine motion models handle scale
 variation better than other trackers, which are designed to account
-translational motion \cite{Wu2013}. In our system, scale is not determined. We
+translational motion \cite{Zhong2012}. In our system, scale is not determined. We
 are dependent of each separated tracker scale, and some trackers do not consider
 scale correction. Some of them apply initialization scale over all sequence.
 

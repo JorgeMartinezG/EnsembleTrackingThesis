@@ -1,7 +1,7 @@
 % Chapter Template
 \chapter{Related Work} % Main chapter title
 
-\label{chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{chapter::related_work} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 \lhead{Chapter 2. \emph{Related Work}} 
 
@@ -286,6 +286,12 @@ Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost
 to combine many weak classifiers (usually decision stumps) into a linear
 strong classifier.
 
+\textbf{Sparse/non.sparse representation: } In this type of tracking, a set of
+target samples is associated with spanned serveral templates. The likelihood
+of a candidate sample belonging to the object class is often determined by the
+residual between the candidate sample and the reconstructed samples derived from
+a linear representation \cite{Zhang2012b,Zhang2012a,Bao2012,Mei2011a,Mei2011}.
+
 \subsection{Silhouette Tracking}
 
 The object is tracked via estimation of the object region in each frame.
@@ -388,7 +394,7 @@ scenario.
 Recently, the tracking community released evaluation suites containing a
 selection of videos and algorithms for testing trackers performance. These
 benchmarks test and compare many tracking approaches using fair evaluation
-criteria. Online Object Tracking Benchmark \cite{Wu2013b} contais 50 most
+criteria. Online Object Tracking Benchmark \cite{Wu2013B} contais 50 most
 commonly used sequences. Also, the authors classified tracking challenges
 (attributes) into subsets to report specific challenging conditions. The
 Amsterdam Library of Ordinary Videos for tracking, ALOV300+ \cite{Smeulders2014},
@@ -412,7 +418,7 @@ PROST \cite{Santner2010a}         & 4        & Yes & Generic \\
 Ross \cite{Ross2007}              & 4        & Yes & Generic \\
 Thang \cite{Dinh2011}             & 4        & Yes & Generic \\
 Wang (NoRef)                      & 4        & Yes & Generic \\
-Tracking Benchmark \cite{Wu2013b} & 50       & Yes & Generic \\
+Tracking Benchmark \cite{Wu2013B} & 50       & Yes & Generic \\
 ALOV 300+ \cite{Smeulders2014}    & 315      & Yes & Generic \\
 Godec \cite{godec11a}             & 7        & Yes & Human   \\
 Babenko \cite{Babenko2010}        & 3        & Yes & Human   \\

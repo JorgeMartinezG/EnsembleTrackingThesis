@@ -11,100 +11,12 @@ title = {{Cooperative Learning Returns To College What Evidence Is There That It
 volume = {30},
 year = {1998}
 }
-@inproceedings{Hare2011,
-abstract = {Adaptive tracking-by-detection methods are widely used in computer vision for tracking arbitrary objects. Current approaches treat the tracking problem as a classification task and use online learning techniques to update the object model. However, for these updates to happen one needs to convert the estimated object position into a set of labelled training examples, and it is not clear how best to perform this intermediate step. Furthermore, the objective for the classifier (label prediction) is not explicitly coupled to the objective for the tracker (accurate estimation of object position). In this paper, we present a framework for adaptive visual object tracking based on structured output prediction. By explicitly allowing the output space to express the needs of the tracker, we are able to avoid the need for an intermediate classification step. Our method uses a kernelized structured output support vector machine (SVM), which is learned online to provide adaptive tracking. To allow for real-time application, we introduce a budgeting mechanism which prevents the unbounded growth in the number of support vectors which would otherwise occur during tracking. Experimentally, we show that our algorithm is able to outperform state-of-the-art trackers on various benchmark videos. Additionally, we show that we can easily incorporate additional features and kernels into our framework, which results in increased performance.},
-author = {Hare, Sam and Saffari, Amir and Torr, Philip H S},
-booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
-doi = {10.1109/ICCV.2011.6126251},
-isbn = {9781457711015},
-issn = {1550-5499},
-mendeley-groups = {Ensemble tracking},
-pages = {263--270},
-title = {{Struck: Structured output tracking with kernels}},
-year = {2011}
-}
-@inproceedings{Zhong2012,
-abstract = {In this paper we propose a robust object tracking al- gorithm using a collaborative model. As the main chal- lenge for object tracking is to account for drastic appear- ance change, we propose a robust appearance model that exploits both holistic templates and local representations. We develop a sparsity-based discriminative classifier (SD- C) and a sparsity-based generative model (SGM). In the S- DC module, we introduce an effective method to compute the confidence value that assigns more weights to the fore- ground than the background. In the SGM module, we pro- pose a novel histogram-based method that takes the spatial information of each patch into consideration with an oc- clusion handing scheme. Furthermore, the update scheme considers both the latest observations and the original tem- plate, thereby enabling the tracker to deal with appearance change effectively and alleviate the drift problem. Numer- ous experiments on various challenging videos demonstrate that the proposed tracker performs favorably against sever- al state-of-the-art algorithms.},
-author = {Zhong, Wei and Lu, Huchuan and Yang, Ming-Hsuan},
-booktitle = {CVPR},
-doi = {10.1109/CVPR.2012.6247882},
-isbn = {978-1-4673-1228-8},
-issn = {978-1-4673-1228-8},
-mendeley-groups = {Ensemble tracking},
-pages = {1838--1845},
-title = {{Robust object tracking via sparsity-based collaborative model}},
-url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6247882},
-year = {2012}
-}
-@inproceedings{Danelljan2014,
-abstract = {Abstract Visual tracking is a challenging problem in computer vision . Most state-of-the-art visual trackers either rely on luminance information or use simple color representations for image description. Contrary to visual tracking , for object recognition and detection, ... $\backslash$n},
-author = {Danelljan, Martin and Khan, Fahad Shahbaz and Felsberg, Michael and Weijer, Joost Van De},
-booktitle = {CVPR},
-doi = {10.1109/CVPR.2014.143},
-mendeley-groups = {Ensemble tracking},
-title = {{Adaptive Color Attributes for Real-Time Visual Tracking}},
-year = {2014}
-}
-@article{Bolme2010,
-abstract = {Although not commonly used, correlation filters can track complex objects through rotations, occlusions and other distractions at over 20 times the rate of current state-of-the-art techniques. The oldest and simplest correlation filters use simple templates and generally fail when applied to tracking. More modern approaches such as ASEF and UMACE perform better, but their training needs are poorly suited to tracking. Visual tracking requires robust filters to be trained from a single frame and dynamically adapted as the appearance of the target object changes. This paper presents a new type of correlation filter, a Minimum Output Sum of Squared Error (MOSSE) filter, which produces stable correlation filters when initialized using a single frame. A tracker based upon MOSSE filters is robust to variations in lighting, scale, pose, and nonrigid deformations while operating at 669 frames per second. Occlusion is detected based upon the peak-to-sidelobe ratio, which enables the tracker to pause and resume where it left off when the object reappears.},
-author = {Bolme, D S and Beveridge, J R and Draper, B a and Lui, Yui Man Lui Yui Man},
-doi = {10.1109/CVPR.2010.5539960},
-isbn = {978-1-4244-6984-0},
-issn = {10636919},
-journal = {Computer Vision and Pattern Recognition CVPR 2010 IEEE Conference on},
-mendeley-groups = {Ensemble tracking},
-pages = {2544--2550},
-title = {{Visual object tracking using adaptive correlation filters}},
-url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5539960},
-year = {2010}
-}
-@inproceedings{Zhang2012,
-abstract = {It is a challenging task to develop effective and efficient appearance models for robust object tracking due to factors such as pose variation, illumination change, occlusion, and motion blur. Existing online tracking algorithms often update models with samples from observations in recent frames. While much success has been demonstrated, several issues remain to be addressed. First, while these adaptive appearance models are data-dependent, there does not exist sufficient amount of data for online algorithms to learn at the outset. Second, online tracking algorithms often encounter the drift problems. As a result of self-taught learning, these misaligned samples are likely to be added and degrade the appearance models. In this paper, we propose a simple yet effective and efficient tracking algorithm with an appearance model based on features extracted from the multi-scale image feature space with data-independent basis. Our appearance model employs non-adaptive random projections that preserve the structure of the image feature space of objects. A very sparse measurement matrix is adopted to efficiently extract the features for the appearance model. We compress samples of foreground targets and the background using the same sparse measurement matrix. The tracking task is formulated as a binary classification via a naive Bayes classifier with online update in the compressed domain. The proposed compressive tracking algorithm runs in real-time and performs favorably against state-of-the-art algorithms on challenging sequences in terms of efficiency, accuracy and robustness.},
-author = {Zhang, Kaihua and Zhang, Lei and Yang, Ming Hsuan},
-booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-doi = {10.1007/978-3-642-33712-3\_62},
-isbn = {9783642337116},
-issn = {03029743},
-mendeley-groups = {Ensemble tracking},
-pages = {864--877},
-title = {{Real-time compressive tracking}},
-volume = {7574 LNCS},
-year = {2012}
-}
-@inproceedings{Jia2012,
-abstract = {Sparse representation has been applied to visual track- ing by finding the best candidate with minimal reconstruc- tion error using target templates. However most sparse rep- resentation based trackers only consider the holistic repre- sentation and do not make full use of the sparse coefficients to discriminate between the target and the background, and hence may fail with more possibility when there is similar object or occlusion in the scene. In this paper we develop a simple yet robust tracking method based on the struc- tural local sparse appearance model. This representation exploits both partial information and spatial information of the target based on a novel alignment-pooling method. The similarity obtained by pooling across the local patches helps not only locate the target more accurately but also handle occlusion. In addition, we employ a template up- date strategy which combines incremental subspace learn- ing and sparse representation. This strategy adapts the template to the appearance change of the target with less possibility of drifting and reduces the influence of the oc- cluded target template as well. Both qualitative and quan- titative evaluations on challenging benchmark image se- quences demonstrate that the proposed tracking algorithm performs favorably against several state-of-the-art meth- ods.},
-author = {Jia, Xu and Lu, Huchuan and Yang, Ming Hsuan},
-booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
-doi = {10.1109/CVPR.2012.6247880},
-isbn = {9781467312264},
-issn = {10636919},
-mendeley-groups = {Ensemble tracking},
-pages = {1822--1829},
-title = {{Visual tracking via adaptive structural local sparse appearance model}},
-year = {2012}
-}
-@inproceedings{Collins2005a,
-abstract = {We have implemented a GUI-based tracking tested system in C and Intel OpenCV, running within the Microsoft Windows environment. The motivation for the testbed is to run and log tracking experiments in near real-time. The testbed allows a tracking experiment to be repeated from the same starting state using different tracking algorithms and parameter settings, thereby facilitating comparison of algorithms. We have also developed a tracking evaluation web site to encourage third-party self-evaluation of state-of-the-art tracking algorithms. The site hosts source code for the tracking testbed, a set of ground-truth datasets, and a method for on-line evaluation of uploaded tracking results.},
-author = {Collins, Robert and Zhou, Xuhui and Teh, Seng Keat},
-booktitle = {IEEE International Workshop on Performance Evaluation of Tracking and Surveillance},
-mendeley-groups = {Ensemble tracking},
-title = {{An Open Source Tracking Testbed and Evaluation Web Site}},
-year = {2005}
-}
-@article{Henriques2014,
-abstract = {The core component of most modern trackers is a discriminative classifier, tasked with distinguishing between the target and the surrounding environment. To cope with natural image changes, this classifier is typically trained with translated and scaled sample patches. Such sets of samples are riddled with redundancies – any overlapping pixels are constrained to be the same. Based on this simple observation, we propose an analytic model for datasets of thousands of translated patches. By showing that the resulting data matrix is circulant, we can diagonalize it with the Discrete Fourier Transform, reducing both storage and computation by several orders of magnitude. Interestingly, for linear regression our formulation is equivalent to a correlation filter, used by some of the fastest competitive trackers. For kernel regression, however, we derive a new Kernelized Correlation Filter (KCF), that unlike other kernel algorithms has the exact same complexity as its linear counterpart. Building on it, we also propose a fast multi-channel extension of linear correlation filters, via a linear kernel, which we call Dual Correlation Filter (DCF). Both KCF and DCF outperform top-ranking trackers such as Struck or TLD on a 50 videos benchmark, despite running at hundreds of frames-per-second, and being implemented in a few lines of code (Algorithm 1). To encourage further developments, our tracking framework was made open-source.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1404.7584v1},
-author = {Henriques, JF and Caseiro, Rui and Martins, Pedro and Batista, Jorge},
-eprint = {arXiv:1404.7584v1},
-journal = {arXiv preprint arXiv: \ldots},
-keywords = {Visual tracking,circulant matrices,correlation filter,discrete Fourier transform,kernel methods,ridge regression},
-mendeley-groups = {Ensemble tracking},
-pages = {1--14},
-title = {{High-Speed Tracking with Kernelized Correlation Filters}},
-url = {http://arxiv.org/abs/1404.7584},
-year = {2014}
-}
+
+
+
+
+
+
 @article{Yilmaz2006,
 abstract = {The goal of this article is to review the state-of-the-art tracking methods, classify them into different categories, and identify new trends. Object tracking, in general, is a challenging problem. Difficulties in tracking objects can arise due to abrupt object motion, changing appearance patterns of both the object and the scene, nonrigid object structures, object-to-object and object-to-scene occlusions, and camera motion. Tracking is usually performed in the context of higher-level applications that require the location and/or shape of the object in every frame. Typically, assumptions are made to constrain the tracking problem in the context of a particular application. In this survey, we categorize the tracking methods on the basis of the object and motion representations used, provide detailed descriptions of representative methods in each category, and examine their pros and cons. Moreover, we discuss the important issues related to tracking including the use of appropriate image features, selection of motion models, and detection of objects.},
 author = {Yilmaz, Alper and Javed, Omar and Shah, Mubarak},
@@ -533,20 +445,7 @@ pages = {232--237},
 title = {{Elliptical head tracking using intensity gradients and color histograms}},
 year = {1998}
 }
-@article{Zhang2013,
-abstract = {In this paper, we present a simple yet fast and robust algorithm which exploits the spatio-temporal context for visual tracking. Our approach formulates the spatio-temporal relationships between the object of interest and its local context based on a Bayesian framework, which models the statistical correlation between the low-level features (i.e., image intensity and position) from the target and its surrounding regions. The tracking problem is posed by computing a confidence map, and obtaining the best target location by maximizing an object location likelihood function. The Fast Fourier Transform is adopted for fast learning and detection in this work. Implemented in MATLAB without code optimization, the proposed tracker runs at 350 frames per second on an i7 machine. Extensive experimental results show that the proposed algorithm performs favorably against state-of-the-art methods in terms of efficiency, accuracy and robustness},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1311.1939v1},
-author = {Zhang, Kaihua and Zhang, Lei and Yang, Ming-Hsuan and Zhang, David},
-eprint = {arXiv:1311.1939v1},
-journal = {arXiv preprint arXiv:1311.1939},
-keywords = {Fast Fourier Transform (FFT),Index Terms Object tracking,spatio-temporal context learning},
-mendeley-groups = {Ensemble tracking},
-pages = {1--16},
-title = {{Fast Tracking via Spatio-Temporal Context Learning}},
-url = {http://arxiv.org/abs/1311.1939},
-year = {2013}
-}
+
 @inproceedings{Ren2008,
 abstract = {The goal of this work is to find all people in archive films. Challenges include low image quality, motion blur, partial occlusion, non-standard poses and crowded scenes. We base our approach on face detection and take a tracking/temporal approach to detection. Our tracker operates in two modes, following face detections whenever possible, switching to low-level tracking if face detection fails. With temporal correspondences established by tracking, we formulate detection as an inference problem in one-dimensional chains/tracks. We use a conditional random field model to integrate information across frames and to re-score tentative detections in tracks. Quantitative evaluations on full-length films show that the CRF-based temporal detector greatly improves face detection, increasing precision for about 30\% (suppressing isolated false positives) and at the same time boosting recall for over 10\% (recovering difficult cases where face detectors fail).},
 author = {Ren, Xiaofeng},
