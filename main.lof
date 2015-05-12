@@ -11,7 +11,7 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Spatial clustering stage}}{17}{figure.caption.38}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Patches and features extraction process}}{19}{figure.caption.41}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Appearance estimation for trackers estimates.}}{19}{figure.caption.42}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip System behavior in five frames. Given image input, trackers will give results on where the object might be (first row). Then, all results are clustered using hierarchical agglomerative clustering (second row). We focus on selecting the group with highest number of members, or cluster with best appearance score (third row). Finally, we reinitialize outliers.\relax }}{20}{figure.caption.46}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces System behavior in five frames}}{20}{figure.caption.46}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Outliers reinitialization}}{21}{figure.caption.50}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Precision and success plots for all 50 sequences}}{26}{figure.caption.61}
