@@ -147,8 +147,8 @@ not in it" \cite{Jain88}.
 \includegraphics[page=4, width=0.9\linewidth, trim= 0.4cm 5.5cm 6.5cm 5cm,
                  clip=true]{Figures/global_diagram}
 \caption[Spatial clustering stage]{\small Spatial clustering stage. Using
-        trackers estimate, we cluster similar bounding boxes using equation
-        \ref{eq::diff}. On right image, each color represents a cluster.}
+        predicted positions from each tracker, we cluster similar bounding boxes using
+        equation \ref{eq::diff}. In right image, each color represents a cluster.}
 \label{fig::clustering}
 \end{figure}
 
@@ -205,8 +205,8 @@ maximize the separability between object and non-object regions discriminately.
 
 \begin{figure}[t!]
 \centering
-\includegraphics[page=3, width=1\linewidth, trim= 0.4cm 9.9cm 7.5cm 1.8cm,
-                 clip=true]{Figures/global_diagram}
+\includegraphics[page=2, width=1\linewidth, trim= 0.4cm 8.5cm 4cm 5cm,
+                 clip=true]{Figures/figures_mod}
 \caption[Patches and features extraction process]
 {\small Patches and features extraction process. For a given patch, Histograms
 of Oriented Gradients are extracted. The final result, corresponds to a hog
@@ -251,12 +251,13 @@ tracking-by-detection methods \eg Haar.
 
 \begin{figure}[b!]
 \centering
-\includegraphics[page=5, width=1\linewidth, trim= 0.4cm 5.5cm 0cm 5cm,
-                 clip=true]{Figures/global_diagram}
+\includegraphics[page=1, width=1\linewidth, trim= 0.2cm 6cm 0.2cm 6.5cm,
+                 clip=true]{Figures/figures_mod}
 \caption[Appearance estimation for trackers estimates.]
         {\small Appearance estimation for trackers estimates. On each frame,
         We compute appearance score for each tracker result using a previously
-        trained classifier. We adopted HOG as image features.}
+        trained classifier. In this figure, patches classified as object, have high
+        appearance scores.}
 \label{fig::svm_app}
 \end{figure}
 
@@ -386,7 +387,7 @@ object model and steer failed trackers in the pool.
 \centering
 \includegraphics[width=0.5\textwidth]{Figures/clustering/deer_outliers.png}
 \caption[Outliers reinitialization]{Outliers reinitialization. In this Figure,
-dashed red bounding boxes are tagged as outliers. These trackers states are
+dashed red bounding boxes are tagged as outliers. State from each outlier are
 reset to the latest target state prediction from the ensemble (green bounding
 box.)}
 \label{fig::outliers}
