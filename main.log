@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  15 MAY 2015 09:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.30)  15 MAY 2015 17:43
 entering extended mode
-**C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/main.tex
-(C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/main.tex
+**D:/Tesis/EnsembleTrackingThesis/main.tex
+(D:/Tesis/EnsembleTrackingThesis/main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Thesis.cls
+(D:\Tesis\EnsembleTrackingThesis\Thesis.cls
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
@@ -33,10 +33,10 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeepes\vmargin.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ieeepes\vmargin.sty"
 Package: vmargin 1999/06/01
 
 Package `vmargin', V2.2, <1999/06/01>
@@ -259,7 +259,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -363,10 +363,10 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@example=\count100
 \c@theorem=\count101
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 
@@ -460,7 +460,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen126
 \lightrulewidth=\dimen127
@@ -480,7 +480,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen138
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -492,7 +492,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks29
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count109
 \lst@gtempboxa=\box29
 \lst@token=\toks30
@@ -506,7 +506,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@lineno=\count114
 \lst@maxwidth=\dimen142
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
+(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -515,18 +515,18 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 *** Patch file not loaded.
 ***
 
-) (C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box30
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\lstpatch.sty
+(D:\Tesis\EnsembleTrackingThesis\lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
@@ -615,7 +615,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count120
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -672,14 +672,14 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count132
 \LT@p@ftn=\toks31
 ))
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\epigraph\epigraph.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\epigraph\epigraph.sty"
 Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
 \beforeepigraphskip=\skip65
 \afterepigraphskip=\skip66
 \epigraphwidth=\skip67
 \epigraphrule=\skip68
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
@@ -694,12 +694,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@algorithm=\toks34
 \c@algorithm=\count134
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode.s
-ty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmicx.st
-y
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -715,7 +713,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip71
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count142
 \sf@farskip=\skip72
@@ -731,7 +729,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip75
 \sf@bottom=\skip76
 )
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip77
 \bibsep=\skip78
@@ -740,7 +738,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 51.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
+(D:\Tesis\EnsembleTrackingThesis\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -764,13 +762,13 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(C:\Users\pc1\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count150
 \scratchdimen=\dimen149
@@ -808,14 +806,14 @@ LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.out)
+(D:\Tesis\EnsembleTrackingThesis\main.out)
+(D:\Tesis\EnsembleTrackingThesis\main.out)
 \@outlinefile=\write3
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Sections/title_page
-.tex
+(D:\Tesis\EnsembleTrackingThesis\Sections/title_page.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 16.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 16.
@@ -826,17 +824,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{C:/Users/pc1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) [1]
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Sections/abstract.t
-ex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) [1]
+(D:\Tesis\EnsembleTrackingThesis\Sections/abstract.tex
 ------------------------------------------------------------------------------
  Abstract Page
 ------------------------------------------------------------------------------
 ) [2
 
-]
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Sections/acknowledg
-ments.tex
+] (D:\Tesis\EnsembleTrackingThesis\Sections/acknowledgments.tex
 ------------------------------------------------------------------------------
  Acknowledgements
 ------------------------------------------------------------------------------
@@ -846,17 +841,16 @@ ments.tex
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.toc [4
+(D:\Tesis\EnsembleTrackingThesis\main.toc [4
 
 
 ])
 \tf@toc=\write4
-
-[5]
+ [5]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lof)
+(D:\Tesis\EnsembleTrackingThesis\main.lof)
 \tf@lof=\write5
  [6
 
@@ -865,22 +859,19 @@ ments.tex
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.lot)
+(D:\Tesis\EnsembleTrackingThesis\main.lot)
 \tf@lot=\write6
  [7
 
 
 ]
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Sections/dedication
-s.tex
+(D:\Tesis\EnsembleTrackingThesis\Sections/dedications.tex
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
 [8
 
-])
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/introducti
-on.tex
+]) (D:\Tesis\EnsembleTrackingThesis\Chapters/introduction.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
@@ -889,9 +880,7 @@ Chapter 1.
 
 
 
-])
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/related_wo
-rk.tex [2] [3]
+]) (D:\Tesis\EnsembleTrackingThesis\Chapters/related_work.tex [2] [3]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Related Work
@@ -904,9 +893,8 @@ File: Figures/bg_sub.jpg Graphic file (type jpg)
 <use Figures/bg_sub.jpg>
 Package pdftex.def Info: Figures/bg_sub.jpg used on input line 92.
 (pdftex.def)             Requested size: 292.22987pt x 183.13576pt.
- [6 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/bg_sub.
-jpg>]
-<Figures/points/harris.png, id=384, 268.75406pt x 202.50656pt>
+ [6 <D:/Tesis/EnsembleTrackingThesis/Figures/bg_sub.jpg>] <Figures/points/harri
+s.png, id=384, 268.75406pt x 202.50656pt>
 File: Figures/points/harris.png Graphic file (type png)
 
 <use Figures/points/harris.png>
@@ -926,10 +914,9 @@ File: Figures/points/sift.png Graphic file (type png)
 <use Figures/points/sift.png>
 Package pdftex.def Info: Figures/points/sift.png used on input line 159.
 (pdftex.def)             Requested size: 133.59444pt x 101.59207pt.
- [7 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/points/
-harris.png> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures
-/points/klt.png> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Fi
-gures/points/sift.png>]
+ [7 <D:/Tesis/EnsembleTrackingThesis/Figures/points/harris.png> <D:/Tesis/Ensem
+bleTrackingThesis/Figures/points/klt.png> <D:/Tesis/EnsembleTrackingThesis/Figu
+res/points/sift.png>]
 <Figures/particle_filter1.jpg, id=409, 481.8pt x 361.35pt>
 File: Figures/particle_filter1.jpg Graphic file (type jpg)
 
@@ -957,12 +944,11 @@ File: Figures/overview_boost.png Graphic file (type png)
 <use Figures/overview_boost.png>
 Package pdftex.def Info: Figures/overview_boost.png used on input line 261.
 (pdftex.def)             Requested size: 292.22987pt x 199.06325pt.
- [9 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/particl
-e_filter1.jpg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figu
-res/particle_filter2.jpg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTracking
-Thesis/Figures/particle_filter3.jpg>] [10 <C:/Users/pc1/Documents/ThesisReport/
-EnsembleTrackingThesis/Figures/overview_boost.png (PNG copy)>] <Figures/contour
-.png, id=471, 737.00343pt x 242.40562pt>
+ [9 <D:/Tesis/EnsembleTrackingThesis/Figures/particle_filter1.jpg> <D:/Tesis/En
+sembleTrackingThesis/Figures/particle_filter2.jpg> <D:/Tesis/EnsembleTrackingTh
+esis/Figures/particle_filter3.jpg>] [10 <D:/Tesis/EnsembleTrackingThesis/Figure
+s/overview_boost.png (PNG copy)>]
+<Figures/contour.png, id=471, 737.00343pt x 242.40562pt>
 File: Figures/contour.png Graphic file (type png)
 
 <use Figures/contour.png>
@@ -976,11 +962,8 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
- [11 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/contou
-r.png>] [12]
-[13])
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/approach.t
-ex [14]
+ [11 <D:/Tesis/EnsembleTrackingThesis/Figures/contour.png>] [12] [13])
+(D:\Tesis\EnsembleTrackingThesis\Chapters/approach.tex [14]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Proposed approach
@@ -994,24 +977,22 @@ Package pdftex.def Info: Figures/global_diagram.pdf, page2 used on input line 1
 (pdftex.def)             Requested size: 333.97972pt x 103.66849pt.
  [15
 
- <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/global_dia
-gram.pdf>]
-<Figures/diagram.pdf, id=571, 963.6pt x 542.025pt>
+ <D:/Tesis/EnsembleTrackingThesis/Figures/global_diagram.pdf>] <Figures/diagram
+.pdf, id=571, 963.6pt x 542.025pt>
 File: Figures/diagram.pdf Graphic file (type pdf)
- <use Figures/diagram.pdf>
+
+<use Figures/diagram.pdf>
 Package pdftex.def Info: Figures/diagram.pdf used on input line 64.
 (pdftex.def)             Requested size: 417.47307pt x 110.88266pt.
-
-[16 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/diagram
-.pdf>] <Figures/global_diagram.pdf, id=597, page=4, 963.6pt x 542.025pt>
+ [16 <D:/Tesis/EnsembleTrackingThesis/Figures/diagram.pdf>] <Figures/global_dia
+gram.pdf, id=597, page=4, 963.6pt x 542.025pt>
 File: Figures/global_diagram.pdf Graphic file (type pdf)
 
 <use Figures/global_diagram.pdf, page 4>
 Package pdftex.def Info: Figures/global_diagram.pdf, page4 used on input line 1
 48.
 (pdftex.def)             Requested size: 375.7232pt x 119.12962pt.
- [17 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/global
-_diagram.pdf>]
+ [17 <D:/Tesis/EnsembleTrackingThesis/Figures/global_diagram.pdf>]
 <Figures/figures_mod.pdf, id=620, page=2, 722.7pt x 542.025pt>
 File: Figures/figures_mod.pdf Graphic file (type pdf)
 
@@ -1027,10 +1008,9 @@ File: Figures/figures_mod.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/figures_mod.pdf, page1 used on input line 255.
 
 (pdftex.def)             Requested size: 417.47307pt x 109.37746pt.
- [19 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/figure
-s_mod.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/
-figures_mod.pdf>]
-<Figures/Process/trackers/027.jpeg, id=666, 1204.5pt x 903.375pt>
+ [19 <D:/Tesis/EnsembleTrackingThesis/Figures/figures_mod.pdf> <D:/Tesis/Ensemb
+leTrackingThesis/Figures/figures_mod.pdf>] <Figures/Process/trackers/027.jpeg, 
+id=666, 1204.5pt x 903.375pt>
 File: Figures/Process/trackers/027.jpeg Graphic file (type jpg)
 
 <use Figures/Process/trackers/027.jpeg>
@@ -1149,25 +1129,20 @@ File: Figures/Process/final_result/031.jpeg Graphic file (type jpg)
 Package pdftex.def Info: Figures/Process/final_result/031.jpeg used on input li
 ne 357.
 (pdftex.def)             Requested size: 75.14209pt x 56.35052pt.
- [20 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Proces
-s/trackers/027.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesi
-s/Figures/Process/trackers/028.jpeg> <C:/Users/pc1/Documents/ThesisReport/Ensem
-bleTrackingThesis/Figures/Process/trackers/029.jpeg> <C:/Users/pc1/Documents/Th
-esisReport/EnsembleTrackingThesis/Figures/Process/trackers/030.jpeg> <C:/Users/
-pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Process/trackers/031.
-jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Proce
-ss/clusters/027.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThes
-is/Figures/Process/clusters/028.jpeg> <C:/Users/pc1/Documents/ThesisReport/Ense
-mbleTrackingThesis/Figures/Process/clusters/029.jpeg> <C:/Users/pc1/Documents/T
-hesisReport/EnsembleTrackingThesis/Figures/Process/clusters/030.jpeg> <C:/Users
-/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Process/clusters/031
-.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Proc
-ess/final_result/027.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackin
-gThesis/Figures/Process/final_result/028.jpeg> <C:/Users/pc1/Documents/ThesisRe
-port/EnsembleTrackingThesis/Figures/Process/final_result/029.jpeg> <C:/Users/pc
-1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Process/final_result/03
-0.jpeg> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Pro
-cess/final_result/031.jpeg>]
+ [20 <D:/Tesis/EnsembleTrackingThesis/Figures/Process/trackers/027.jpeg> <D:/Te
+sis/EnsembleTrackingThesis/Figures/Process/trackers/028.jpeg> <D:/Tesis/Ensembl
+eTrackingThesis/Figures/Process/trackers/029.jpeg> <D:/Tesis/EnsembleTrackingTh
+esis/Figures/Process/trackers/030.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figure
+s/Process/trackers/031.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures/Process/c
+lusters/027.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures/Process/clusters/028
+.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures/Process/clusters/029.jpeg> <D:/
+Tesis/EnsembleTrackingThesis/Figures/Process/clusters/030.jpeg> <D:/Tesis/Ensem
+bleTrackingThesis/Figures/Process/clusters/031.jpeg> <D:/Tesis/EnsembleTracking
+Thesis/Figures/Process/final_result/027.jpeg> <D:/Tesis/EnsembleTrackingThesis/
+Figures/Process/final_result/028.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures
+/Process/final_result/029.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures/Proces
+s/final_result/030.jpeg> <D:/Tesis/EnsembleTrackingThesis/Figures/Process/final
+_result/031.jpeg>]
 <Figures/clustering/deer_outliers.png, id=688, 421.575pt x 316.18124pt>
 File: Figures/clustering/deer_outliers.png Graphic file (type png)
 
@@ -1175,10 +1150,9 @@ File: Figures/clustering/deer_outliers.png Graphic file (type png)
 Package pdftex.def Info: Figures/clustering/deer_outliers.png used on input lin
 e 388.
 (pdftex.def)             Requested size: 208.73653pt x 156.55603pt.
- [21 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/cluste
-ring/deer_outliers.png (PNG copy)>])
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/experiment
-s.tex [22]
+ [21 <D:/Tesis/EnsembleTrackingThesis/Figures/clustering/deer_outliers.png (PNG
+ copy)>])
+(D:\Tesis\EnsembleTrackingThesis\Chapters/experiments.tex [22]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Experiments
@@ -1290,11 +1264,11 @@ File: Figures/Results/soccer/150.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Results/soccer/150.pdf used on input line 198.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
- [26 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Result
-s/quality_plot_error_OPE_threshold.pdf> <C:/Users/pc1/Documents/ThesisReport/En
-sembleTrackingThesis/Figures/Results/quality_plot_overlap_OPE_AUC.pdf>]
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Figures/results_fig
-ures.tex <Figures/results_all/bolt/015.pdf, id=803, 614.295pt x 794.97pt>
+ [26 <D:/Tesis/EnsembleTrackingThesis/Figures/Results/quality_plot_error_OPE_th
+reshold.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/Results/quality_plot_over
+lap_OPE_AUC.pdf>]
+(D:\Tesis\EnsembleTrackingThesis\Figures/results_figures.tex
+<Figures/results_all/bolt/015.pdf, id=803, 614.295pt x 794.97pt>
 File: Figures/results_all/bolt/015.pdf Graphic file (type pdf)
 
 <use Figures/results_all/bolt/015.pdf>
@@ -1608,63 +1582,47 @@ File: Figures/results_all/legend.pdf Graphic file (type pdf)
 <use Figures/results_all/legend.pdf>
 Package pdftex.def Info: Figures/results_all/legend.pdf used on input line 70.
 (pdftex.def)             Requested size: 333.97972pt x 40.10376pt.
-) [27 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Resul
-ts/subway/041.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/
-Figures/Results/subway/042.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTr
-ackingThesis/Figures/Results/subway/043.pdf> <C:/Users/pc1/Documents/ThesisRepo
-rt/EnsembleTrackingThesis/Figures/Results/subway/044.pdf> <C:/Users/pc1/Documen
-ts/ThesisReport/EnsembleTrackingThesis/Figures/Results/subway/045.pdf> <C:/User
-s/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Results/soccer/090.
-pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/Result
-s/soccer/110.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/F
-igures/Results/soccer/131.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTra
-ckingThesis/Figures/Results/soccer/140.pdf> <C:/Users/pc1/Documents/ThesisRepor
-t/EnsembleTrackingThesis/Figures/Results/soccer/150.pdf>] [28 <C:/Users/pc1/Doc
-uments/ThesisReport/EnsembleTrackingThesis/Figures/results_all/bolt/015.pdf> <C
-:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/b
-olt/196.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figure
-s/results_all/bolt/236.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTracki
-ngThesis/Figures/results_all/bolt/316.pdf> <C:/Users/pc1/Documents/ThesisReport
-/EnsembleTrackingThesis/Figures/results_all/bolt/346.pdf> <C:/Users/pc1/Documen
-ts/ThesisReport/EnsembleTrackingThesis/Figures/results_all/jogging-2/033.pdf> <
-C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/
-jogging-2/071.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/
-Figures/results_all/jogging-2/104.pdf> <C:/Users/pc1/Documents/ThesisReport/Ens
-embleTrackingThesis/Figures/results_all/jogging-2/258.pdf> <C:/Users/pc1/Docume
-nts/ThesisReport/EnsembleTrackingThesis/Figures/results_all/jogging-2/305.pdf> 
-<C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all
-/singer-1/048.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/
-Figures/results_all/singer-1/131.pdf> <C:/Users/pc1/Documents/ThesisReport/Ense
-mbleTrackingThesis/Figures/results_all/singer-1/179.pdf> <C:/Users/pc1/Document
-s/ThesisReport/EnsembleTrackingThesis/Figures/results_all/singer-1/242.pdf> <C:
-/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/si
-nger-1/306.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Fig
-ures/results_all/football/005.pdf> <C:/Users/pc1/Documents/ThesisReport/Ensembl
-eTrackingThesis/Figures/results_all/football/086.pdf> <C:/Users/pc1/Documents/T
-hesisReport/EnsembleTrackingThesis/Figures/results_all/football/135.pdf> <C:/Us
-ers/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/footb
-all/325.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figure
-s/results_all/football/353.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTr
-ackingThesis/Figures/results_all/singer-2/029.pdf> <C:/Users/pc1/Documents/Thes
-isReport/EnsembleTrackingThesis/Figures/results_all/singer-2/069.pdf> <C:/Users
-/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/singer-2
-/155.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/r
-esults_all/singer-2/211.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrack
-ingThesis/Figures/results_all/singer-2/309.pdf> <C:/Users/pc1/Documents/ThesisR
-eport/EnsembleTrackingThesis/Figures/results_all/skating1/058.pdf> <C:/Users/pc
-1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/skating1/09
-3.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/resu
-lts_all/skating1/237.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTracking
-Thesis/Figures/results_all/skating1/295.pdf> <C:/Users/pc1/Documents/ThesisRepo
-rt/EnsembleTrackingThesis/Figures/results_all/skating1/329.pdf> <C:/Users/pc1/D
-ocuments/ThesisReport/EnsembleTrackingThesis/Figures/results_all/david3/072.pdf
-> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_a
-ll/david3/092.pdf> <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/
-Figures/results_all/david3/197.pdf> <C:/Users/pc1/Documents/ThesisReport/Ensemb
-leTrackingThesis/Figures/results_all/david3/218.pdf> <C:/Users/pc1/Documents/Th
-esisReport/EnsembleTrackingThesis/Figures/results_all/david3/242.pdf> <C:/Users
-/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/results_all/legend.p
-df>]
+) [27 <D:/Tesis/EnsembleTrackingThesis/Figures/Results/subway/041.pdf> <D:/Tesi
+s/EnsembleTrackingThesis/Figures/Results/subway/042.pdf> <D:/Tesis/EnsembleTrac
+kingThesis/Figures/Results/subway/043.pdf> <D:/Tesis/EnsembleTrackingThesis/Fig
+ures/Results/subway/044.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/Results/s
+ubway/045.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/Results/soccer/090.pdf>
+ <D:/Tesis/EnsembleTrackingThesis/Figures/Results/soccer/110.pdf> <D:/Tesis/Ens
+embleTrackingThesis/Figures/Results/soccer/131.pdf> <D:/Tesis/EnsembleTrackingT
+hesis/Figures/Results/soccer/140.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/
+Results/soccer/150.pdf>] [28 <D:/Tesis/EnsembleTrackingThesis/Figures/results_a
+ll/bolt/015.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/bolt/196.
+pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/bolt/236.pdf> <D:/Tes
+is/EnsembleTrackingThesis/Figures/results_all/bolt/316.pdf> <D:/Tesis/EnsembleT
+rackingThesis/Figures/results_all/bolt/346.pdf> <D:/Tesis/EnsembleTrackingThesi
+s/Figures/results_all/jogging-2/033.pdf> <D:/Tesis/EnsembleTrackingThesis/Figur
+es/results_all/jogging-2/071.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/resu
+lts_all/jogging-2/104.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all
+/jogging-2/258.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/joggin
+g-2/305.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/singer-1/048.
+pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/singer-1/131.pdf> <D:
+/Tesis/EnsembleTrackingThesis/Figures/results_all/singer-1/179.pdf> <D:/Tesis/E
+nsembleTrackingThesis/Figures/results_all/singer-1/242.pdf> <D:/Tesis/EnsembleT
+rackingThesis/Figures/results_all/singer-1/306.pdf> <D:/Tesis/EnsembleTrackingT
+hesis/Figures/results_all/football/005.pdf> <D:/Tesis/EnsembleTrackingThesis/Fi
+gures/results_all/football/086.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/re
+sults_all/football/135.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_al
+l/football/325.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/footba
+ll/353.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/singer-2/029.p
+df> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/singer-2/069.pdf> <D:/
+Tesis/EnsembleTrackingThesis/Figures/results_all/singer-2/155.pdf> <D:/Tesis/En
+sembleTrackingThesis/Figures/results_all/singer-2/211.pdf> <D:/Tesis/EnsembleTr
+ackingThesis/Figures/results_all/singer-2/309.pdf> <D:/Tesis/EnsembleTrackingTh
+esis/Figures/results_all/skating1/058.pdf> <D:/Tesis/EnsembleTrackingThesis/Fig
+ures/results_all/skating1/093.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/res
+ults_all/skating1/237.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all
+/skating1/295.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/skating
+1/329.pdf> <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/david3/072.pdf>
+ <D:/Tesis/EnsembleTrackingThesis/Figures/results_all/david3/092.pdf> <D:/Tesis
+/EnsembleTrackingThesis/Figures/results_all/david3/197.pdf> <D:/Tesis/EnsembleT
+rackingThesis/Figures/results_all/david3/218.pdf> <D:/Tesis/EnsembleTrackingThe
+sis/Figures/results_all/david3/242.pdf> <D:/Tesis/EnsembleTrackingThesis/Figure
+s/results_all/legend.pdf>]
 <Figures/stats.pdf, id=1124, 794.97pt x 614.295pt>
 File: Figures/stats.pdf Graphic file (type pdf)
  <use Figures/stats.pdf>
@@ -1681,11 +1639,9 @@ Package pdftex.def Info: Figures/bar_graph.pdf used on input line 303.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/stats.p
-df, page is rotated 90 degrees>])
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\Chapters/conclusion
-s.tex [30 <C:/Users/pc1/Documents/ThesisReport/EnsembleTrackingThesis/Figures/b
-ar_graph.pdf, page is rotated 90 degrees>]
+[29 <D:/Tesis/EnsembleTrackingThesis/Figures/stats.pdf, page is rotated 90 degr
+ees>]) (D:\Tesis\EnsembleTrackingThesis\Chapters/conclusions.tex [30 <D:/Tesis/
+EnsembleTrackingThesis/Figures/bar_graph.pdf, page is rotated 90 degrees>]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusion
@@ -1696,30 +1652,29 @@ Chapter 5.
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.bbl [32
+(D:\Tesis\EnsembleTrackingThesis\main.bbl [32
 
 
-]
-[33] [34] [35] [36] [37] [38] [39])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
- [40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+] [33] [34] [35] [36] [37])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 
-(C:\Users\pc1\Documents\ThesisReport\EnsembleTrackingThesis\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+[38]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ (D:\Tesis\EnsembleTrackingThesis\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 353D793A5238E7FA251D9330401A4A45;6891.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 14733 strings out of 493921
- 218525 string characters out of 3144883
+ 14738 strings out of 493921
+ 216938 string characters out of 3144867
  278609 words of memory out of 3000000
- 17471 multiletter control sequences out of 15000+200000
- 17062 words of font info for 63 fonts, out of 3000000 for 9000
+ 17476 multiletter control sequences out of 15000+200000
+ 17681 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,12n,45p,731b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,45p,704b,652s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/P
@@ -1738,9 +1693,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (49 pages, 5030638 bytes).
+Output written on main.pdf (47 pages, 5025435 bytes).
 PDF statistics:
- 1309 PDF objects out of 1440 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
+ 1300 PDF objects out of 1440 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
  1051 words of extra memory for PDF output out of 10000 (max. 10000000)
 

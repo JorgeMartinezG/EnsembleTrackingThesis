@@ -713,12 +713,12 @@ FUNCTION {article}
     }
     { format.article.crossref output.nonnull
       eid empty$
-        { format.pages output }
-        { format.eid output }
+        %{ format.pages output }
+        %{ format.eid output }
       if$
     }
   if$
-  format.issn output
+  %format.issn output
   %format.doi output
   %format.url output
   new.block
@@ -933,7 +933,7 @@ FUNCTION {misc}
   howpublished new.block.checka
   howpublished output
   format.date output
-  format.issn output
+  %format.issn output
   %format.url output
   new.block
   note output
