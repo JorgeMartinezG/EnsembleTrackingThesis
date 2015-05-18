@@ -16,7 +16,7 @@ These labels provide position and scale information for evaluation and analysis.
 \includegraphics[page=2, width=0.8\linewidth, trim= 0cm 5.1cm 6cm 5.3cm,
                  clip=true]{Figures/global_diagram}
 \caption[Tracking diagram]{\small Tracking diagram. The proposed system takes
-        initial bounding box, image sequences and the list of trackers as inputs.
+        initial bounding box as \gls{ROI}, image sequences and the list of trackers as inputs.
         After tracking ensemble, the system drops out tracking results for each
         frame.}
 \label{fig::global_diagram}
@@ -110,7 +110,7 @@ In order to achieve this, we note a simple but key observation: in most cases,
 there is only a small subset of trackers that fail to correctly track the
 object in any given frame.
 In such scenario, the majority of the trackers focus correctly in the object,
-and we could use clustering techniques to automatically determine this set
+and we could use \gls{clustering} techniques to automatically determine this set
 of inlier trackers.
 A more difficult scenario is when most of the trackers fail, but only a few
 focus in the correct image region. But even in this case, tracker failures
@@ -210,7 +210,7 @@ maximize the separability between object and non-object regions discriminately.
 \caption[Patches and features extraction process]
 {\small Patches and features extraction process. For a given patch, Histograms
 of Oriented Gradients are extracted. The final result, corresponds to a hog
-descriptor.
+\gls{descriptor}.
 }
 \label{fig::features_extraction}
 \end{figure}
@@ -234,7 +234,7 @@ positive target bounding boxes from background bounding boxes.
 We extract positive samples from the target location given at the first frame
 and also from uniformly sampling background bounding boxes around the target
 bounding box.
-In practice, we adopt a feature representation based on HOG and a SVM
+In practice, we adopt a feature representation based on \gls{HOG} (HOG) and a SVM
 classifier with probability outputs.
 Using the classifier, we compute appearance scores  
 %During tracking loop,
@@ -288,7 +288,7 @@ potential cues to select inliers.
 \textbf{Cluster size:}
 This critera follows the idea that the largest spatially coherent cluster
 is associated to the true target location. Therefore, we flag all trackers
-in the largest cluster as inliners, and all other trackers as outliers.
+in the largest cluster as \gls{inliers}, and all other trackers as \gls{outliers}.
 
 \begin{equation}
  c^{*} = \argmax_{c_i\in C} |c_i|

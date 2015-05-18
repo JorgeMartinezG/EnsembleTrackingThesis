@@ -35,6 +35,7 @@
 \usepackage{epigraph}
 \usepackage{algorithm}
 \usepackage{amsmath}
+\usepackage[toc,nonumberlist]{glossaries}
 \usepackage[noend]{algpseudocode}
 \usepackage{subfig}
 \usepackage{fancyhdr}
@@ -48,7 +49,10 @@
 \usepackage[font=small,format=plain,labelfont=bf,textfont=normal,
 			justification=justified,singlelinecheck=false]{caption}
 % Colors hyperlinks in blue - change to black if annoying
-\hypersetup{urlcolor=blue, colorlinks=true} 
+\hypersetup{linkcolor=black,urlcolor=black,citecolor=black, colorlinks=true} 
+
+\makeglossaries
+\input{Sections/glossaries}
 
 % Defines the thesis title - don't touch this
 \title{\ttitle}
@@ -87,6 +91,7 @@
 
 % Abstract Section.
 \input{Sections/abstract.tex} \clearpage % Start a new page
+
 % Acknowledgments Section.
 \input{Sections/acknowledgments.tex} \clearpage % Start a new page
 
@@ -116,14 +121,10 @@
 \input{Chapters/approach}
 \input{Chapters/experiments}
 \input{Chapters/conclusions}
+\printglossaries
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
-%----------------------------------------------------------------------------------------
-%	THESIS CONTENT - APPENDICES
-%----------------------------------------------------------------------------------------
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+%\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
@@ -132,14 +133,9 @@
 %\input{Appendices/AppendixB}
 %\input{Appendices/AppendixC}
 
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
 \backmatter
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
 \label{Bibliography}
 
 \lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
@@ -148,5 +144,4 @@
 % The references (bibliography) information are stored in the file named "Bibliography.bib"
 {\small
 \bibliography{References/related_work} }
-
 \end{document}  

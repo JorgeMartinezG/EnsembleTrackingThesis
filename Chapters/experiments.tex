@@ -23,12 +23,12 @@ to prevent over-tuning.
 The trackers were evaluated using two evaluation metrics commonly used in
 literature. The first is \textit{distance precision} (DP), which is the number
 of frames where the estimated center location is within a certain distance
-threshold $d$ from the ground truth center location. The second metric is
+threshold $d$ from the \gls{gt} center location. The second metric is
 \textit{overlap precision} (OP), defined as the number of frames where the
 óverlap between the estimated and ground truth bounding box exceeds
 a treshold $b$. For an image sequence, these two measures are calculated using
 equations \ref{eq::precision} and \ref{eq::overlap}. Estimated center location
-and ground truth are denoted as $\mathbf{p}_f$ and $\mathbf{\hat{p}}_f$
+and \gls{gt} are denoted as $\mathbf{p}_f$ and $\mathbf{\hat{p}}_f$
 respectively, where $f$ is the frame number. Futhermore, $B_f$ and $\hat{B}_f$
 denote the estimated and ground truth bounding boxes of the object. $N$ is the
 number of frames in the sequence.
@@ -51,10 +51,10 @@ In the recent literature, there has not been much agreement on which
 performance measure to use for comparing visual trackers. DP focuses only
 on estimated center location, which is beneficial for trackers that do not
 estimate scale of the object. Instead, OP also takes estimated scale into
-account and penalizes if the scale of the target is estimated incorrectly. We report results performance for both precision and overlap metrics.
+account and penalizes if the scale of the target is estimated incorrectly.
 
 Recently, authors of Online Object Tracking Benchmark (OOTB) suggest the usage
-of precision and success plots. These curves show distance and overlap precision metrics over a range of
+of precision and success plots. These curves show distance and \gls{overlap} precision metrics over a range of
 thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
 achieve perfect precision on a large threshold range. In both types of plots,
@@ -107,7 +107,7 @@ are listed below.
 \item \textbf{Standarized sequences: }For better comparison, OOTB videos are
 widely used as benchmark sequences in recent literature, allowing us to make a
 fair comparison to state-of-the-art algorithms.
-\item \textbf{Manual annotations available: }OOTB comes with ground-truth annotations for each sequence. This avoid labeling process, which takes time.
+\item \textbf{Manual annotations available: }OOTB comes with \gls{gt} annotations for each sequence. This avoid labeling process, which takes time.
 \item \textbf{Image frames: } Each sequence corresponds to a set of image frames. This format allows to evaluate global processing time of the ensemble approach.
 \item \textbf{Attributes classification: } Each sequence provides an annotation with 11 attributes, which explain the challenging scenarios encountered. This
 allow us to make attribute-based comparisons, which can show strengths and weaknesses of different trackers.

@@ -40,6 +40,5 @@
 \contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{27}{section.64}
 \contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{29}{section.76}
 \contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.78}
-\vspace {2em}
-\vspace {2em}
-\contentsline {chapter}{Bibliography}{32}{dummy.79}
+\contentsline {chapter}{Glossary}{32}{section*.79}
+\contentsline {chapter}{Bibliography}{33}{dummy.81}
