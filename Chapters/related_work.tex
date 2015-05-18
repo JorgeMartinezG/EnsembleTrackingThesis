@@ -15,9 +15,9 @@ performed and the visual features of the object that needs to be tracked. This
 chapter is focused on presenting methodologies for object tracking in general
 and not for specific objects, such as humans or faces.
 
-We follow a structure for describing the issues that are necessary to address
+We follow a structure for describing the issues that are necessary to address,
 when building an object tracker. In section \ref{sec::object_representation} we
-describe common object representation and image features. Section
+describe common object representations and image features. Section
 \ref{sec::detection} summarizes general schemes for detecting objects in an
 scenario. In Section \ref{sec::tracking}, we categorize and describe
 existing tracking methods. Section \ref{sec::datasets} shows existing
@@ -50,9 +50,8 @@ automatic feature selection has received significant attention in the pattern
 recognition community. The most common visual features selections are color
 \cite{Paschos2001,Song1996}, edges \cite{Canny1986,Bowyer2001}, displacement
 vectors \cite{Black1996,Lucas1981a}, corners \cite{Harris1988} and textures
-\cite{Haralick1973,Nickels1997,Mallat1989}.
-
-Among all features, color is the one of the most widely used feature for
+\cite{Haralick1973,Nickels1997,Mallat1989}.Among all features, color is one
+of the most widely used feature for
 tracking. However, color features are sensitive to illumination variation. To
 tackle this problem, in scenarios where this effect is inevitable, other
 features are incorporated to model the appearance of an object.
@@ -168,10 +167,9 @@ Harris \cite{Harris1988} corners detectors.
 
 The goal of an object tracker is to generate an object trajectory in a video.
 This path consists of the object position across the time. Additionally,
-a tracker may provides other informations, such as scale, orientation, area, or
-shape of an object. As stated in section \ref{sec::detection}, many combinations
-of object tracking approaches have been proposed before. This section classifies
-ans covers popular approaches on each category.
+a tracker may provides other information, such as scale, orientation, area, or
+shape of an object. This section classifies ans covers popular approaches
+for object tracking on each category.
 
 \subsection{Point Tracking}
 
@@ -193,7 +191,7 @@ contain noise, or object motion can undergo random perturbations. These
 approaches take measurements and model uncertainties into account during
 object state estimation. Applying state space approach to modeling the object
 properties such as position, velocity and acceleration. In single object
-state estimation, tYhe optimal state of an object is given by a Kalman Filter
+state estimation, the optimal state of an object is given by a Kalman Filter
 \cite{Ren2008a,Heikkila2004}, assuming measurement noise have a Gaussian
 distribution. In the general case, that is, object state is not assumed as
 Gaussian, estimation can be performed using particle filters
@@ -315,7 +313,8 @@ minimization of an energy function \cite{Cremers2003}.
 \section{Tracking Datasets and Challenges}
 \label{sec::datasets}
 
-Object detection and tracking is still an open research problem in computer
+\textbf{Tracking Challenges. }Object detection and tracking is still an open
+research problem in computer
 vision. A robust, accurate and high performance approach is still a great
 challenge. The level of difficulty depends on how the object of interest is
 defined in terms of features. For instance, Using color as object representation
@@ -324,7 +323,7 @@ object. However, there is always a probability of existence a background region
 with same color information (background clutter). In addition, illumination
 changes in the scene does not guarantee that the pixel values of an object
 will be the same in all frames. These variabilities or challenges which are
-random in object tracking causes wrong object tracking, and are listed below.
+random in object tracking causes failures, and are listed below.
 
 \begin{itemize}
 \item \textbf{Illumination Variation (IV):} It is desirable that background
@@ -356,7 +355,7 @@ considerably.
 bounding box is less than 400.
 \end{itemize}
 
-\textbf{Tracking Dataset: } In computer vision, a \textit{dataset} could be
+\textbf{Tracking Dataset. } In computer vision, a \textit{dataset} could be
 defined as a collection of
 images or video sequences used for testing algorithms. The amount of data and
 characteristics presented, depend on the field that is studied.
