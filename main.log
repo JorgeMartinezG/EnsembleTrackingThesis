@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.30)  18 MAY 2015 09:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.30)  18 MAY 2015 09:35
 entering extended mode
 **D:/Tesis/EnsembleTrackingThesis/main.tex
 (D:/Tesis/EnsembleTrackingThesis/main.tex
@@ -1330,7 +1330,7 @@ File: Figures/Results/quality_plot_error_OPE_threshold.pdf Graphic file (type p
 df)
  <use Figures/Results/quality_plot_error_OPE_threshold.pdf>
 Package pdftex.def Info: Figures/Results/quality_plot_error_OPE_threshold.pdf u
-sed on input line 152.
+sed on input line 153.
 (pdftex.def)             Requested size: 208.73653pt x 171.12259pt.
 
 <Figures/Results/quality_plot_overlap_OPE_AUC.pdf, id=780, 614.295pt x 794.97pt
@@ -1338,10 +1338,10 @@ sed on input line 152.
 File: Figures/Results/quality_plot_overlap_OPE_AUC.pdf Graphic file (type pdf)
  <use Figures/Results/quality_plot_overlap_OPE_AUC.pdf>
 Package pdftex.def Info: Figures/Results/quality_plot_overlap_OPE_AUC.pdf used 
-on input line 155.
+on input line 156.
 (pdftex.def)             Requested size: 208.73653pt x 171.12259pt.
 
-Overfull \hbox (7.29997pt too wide) in paragraph at lines 152--159
+Overfull \hbox (7.29997pt too wide) in paragraph at lines 153--160
  [][][][] 
  []
 
@@ -1349,7 +1349,7 @@ Overfull \hbox (7.29997pt too wide) in paragraph at lines 152--159
 File: Figures/Results/subway/041.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/041.pdf>
-Package pdftex.def Info: Figures/Results/subway/041.pdf used on input line 188.
+Package pdftex.def Info: Figures/Results/subway/041.pdf used on input line 189.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1357,7 +1357,7 @@ Package pdftex.def Info: Figures/Results/subway/041.pdf used on input line 188.
 File: Figures/Results/subway/042.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/042.pdf>
-Package pdftex.def Info: Figures/Results/subway/042.pdf used on input line 189.
+Package pdftex.def Info: Figures/Results/subway/042.pdf used on input line 190.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1365,7 +1365,7 @@ Package pdftex.def Info: Figures/Results/subway/042.pdf used on input line 189.
 File: Figures/Results/subway/043.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/043.pdf>
-Package pdftex.def Info: Figures/Results/subway/043.pdf used on input line 190.
+Package pdftex.def Info: Figures/Results/subway/043.pdf used on input line 191.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1373,7 +1373,7 @@ Package pdftex.def Info: Figures/Results/subway/043.pdf used on input line 190.
 File: Figures/Results/subway/044.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/044.pdf>
-Package pdftex.def Info: Figures/Results/subway/044.pdf used on input line 191.
+Package pdftex.def Info: Figures/Results/subway/044.pdf used on input line 192.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1381,7 +1381,7 @@ Package pdftex.def Info: Figures/Results/subway/044.pdf used on input line 191.
 File: Figures/Results/subway/045.pdf Graphic file (type pdf)
 
 <use Figures/Results/subway/045.pdf>
-Package pdftex.def Info: Figures/Results/subway/045.pdf used on input line 192.
+Package pdftex.def Info: Figures/Results/subway/045.pdf used on input line 193.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1389,7 +1389,7 @@ Package pdftex.def Info: Figures/Results/subway/045.pdf used on input line 192.
 File: Figures/Results/soccer/090.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/090.pdf>
-Package pdftex.def Info: Figures/Results/soccer/090.pdf used on input line 194.
+Package pdftex.def Info: Figures/Results/soccer/090.pdf used on input line 195.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1397,7 +1397,7 @@ Package pdftex.def Info: Figures/Results/soccer/090.pdf used on input line 194.
 File: Figures/Results/soccer/110.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/110.pdf>
-Package pdftex.def Info: Figures/Results/soccer/110.pdf used on input line 195.
+Package pdftex.def Info: Figures/Results/soccer/110.pdf used on input line 196.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1405,7 +1405,7 @@ Package pdftex.def Info: Figures/Results/soccer/110.pdf used on input line 195.
 File: Figures/Results/soccer/131.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/131.pdf>
-Package pdftex.def Info: Figures/Results/soccer/131.pdf used on input line 196.
+Package pdftex.def Info: Figures/Results/soccer/131.pdf used on input line 197.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1413,7 +1413,7 @@ Package pdftex.def Info: Figures/Results/soccer/131.pdf used on input line 196.
 File: Figures/Results/soccer/140.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/140.pdf>
-Package pdftex.def Info: Figures/Results/soccer/140.pdf used on input line 197.
+Package pdftex.def Info: Figures/Results/soccer/140.pdf used on input line 198.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
 
@@ -1421,7 +1421,7 @@ Package pdftex.def Info: Figures/Results/soccer/140.pdf used on input line 197.
 File: Figures/Results/soccer/150.pdf Graphic file (type pdf)
 
 <use Figures/Results/soccer/150.pdf>
-Package pdftex.def Info: Figures/Results/soccer/150.pdf used on input line 198.
+Package pdftex.def Info: Figures/Results/soccer/150.pdf used on input line 199.
 
 (pdftex.def)             Requested size: 79.32089pt x 58.60698pt.
  [26 <D:/Tesis/EnsembleTrackingThesis/Figures/Results/quality_plot_error_OPE_th
@@ -1786,14 +1786,14 @@ s/results_all/legend.pdf>]
 <Figures/stats.pdf, id=1147, 794.97pt x 614.295pt>
 File: Figures/stats.pdf Graphic file (type pdf)
  <use Figures/stats.pdf>
-Package pdftex.def Info: Figures/stats.pdf used on input line 280.
+Package pdftex.def Info: Figures/stats.pdf used on input line 281.
 (pdftex.def)             Requested size: 417.47307pt x 95.9243pt.
 
 <Figures/bar_graph.pdf, id=1150, 794.97pt x 614.295pt>
 File: Figures/bar_graph.pdf Graphic file (type pdf)
 
 <use Figures/bar_graph.pdf>
-Package pdftex.def Info: Figures/bar_graph.pdf used on input line 303.
+Package pdftex.def Info: Figures/bar_graph.pdf used on input line 304.
 (pdftex.def)             Requested size: 417.47307pt x 146.1319pt.
 
 
@@ -1856,7 +1856,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (47 pages, 5030793 bytes).
+Output written on main.pdf (47 pages, 5030878 bytes).
 PDF statistics:
  1331 PDF objects out of 1440 (max. 8388607)
  230 named destinations out of 1000 (max. 500000)
