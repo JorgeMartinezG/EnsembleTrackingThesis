@@ -1,4 +1,4 @@
-\chapter{Conclusion}
+\chapter{Conclusion and Future Work}
 \label{chapter::conclusions}
 
 In this thesis, we demonstrated that an online ensemble of trackers can result
@@ -7,11 +7,15 @@ considers the spatial coherence and appearance of the predicted target locations
 to ensemble a final estimate of the target state. We leverage high confidence
 estimation to reinitialize trackers that fail and steer them towards the true
 region. Our experiments show that our simple but effective technique can achieve
-state-of-the-art tracking performance in benchmarking sequences.
+state-of-the-art tracking performance in benchmarking sequences. 
 
-One possible future research direction would fix scale issue of final ensemble
-tracking result. We plan to enlarge evaluation of the ensemble of trackers
-using large scale evaluation benchmark. Moreover, we expect to formulate a novel
-appearance model update, that will perform this task more efficiently, avoiding
-spurious samples aggregation into the model. Finally, we propose to apply
-better object modeling using more robust features.
+Using a quite simple framework, further improvements are expected to be
+possible. For instance, the ensemble method does not estimate scale. This
+limitation needs to be addressed in future research, since it might give
+significant performance gain. One possible solution could be the application of
+a sliding window in the scale dimension, preserving low computational cost.
+
+Other possible futures research are proposed. We plan to enlarge evaluation of
+the ensemble of trackers using large scale evaluation benchmark. Moreover, we
+expect to formulate a novel appearance model update, that will perform this task more efficiently, avoiding spurious samples aggregation into the model. Finally,
+we propose to apply better object modeling using more robust features.

@@ -131,17 +131,17 @@ Robert~T Collins, Alan~J Lipton, Takeo Kanade, Hironobu Fujiyoshi, David
 B.~Stenger, V.~Ramesh, N.~Paragios, F.~Coetzee, and J.M. Buhmann.
 \newblock {Topology free hidden Markov models: application to background
   modeling}.
-\newblock \emph{\iccv}, 1, 2001.
+\newblock In \emph{\iccv}, volume~1, 2001.
 
 \bibitem[Rittscher et~al.(2000)Rittscher, Kato, Joga, and Blake]{Rittscher2000}
 J~Rittscher, J~Kato, S~Joga, and A~Blake.
 \newblock {A probabilistic background model for tracking}.
-\newblock \emph{\eccv}, pages 336--350, 2000.
+\newblock In \emph{\eccv}, pages 336--350, 2000.
 
 \bibitem[Shi and Tomasi(1994)]{Shi1994}
 Jianbo Shi and C.~Tomasi.
 \newblock {Good features to track}.
-\newblock \emph{\cvpr}, 1994.
+\newblock In \emph{\cvpr}, 1994.
 
 \bibitem[Lowe(2004)]{Lowe2004b}
 David~G Lowe.
@@ -172,7 +172,7 @@ Janne Heikkil\"{a} and Olli Silv\'{e}n.
   Lowe]{Okuma2004}
 Kenji Okuma, Ali Taleghani, Nando~De Freitas, James~J Little, and David~G Lowe.
 \newblock {A Boosted Particle Filter : Multitarget Detection and Tracking}.
-\newblock \emph{\eccv}, pages 28--39, 2004.
+\newblock In \emph{\eccv}, pages 28--39, 2004.
 
 \bibitem[Schulz et~al.(2003)Schulz, Burgard, Fox, and Cremers]{Schulz2003}
 Dirk Schulz, Wolfram Burgard, Dieter Fox, and Armin~B. Cremers.
@@ -221,7 +221,7 @@ Xiaoming Liu and Ting Yu.
 \bibitem[Isard and MacCormick(2001)]{Isard2001}
 M.~Isard and J.~MacCormick.
 \newblock {BraMBLe: a Bayesian multiple-blob tracker}.
-\newblock \emph{\iccv}, 2, 2001.
+\newblock In \emph{\iccv}, volume~2, 2001.
 
 \bibitem[Lepetit and Fua(2006)]{Lepetit2006}
 Vincent Lepetit and Pascal Fua.
@@ -231,7 +231,7 @@ Vincent Lepetit and Pascal Fua.
 \bibitem[Comaniciu et~al.(2000)Comaniciu, Ramesh, and Meer]{Comaniciu2000}
 D~Comaniciu, V~Ramesh, and P~Meer.
 \newblock {Real-time tracking of non-rigid objects using mean shift}.
-\newblock \emph{\cvpr}, 2:\penalty0 142--149, 2000.
+\newblock In \emph{\cvpr}, volume~2, pages 142--149, 2000.
 
 \bibitem[Adam et~al.(2006)Adam, Rivlin, and Shimshoni]{Adam2006}
 Amit Adam, Ehud Rivlin, and Ilan Shimshoni.
@@ -355,7 +355,7 @@ Alexandre Alahi, Laurent Jacques, Yannick Boursier, and Pierre Vandergheynst.
   Rubin]{Torralba2003}
 A.~Torralba, K.P. Murphy, W.T. Freeman, and M.A. Rubin.
 \newblock {Context-based vision system for place and object recognition}.
-\newblock \emph{\iccv}, 2003.
+\newblock In \emph{\iccv}, 2003.
 
 \bibitem[Vezzani and Cucchiara(2010)]{Vezzani2010}
 Roberto Vezzani and Rita Cucchiara.
@@ -502,7 +502,7 @@ JF~Henriques, Rui Caseiro, Pedro Martins, and Jorge Batista.
 \bibitem[Zhang et~al.(2013)Zhang, Zhang, Yang, and Zhang]{Zhang2013}
 Kaihua Zhang, Lei Zhang, Ming-Hsuan Yang, and David Zhang.
 \newblock {Fast Tracking via Spatio-Temporal Context Learning}.
-\newblock \emph{\eccv}, pages 1--16, 2013.
+\newblock In \emph{\eccv}, pages 1--16, 2013.
 
 \bibitem[Danelljan et~al.(2014)Danelljan, Khan, Felsberg, and
   Weijer]{Danelljan2014}
@@ -514,7 +514,7 @@ Martin Danelljan, Fahad~Shahbaz Khan, Michael Felsberg, and Joost Van~De
 \bibitem[Bolme et~al.(2010)Bolme, Beveridge, Draper, and Lui]{Bolme2010}
 D~S Bolme, J~R Beveridge, B~a Draper, and Yui Man Lui Yui~Man Lui.
 \newblock {Visual object tracking using adaptive correlation filters}.
-\newblock \emph{\cvpr}, pages 2544--2550, 2010.
+\newblock In \emph{\cvpr}, pages 2544--2550, 2010.
 
 \bibitem[Hare et~al.(2011)Hare, Saffari, and Torr]{Hare2011}
 Sam Hare, Amir Saffari, and Philip H~S Torr.

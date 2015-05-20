@@ -39,6 +39,5 @@
 \contentsline {section}{\numberline {4.5}Benchmarking results}{26}{section.60}
 \contentsline {section}{\numberline {4.6}Analysis of the tracking ensemble}{27}{section.64}
 \contentsline {section}{\numberline {4.7}Experiments with sequence attributes}{29}{section.76}
-\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.78}
-\contentsline {chapter}{Glossary}{32}{section*.79}
-\contentsline {chapter}{Bibliography}{33}{dummy.81}
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{31}{chapter.78}
+\contentsline {chapter}{Bibliography}{32}{dummy.79}
