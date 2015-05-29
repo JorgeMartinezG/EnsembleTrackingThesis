@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Outliers reinitialization}}{21}{figure.caption.50}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Precision and success plots for all 50 sequences}}{26}{figure.caption.61}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Qualitative results for object tracking applying both selection criterias in two sequences.}}{27}{figure.caption.65}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Qualitative results for object tracking applying both inliers selection methods in two sequences.}}{27}{figure.caption.65}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Screenshots of tracking results.\relax }}{28}{figure.caption.67}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {bolt sequence.}}}{28}{subfigure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {jogging-2 sequence.}}}{28}{subfigure.3.2}

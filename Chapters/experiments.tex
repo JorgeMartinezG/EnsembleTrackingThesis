@@ -20,13 +20,13 @@ HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default p
 to prevent over-tuning.
 
 \section{Evaluation Metrics}
-The trackers were evaluated using two evaluation metrics commonly used in
+The trackers were put into test using two evaluation metrics commonly employed in
 literature. The first is \textit{distance precision} (DP), which is the number
 of frames where the estimated center location is within a certain distance
 threshold $d$ from the \gls{gt} center location. The second metric is
 \textit{overlap precision} (OP), defined as the number of frames where the
 óverlap between the estimated and ground truth bounding box exceeds
-a treshold $b$. For an image sequence, these two measures are calculated using
+a treshold $b$. On each sequence, these two measures are calculated using
 equations \ref{eq::precision} and \ref{eq::overlap}. Estimated center location
 and \gls{gt} are denoted as $\mathbf{p}_f$ and $\mathbf{\hat{p}}_f$
 respectively, where $f$ is the frame number. Futhermore, $B_f$ and $\hat{B}_f$
@@ -59,12 +59,13 @@ thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
 achieve perfect precision on a large threshold range. In both types of plots,
 a \textit{ranking score} is computed to line up trackers overall performance.
-In precision the DP value of 20 pixels is used as ranking score. In contrast to precision, in success plots, trackers are ranked using area under
+In precision plot, the DP value of 20 pixels is used as ranking score. In contrast to precision, in success plots, trackers are ranked using area under
 the curve (AUC), which relates to the average overlap across all frames. 
 
 To validate the performance of our proposed approach, we follow the one-pass
-evaluation methodology (OPE) proposed in \cite{Wu2013B}. 
-We summarize the performance using the precision and success plots.
+evaluation methodology (OPE) proposed in \cite{Wu2013B}. OPE evaluates trackers
+performance running them throughout a test sequence with initialization from
+the \gls{gt} position in the first frame. We summarize employing the precision and success plots for complete dataset.
 
 \begin{table}[h!]
 \caption[Selected tracking algorithms for ensemble method.]{\small Selected tracking algorithms for ensemble method. \textbf{Code Column}: 
@@ -131,7 +132,7 @@ store current state and give current result. This allow the ensemble to
 perform spatial clustering and compute appearance score for each tracker.
 \item \textbf{Trackers bounding box result: } Each tracker estimate must give
 current target location and scale overall frames. Also, the current result
-must be able to transform into a generic format, in order to perform ensemble.
+must be able to be transformed into a generic format, in order to perform ensemble.
 \item \textbf{Reinitialization available: } A tracker is able to reset its
 state using final ensemble tracking result.
 \end{itemize}
@@ -198,9 +199,9 @@ fails tracking the object.
 	\figuresr{soccer/140}
 	\figuresr{soccer/150}
 \vspace{-2mm}
-\caption[Qualitative results for object tracking applying both selection
-	criterias in two sequences.]{\small Qualitative results for object tracking applying both selection
-	criterias in two sequences. \textbf{Green} bounding box corresponds to
+\caption[Qualitative results for object tracking applying both inliers selection
+	methods
+	in two sequences.]{\small Qualitative results for object tracking applying both inliers selection methods in two sequences. \textbf{Green} bounding box corresponds to
 	appearance score selection. \textbf{Blue} box to cluster size. In
 	\textit{subway} when occlusion happens, many trackers are lost, creating a
 	big cluster. In cases of background clutter \textit{soccer}, appearance
@@ -222,8 +223,7 @@ We also study the effect of the inlier selection criteria of Section
 
 \begin{table}[h!]
 \centering
-\caption{\small Average AUC and precision for live fusion methods tested in 50 videos
-		dataset.}
+\caption{\small Average AUC and precision for inliers selection methods.}
 \resizebox{0.9\linewidth}{!}{%
 \begin{tabular}{llll}
 \hline
@@ -278,7 +278,7 @@ These timings do not include the processing time of each tracker.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.0\linewidth, trim= 0.7cm 7.6cm 0.3cm 7.8cm, clip=true]{Figures/stats.pdf}
+\includegraphics[width=1.0\linewidth, trim= 0.7cm 6.8cm 0.0cm 7.2cm, clip=true]{Figures/test.pdf}
 \caption{\small Statistics for each tracker in the ensemble over all frames. }
 \label{fig:stats}
 \end{figure}
