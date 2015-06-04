@@ -6,15 +6,15 @@
 
 As it can be seen in chapter \ref{chapter::related_work}, several tracking
 approaches have been proposed before. These methods attain relative success under
-particular circumstances. Based on the above, we present in this section 
+particular circumstances. Based on the above, we present in this chapter 
 our ensemble tracking approach, which combines many tracking results into an
-online ensemble. we consider that combining each tracker virtues, while
+online ensemble. We consider that combining each tracker virtues, while
 evading their weaknesses, could outperform each single algorithm.
 
-This section presents an overview of our online ensemble
+First, in this chapter we give an introduction of our online ensemble
 tracking approach, and then describe the details of each stage of our
 processing pipeline. Given tracking inputs, the algorithm estimates the
-trajectory of an object as it moves around a scene. The tracker outputs labels
+trajectory of an object as it moves around a scene. Then, the tracker outputs labels
 of the tracked object in every frame of the video (Figure \ref{fig::global_diagram}).
 These labels provide position and scale information for evaluation and analysis.
 
@@ -191,7 +191,7 @@ d(x_i,x_j) = 1 - \frac{|x_i \bigcap x_j|}{|x_i \bigcup  x_j|}
 Using all dissimilarity values, we construct a symmetric $n \times n$ proximity
 matrix $D$. In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in
 the same cluster if their dissimilarity is below some threshold $v$.
-For all our experiments we set this value to $0.8$, which is interpreted as
+For all our experiments we set this value to $0.8$, which could be interpreted as
 low number of clusters formation.
 The result of CL is a grouping of the input bounding boxes $X$ into 
 $m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$,
@@ -251,7 +251,7 @@ Using the classifier, we compute appearance scores
 %On each frame, we obtain probability scores
 $S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result $x_i$ in
 $X$ (Figure \ref{fig::svm_app}). We considered this model, because other methods
-which applied SVM classifier \cite{zhang2014meem,Bai2013}, obtained better results
+that applied SVM classifier \cite{zhang2014meem,Bai2013}, obtained better results
 than other classifiers \eg Boosting.
 Also, HOG features are
 more robust to deformable objects than other image features used in
@@ -385,7 +385,7 @@ we use a simpler approach that selects the medoid bounding box as the final
 ensemble output. That is, we output a
 bounding box $x^{*}$
 whose sum of distances with the rest of inlier bounding boxes
-is minimum \ref{fig::behavior}:
+is minimum (Figure \ref{fig::behavior}):
 \begin{equation}
 x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j}) 
 \end{equation}

@@ -19,7 +19,7 @@ HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default p
 
 \section{Evaluation Metrics}
 The trackers were put into test using two evaluation metrics commonly employed in
-literature. The first is \textit{distance precision} (DP), which is the number
+the literature. The first is \textit{distance precision} (DP), which is the number
 of frames where the estimated center location is within a certain distance
 threshold $d$ from the \gls{gt} center location. The second metric is
 \textit{overlap precision} (OP), defined as the number of frames where the
@@ -101,7 +101,7 @@ annotated with 11 attributes.
 The dataset includes challenging scenarios such as motion blur,
 illumination changes, scale variation, occlusions,
 in-plane and out-of-plane rotations, object deformation,
-background clutter and low resolution. The selection criterias of this dataset
+background clutter and low resolution. The selection criteria of this dataset
 are listed below. 
 \begin{itemize}
 \item \textbf{Standarized sequences: }For better comparison, OOTB videos are
@@ -124,7 +124,7 @@ allows us to make attribute-based comparisons, which can show strengths and weak
 %their states on each frame.
 Table \ref{table:trackers} shows the list of the
 selected tracking algorithms that will be included in the pool for our
-experiments. The selection criterias for the trackers are
+experiments. The selection criteria for the trackers are
 listed below.
 \begin{itemize}
 \item \textbf{Source code: } We integrate into our pool, tracking algorithms
@@ -292,7 +292,7 @@ In figure
 \ref{fig:stats}, for each tracker, there are 3 bars: percentage of frames that a
 tracker was in best cluster(inlier - blue bar); percentage of frames where a
 tracker was considered outlier (red bar); finally, percentage of frames that a
-tracker was selected as medoid-centralbb bounding box (green bar). Based on this result,
+tracker was selected as medoid bounding box (green bar). Based on this result,
 trackers whose individual performance is very high, have low percentage of being
 considered outliers (KCF, MEEM, RCSK). MEEM individual performance is very high.
 However, it does not have the highest frame percentage of being selected as
