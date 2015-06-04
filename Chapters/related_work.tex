@@ -77,8 +77,8 @@ background image. The pixels above some threshold are classified as foreground,
 which means pixels belonging to the object of interest. The background image is 
 created  averaging images over time in an initialization period, and is updated
 with new images to adapt to dynamic scene changes. Also, the foreground map is 
-followed by morphological operations such as closing and erosion (elimination of 
-small-sized blobs).
+followed by morphological operations such as closing and erosion, which eliminate  
+small-sized blobs.
 
 Although background subtraction techniques extracts well most of the relevant
 pixels, this method is sensitive to changes when some background and foreground
@@ -306,8 +306,8 @@ minimization of an energy function \cite{Cremers2003,Davila2014,Niebles2010}.
 \textbf{Tracking Challenges. }Object detection and tracking is still an open
 research problem in computer
 vision. The level of difficulty depends on how the object of interest is
-defined in terms of features, and random challenges which appear in a video sequence
-. For instance, using color as object representation
+defined in terms of features, and random challenges which appear in a video sequence.
+For instance, using color as object representation
 method, it is not difficult to identify all pixels with same color as the
 object. However, there are sequences where the values of pixels for the object
 and the background, are very similar. In addition, illumination
@@ -331,7 +331,7 @@ e.g. traffic lights, waving trees).
 \item \textbf{Out of view (OV): } Some portion o the target leaves the field
 of view.
 \item \textbf{Background clutter (BC):} As stated before, this challenge makes
-the segmentation task difficult. It is hard to create ans separate background
+the segmentation task difficult. It is hard to create a separate background
 model from moving foreground objects.
 \item \textbf{Fast Motion (FM):} The speed of a moving object plays an
 important role in its detection and track. If an object is moving too slow,

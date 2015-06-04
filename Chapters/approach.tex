@@ -144,10 +144,10 @@ classifying entities. These entities are described as a set of measurements or b
 relationships between the entity and other entities. A \textit{cluster} is
 comprised of a number of similar entities collected or group together. Other
 authors define a cluster as a set of instances which are alike, and instances from
-different clusters are not alike, or "A cluster is an aggregation of points in
+different clusters are not alike, or a cluster is an aggregation of points in
 the test space such that the \textit{distance} between any two points in the
 cluster is less than the distance between any point in the cluster and any point
-not in it" \cite{Jain88}.
+not in it \cite{Jain88}.
 
 \begin{figure}[b!]
 \centering
@@ -165,11 +165,11 @@ organized into an efficient representation that characterizes the data.
 Clustering methods require that an index of proximity, or alikeness, or
 affinity, or association be established between pairs or patterns. A
 \textit{proximity matrix} $|d(i, j)|$ accumulates the pairwise indices of
-proximity in a matrix in which each row and column represents a pattern.
+proximity in a matrix in which each row and column represents an entity.
 Diagonal entries of a proximity matrix are ignored since all paterns are
 assumed to have the same degree of proximity with themselves. Also it is
 assumed that all proximity matrices are symmetric, so all pairs of entities have
-the same proximity index, independent of the order in which they are written.A
+the same proximity index, independent of the order in which they are written. A
 proximity index is either a \textit{similarity} or a \textit{dissimilarity}.
 The more the \textit{i}th and \textit{j}th entities are similar one another, the
 larger a similarity index and the dissimilarity index are.
@@ -259,7 +259,7 @@ tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
-\begin{figure}[b!]
+\begin{figure}[h!]
 \centering
 \includegraphics[page=1, width=1\linewidth, trim= 0.2cm 6cm 0.2cm 6.5cm,
                  clip=true]{Figures/figures_mod}
