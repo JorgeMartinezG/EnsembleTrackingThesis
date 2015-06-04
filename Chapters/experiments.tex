@@ -51,7 +51,7 @@ on estimated center location, which is beneficial for trackers that do not
 estimate scale of the object. Instead, OP also takes estimated scale into
 account and penalizes if the scale of the target is estimated incorrectly.
 
-Recently, authors of Online Object Tracking Benchmark (OOTB) \cite{Wu2013B} suggest the usage
+Recently, the authors of Online Object Tracking Benchmark (OOTB) \cite{Wu2013B} suggest the usage
 of precision and success plots. These curves show distance and \gls{overlap} precision metrics over a range of
 thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
@@ -109,7 +109,7 @@ widely used as benchmark sequences in recent literature, allowing us to make a
 fair comparison to state-of-the-art algorithms. Also, all of the sequences were
 selected for generic single-object tracking purposes.
 \item \textbf{Manual annotations available: }OOTB provides \gls{gt} annotations for
-each sequence. This avoid labeling process, which takes time.
+each sequence. This avoids a costly labeling process.
 \item \textbf{Image frames: } Each sequence corresponds to a set of image frames. This
 format allows to evaluate global processing time of the ensemble approach.
 \item \textbf{Attributes classification: } Each sequence provides an annotation with 11
@@ -170,9 +170,8 @@ state-of-the-art tracking algorithms in the benchmark.
 From Figure \ref{fig:results}, our method outperforms each individual tracking
 score, in both precision and success.
 When inspecting individial sequences, we note that 
-our method handles better camera
-rotation sequences, such as \textit{singer1, singer2, fish, car4}, unlike
-the competing
+our method handles camera rotation sequences better, such as \textit{singer1, 
+singer2, fish, car4}, unlike the competing
 MEEM tracker. Also, our ensemble method can overcome complete object occlusion. In
 sequences where this situation happens \textit{jogging, david3}, KCF trackers
 fails tracking the object. 
@@ -264,7 +263,8 @@ clutter sequences.
 
 We also note that adding trackers with lower performance hurts the ensemble.
 However, the drop in performance when adding
-weaker trackers, is less than 5\% ($\sim$1500 frames from 29519) in success and 10\% in
+weaker trackers, is less than 5\% ($\sim$1500 frames out of 29519) in success and 10
+\% in
 precision ($\sim$3000 frames). For instance, when performing inlier selection using
 the
 appearance score criteria, a spurious tracker may focus on a region with

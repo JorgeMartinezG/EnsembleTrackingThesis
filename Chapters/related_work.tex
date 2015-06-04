@@ -60,9 +60,9 @@ features are incorporated to model the appearance of an object.
 \section{Moving Object Detection} 
 \label{sec::detection}
 
-Detection can be defined as
-finding instances of objects in images or videos. A large number of methodologies
-have been proposed for object tracking, focusing
+Detection can be defined as finding instances of objects in images or videos. Some
+tracking approaches require an object detection method as initialization only. Some others, make use of an object detector over all frames in ofrder to track objects.
+A large number of methodologies have been proposed for object tracking, focusing
 on the task of object detection first. Most of them apply combinations among
 different methodologies, making it very difficult to create a uniform
 classification of existing approaches. This section classifies
@@ -224,8 +224,8 @@ the probability of object appearance. Mean-shift is an approach of density-based
 tracking. This method shifts a data point to the average of data points
 in its neighborhood, using fixed color distribution. A similar
 approach is CAMSHIFT \cite{Exner2010} that handles dynamically
-changing color distribution by adapting the searching window size
-and computing color distribution in a pixels neighbourhood.
+changing color distribution by adapting the search window size
+and computing color distribution in the window.
 
 \textbf{Template-based tracking:}  These approaches apply templates of the
 object to calculate appearance probability on every frame of the
@@ -233,7 +233,7 @@ video sequence. The most common is \textit{Template \gls{matching}} \cite{Korman
 that searches accross the image, a region similar to the object template, defined
 in previous frames. The similarity measure is calculated using normalized cross
 correlation. A limitation of this method is its high computational cost due to
-brute force search. To reduce this cost, some methods limit the searching region
+brute force search. To reduce this cost, some methods limit the object search
 to a neighbourhood.
 
 Instead of templates, other object representations can be used for tracking.
@@ -306,7 +306,8 @@ minimization of an energy function \cite{Cremers2003,Davila2014,Niebles2010}.
 \textbf{Tracking Challenges. }Object detection and tracking is still an open
 research problem in computer
 vision. The level of difficulty depends on how the object of interest is
-defined in terms of features, and random challenges which appear in a video sequence.
+defined in terms of features, and particular challenges which appear in a video 
+sequence.
 For instance, using color as object representation
 method, it is not difficult to identify all pixels with same color as the
 object. However, there are sequences where the values of pixels for the object
@@ -328,7 +329,7 @@ camera.
 should be still remain as background, acoording to their relevance. Such
 movement can be periodical or irregular, causing blurring (motion blur - MB),
 e.g. traffic lights, waving trees).
-\item \textbf{Out of view (OV): } Some portion o the target leaves the field
+\item \textbf{Out of view (OV): } Some portion of the target leaves the field
 of view.
 \item \textbf{Background clutter (BC):} As stated before, this challenge makes
 the segmentation task difficult. It is hard to create a separate background

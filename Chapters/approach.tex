@@ -144,10 +144,10 @@ classifying entities. These entities are described as a set of measurements or b
 relationships between the entity and other entities. A \textit{cluster} is
 comprised of a number of similar entities collected or group together. Other
 authors define a cluster as a set of instances which are alike, and instances from
-different clusters are not alike, or a cluster is an aggregation of points in
-the test space such that the \textit{distance} between any two points in the
-cluster is less than the distance between any point in the cluster and any point
-not in it \cite{Jain88}.
+different clusters are not alike. Also, a cluster could be defined as an 
+aggregation of points in the test space such that the \textit{distance} between
+any two points in the cluster is less than the distance between any point in the
+cluster and any point not in it \cite{Jain88}.
 
 \begin{figure}[b!]
 \centering
@@ -191,8 +191,8 @@ d(x_i,x_j) = 1 - \frac{|x_i \bigcap x_j|}{|x_i \bigcup  x_j|}
 Using all dissimilarity values, we construct a symmetric $n \times n$ proximity
 matrix $D$. In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in
 the same cluster if their dissimilarity is below some threshold $v$.
-For all our experiments we set this value to $0.8$, which could be interpreted as
-low number of clusters formation.
+For all our experiments we set this value to $0.8$, which generally
+corresponds to a small number of clusters.
 The result of CL is a grouping of the input bounding boxes $X$ into 
 $m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$,
 which are illustrated with colors in Fig.~\ref{fig::diagram}b. These clusters
@@ -250,12 +250,12 @@ Using the classifier, we compute appearance scores
 %and evaluate in object model.
 %On each frame, we obtain probability scores
 $S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result $x_i$ in
-$X$ (Figure \ref{fig::svm_app}). We considered this model, because other methods
+$X$ (Figure \ref{fig::svm_app}). We considered this model, because tracking methods
 that applied SVM classifier \cite{zhang2014meem,Bai2013}, obtained better results
-than other classifiers \eg Boosting.
+than other classifiers \eg Boosting \cite{Grabner2006,Grabner2008}.
 Also, HOG features are
 more robust to deformable objects than other image features used in
-tracking-by-detection methods \eg Haar.
+tracking-by-detection methods \eg Haar \cite{Avidan2007}.
 %We considered a probability score as a similarity measure which compares a tracker
 %patch with the object model in the current frame. 
 
@@ -385,7 +385,7 @@ we use a simpler approach that selects the medoid bounding box as the final
 ensemble output. That is, we output a
 bounding box $x^{*}$
 whose sum of distances with the rest of inlier bounding boxes
-is minimum (Figure \ref{fig::behavior}):
+is minimum:
 \begin{equation}
 x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j}) 
 \end{equation}
@@ -420,6 +420,12 @@ resets its state to the latest target state prediction from the ensemble
 This reinitialization procedure is only performed periodically every 15 frames
 so that we can also take advantage of the capability of some trackers
 to recover from short-term tracking failures.
+
+The proposed object tracking using ensemble of multiple tracking algorithms, can be visualized in Figure \ref{fig::behavior}. In it, after running each tracker
+individually, the results are clustered using CL. Then, the system finds inliers
+applying the potential cues explained in Section \ref{sec:inliers}. Finally, the
+medoid bounding box is selected from inliers. Each 15 frames, outliers are
+reinitialized.
 
 %The outliers correspond to those trackers that does not belong to $c^*$. These
 %trackers are reinitialized using $\mathrm{x}^{*}$ every 15 frames. Also,

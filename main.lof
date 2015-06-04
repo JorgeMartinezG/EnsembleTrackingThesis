@@ -3,8 +3,8 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Object detection using Gaussian Mixture Models for background subtraction}}{6}{figure.caption.17}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Interest points for object detection}}{7}{figure.caption.21}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Object tracking using particle filter}}{8}{figure.caption.24}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Overview for online boosting object tracker}}{9}{figure.caption.26}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation}}{10}{figure.caption.28}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Overview for online boosting object tracker}}{10}{figure.caption.26}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of an active contour representation}}{11}{figure.caption.28}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Tracking diagram}}{15}{figure.caption.33}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Proposed methodology.}}{16}{figure.caption.35}
