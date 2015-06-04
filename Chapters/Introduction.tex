@@ -40,7 +40,7 @@ struggle to handle appearance variations.
 In this thesis, we focus on ``model free tracking'' of
 arbitrary objects in videos, in which no prior knowledge other than
 the object location in the first frame is available.
-Recently, the online tracking benchmark proposed in \cite{Wu2013B}
+The online tracking benchmark recently proposed in \cite{Wu2013B}
 shows that
 each tracking algorithm performs best under particular circumstances.
 There is no single tracking algorithm that can perform well on all
@@ -96,18 +96,21 @@ tracking performance.
 \section{Goals} \label{sec::goals}
 
 \textbf{Our main goal} is to design and implement a visual object tracking
-system, performing an ensemble of multiple tracking algorithms (trackers). We
-aim at selecting a set of standarized sequences, to be used for analysis, development and tests of the proposed system. We need to select a group of
-trackers, which can store its state on each frame and be possible its
-reinitialization. We seek to develop an ensemble of multiple trackers
-algorithms. We plan to test and verify our approach behavior using performance
-quantification.
+system, thar performs an ensemble of multiple tracking algorithms. We achieve
+this goal via several landmarks. First, we
+aim at selecting a set of standarized sequences,necessary for the analysis,
+development and tests of the proposed system. Also, it is important to
+select a group of trackers, which can store their state on each frame and can
+be reinitialized. Then, ee seek to develop an ensemble of multiple trackers
+algorithms. Finally, we plan to test and verify our approach using performance
+quantification. 
 
 \section{Contributions}
 
 The main contribution of this thesis is an ensemble tracking
 framework that builds on top of the output of available online tracking
-algorithms running in parallel to produce an online fused tracking result that
+algorithms. Running in parallel several trackers, the outcome corresponds to
+an online fused tracking result that
 leverages each tracker best features. Our method does not use prior knowledge
 about the nature of the trackers in the pool.
 The fused tracking output is obtained by considering appearance and spatial

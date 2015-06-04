@@ -15,9 +15,7 @@ individual performance of trackers and effect of the tracker pool.
 We implemented our online ensemble approach in MATLAB. CL clustering method is
 implemented in C++ and ported as \textit{mex} function. Object model corresponds
 to a standard RBF SVM, implemented in LIBSVM library \cite{libsvm}. To extract
-HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default parameters. All experiments were performed on a PC with an Intel Xeon CPU and
-16 GB of RAM using same parameters over default dataset. This is commonly used
-to prevent over-tuning.
+HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default parameters. All experiments were performed on a PC with an Intel Xeon CPU and 16 GB of RAM.
 
 \section{Evaluation Metrics}
 The trackers were put into test using two evaluation metrics commonly employed in
@@ -25,8 +23,8 @@ literature. The first is \textit{distance precision} (DP), which is the number
 of frames where the estimated center location is within a certain distance
 threshold $d$ from the \gls{gt} center location. The second metric is
 \textit{overlap precision} (OP), defined as the number of frames where the
-óverlap between the estimated and ground truth bounding box exceeds
-a treshold $b$. On each sequence, these two measures are calculated using
+overlap between the estimated and ground truth bounding box exceeds
+a threshold $b$. On each sequence, these two measures are calculated using
 equations \ref{eq::precision} and \ref{eq::overlap}. Estimated center location
 and \gls{gt} are denoted as $\mathbf{p}_f$ and $\mathbf{\hat{p}}_f$
 respectively, where $f$ is the frame number. Futhermore, $B_f$ and $\hat{B}_f$
@@ -53,7 +51,7 @@ on estimated center location, which is beneficial for trackers that do not
 estimate scale of the object. Instead, OP also takes estimated scale into
 account and penalizes if the scale of the target is estimated incorrectly.
 
-Recently, authors of Online Object Tracking Benchmark (OOTB) suggest the usage
+Recently, authors of Online Object Tracking Benchmark (OOTB) \cite{Wu2013B} suggest the usage
 of precision and success plots. These curves show distance and \gls{overlap} precision metrics over a range of
 thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
@@ -65,7 +63,8 @@ the curve (AUC), which relates to the average overlap across all frames.
 To validate the performance of our proposed approach, we follow the one-pass
 evaluation methodology (OPE) proposed in \cite{Wu2013B}. OPE evaluates trackers
 performance running them throughout a test sequence with initialization from
-the \gls{gt} position in the first frame. We summarize employing the precision and success plots for complete dataset.
+the \gls{gt} position in the first frame. We summarize results using the precision and
+success plots in the complete dataset.
 
 \begin{table}[h!]
 \caption[Selected tracking algorithms for ensemble method.]{\small Selected tracking algorithms for ensemble method. \textbf{Code Column}: 
@@ -109,10 +108,13 @@ are listed below.
 widely used as benchmark sequences in recent literature, allowing us to make a
 fair comparison to state-of-the-art algorithms. Also, all of the sequences were
 selected for generic single-object tracking purposes.
-\item \textbf{Manual annotations available: }OOTB comes with \gls{gt} annotations for each sequence. This avoid labeling process, which takes time.
-\item \textbf{Image frames: } Each sequence corresponds to a set of image frames. This format allows to evaluate global processing time of the ensemble approach.
-\item \textbf{Attributes classification: } Each sequence provides an annotation with 11 attributes, which explain the challenging scenarios encountered. This
-allow us to make attribute-based comparisons, which can show strengths and weaknesses of different trackers.
+\item \textbf{Manual annotations available: }OOTB provides \gls{gt} annotations for
+each sequence. This avoid labeling process, which takes time.
+\item \textbf{Image frames: } Each sequence corresponds to a set of image frames. This
+format allows to evaluate global processing time of the ensemble approach.
+\item \textbf{Attributes classification: } Each sequence provides an annotation with 11
+attributes, which explain the challenging scenarios encountered. This
+allows us to make attribute-based comparisons, which can show strengths and weaknesses of different trackers.
 
 \end{itemize}
 
@@ -121,7 +123,8 @@ allow us to make attribute-based comparisons, which can show strengths and weakn
 %All trackers were modified in order to store their results and save
 %their states on each frame.
 Table \ref{table:trackers} shows the list of the
-selected tracking algorithms. The selection criterias for the trackers are
+selected tracking algorithms that will be included in the pool for our
+experiments. The selection criterias for the trackers are
 listed below.
 \begin{itemize}
 \item \textbf{Source code: } We integrate into our pool, tracking algorithms
@@ -261,8 +264,8 @@ clutter sequences.
 
 We also note that adding trackers with lower performance hurts the ensemble.
 However, the drop in performance when adding
-weaker trackers, is less than 5\% ($\sim$300 frames) in success and 10\% in
-precision ($\sim$500 frames). For instance, when performing inlier selection using
+weaker trackers, is less than 5\% ($\sim$1500 frames from 29519) in success and 10\% in
+precision ($\sim$3000 frames). For instance, when performing inlier selection using
 the
 appearance score criteria, a spurious tracker may focus on a region with
 very similar apperance to the object, \eg background clutter, which can

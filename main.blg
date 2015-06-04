@@ -13,12 +13,8 @@ Repeated entry---line 864 of file References/related_work.bib
  : @article{Mallat1989
  :                    ,
 I'm skipping whatever remains of this entry
-A bad cross reference---entry "KwonL09"
-refers to entry "DBLP:conf/cvpr/2009", which doesn't exist
-A bad cross reference---entry "KwonL10"
-refers to entry "DBLP:conf/cvpr/2010", which doesn't exist
-Warning--I didn't find a database entry for "DBLP:conf/cvpr/2009"
-Warning--I didn't find a database entry for "DBLP:conf/cvpr/2010"
+Warning--entry type for "Davila2014" isn't style-file defined
+--line 1441 of file References/related_work.bib
 Warning--empty journal in Lowe2004b
 Warning--empty year in PMT
-(There were 5 error messages)
+(There were 3 error messages)

@@ -4,11 +4,18 @@
 
 \lhead{Chapter 3. \emph{Proposed approach}} 
 
+As it can be seen in chapter \ref{chapter::related_work}, several tracking
+approaches have been proposed before. These methods attain relative success under
+particular circumstances. Based on the above, we present in this section 
+our ensemble tracking approach, which combines many tracking results into an
+online ensemble. we consider that combining each tracker virtues, while
+evading their weaknesses, could outperform each single algorithm.
+
 This section presents an overview of our online ensemble
 tracking approach, and then describe the details of each stage of our
 processing pipeline. Given tracking inputs, the algorithm estimates the
 trajectory of an object as it moves around a scene. The tracker outputs labels
-of the tracked object in every frame of the video \ref{fig::global_diagram}.
+of the tracked object in every frame of the video (Figure \ref{fig::global_diagram}).
 These labels provide position and scale information for evaluation and analysis.
 
 \begin{figure}[h!]
@@ -40,7 +47,7 @@ in a pool of size $n$, which produce a set of predicted target
 states
 $X = \{ x_1, x_2, ..., x_n \}$ (Fig.~\ref{fig::diagram}a).
 These predictions are the raw input of our ensemble algorithm,
-and may be in the form of bounding boxes. A bounding box is here defines as the
+and may be in the form of bounding boxes. A bounding box is defined as the
 set of pixels covered by a rectangular area.
 Our ensemble methodology then looks for spatial coherence among the predicted
 target states, and verifies the appearance of the predicted image regions
@@ -133,10 +140,10 @@ high confidence.
 \subsection{Spatial clustering}
 
 Cluster analysis is the formal study of algorithms and methods for grouping, or
-classifying objects. These objects are described as a set of measurements or by
-relationships between the object and other objects. A \textit{cluster} is
-comprised of a number of similar objects collected or group together. Other
-authors define a cluster as a set of entities which are alike, and entities from
+classifying entities. These entities are described as a set of measurements or by
+relationships between the entity and other entities. A \textit{cluster} is
+comprised of a number of similar entities collected or group together. Other
+authors define a cluster as a set of instances which are alike, and instances from
 different clusters are not alike, or "A cluster is an aggregation of points in
 the test space such that the \textit{distance} between any two points in the
 cluster is less than the distance between any point in the cluster and any point
@@ -152,8 +159,8 @@ not in it" \cite{Jain88}.
 \label{fig::clustering}
 \end{figure}
 
-Cluster analysis is the process of classifying objects into subsets that have
-meaning in the context of a particular problem. The objects are thereby
+Cluster analysis is the process of classifying entities into subsets that have
+meaning in the context of a particular problem. The entities are thereby
 organized into an efficient representation that characterizes the data.
 Clustering methods require that an index of proximity, or alikeness, or
 affinity, or association be established between pairs or patterns. A
@@ -161,10 +168,10 @@ affinity, or association be established between pairs or patterns. A
 proximity in a matrix in which each row and column represents a pattern.
 Diagonal entries of a proximity matrix are ignored since all paterns are
 assumed to have the same degree of proximity with themselves. Also it is
-assumed that all proximity matrices are symmetric, so all pairs of objects have
+assumed that all proximity matrices are symmetric, so all pairs of entities have
 the same proximity index, independent of the order in which they are written.A
 proximity index is either a \textit{similarity} or a \textit{dissimilarity}.
-The more the \textit{i}th and \textit{j}th objects are similar one another, the
+The more the \textit{i}th and \textit{j}th entities are similar one another, the
 larger a similarity index and the dissimilarity index are.
 
 At this stage, we perform spatial clustering of all tracker predictions $X$.
@@ -184,7 +191,8 @@ d(x_i,x_j) = 1 - \frac{|x_i \bigcap x_j|}{|x_i \bigcup  x_j|}
 Using all dissimilarity values, we construct a symmetric $n \times n$ proximity
 matrix $D$. In CL, a pair of bounding boxes $(x_i, x_j)$ will be grouped in
 the same cluster if their dissimilarity is below some threshold $v$.
-For all our experiments we set this value to $0.8$.
+For all our experiments we set this value to $0.8$, which is interpreted as
+low number of clusters formation.
 The result of CL is a grouping of the input bounding boxes $X$ into 
 $m$ clusters $C = \left \{ c_1, c_2, ..., c_m \right \}$,
 which are illustrated with colors in Fig.~\ref{fig::diagram}b. These clusters
@@ -215,7 +223,7 @@ of Oriented Gradients are extracted. The final result, corresponds to a hog
 \label{fig::features_extraction}
 \end{figure}
 
-Generally, Discriminative methods train a classifier using data acquired from
+Generally, discriminative methods train a classifier using data acquired from
 previous frames, and subsequently use the trained classifier to evaluate
 possible object regions at the current frame. After localization, a set of
 \textit{positive} and \textit{negative} samples are heuristically selected to
@@ -242,8 +250,10 @@ Using the classifier, we compute appearance scores
 %and evaluate in object model.
 %On each frame, we obtain probability scores
 $S = \left \{ s_1, s_2, ..., s_n \right \}$ for each tracking result $x_i$ in
-$X$ (Figure \ref{fig::svm_app}). We considered this model, because other methods found in 
-\cite{zhang2014meem,Bai2013}, obtained better results. Also, HOG features are
+$X$ (Figure \ref{fig::svm_app}). We considered this model, because other methods
+which applied SVM classifier \cite{zhang2014meem,Bai2013}, obtained better results
+than other classifiers \eg Boosting.
+Also, HOG features are
 more robust to deformable objects than other image features used in
 tracking-by-detection methods \eg Haar.
 %We considered a probability score as a similarity measure which compares a tracker
@@ -362,19 +372,20 @@ give results on where the object might be (first row). Then, all results are
 clustered using hierarchical agglomerative clustering (second row). We focus on
 selecting the group with highest number of members, or cluster with best
 appearance score (third row). Finally, we reinitialize outliers.}   
+\label{fig::behavior}
 \end{figure*}
 
 
 \section{Final ensemble tracking result}
 In order to provide an estimation of the state of the target using our
 ensemble, we fuse the outputs of all inlier trackers from the previous stage.
-There are multiple choices on how to impĺement this fusion. For example,
+There are multiple choices on how to implement this fusion. For example,
 it can be a linear combination of the inlier bounding boxes. In practice,
 we use a simpler approach that selects the medoid bounding box as the final
 ensemble output. That is, we output a
 bounding box $x^{*}$
 whose sum of distances with the rest of inlier bounding boxes
-is minimum:
+is minimum \ref{fig::behavior}:
 \begin{equation}
 x^{*} = \argmin_{x_{i} \in c^*}  ~\sum_{x_{j} \in c^{*}}d(x_{i}, x_{j}) 
 \end{equation}
