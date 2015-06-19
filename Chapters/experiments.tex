@@ -6,14 +6,14 @@
 \label{chapter::experiments}
 
 In this section we report evaluations for our proposed approach. We compare our
-tracking ensemble method and other state-of-the-art trackers using complete
+tracking ensemble method and other state-of-the-art trackers using the complete
 50 sequences tracking benchmark \cite{Wu2013B}. We also present qualitative and
 quantitative analysis of our ensemble tracker, such as
 individual performance of trackers and effect of the tracker pool.
 
 \section{Implementation details}
 We implemented our online ensemble approach in MATLAB. CL clustering method is
-implemented in C++ and ported as \textit{mex} function. Object model corresponds
+implemented in C++ and ported as a \textit{mex} function. Object model corresponds
 to a standard RBF SVM, implemented in LIBSVM library \cite{libsvm}. To extract
 HOG features, we made use of Piotr Toolbox for Matlab \cite{PMT} using default parameters. All experiments were performed on a PC with an Intel Xeon CPU and 16 GB of RAM.
 
@@ -51,7 +51,7 @@ on estimated center location, which is beneficial for trackers that do not
 estimate scale of the object. Instead, OP also takes estimated scale into
 account and penalizes if the scale of the target is estimated incorrectly.
 
-Recently, the authors of Online Object Tracking Benchmark (OOTB) \cite{Wu2013B} suggest the usage
+Recently, the authors of the Online Object Tracking Benchmark (OOTB) \cite{Wu2013B} suggest the usage
 of precision and success plots. These curves show distance and \gls{overlap} precision metrics over a range of
 thresholds. For instance, in precision plot, a higher precision at low
 thresholds means the tracker is more accurate, while a lost target will not
@@ -127,7 +127,7 @@ selected tracking algorithms that will be included in the pool for our
 experiments. The selection criteria for the trackers are
 listed below.
 \begin{itemize}
-\item \textbf{Source code: } We integrate into our pool, tracking algorithms
+\item \textbf{Source code: } We integrate into our pool tracking algorithms
 whose original source code is publicly available. Executable files were not
 selected.
 \item \textbf{Store current state: } On each frame, a tracker must be able to
@@ -173,7 +173,7 @@ When inspecting individial sequences, we note that
 our method handles camera rotation sequences better, such as \textit{singer1, 
 singer2, fish, car4}, unlike the competing
 MEEM tracker. Also, our ensemble method can overcome complete object occlusion. In
-sequences where this situation happens \textit{jogging, david3}, KCF trackers
+sequences where this situation happens like \textit{jogging, david3}, KCF trackers
 fails tracking the object. 
 
 %Establishing a general comparison, performance of MEEM is comparable to ours.
@@ -271,7 +271,8 @@ appearance score criteria, a spurious tracker may focus on a region with
 very similar apperance to the object, \eg background clutter, which can
 make tracking fail.
 This is very common in the \textit{soccer} and \textit{shaking}
-sequences.
+sequences. It is important to note that even a small percentage difference could be
+significant in terms of sequences. 
 
 In terms of running time, the average time cost for our ensemble
 method is $0.062$ s/frame for 5

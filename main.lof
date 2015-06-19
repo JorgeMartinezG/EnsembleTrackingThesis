@@ -8,11 +8,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Tracking diagram}}{15}{figure.caption.33}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Proposed methodology.}}{16}{figure.caption.35}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Spatial clustering stage}}{17}{figure.caption.38}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Spatial clustering stage}}{18}{figure.caption.38}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Patches and features extraction process}}{19}{figure.caption.41}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Appearance estimation for trackers estimates.}}{20}{figure.caption.42}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces System behavior in five frames}}{21}{figure.caption.46}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Outliers reinitialization}}{21}{figure.caption.50}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Outliers reinitialization}}{22}{figure.caption.50}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Precision and success plots for all 50 sequences}}{26}{figure.caption.61}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Qualitative results for object tracking applying both inliers selection methods in two sequences.}}{27}{figure.caption.65}

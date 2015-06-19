@@ -9,9 +9,9 @@ approaches have been proposed before. These methods attain relative success unde
 particular circumstances. Based on the above, we present in this chapter 
 our ensemble tracking approach, which combines many tracking results into an
 online ensemble. We consider that combining each tracker virtues, while
-evading their weaknesses, could outperform each single algorithm.
+evading their weaknesses, could outperform each single algorithm used individually.
 
-First, in this chapter we give an introduction of our online ensemble
+First, in this chapter we give an introduction to our online ensemble
 tracking approach, and then describe the details of each stage of our
 processing pipeline. Given tracking inputs, the algorithm estimates the
 trajectory of an object as it moves around a scene. Then, the tracker outputs labels
@@ -22,9 +22,9 @@ These labels provide position and scale information for evaluation and analysis.
 \centering
 \includegraphics[page=2, width=0.8\linewidth, trim= 0cm 5.1cm 6cm 5.3cm,
                  clip=true]{Figures/global_diagram}
-\caption[Tracking diagram]{\small Tracking diagram. The proposed system takes
+\caption[Tracking diagram]{\small Tracking diagram. The proposed system takes an
         initial bounding box as \gls{ROI}, image sequences and the list of trackers as inputs.
-        After tracking ensemble, the system drops out tracking results for each
+        After tracking ensemble, the system outputs tracking results for each
         frame.}
 \label{fig::global_diagram}
 \end{figure}
@@ -108,7 +108,7 @@ role in the overall ensemble procedure.
 
 \section{Analysis of appearance and spatial coherence}
 After running all trackers in the pool, our method uses their state estimates
-$X$ as input of the appearance and spatial coherence stage
+$X$ as input for the appearance and spatial coherence stage
 (Fig.~\ref{fig::diagram}b). The goal is to determine the set of
 trackers that correctly estimate the true target state. We denote these trackers
 as inliners in Fig.~\ref{fig::diagram}c.
@@ -142,7 +142,7 @@ high confidence.
 Cluster analysis is the formal study of algorithms and methods for grouping, or
 classifying entities. These entities are described as a set of measurements or by
 relationships between the entity and other entities. A \textit{cluster} is
-comprised of a number of similar entities collected or group together. Other
+comprised of a number of similar entities collected or grouped together. Other
 authors define a cluster as a set of instances which are alike, and instances from
 different clusters are not alike. Also, a cluster could be defined as an 
 aggregation of points in the test space such that the \textit{distance} between
@@ -155,7 +155,7 @@ cluster and any point not in it \cite{Jain88}.
                  clip=true]{Figures/global_diagram}
 \caption[Spatial clustering stage]{\small Spatial clustering stage. Using
         predicted positions from each tracker, we cluster similar bounding boxes using
-        equation \ref{eq::diff}. In right image, each color represents a cluster.}
+        equation \ref{eq::diff}. In the image on the right, each color represents a cluster.}
 \label{fig::clustering}
 \end{figure}
 
@@ -206,7 +206,7 @@ satisfy the following:
 Visual object tracking has been formulated as a tracking-by-detection problem
 recently. Object modeling is dynamically performed to support object detection
 over all frames. Mostly all the approaches can be classified into two categories:
-\textit{Generative appearance models}, that mainly focus on how fit the data into
+\textit{Generative appearance models}, that mainly focus on how to fit the data into
 their correspondent object class; and \textit{discriminative appearance models},
 which assume object tracking as a binary classification issue. Main goal is to
 maximize the separability between object and non-object regions discriminately.
@@ -231,7 +231,7 @@ update the classifier. Some approaches apply online boosting
 \cite{Babenko2010,Grabner2008,Grabner2006}, that make a discriminative
 evaluation of features taken from a candidate feature pool, and then select the
 top ranked features to conduct the tracking process. Other methods apply
-Support Vector Nachines (SVM) method, which learns a margin-based discriminative
+Support Vector Machines (SVM) method, which learns a margin-based discriminative
 appearance model, in order to maximize inter-class separability. These
 classifiers are trained using visual representations of the object.
 
@@ -239,7 +239,8 @@ At this stage, we would like to verify the appearance of all tracker
 predictions $X$ in comparison to an object appearance model.
 In order to do so, we train an appearance classifier that aims at separating
 positive target bounding boxes from background bounding boxes.
-We extract positive samples from the target location given at the first frame
+We extract positive samples (Figure \ref{fig::features_extraction}) from the target
+location given at the first frame
 and also from uniformly sampling background bounding boxes around the target
 bounding box.
 In practice, we adopt a feature representation based on \gls{HOG} (HOG) and a SVM
@@ -286,10 +287,11 @@ model.
 \label{sec:inliers}
 The clustering stage and appearance scoring provide cues about which trackers
 can be considered as correctly tracking the target.
-We evalute two simple criteria that optimally select a group of trackers as
+We evaluate two simple criteria that optimally select a group of trackers as
 inliers (Fig.~\ref{fig::diagram}c).
 In our experiments, we consider cluster size and appearance scores as
-potential cues to select inliers.
+potential cues to select inliers. The user defines initially which criteria will
+use in the ensemble.
 
 %After performing clustering stage and obtaining classification scores for each
 %tracker, we can select the cluster that best follows the object. We present two
@@ -414,14 +416,15 @@ location and provided as a new positive sample to retrain or update
 our object appearance model.
 
 The second goal is to steer failed trackers in the pool back to the target.
-When a tracker is consistently tagged as an outlier, our algorithm automatically
+When a tracker is tagged as an outlier, our algorithm automatically
 resets its state to the latest target state prediction from the ensemble
 (Figure~\ref{fig::outliers}).
 This reinitialization procedure is only performed periodically every 15 frames
 so that we can also take advantage of the capability of some trackers
 to recover from short-term tracking failures.
 
-The proposed object tracking using ensemble of multiple tracking algorithms, can be visualized in Figure \ref{fig::behavior}. In it, after running each tracker
+The proposed object tracking using ensemble of multiple tracking algorithms, can be
+visualized in Figure \ref{fig::behavior}. In it, after running each tracker
 individually, the results are clustered using CL. Then, the system finds inliers
 applying the potential cues explained in Section \ref{sec:inliers}. Finally, the
 medoid bounding box is selected from inliers. Each 15 frames, outliers are

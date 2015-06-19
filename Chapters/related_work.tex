@@ -42,14 +42,14 @@ as humans or excavators machines, contour or silhouette-based representation is
 appropiate \cite{Haritaoglu2000}.
 
 In order to track objects, selecting the right features plays a critical role.
-Researchers usually choose manually visual features depending on the application
-domain. This problem of automatic feature selection has received significant
+Researchers usually choose visual features manually depending on the application
+domain. The problem of automatic feature selection has received significant
 attention in the pattern recognition community. 
 In general, a \gls{feature} is a property of an image which we are interested in.
-The most important property of a visual feature is its discrimination power so
-that the object could be easily distinguished from others. The most common visual
-features selections are color  \cite{Paschos2001,Song1996}, edges \cite{Canny1986,
-Bowyer2001}, displacement
+The most important property of a visual feature is its discriminative power so
+that the object of interest could be easily distinguished from others. The most
+common visual features selections are color  \cite{Paschos2001,Song1996}, edges
+\cite{Canny1986, Bowyer2001}, displacement
 vectors \cite{Black1996,Lucas1981a}, corners \cite{Harris1988} and textures
 \cite{Haralick1973,Nickels1997,Mallat1989}. Among all features, color is one
 of the most widely used for tracking. However, color features are sensitive to
@@ -61,9 +61,10 @@ features are incorporated to model the appearance of an object.
 \label{sec::detection}
 
 Detection can be defined as finding instances of objects in images or videos. Some
-tracking approaches require an object detection method as initialization only. Some others, make use of an object detector over all frames in ofrder to track objects.
-A large number of methodologies have been proposed for object tracking, focusing
-on the task of object detection first. Most of them apply combinations among
+tracking approaches require an object detection method as initialization only. Some others,
+make use of an object detector over all frames in ofrder to track objects.
+A large number of methodologies have been proposed for object tracking, focusing first
+on the task of object detection. Most of them apply combinations among
 different methodologies, making it very difficult to create a uniform
 classification of existing approaches. This section classifies
 different approaches available for object detection from videos.
@@ -74,7 +75,8 @@ Background subtraction is a commonly used technique for object segmentation in
 static camera scenarios \cite{McIvor2000}. This task consists in detecting moving
 regions by subtracting the current image pixel-by-pixel from a reference
 background image. The pixels above some threshold are classified as foreground,
-which means pixels belonging to the object of interest. The background image is 
+which means pixels belonging to the object of interest (Figure \ref{fig::bg_sub}).
+The background image is 
 created  averaging images over time in an initialization period, and is updated
 with new images to adapt to dynamic scene changes. Also, the foreground map is 
 followed by morphological operations such as closing and erosion, which eliminate  
@@ -107,7 +109,7 @@ and $t$.
 
 This method is highly adaptive to dynamic changes in the scene as most recent
 frames are involved in the process. However, it fails detecting new small
-regions as moving objects, known as ghost regions. Detection will not be correct either,
+regions as moving objects, known as ghost regions. Detection will not be correct either
 for objects which remain static in a video.
 
 A two-frame differencing method is presented in \cite{Lipton1998a}, where the
@@ -123,15 +125,16 @@ background subtraction model \cite{Collins2000}.
 
 Statistical characteristics of pixels have been used, in order to overcome
 shortcomings between frames of basic background subtraction methods. The
-approaches consist in keeping and updating pixels statistics that belong to the
-background model. Foreground pixels are identified by comparing each pixel's
-statistics with that of the background model. These methods are becoming more
+approaches consist in keeping and updating a statistical model for the pixels
+that belong to the background model. Foreground pixels are identified by
+comparing each pixel's statistics with that of the background model. These
+methods are becoming more
 popular due to its reliability in scenes that contain noise, illumination
 changes and shadows. Some approaches apply Hidden Markov Models (HMM). These
 methods \cite{Stenger2001,Rittscher2000} represent the intensity variation of a
 pixel in an image sequence as discrete states.
 
-The statistical method proposed in \cite{Pham2010} describes and adaptive
+The statistical method proposed in \cite{Pham2010} describes an adaptive
 background model for real-time tracking. Every pixel is modeled by a mixture of
 Gaussians which are udpated online using incoming image data. Then, the
 Gaussians distributions of the mixture model for each pixel are evaluated
@@ -146,7 +149,7 @@ detector uses optical flow (KLT) approach \cite{Shi1994}. This method makes use
 of the flow vectors of moving objects over time to detect moving blobs in an
 image. In this approach the apparent velocity and direction of every pixel in
 the frame must be computed. Some other methods are SIFT \cite{Lowe2004b} and
-Harris \cite{Harris1988} corners detectors.
+Harris \cite{Harris1988} corners detectors (Figure \ref{fig::points}).
 
 \begin{figure}[h!!]
 \centering
@@ -158,6 +161,7 @@ Harris \cite{Harris1988} corners detectors.
 \caption[Interest points for object detection]
 		{Interest points for object detection. Left - Harris, center - KLT, 
 		right - SIFT. Figure reproduced from \cite{Yilmaz2006}.}
+\label{fig::points}
 \end{figure}
 
 \section{Object Tracking}
@@ -191,8 +195,8 @@ object state estimation, these methods apply state space approach to modeling
 properties such as position, velocity and acceleration. In single object
 state estimation, the optimal state of an object is given by a Kalman Filter
 \cite{Ren2008a,Heikkila2004}, assuming measurement noise have a Gaussian
-distribution. In the general case, where object state is not assumed as
-Gaussian, estimation can be performed using particle filters
+distribution. In the general case, where noise is not assumed as
+Gaussian, estimation can be performed using particle filters (Figure \ref{fig::particle})
 \cite{Okuma2004,Rittscher2000}.
 
 \begin{figure}[t!!]
@@ -207,6 +211,7 @@ Gaussian, estimation can be performed using particle filters
 		possible location of the object being tracked. A set of particles have
 		more weight at locations where the probability is very high. Figure
 		reproduced from \cite{Rittscher2000}.}
+\label{fig::particle}
 \end{figure}
 
 
@@ -231,17 +236,18 @@ and computing color distribution in the window.
 object to calculate appearance probability on every frame of the
 video sequence. The most common is \textit{Template \gls{matching}} \cite{Korman2013}
 that searches accross the image, a region similar to the object template, defined
-in previous frames. The similarity measure is calculated using normalized cross
+in previous frames. A similarity measure is calculated using normalized cross
 correlation. A limitation of this method is its high computational cost due to
 brute force search. To reduce this cost, some methods limit the object search
-to a neighbourhood.
+to a neighborhood \ref{fig::overview_boost}.
 
 Instead of templates, other object representations can be used for tracking.
 For example, color histograms or mixture models can be computed using the
 appearance of pixels inside a rectangular or ellipsoidal region. To reduce
 computational complexity, the similarity between object model and the
 hypothesized position, is computed evaluating the ratio between color means of
-object model and position. The position with highest ratio is selected as
+object model and position \cite{Supancic2013}. The position with highest ratio is
+selected as
 current object location.
 
 \begin{figure}[t]
@@ -263,9 +269,9 @@ successful real-time tracking algorithms \cite{Liu2007,Grabner2006}. However,
 many tracking algorithms employ static appearance models that are defined
 manually or trained at the first frame only \cite{Isard2001, Lepetit2006,
 Black1996, Comaniciu2000, Adam2006}, these methods are often unable to deal
-with significant appearance changes. In order to cope this problem, an adaptive
+with significant appearance changes. In order to cope with this problem, an adaptive
 appearance model that changes during the tracking process as the appearance of
-the object changes, gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
+the object changes gets better results \cite{Ross2007,Matthews2004,Jepson2003}.
 
 Boosting has been used in a wide field of machine learning tasks and
 applied to computer vision problems. Many tracking algorithms are based on the
@@ -275,8 +281,8 @@ Online Adaboost \cite{Avidan2007,Grabner2008,Oza2000}, multi-class boost
 to combine many weak classifiers (usually decision stumps) into a linear
 strong classifier.
 
-\textbf{Sparse/non.sparse representation: } In this type of tracking, a set of
-target samples is associated with spanned serveral templates. The likelihood
+\textbf{Sparse/non-sparse representation: } In this type of tracking, a set of
+target samples is associated with serveral templates. The likelihood
 of a candidate sample belonging to the object class is often determined by the
 residual between the candidate sample and the reconstructed samples derived from
 a linear representation \cite{Zhang2012b,Zhang2012a,Bao2012,Mei2011a,Mei2011}.
@@ -285,7 +291,8 @@ a linear representation \cite{Zhang2012b,Zhang2012a,Bao2012,Mei2011a,Mei2011}.
 
 The object is tracked via estimation of the object region in each frame.
 Silhouette-based methods provide an accurate shape description for the
-objects that are tracked. These approaches can be divided into two main
+objects that are tracked (Figure \ref{fig::contour}) . These approaches can be
+divided into two main
 categories, shape matching and contour tracking. Shape matching \cite{Li2001}
 approaches search object silhouette in the current frame. Contour based, evolve
 initial contour to its new position using state space models or direct
@@ -300,6 +307,7 @@ minimization of an energy function \cite{Cremers2003,Davila2014,Niebles2010}.
 			image displays contour result. Figure reproduced from \cite{Yilmaz2006}.}
 	\label{fig::contour}
 \end{figure}	
+
 \section{Tracking Datasets and Challenges}
 \label{sec::datasets}
 
@@ -337,11 +345,11 @@ model from moving foreground objects.
 \item \textbf{Fast Motion (FM):} The speed of a moving object plays an
 important role in its detection and track. If an object is moving too slow,
 the temporal differencing methods fails to detect object, because it preserves
-uniform region between frames. In the other case, fast moving object leaves
+uniform region between frames. On the other hand, fast moving object leaves
 ghost regions in a detected foreground model.
 \item \textbf{Object rotation and deformation (DEF):} Since natural objects
 move freely, they can appear slightly or completely transformed. Such
-rotations, in (IPR) or out (OPR) of plane on the images affect object tracking
+rotations, in (IPR) or out (OPR) of plane, on the images affect object tracking
 considerably.
 \item \textbf{Low Resolution (LR):} Number of pixels inside the object
 bounding box is less than 400.
@@ -362,12 +370,12 @@ can be used for evaluating algorithms for surveillance-related applications. The
 first dataset contains 5 sequences applied to single person/face detection and
 tracking. The second dataset applies for multiple person/face detection and
 tracking. The sequences contain four targets occluding each other repeatedly.
-ETISEO dataset \cite{Munder2006} contains indoor and outdoor scenes, such as
+The ETISEO dataset \cite{Munder2006} contains indoor and outdoor scenes, such as
 corridors, buildings entries, etc. This dataset can be used for surveillance
 applications.
 
-PETS dataset \cite{PETS} became a surveillance project whose challenging
-scenarios are focused only on high level applications of this field. Some
+The PETS dataset \cite{PETS} became a surveillance project whose challenging
+scenarios are focused only on high level applications on this field. Some
 issues, like illumination or scale changes are not considered in these videos.
 Most of the sequences are used for person/vehicle tracking in outdoor
 environments(subway stations, building entrances). CAVIAR \cite{Torralba2003}
@@ -378,15 +386,15 @@ people walking alone, meeting other people, entering and exiting shops.
 The VIdeo Surveillance Online Repository (VISOR) \cite{Vezzani2010} database
 covers a wide range of scenarios and situations, including videos for human
 action recognition, outdoor videos for face detection, indoor videos for people
-tracking with occlusions, vehicles detection and surveillance. The VIdeo
-Surveillance Online Repository, includes several sequences for two separate
+tracking with occlusions, vehicles detection and surveillance. VISOR, includes
+several sequences for two separate
 tasks: First, an abandoned baggage scenario and second, a parked vehicle
 scenario.
 
 Recently, the tracking community released evaluation suites containing a
 selection of videos and algorithms for testing trackers performance. These
 benchmarks test and compare many tracking approaches using fair evaluation
-criteria. Online Object Tracking Benchmark \cite{Wu2013B} contais 50 most
+criteria. Online Object Tracking Benchmark \cite{Wu2013B} contais 50 of the most
 commonly used sequences. Also, the authors classified tracking challenges
 (attributes) into subsets to report specific challenging conditions. The
 Amsterdam Library of Ordinary Videos for tracking, ALOV300+ \cite{Smeulders2014},
@@ -464,8 +472,8 @@ on the behaviour of each tracker.
 
 
 Sampling based approaches have also been explored for ensemble tracking.
-Examples of this are the VTD \cite{Kwon2009} and
-VTS \cite{Kwon2011a} trackers.
+Examples of this are the Visual Tracking Detector (VTD) \cite{Kwon2009} and
+the Visual Tracker Sampler (VTS) \cite{Kwon2011a} trackers.
 In this perspective, there is a sampling process that generates
 multiple samples of target and tracker states. These trackers run in parallel
 and their outputs are fused by probabilistic weighting. Therefore,

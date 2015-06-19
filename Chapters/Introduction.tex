@@ -31,11 +31,11 @@ situations.
 %For instance, tracking-by-detection methods generally have the problem of
 %not handling scale variations correctly.
 For instance, tracking-by-detection methods may not be able to handle scale
-variations rigorously.
+variations rigorously \cite{zhang2014meem}.
 %On the other hand, simpler methods tend to suffer from model drifting and
 %struggle to handle strong illumination changes.
 On the other hand, generative methods tend to suffer from model drifting and
-struggle to handle appearance variations.
+struggle to handle appearance variations \cite{Zhang2012b}.
 
 In this thesis, we focus on ``model free tracking'' of
 arbitrary objects in videos, in which no prior knowledge other than
@@ -96,12 +96,12 @@ tracking performance.
 \section{Goals} \label{sec::goals}
 
 \textbf{Our main goal} is to design and implement a visual object tracking
-system, thar performs an ensemble of multiple tracking algorithms. We achieve
+system that performs an ensemble of multiple tracking algorithms. We achieve
 this goal via several milestones. First, we
 aim at selecting a set of standarized sequences, necessary for the analysis,
 development and tests of the proposed system. Also, it is important to
-select a group of trackers, which can store their state on each frame and can
-be reinitialized. Then, we seek to develop an ensemble of multiple tracking
+select a group of trackers that can store their state on each frame and be
+reinitialized. Then, we seek to develop an ensemble of multiple tracking
 algorithms. Finally, we plan to test and verify our approach using performance
 quantification. 
 
