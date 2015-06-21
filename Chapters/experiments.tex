@@ -271,8 +271,10 @@ appearance score criteria, a spurious tracker may focus on a region with
 very similar apperance to the object, \eg background clutter, which can
 make tracking fail.
 This is very common in the \textit{soccer} and \textit{shaking}
-sequences. It is important to note that even a small percentage difference could be
-significant in terms of sequences. 
+sequences. It is important to note that a difference in performance between
+two trackers, does not establish one tracker better than the other. The evaluation
+metric averages performance over all 50 sequences. It does not consider a deeper
+comparison between trackers in terms of sequences.
 
 In terms of running time, the average time cost for our ensemble
 method is $0.062$ s/frame for 5
